@@ -37,8 +37,8 @@ with open("Macrepo_Lookup.csv","w", encoding='utf-8',newline='') as f: #Prepares
 			elif nargin ==1: #Updating to the current lookup table
 				macrepo_end=100000
 				print('Alternate Route');
-				with open("Macrepo_GOOD.csv","r",encoding='utf-8') as x: #Rename the previously completed lookup table to this before running the script
-					#with open("URL_GOOD.csv","r",encoding='utf-8') as y:
+				with open("Macrepo_Lookup.csv","r",encoding='utf-8') as x: #Rename the previously completed lookup table to this before running the script
+					#with open("URL_Lookup.csv","r",encoding='utf-8') as y:
 					book=csv.reader(x,delimiter=",") #Read the original, complete lookup table
 						#mark=csv.reader(y,delimiter=",")
 					for row in book: 
