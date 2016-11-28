@@ -23,7 +23,7 @@ folder to create a CSV report on the reported data.
 	Follow the link to the full code repository on GitHub. Download the 'Google_Analytics_API_Python_Client'
 	folder to your C:\ drive.
 	
-	*LINK*
+	https://github.com/cochonnk/Digital-Archive-Tools/tree/Google-Analytics-Reporting/Google_Analytics_API_Python_Client
 	
 	3. Add Your Google Analytics API Client Secret Credentials.
 	In the Google_Analytics_API_Python_Client folder, open the scripts folder.
