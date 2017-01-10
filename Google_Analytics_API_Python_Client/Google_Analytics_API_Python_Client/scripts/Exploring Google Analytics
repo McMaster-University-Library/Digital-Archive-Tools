@@ -1,0 +1,47 @@
+TOOLS TO EXPLORE AND OBTAIN CERTAIN DATA FROM THE GOOGLE ANALYTICS DASHBOARD.
+
+To obtain information on the McMaster Digital Archives total page users: Reporting --> Behaviour --> Site Content --> All Pages.
+(To obtain information on a specific page, enter the MacRepo ID of the web page in the search bar.)
+
+Using Reporting --> Behaviour --> Site Content --> All Pages --> (Enter MacRepo ID in the search bar and select the web page.), we can navigate to:
+
+	1. Page views by Users' Country: Set Primary Dimension to Page --> Set Secondary Dimension to Users --> Country.
+	2. Page views by Users' City: Set Primary Dimension to Page --> Set Secondary Dimension to Users --> City.
+	3. Page views by Channel Grouping: Set Primary Dimension to Page --> Set Secondary Dimension to Acquisition --> Default Channel Grouping.
+			
+			Terminology Note:
+			- Direct: Visitors who visited the site by typing the URL directly into their browser. 'Direct' can also refer to the visitors who clicked on the links from their bookmarks/favorites, untagged links within emails, or links from documents that don't include tracking variables (such as PDFs or Word documents).
+			- Organic: Visitors referred by an unpaid search engine listing, e.g. a Google.com search.
+			- Referral: Visitors referred by links on other websites. (Links that have been tagged with campaign variables won't show up as [referral] unless they happen to have been tagged with utm_medium=referral.)
+			- Social: Visitors referred as a result of social media efforts including sources like Twitter and Facebook.
+			
+	4. Page views by Traffic Sources and Medium: Set Primary Dimension to Page --> Set Secondary Dimension to Acquisition --> Source/Medium.
+			
+			Note: Medium refers to the channel grouping above. For direct, '(none)' would be indicated as its medium.
+	
+Using the Query Explorer linked here, https://ga-dev-tools.appspot.com/query-explorer/, we can obtain the same data above and create reports.
+Respective to the navigations above, the query parameters to be set for creating the data reports are:
+
+	Initial Parameters for the McMaster Digital Archive:
+	ids: ga:83866004
+	start-date: 365daysAgo
+	end-date: yesterday
+	metrics: ga:pageviews
+	filters: ga:pagePath==/islandora/object/macrepo:_______ <-- insert the web page's MacRepo ID here.
+	
+	1.  dimensions: ga:country
+		sort: -ga:pageviews
+		
+	2.	dimensions: ga:city
+		sort: -ga:pageviews
+		
+	3.  dimensions: ga:channelGrouping
+		sort: -ga:pageviews
+		
+	4.  dimensions: ga:sourceMedium
+		sort: -ga:pageviews
+		
+	
+		
+		
+		
