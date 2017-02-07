@@ -1,12 +1,13 @@
 # THIS SCRIPT RUNS GA_Filter.py. WHICH PULLS DATA FROM THE GOOGLE ANALYTICS REPORTING API.
 # IT THEN TAKES THE RAW OUTPUT STORED IN A CSV FILE TO CREATE A READABLE CSV REPORT.
+# IN ADDITION, THE RAW OUTPUT IS ALSO SORTED INTO EACH OBJECT'S COLLECTION, CREATING A SECOND READABLE CSV COLLECTIONS REPORT.
 # CURRENTLY, THE SCRIPT ONLY WORKS ON PYTHON 2 DUE TO VERSION-UNIQUE LIBRARIES AND COMMANDS.
 
 # THIS SCRIPT USES THE STORED GOOGLE ANALYTICS DATA WITHIN GA_Data.csv AS INPUTS.
 # IN ADDITION, IT TAKES THE INPUT 'startdate', DENOTING THE BEGINNING DATE FROM WHICH GOOGLE TAKES
 # ITS QUERY DATA. ITS END DATE IS THE DATE THE QUERY IS EXECUTED.
 # THE OUTPUT DATA WILL BE IN A TABLE IN CSV FORMAT. IT WILL CONTAIN (for each unique webpage):
-# MACREPO ID; WEBSITE URL; PAGETITLE; NUMBER OF USERS; NUMBER OF PAGEVIEWS; COLLECTION OR ITEM FLAG.
+# MACREPO ID; WEBSITE URL; PAGETITLE; NUMBER OF UNIQUE USERS; NUMBER OF PAGEVIEWS; COLLECTION OR ITEM FLAG.
 
 # Note: - Double backslashes are used to avoid Python errors in scanning strings.
 #       - Each report file name is of the form 'GA_ReportYYYYMMDD.csv' with the date on which
@@ -25,11 +26,11 @@ def create_report(startdate):
     import GA_Filter
     GA_Filter.filtering(startdate)
 
-    # Create list of Macrepo IDs.
-    IDList = []
-
-    # Creating list to hold collection or item flags.
-    flags = []
+    # Creating empty lists. 
+    IDList = [] # Create list of Macrepo IDs.
+    flags = [] # Creating list to hold collection or item flags.
+    identifiers = [] #Creating list to hold identifiers.
+    parentdir = [] #Creating list of parent directories.
 
     #----------------------------------------------------------------------------- USER EDIT ---------
     # Open Macrepo_Lookup.csv to obtain ID numbers.
@@ -44,8 +45,10 @@ def create_report(startdate):
         for row in reader1:
             IDList.append(row[0])
             flags.append(row[3])
+            identifiers.append(row[4])
+            parentdir.append(row[5])
     
-    print datetime.datetime.today().strftime('%Y%m%d')
+    #print datetime.datetime.today().strftime('%Y%m%d')
     
     #----------------------------------------------------------------------------- USER EDIT ---------
     # Open the csv file to which the report will be written to.
@@ -54,7 +57,7 @@ def create_report(startdate):
     GARPath = 'C:\Home\\Digital-Archive-Tools\\Google_Analytics_API_Python_Client\\scripts\\' + startdate
     GARFile = 'GA_Report' + datetime.datetime.today().strftime('%Y%m%d') + '.csv'
     a = open(GARPath.strip('\\') + '\\' + GARFile, 'wt')
-
+    
     #----------------------------------------------------------------------------- USER EDIT ---------
     # Open GA_Data.csv file for reading.
     # DEAR USER: Enter the filepath and the corresponding filename that contains the raw query data.
@@ -64,7 +67,8 @@ def create_report(startdate):
     reader2 = csv.reader(c, delimiter=',', quotechar='|')
     reader3 = csv.reader(c, delimiter = ',', quotechar=',')
 
-    # Open GA_DataDetails.csv file for appending.
+    # WRITING GOOGLE ANALYTICS DATA TO GA_Report.csv.
+    # Open GA_Report.csv file for appending.
     b = open(GARPath.strip('\\') + '\\' + GARFile, 'a')
     writer = csv.writer(b, dialect='excel', lineterminator='\n')
 
@@ -83,25 +87,101 @@ def create_report(startdate):
     TIMERANGE = "TIMERANGE: From " + startdate + " to " + datetime.datetime.today().strftime('%Y%m%d')
 
     # Write headers for GA_Report.csv.
-    headerwriter = csv.DictWriter(b, fieldnames = ["MACREPO ID", "WEBSITE URL", DIMENSION, METRIC1, METRIC2, "ITEM=1, COLLECTION=2",TIMERANGE])
+    headerwriter = csv.DictWriter(b, fieldnames = ["MACREPO ID", "WEBSITE URL", DIMENSION, METRIC1, METRIC2, "ITEM=1, COLLECTION=2", "IDENTIFIER", "PARENT DIRECTORY", TIMERANGE])
     headerwriter.writeheader()
 
     # Write data in GA_Report.csv.
-    for ID, item, indicator in zip(IDList[0:len(IDList)],dataread[1:len(dataread)], flags[0:len(flags)]):
-        print item
-        print indicator
+    for ID, item, indicator, identifier, parent in zip(IDList[0:len(IDList)],dataread[1:len(dataread)], flags[0:len(flags)], identifiers[0:len(identifiers)], parentdir[0:len(parentdir)]):
         line = []
         line.append(item[0]) #Appending MacRepo ID.
-        line.append("http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A"+item[0])#Appending corresponding URL.
+        line.append("http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A"+item[0]) #Appending corresponding URL.
         line.append(''.join('%5s' %piece for piece in item[1:len(item)-2])[3:]) #Appending corresponding dimension (page title).
-        line.append(int(filter(str.isdigit, item[(len(item)-1)]))) #Appending corresponding Metric data (pageviews).
-        line.append(int(filter(str.isdigit, item[(len(item)-2)]))) #Appending corresponding Metric data (users).
+        line.append(str(filter(str.isdigit, item[(len(item)-1)]))) #Appending corresponding Metric data (users).
+        line.append(str(filter(str.isdigit, item[(len(item)-2)]))) #Appending corresponding Metric data (pageviews).
         line.append(int(indicator)) #Appending corresponding collection or item flag.
+        line.append(str(identifier)) #Appending corresponding identifier.
+        line.append(parent) #Appending corresponding parent directory.
         writer.writerow(line)
 
     b.close()
 
     print "Success. Your Google Analytics report has been written to " + GARFile + " in " + GARPath
 
+
+    # WRITING GOOGLE ANALYTICS DATA TO GA_CollectionsReport.csv.
+    
+    #----------------------------------------------------------------------------- USER EDIT ---------
+    # Open the csv file to which the collections report will be written to.
+    # DEAR USER: Enter the filepath and the corresponding filename for a csv file to which the collection
+    #            report data will be written to.
+    GARPathColl = 'C:\Home\\Digital-Archive-Tools\\Google_Analytics_API_Python_Client\\scripts\\' + startdate
+    GARFileColl = 'GA_CollectionsReport' + datetime.datetime.today().strftime('%Y%m%d') + '.csv'
+    d = open(GARPathColl.strip('\\') + '\\' + GARFileColl, 'wt')
+
+    # Open GA_CollectionsReport.csv file for appending.
+    e = open(GARPathColl.strip('\\') + '\\' + GARFileColl, 'a')
+    writer = csv.writer(e, dialect='excel', lineterminator='\n')
+
+    # Write headers for GA_CollectionsReport.csv.
+    headerwriter = csv.DictWriter(e, fieldnames = ["COLLECTION MACREPO ID", "WEBSITE URL", "IDENTIFIER", DIMENSION, METRIC1 + " (TOTAL)",METRIC2 + " (TOTAL)", TIMERANGE])
+    headerwriter.writeheader()
+
+    # Creating list of unique parent directories.
+    unique_pd = []
+    [unique_pd.append(pd) for pd in parentdir if pd not in unique_pd]
+
+    for pd in unique_pd:
+
+        totalusers = 0
+        totalpageviews = 0
+        line = []
+        line.append(pd) #Appending collection MacRepo ID.
+
+        if pd == 10: #Appending the URL and pagetitle for MacRepo ID 10, which is not listed within Macrepo_Lookup.csv.
+            line.append("http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A10")
+            line.append("N/A")
+            line.append("Map Collections | Digital Archive @ McMaster University Library")
+
+        elif pd == 4: #Appending the URL and pagetitle for MacRepo ID 4, which is not listed within Macrepo_Lookup.csv.
+            line.append("http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A4")
+            line.append("N/A")
+            line.append("secret | Digital Archive @ McMaster University Library")
+
+        else:
+            pass
+               
+        # Open GA_Report.csv to obtain data.
+        with open(GARPath.strip('\\') + '\\' + GARFile, 'r') as lookupfile2:
+        
+            reader4 = csv.reader(lookupfile2, delimiter=",")
+
+            for row in reader4:
+                    
+                if row[0] == pd: #Appending MacRepo ID details for the collection.
+                    line.append(row[1]) #Appending corresponding URL.
+                    line.append(row[2]) #Appending corresponding dimension (page title).
+                    line.append(row[6]) #Appending corresponding identifier.
+
+                else:
+                    pass
+
+                if row[7] == pd: #Tabulating the total numbers of users and pageviews for each parent directory.
+                    usersnum = int(row[3])
+                    pageviewsnum = int(row[4])
+                    totalusers = totalusers + usersnum 
+                    totalpageviews = totalpageviews + pageviewsnum
+
+                else:
+                    pass
+                
+        line.append(totalusers)
+        line.append(totalpageviews)
+
+        writer.writerow(line) #Writing the data line for each collection within the csv file. 
+                    
+    e.close()
+
+    print "Success. Your Google Analytics Collections report has been written to " + GARFileColl + " in " + GARPathColl
+    
 if __name__ == "__main__":
     create_report(startdate)

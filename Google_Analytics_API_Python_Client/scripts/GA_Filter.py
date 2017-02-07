@@ -31,7 +31,7 @@ def filtering(startdate):
     # DEAR USER: Enter the filepath and the corresponding filename for a csv file which contains the
     #            MacRepo IDs you want to pass the Google Analytics query for.
     filepath = 'C:\Home\\Digital-Archive-Tools'
-    filename = 'Macrepo_Lookup.csv'
+    filename = 'Macrepo_Lookup.csv' 
 
     with open(filepath.strip('\\') + '\\' + filename, 'r') as lookupfile:
         

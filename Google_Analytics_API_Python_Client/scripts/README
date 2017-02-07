@@ -2,7 +2,9 @@ Note: The data collected from Windows' Task Scheduler is located within the fold
 
 ## Tool: Google_Analytics_API_Python_Client
 
-Using Python 2.7.8, the contents within Google_Analytics_API_Python_Client pulls Google Analytics query data directly into Excel to write a CSV file containing the Google Analytics data. Particularly in GA_Filter, the script performs a query to report the page title, number of users, number of pageviews, and a collection or item flag for each webpage in the Maps collection of McMaster's Digital Archives. In addition, the same information is gathered for the multiple timespans of the last 30 days, the last 7 days, and the last day. The following instructions are a guide on how to first setup Python and the Google Analytics reporting API, then edit the Python scripts within this folder to create a CSV report on the reported data.
+Using Python 2.7.8, the contents within Google_Analytics_API_Python_Client pulls Google Analytics query data directly into Excel to write a CSV file containing the Google Analytics data. Particularly in GA_Filter, the script performs a query to report the page title, number of users, number of pageviews, a collection or item flag, identifier, and parent directory for each webpage in the Maps collection of McMaster's Digital Archives. In addition, the same information is gathered for the multiple timespans of the last 30 days, the last 7 days, and the last day. The script GA_CreateReport transforms this data into a readable csv format, with outputs including both an 'all objects' analytics report labeled GA_Report(Date Created) and an analytics report fot the collections within the Digital Archive labeled GA_CollectionsReport(Date Created).
+
+The following instructions are a guide on how to first setup Python and the Google Analytics reporting API, then edit the Python scripts within this folder to create a CSV report on the reported data.
 
 	1. The link below is a guide on setting up the Google Analytics API for the first time.
 	

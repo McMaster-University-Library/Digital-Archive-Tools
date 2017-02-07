@@ -10,11 +10,38 @@ Using Reporting --> Behaviour --> Site Content --> All Pages --> (Enter MacRepo 
 	3. Page views by Channel Grouping: Set Primary Dimension to Page --> Set Secondary Dimension to Acquisition --> Default Channel Grouping.
 			
 			Terminology Note:
-			- Direct: Visitors who visited the site by typing the URL directly into their browser. 'Direct' can also refer to the visitors who clicked on the links from their bookmarks/favorites, untagged links within emails, or links from documents that don't include tracking variables (such as PDFs or Word documents).
-			- Organic: Visitors referred by an unpaid search engine listing, e.g. a Google.com search.
-			- Referral: Visitors referred by links on other websites. (Links that have been tagged with campaign variables won't show up as [referral] unless they happen to have been tagged with utm_medium=referral.)
-			- Social: Visitors referred as a result of social media efforts including sources like Twitter and Facebook.
 			
+			- DIRECT: Visitors who visited the site by typing the URL directly into their browser. 'Direct' can also refer to the visitors who clicked on the links from their bookmarks/favorites, untagged links within emails, or links from documents that don't include tracking variables (such as PDFs or Word documents).
+	
+			- ORGANIC: Visitors referred by an unpaid search engine listing, e.g. a Google.com search.
+			
+			- REFERRAL: Visitors referred by links on other websites. (Links that have been tagged with campaign variables won't show up as [referral] unless they happen to have been tagged with utm_medium=referral.)
+			
+			- SOCIAL: Visitors referred as a result of social media efforts including sources like Twitter and Facebook.
+			
+			- Additional Information on 'Direct' Sources:
+			
+				- Note that 'direct' traffic isn't defined well and actually better represents traffic sources that are unknown or undefined. Google Analytics will first check for AdWords auto-tagging, UTM campaign tagging parameters and then the HTTP referrer field. If none of these are set and if there is no prior campaign data associated with the user’s browser (ID is clientId in the _ga cookie) then Google Analytics will mark such traffic as direct/(none).
+			
+				The different types of 'direct' or 'unknown' traffic include:
+					- User types in a URL
+					- User clicks on a bookmark
+					- User clicks on a link in an e-mail from Outlook or Thunderbird or similar desktop software
+					- User clicks on a link in Skype or other desktop messengers
+					- User clicks on a link in a PDF, DocX, ODF, XLSX or a different type of document.
+					- User clicks on a link in a mobile app
+					- User clicks on a link from a secured site (https://something) to your non-secured site (just http://something)
+					- User clicks through a URL-shortener or in a different scenario where certain JS is being used (rare)
+					- User clicks on a link in any desktop software in general
+				
+				- To improve and help Google distinguish the different tracking sources above, it is encouraged to use a URL tagging tool to generate a tagged link wherever possible for the above scenarios. An email footer should be tagged, any PDF download you have with links back to your site should be tagged, etc. To do so, go to https://ga-dev-tools.appspot.com/campaign-url-builder/
+				
+				- Also, Google Analytics attributes conversions to direct traffic in two ways for the cases of non-multi channel funnel reports and multi channel funnel reports.
+				
+				For the purposes of non-Multi-Channel Funnels reports in Analytics, if a session has no campaign associated with it, the previous session's campaign is "inherited." For example, if a user visit your website through a keyword ‘My Search‘ and a few days later, came directly to your website again, the keyword ‘My Search‘ visits will be 2 and the direct visits will be 0. 
+				
+				For Multi-Channel Funnels reports, however, Analytics will consider the second session as "direct." and keyword ‘My Search‘ visits will be 1 and the direct visits will be 1. 
+						
 	4. Page views by Traffic Sources and Medium: Set Primary Dimension to Page --> Set Secondary Dimension to Acquisition --> Source/Medium.
 			
 			Note: Medium refers to the channel grouping above. For direct, '(none)' would be indicated as its medium.
