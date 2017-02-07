@@ -1,3 +1,0 @@
-import GA_Filter
-
-GA_Filter.filter()

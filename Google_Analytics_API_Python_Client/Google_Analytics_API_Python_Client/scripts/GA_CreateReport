@@ -1,9 +1,0 @@
-import csv
-
-filepath = 'C:\\Users\\cochonnk\\Digital-Archive-Tools\\Google_Analytics_API_Python_Client\\scripts'
-filename = 'GA_Data.csv'
-f = open(filepath.strip('\\') + '\\' + filename, 'r')
-
-reader = csv.reader(f)
-for row in reader:
-    print(" ".join(row))
