@@ -31,6 +31,7 @@ def create_report(startdate):
     flags = [] # Creating list to hold collection or item flags.
     identifiers = [] #Creating list to hold identifiers.
     parentdir = [] #Creating list of parent directories.
+    pd_nodetails = [] #Creating list of parent directories with missing information from GA.
 
     #----------------------------------------------------------------------------- USER EDIT ---------
     # Open Macrepo_Lookup.csv to obtain ID numbers.
@@ -123,7 +124,7 @@ def create_report(startdate):
     writer = csv.writer(e, dialect='excel', lineterminator='\n')
 
     # Write headers for GA_CollectionsReport.csv.
-    headerwriter = csv.DictWriter(e, fieldnames = ["COLLECTION MACREPO ID", "WEBSITE URL", "IDENTIFIER", DIMENSION, METRIC1 + " (TOTAL)",METRIC2 + " (TOTAL)", TIMERANGE])
+    headerwriter = csv.DictWriter(e, fieldnames = ["COLLECTION MACREPO ID", "WEBSITE URL",DIMENSION, METRIC1 + " (TOTAL)",METRIC2 + " (TOTAL)", TIMERANGE])
     headerwriter.writeheader()
 
     # Creating list of unique parent directories.
@@ -139,14 +140,15 @@ def create_report(startdate):
 
         if pd == 10: #Appending the URL and pagetitle for MacRepo ID 10, which is not listed within Macrepo_Lookup.csv.
             line.append("http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A10")
-            line.append("N/A")
             line.append("Map Collections | Digital Archive @ McMaster University Library")
 
         elif pd == 4: #Appending the URL and pagetitle for MacRepo ID 4, which is not listed within Macrepo_Lookup.csv.
             line.append("http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A4")
-            line.append("N/A")
             line.append("secret | Digital Archive @ McMaster University Library")
 
+        elif pd not in IDList:
+            pd_nodetails.append(pd)
+            
         else:
             pass
                
@@ -155,16 +157,19 @@ def create_report(startdate):
         
             reader4 = csv.reader(lookupfile2, delimiter=",")
 
-            for row in reader4:
-                    
+            for row, pdnd in zip(reader4, pd_nodetails):
+
                 if row[0] == pd: #Appending MacRepo ID details for the collection.
                     line.append(row[1]) #Appending corresponding URL.
                     line.append(row[2]) #Appending corresponding dimension (page title).
-                    line.append(row[6]) #Appending corresponding identifier.
 
+                elif pd == pdnd:
+                    line.append("N/A")
+                    line.append("N/A")  
+                
                 else:
                     pass
-
+                    
                 if row[7] == pd: #Tabulating the total numbers of users and pageviews for each parent directory.
                     usersnum = int(row[3])
                     pageviewsnum = int(row[4])
