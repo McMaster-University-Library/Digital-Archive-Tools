@@ -138,35 +138,33 @@ def create_report(startdate):
         line = []
         line.append(pd) #Appending collection MacRepo ID.
 
-        if pd == 10: #Appending the URL and pagetitle for MacRepo ID 10, which is not listed within Macrepo_Lookup.csv.
-            line.append("http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A10")
-            line.append("Map Collections | Digital Archive @ McMaster University Library")
-
-        elif pd == 4: #Appending the URL and pagetitle for MacRepo ID 4, which is not listed within Macrepo_Lookup.csv.
-            line.append("http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A4")
-            line.append("secret | Digital Archive @ McMaster University Library")
-
-        elif pd not in IDList:
-            pd_nodetails.append(pd)
+        if pd not in IDList:
+            pd_nodetails.append(pd) #Creating list of parent directories that are not listed as a MacRepo ID.
             
         else:
             pass
+
+        for pdnoid in pd_nodetails: #Appending "N/A" for collection's URL and pagetitles if it is not listed as a MacRepo ID.
+
+            if pd == pdnoid:
+
+                line.append("N/A")
+                line.append("N/A")
+
+            else:
+                pass
                
         # Open GA_Report.csv to obtain data.
         with open(GARPath.strip('\\') + '\\' + GARFile, 'r') as lookupfile2:
         
             reader4 = csv.reader(lookupfile2, delimiter=",")
 
-            for row, pdnd in zip(reader4, pd_nodetails):
+            for row in reader4:
 
                 if row[0] == pd: #Appending MacRepo ID details for the collection.
                     line.append(row[1]) #Appending corresponding URL.
                     line.append(row[2]) #Appending corresponding dimension (page title).
-
-                elif pd == pdnd:
-                    line.append("N/A")
-                    line.append("N/A")  
-                
+                        
                 else:
                     pass
                     

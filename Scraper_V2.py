@@ -39,9 +39,9 @@ with open("Macrepo_Lookup_Temp.csv", "w", encoding='utf-8',newline='') as f: #Pr
                                 #Change the above integers to set the range.
                                 print('Running through entire potential range, please hold.');
                         elif scraperfunction ==1: #Updating to the current lookup table
-                                macrepo_end=100000
+                                macrepo_end=100000;
                                 
-                                print('Alternate Route');
+                                print('Alternate Route: Updating');
                                 with open("Macrepo_Lookup.csv", "r",encoding='utf-8') as x: #Rename the previously completed lookup table to this before running the script
                                         #with open("URL_Lookup.csv","r",encoding='utf-8') as y:
                                         book=csv.reader(x,delimiter=",") #Read the original, complete lookup table
@@ -165,7 +165,8 @@ with open("Macrepo_Lookup_Temp.csv", "w", encoding='utf-8',newline='') as f: #Pr
                                 #OBTAIN THE PARENT DIRECTORY MACREPO ID OF THE OBJECT
 
                                 pd_url = str (direct[len(direct)-1])
-                                pd_id = pd_url.lstrip('http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A')
+                                A = pd_url.find('A')
+                                pd_id = pd_url[A+1:] #Takes the numbers after "...%3A" of pd_url and sets it as pd_id.
 
                                 output_table.append(pd_id) #Append the parent directory MacRepo ID of the object to the list.
                                 output_table.extend(direct) #Extend the output table list with every entry from the direct list i.e. the parent directories.
@@ -173,5 +174,6 @@ with open("Macrepo_Lookup_Temp.csv", "w", encoding='utf-8',newline='') as f: #Pr
                                 poe.writerow(output_table) #Write the current list to the csv file; the list now contains all the information for a single macrepo ID.
                                 direct=[] #Clear the parent directory list.
                                 output_table=[] #Finally, clear the list and repeat with the next macrepo ID.
-
-os.rename('Macrepo_Lookup_Temp.csv', 'Macrepo_Lookup.csv')
+                                
+shutil.copyfile('Macrepo_Lookup_Temp.csv', 'Macrepo_Lookup.csv')
+shutil.copyfile('Macrepo_Lookup.csv', 'Macrepo_Lookup' + datetime.datetime.today().strftime('%Y%m%d') + '.csv')
