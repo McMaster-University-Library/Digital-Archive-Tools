@@ -32,6 +32,7 @@ def create_report(startdate):
     identifiers = [] #Creating list to hold identifiers.
     parentdir = [] #Creating list of parent directories.
     pd_nodetails = [] #Creating list of parent directories with missing information from GA.
+    topleveldir = []
 
     #----------------------------------------------------------------------------- USER EDIT ---------
     # Open Macrepo_Lookup.csv to obtain ID numbers.
@@ -48,6 +49,7 @@ def create_report(startdate):
             flags.append(row[3])
             identifiers.append(row[4])
             parentdir.append(row[5])
+            topleveldir.append(row[6])
     
     #print datetime.datetime.today().strftime('%Y%m%d')
     
@@ -88,21 +90,27 @@ def create_report(startdate):
     TIMERANGE = "TIMERANGE: From " + startdate + " to " + datetime.datetime.today().strftime('%Y%m%d')
 
     # Write headers for GA_Report.csv.
-    headerwriter = csv.DictWriter(b, fieldnames = ["MACREPO ID", "WEBSITE URL", DIMENSION, METRIC1, METRIC2, "ITEM=1, COLLECTION=2", "IDENTIFIER", "PARENT DIRECTORY", TIMERANGE])
+    headerwriter = csv.DictWriter(b, fieldnames = ["MACREPO ID", "WEBSITE URL", DIMENSION, METRIC1, METRIC2, "ITEM=1, COLLECTION=2", "IDENTIFIER", "PARENT DIRECTORY", "TOP-LEVEL COLLECTION", TIMERANGE])
     headerwriter.writeheader()
 
     # Write data in GA_Report.csv.
-    for ID, item, indicator, identifier, parent in zip(IDList[0:len(IDList)],dataread[1:len(dataread)], flags[0:len(flags)], identifiers[0:len(identifiers)], parentdir[0:len(parentdir)]):
-        line = []
-        line.append(item[0]) #Appending MacRepo ID.
-        line.append("http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A"+item[0]) #Appending corresponding URL.
-        line.append(''.join('%5s' %piece for piece in item[1:len(item)-2])[3:]) #Appending corresponding dimension (page title).
-        line.append(str(filter(str.isdigit, item[(len(item)-1)]))) #Appending corresponding Metric data (users).
-        line.append(str(filter(str.isdigit, item[(len(item)-2)]))) #Appending corresponding Metric data (pageviews).
-        line.append(int(indicator)) #Appending corresponding collection or item flag.
-        line.append(str(identifier)) #Appending corresponding identifier.
-        line.append(parent) #Appending corresponding parent directory.
-        writer.writerow(line)
+    for ID, item, indicator, identifier, parent, toplevel in zip(IDList[0:len(IDList)],dataread[1:len(dataread)], flags[0:len(flags)], identifiers[0:len(identifiers)], parentdir[0:len(parentdir)], topleveldir[0:len(topleveldir)]): #dataread starts from "1" since "0" are the headings. 
+        
+        if ID == item[0]:
+            line = []
+            line.append(item[0]) #Appending MacRepo ID.
+            line.append("http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A"+item[0]) #Appending corresponding URL.
+            line.append(''.join('%5s' %piece for piece in item[1:len(item)-2])[3:]) #Appending corresponding dimension (page title).
+            line.append(str(filter(str.isdigit, item[(len(item)-1)]))) #Appending corresponding Metric data (users).
+            line.append(str(filter(str.isdigit, item[(len(item)-2)]))) #Appending corresponding Metric data (pageviews).
+            line.append(int(indicator)) #Appending corresponding collection or item flag.
+            line.append(str(identifier)) #Appending corresponding identifier.
+            line.append(parent) #Appending corresponding parent directory.
+            line.append(toplevel) #Appending corresponding top-level parent directory (collection).                                                                                                                                                                  
+            writer.writerow(line)
+
+        else:
+            pass
 
     b.close()
 

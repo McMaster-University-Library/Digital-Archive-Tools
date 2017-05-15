@@ -49,7 +49,7 @@ def filtering(startdate):
 
     print ("Processing... This may take a few hours.")
 
-    for ID in content[0:len(content)]:
+    for ID in content[0:50]:
 
         def main(argv):
           # Authenticate and construct service.
