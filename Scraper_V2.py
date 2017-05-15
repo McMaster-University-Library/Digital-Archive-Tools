@@ -7,12 +7,12 @@ import csv
 import datetime
 
 #THIS SCRIPT CREATES A LOOKUP TABLE OF A RANGE OF ITEMS ON THE MCMASTER DIGITAL ARCHIVE. CURRENTLY THE SCRIPT ONLY WORKS ON PYTHON 3 DUE TO USING VERSION-UNIQUE LIBRARIES AND COMMANDS.
-#THE LOOKUP TABLE WILL BE IN CSV FORMAT. IT WILL CONTAIN (for each unique object): MACREPO ID; URL; NAME; TYPE (Item or Collection); PARENT DIRECTORIES.
+#THE LOOKUP TABLE WILL BE IN CSV FORMAT. IT WILL CONTAIN (for each unique object): MACREPO ID; URL; NAME; TYPE (Item or Collection); PARENT DIRECTORY; TOP-LEVEL PARENT DIRECTORY; PARENT DIRECTORY URLS.
 #NOTE: THIS SCRIPT USES UTF-8 ENCODING. EXCEL MAY NOT BE ABLE TO CORRECTLY IDENTIFY THE ENCODING OF CERTAIN CHARACTERS, PARTICULARLY INTERNATIONAL DIACRITICS, ON ITS OWN.
 #THIS CAN EASILY BE SOLVED BY WORKING IN TEXT EDITORS SUCH AS NOTEPAD++.
 #IF YOU WANT TO WORK IN EXCEL (2007 AT THE EARLIEST), GO TO THIS WEBPAGE AND FOLLOW THE SIMPLE INSTRUCTIONS TO OPEN THE TABLES IN EXCEL: https://www.itg.ias.edu/content/how-import-csv-file-uses-utf-8-character-encoding-0
 
-scraperfunction = 1 #A flag to determine which process to start. (Set this to 0 to create an entirely new Macrepo_Lookup.csv file. Set this to 1 to update the existing Macrepo_Lookup.csv file.)
+scraperfunction = 0 #A flag to determine which process to start. (Set this to 0 to create an entirely new Macrepo_Lookup.csv file. Set this to 1 to update the existing Macrepo_Lookup.csv file.)
                 
 #DEFINING THE SCRAPE FUNCTION. IT IS SET TO RUN NEAR THE END OF THIS SCRIPT. 
 def scrape(scraperfunction):
@@ -161,11 +161,22 @@ def scrape(scraperfunction):
                                 pd_id = pd_url[A+1:] #Takes the numbers after "...%3A" of pd_url and sets it as pd_id.
 
                                 output_table.append(pd_id) #Append the parent directory MacRepo ID of the object to the list.
+
+                                #OBTAIN THE TOP-LEVEL COLLECTION MACREPO ID OF THE OBJECT.
+                                if len(direct) >= 5:
+                                        top_level_url = str(direct[4])
+                                        B = top_level_url.find('A')
+                                        top_level_id = top_level_url[B+1:]
+                                else:
+                                        top_level_id = 0
+
+                                output_table.append(top_level_id) #Append the top-level collection MacRepo ID of the object to the list.
+
                                 output_table.extend(direct) #Extend the output table list with every entry from the direct list i.e. the parent directories.
-                                
                                 poe.writerow(output_table) #Write the current list to the csv file; the list now contains all the information for a single macrepo ID.
                                 direct=[] #Clear the parent directory list.
                                 output_table=[] #Finally, clear the list and repeat with the next macrepo ID.
+
 
 #RUNNING THE SCRAPE FUNCTION. 
 if scraperfunction == 0: #Creating a new Macrepo_Lookup.csv file.
