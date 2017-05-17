@@ -36,14 +36,14 @@ def scrape(scraperfunction):
                         
                         if scraperfunction == 0: #Creating a list of Macrepo IDs from 1 to 100 000.
 
-                                print('Running through entire potential range, please hold.')
+                                print('Creating a Macrepo Lookup list by running through the whole potential range. This may take around 24 hours, leave me running in the background!')
                                 macrepo_start = 1
                                 macrepo_end = 100000
                                 dig = range(macrepo_start,macrepo_end + 1, 1)
 
                         elif scraperfunction == 1: #Creating a list of Macrepo IDs from the last entry of the latest Macrepo_Lookup.csv file to 100 000.
                                 
-                                print('Alternate Route: Updating.')
+                                print('Updating the most recent Macrepo Lookup list. This may take a few hours, leave me running in the background!')
                                 with open("Macrepo_Lookup.csv", "r",encoding='utf-8') as x: #Reading the latest Macrepo_Lookup.csv file.
                                         book=csv.reader(x,delimiter=",")
                                         for row in book:
@@ -59,13 +59,13 @@ def scrape(scraperfunction):
 
                         for i in dig:
                                 
-                                the_url = url_start + str(i) #Add the macrepo to the original URL
+                                the_url = url_start + str(i)#Add the macrepo to the original URL
 
                                 try: #A try clause to exclude all macrepo IDs whose pages do not exist.
                                         fetch=request.urlopen(the_url) #Opens the above URL.
                                 except:
                                         pass #If the page does not exist, this skips it and moves to the next one in order to avoid breaking the code.
-
+                                
                                 try:
                                         request.urlretrieve(the_url,filename="Object_Code.txt") #This try clause retrieves the url and saves its html temporarily as a text file, which will be used to obtain the other information.
                                         print (i); #Prints the macrepo ID, easy to keep track of progress.
@@ -92,7 +92,12 @@ def scrape(scraperfunction):
                                 #PULL THE TYPE OF THE OBJECT: ITEM OR COLLECTION
                                 item = 'islandora-large-image' #Variable for string that is unique to items.
                                 coll = 'islandora-basic-collection' #Variable for string that is unique to collections.
-                                flag1 = text.find(item) 
+                                itemreport = 'islandora-internet-archive-bookreader' #Variable for string that is unique to reports.
+                                flag1 = text.find(item)
+                                if flag1 == -1: #Sets flag1 to check if item is a report, if finding an image item returns false.
+                                        flag1 = text.find(itemreport)
+                                else:
+                                        pass
                                 flag2 = text.find(coll) 
 
                                 #The above flags look for the item and coll strings in the html code. If they are found the flags return a number greater than 0. If they are not found, the flags return -1.
@@ -115,10 +120,13 @@ def scrape(scraperfunction):
                                 if type == 1:
                                         iden = 'Identifier</td>'
                                         c = text.find(iden)
-                                        snip = text[c+19:c+40]
-                                        d = snip.find('<td>')
-                                        e = snip.find('</td>')
-                                        identifier = snip[d+4:e]
+                                        if c == -1: 
+                                                identifier = 'N/A' #Takes care of the case that the item has no identifier. Reports don't have identifiers.
+                                        else:
+                                                snip = text[c+19:c+40]
+                                                d = snip.find('<td>')
+                                                e = snip.find('</td>')
+                                                identifier = snip[d+4:e]
                                 else:
                                         identifier = 'N/A'
                                 

@@ -8,26 +8,26 @@
 <head>
   <meta charset="utf-8" />
 <meta name="generator" content="Drupal 7 (http://drupal.org)" />
-<link rel="canonical" href="http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A81435" />
-<link rel="shortlink" href="http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A81435" />
+<link rel="canonical" href="http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A81454" />
+<link rel="shortlink" href="http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A81454" />
 <meta property="og:site_name" content="Digital Archive @ McMaster University Library" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A81435" />
-<meta property="og:title" content="The plains of Troy" />
+<meta property="og:url" content="http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A81454" />
+<meta property="og:title" content="Precis historique des opérations de l&#039;armée française en Espagne, sous le commandement de ... Monseigneur Duc d&#039;Angoulême" />
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:url" content="http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A81435" />
-<meta name="twitter:title" content="The plains of Troy" />
+<meta name="twitter:url" content="http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A81454" />
+<meta name="twitter:title" content="Precis historique des opérations de l&#039;armée française en Espagne, sous le commandement de ... Monseigneur Duc d&#039;Angoulême" />
 <meta name="twitter:description" content="Digital Archive @ McMaster University Library" />
-<meta name="twitter:image" content="http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A81435/datastream/TN/view" />
-<meta itemprop="name" content="The plains of Troy" />
+<meta name="twitter:image" content="http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A81454/datastream/TN/view" />
+<meta itemprop="name" content="Precis historique des opérations de l&#039;armée française en Espagne, sous le commandement de ... Monseigneur Duc d&#039;Angoulême" />
 <meta itemprop="description" content="Digital Archive @ McMaster University Library" />
-<meta itemprop="image" content="http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A81435/datastream/TN/view" />
-<meta name="dcterms.title" content="The plains of Troy" />
+<meta itemprop="image" content="http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A81454/datastream/TN/view" />
+<meta name="dcterms.title" content="Precis historique des opérations de l&#039;armée française en Espagne, sous le commandement de ... Monseigneur Duc d&#039;Angoulême" />
 <meta name="dcterms.type" content="Text" />
 <meta name="dcterms.format" content="text/html" />
-<meta name="dcterms.identifier" content="http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A81435" />
+<meta name="dcterms.identifier" content="http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A81454" />
 <link rel="shortcut icon" href="http://digitalarchive.mcmaster.ca/sites/default/files/favicon.ico" type="image/ico" />
-  <title>The plains of Troy | Digital Archive @ McMaster University Library</title>
+  <title>Precis historique des opérations de l'armée française en Espagne, sous le commandement de ... Monseigneur Duc d'Angoulême | Digital Archive @ McMaster University Library</title>
 
       <meta name="MobileOptimized" content="width">
     <meta name="HandheldFriendly" content="true">
@@ -102,12 +102,12 @@
 <script src="http://digitalarchive.mcmaster.ca/sites/all/modules/islandora_openseadragon-7.x-1.4/js/djtilesource.js?ook8n2"></script>
 <script src="http://digitalarchive.mcmaster.ca/sites/all/modules/google_analytics/googleanalytics.js?ook8n2"></script>
 <script>var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-2574088-00"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();</script>
-<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"newmac","theme_token":"9ACFPfHMZl3bDsd3qBilylBOQrVOC02M0dFii-65-ls","js":{"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.5\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/nice_menus\/js\/jquery.bgiframe.js":1,"sites\/all\/modules\/nice_menus\/js\/jquery.hoverIntent.js":1,"sites\/all\/modules\/nice_menus\/js\/superfish.js":1,"sites\/all\/modules\/nice_menus\/js\/nice_menus.js":1,"sites\/all\/modules\/collapsiblock\/collapsiblock.js":1,"sites\/all\/libraries\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/colorbox\/js\/colorbox.js":1,"sites\/all\/modules\/colorbox\/styles\/default\/colorbox_style.js":1,"misc\/form.js":1,"misc\/collapse.js":1,"sites\/all\/modules\/islandora_openseadragon-7.x-1.4\/js\/islandora_openseadragon.js":1,"sites\/all\/libraries\/openseadragon\/openseadragon.js":1,"sites\/all\/modules\/islandora_openseadragon-7.x-1.4\/js\/djtilesource.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"0":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/aggregator\/aggregator.css":1,"sites\/all\/modules\/collapsiblock\/collapsiblock.css":1,"modules\/comment\/comment.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/islandora-7.x-1.4\/css\/islandora.base.css":1,"sites\/all\/modules\/islandora-7.x-1.4\/css\/islandora.theme.css":1,"sites\/all\/modules\/islandora_solution_pack_audio-7.x-1.4\/css\/islandora_audio.theme.css":1,"sites\/all\/modules\/islandora_solution_pack_collection-7.x-1.4\/css\/islandora_basic_collection.base.css":1,"sites\/all\/modules\/islandora_solution_pack_collection-7.x-1.4\/css\/islandora_basic_collection.theme.css":1,"sites\/all\/modules\/islandora_batch-7.x-1.4\/css\/views_table_contextual_links_fix.css":1,"sites\/all\/modules\/islandora_fits-7.x-1.4\/css\/islandora_fits.css":1,"sites\/all\/modules\/islandora_solution_pack_large_image-7.x-1.4\/css\/islandora_large_image.theme.css":1,"sites\/all\/modules\/islandora_solution_pack_pdf-7.x-1.4\/css\/islandora_pdf.theme.css":1,"sites\/all\/modules\/islandora_solr_search-7.x-1.4\/css\/islandora_solr.base.css":1,"sites\/all\/modules\/islandora_solr_metadata-7.x-1.4\/css\/islandora_solr_metadata.css":1,"sites\/all\/modules\/islandora_solution_pack_video-7.x-1.4\/css\/islandora_video.theme.css":1,"modules\/node\/node.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/colorbox\/styles\/default\/colorbox_style.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/panels\/css\/panels.css":1,"sites\/all\/modules\/islandora_openseadragon-7.x-1.4\/css\/islandora_openseadragon.theme.css":1,"sites\/all\/modules\/nice_menus\/css\/nice_menus.css":1,"sites\/all\/themes\/maclibrary\/css\/nice_menu.css":1,"sites\/all\/modules\/islandora_solution_pack_compound-7.x-1.4\/css\/islandora_compound_object.block.css":1,"sites\/all\/themes\/newmac\/system.menus.css":1,"sites\/all\/themes\/newmac\/css\/normalize.css":1,"sites\/all\/themes\/newmac\/css\/layouts\/responsive-sidebars.css":1,"sites\/all\/themes\/newmac\/css\/page-backgrounds.css":1,"sites\/all\/themes\/newmac\/css\/tabs.css":1,"sites\/all\/themes\/newmac\/css\/pages.css":1,"sites\/all\/themes\/newmac\/css\/blocks.css":1,"sites\/all\/themes\/newmac\/css\/navigation.css":1,"sites\/all\/themes\/newmac\/css\/views-styles.css":1,"sites\/all\/themes\/newmac\/css\/nodes.css":1,"sites\/all\/themes\/newmac\/css\/comments.css":1,"sites\/all\/themes\/newmac\/css\/forms.css":1,"sites\/all\/themes\/newmac\/css\/fields.css":1,"sites\/all\/themes\/newmac\/css\/print.css":1,"sites\/all\/themes\/newmac\/css\/maclibrary.css":1,"sites\/all\/themes\/newmac\/css\/styles.css":1}},"collapsiblock":{"blocks":{"block-nice-menus-1":"1","block-views-digitalarchive-view-block":"1","block-islandora-bookmark-islandora-bookmark":"1","block-views-home-page-block":"1","block-block-2":"1","block-block-3":"1","block-views-new-digitalarchive-view-block":"1","block-system-user-menu":"1","block-system-main":"1","block-islandora-solr-simple":"1","block-views-fcb6cbe856f996cd11edb1f3e880788f":"1","block-block-5":"1","block-views-f9e704613f6f341b1593ad748719416c":"1","block-block-1":"1","block-multiblock-1":"1","block-islandora-solr-current-query":"1","block-islandora-solr-facet-pages-islandora-solr-facet-pages":"1","block-islandora-compound-object-compound-navigation":"2","block-block-6":"1","block-islandora-solr-sort":"1","block-block-7":"1","block-menu-menu-advancedsearch":"1","block-islandora-solr-advanced":"1"},"default_state":1,"slide_type":1,"slide_speed":200,"block_title":":header:first","block":"div.block","block_content":"div.content"},"colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","maxWidth":"98%","maxHeight":"98%","fixed":true,"mobiledetect":true,"mobiledevicewidth":"480px"},"islandoraOpenSeadragon":{"pid":"macrepo:81435","resourceUri":"http:\/\/digitalarchive.mcmaster.ca\/islandora\/object\/macrepo%3A81435\/datastream\/JP2\/view?token=90d534ab59184cbf50a576d259c1b2d0af102a6f5b30a7ad0eca10627ac71f53","tileSize":256,"tileOverlap":0,"settings":{"id":"islandora-openseadragon","prefixUrl":"http:\/\/digitalarchive.mcmaster.ca\/sites\/all\/libraries\/openseadragon\/images\/","debugMode":0,"djatokaServerBaseURL":"\/adore-djatoka\/resolver","animationTime":1.5,"blendTime":0.1,"alwaysBlend":0,"autoHideControls":1,"immediateRender":1,"wrapHorizontal":0,"wrapVertical":0,"wrapOverlays":0,"panHorizontal":1,"panVertical":1,"showNavigator":1,"minZoomImageRatio":0.8,"maxZoomPixelRatio":2,"visibilityRatio":0.5,"springStiffness":5,"imageLoaderLimit":5,"clickTimeThreshold":300,"clickDistThreshold":5,"zoomPerClick":2,"zoomPerScroll":3,"zoomPerSecond":2}},"nice_menus_options":{"delay":800,"speed":"slow"},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip|tif|tiff|jpeg|jp2"}});</script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"newmac","theme_token":"A8q2nmwzK_7NEVexk96rIak5Dx_djGYnX_oYvvWc57o","js":{"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.5\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/nice_menus\/js\/jquery.bgiframe.js":1,"sites\/all\/modules\/nice_menus\/js\/jquery.hoverIntent.js":1,"sites\/all\/modules\/nice_menus\/js\/superfish.js":1,"sites\/all\/modules\/nice_menus\/js\/nice_menus.js":1,"sites\/all\/modules\/collapsiblock\/collapsiblock.js":1,"sites\/all\/libraries\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/colorbox\/js\/colorbox.js":1,"sites\/all\/modules\/colorbox\/styles\/default\/colorbox_style.js":1,"misc\/form.js":1,"misc\/collapse.js":1,"sites\/all\/modules\/islandora_openseadragon-7.x-1.4\/js\/islandora_openseadragon.js":1,"sites\/all\/libraries\/openseadragon\/openseadragon.js":1,"sites\/all\/modules\/islandora_openseadragon-7.x-1.4\/js\/djtilesource.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"0":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/aggregator\/aggregator.css":1,"sites\/all\/modules\/collapsiblock\/collapsiblock.css":1,"modules\/comment\/comment.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/islandora-7.x-1.4\/css\/islandora.base.css":1,"sites\/all\/modules\/islandora-7.x-1.4\/css\/islandora.theme.css":1,"sites\/all\/modules\/islandora_solution_pack_audio-7.x-1.4\/css\/islandora_audio.theme.css":1,"sites\/all\/modules\/islandora_solution_pack_collection-7.x-1.4\/css\/islandora_basic_collection.base.css":1,"sites\/all\/modules\/islandora_solution_pack_collection-7.x-1.4\/css\/islandora_basic_collection.theme.css":1,"sites\/all\/modules\/islandora_batch-7.x-1.4\/css\/views_table_contextual_links_fix.css":1,"sites\/all\/modules\/islandora_fits-7.x-1.4\/css\/islandora_fits.css":1,"sites\/all\/modules\/islandora_solution_pack_large_image-7.x-1.4\/css\/islandora_large_image.theme.css":1,"sites\/all\/modules\/islandora_solution_pack_pdf-7.x-1.4\/css\/islandora_pdf.theme.css":1,"sites\/all\/modules\/islandora_solr_search-7.x-1.4\/css\/islandora_solr.base.css":1,"sites\/all\/modules\/islandora_solr_metadata-7.x-1.4\/css\/islandora_solr_metadata.css":1,"sites\/all\/modules\/islandora_solution_pack_video-7.x-1.4\/css\/islandora_video.theme.css":1,"modules\/node\/node.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/colorbox\/styles\/default\/colorbox_style.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/panels\/css\/panels.css":1,"sites\/all\/modules\/islandora_openseadragon-7.x-1.4\/css\/islandora_openseadragon.theme.css":1,"sites\/all\/modules\/nice_menus\/css\/nice_menus.css":1,"sites\/all\/themes\/maclibrary\/css\/nice_menu.css":1,"sites\/all\/modules\/islandora_solution_pack_compound-7.x-1.4\/css\/islandora_compound_object.block.css":1,"sites\/all\/themes\/newmac\/system.menus.css":1,"sites\/all\/themes\/newmac\/css\/normalize.css":1,"sites\/all\/themes\/newmac\/css\/layouts\/responsive-sidebars.css":1,"sites\/all\/themes\/newmac\/css\/page-backgrounds.css":1,"sites\/all\/themes\/newmac\/css\/tabs.css":1,"sites\/all\/themes\/newmac\/css\/pages.css":1,"sites\/all\/themes\/newmac\/css\/blocks.css":1,"sites\/all\/themes\/newmac\/css\/navigation.css":1,"sites\/all\/themes\/newmac\/css\/views-styles.css":1,"sites\/all\/themes\/newmac\/css\/nodes.css":1,"sites\/all\/themes\/newmac\/css\/comments.css":1,"sites\/all\/themes\/newmac\/css\/forms.css":1,"sites\/all\/themes\/newmac\/css\/fields.css":1,"sites\/all\/themes\/newmac\/css\/print.css":1,"sites\/all\/themes\/newmac\/css\/maclibrary.css":1,"sites\/all\/themes\/newmac\/css\/styles.css":1}},"collapsiblock":{"blocks":{"block-nice-menus-1":"1","block-views-digitalarchive-view-block":"1","block-islandora-bookmark-islandora-bookmark":"1","block-views-home-page-block":"1","block-block-2":"1","block-block-3":"1","block-views-new-digitalarchive-view-block":"1","block-system-user-menu":"1","block-system-main":"1","block-islandora-solr-simple":"1","block-views-fcb6cbe856f996cd11edb1f3e880788f":"1","block-block-5":"1","block-views-f9e704613f6f341b1593ad748719416c":"1","block-block-1":"1","block-multiblock-1":"1","block-islandora-solr-current-query":"1","block-islandora-solr-facet-pages-islandora-solr-facet-pages":"1","block-islandora-compound-object-compound-navigation":"2","block-block-6":"1","block-islandora-solr-sort":"1","block-block-7":"1","block-menu-menu-advancedsearch":"1","block-islandora-solr-advanced":"1"},"default_state":1,"slide_type":1,"slide_speed":200,"block_title":":header:first","block":"div.block","block_content":"div.content"},"colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","maxWidth":"98%","maxHeight":"98%","fixed":true,"mobiledetect":true,"mobiledevicewidth":"480px"},"islandoraOpenSeadragon":{"pid":"macrepo:81454","resourceUri":"http:\/\/digitalarchive.mcmaster.ca\/islandora\/object\/macrepo%3A81454\/datastream\/JP2\/view?token=d173b69a35c0cc75731d99cd94e3646888a2792f354167fce8781fa6ba3cb73c","tileSize":256,"tileOverlap":0,"settings":{"id":"islandora-openseadragon","prefixUrl":"http:\/\/digitalarchive.mcmaster.ca\/sites\/all\/libraries\/openseadragon\/images\/","debugMode":0,"djatokaServerBaseURL":"\/adore-djatoka\/resolver","animationTime":1.5,"blendTime":0.1,"alwaysBlend":0,"autoHideControls":1,"immediateRender":1,"wrapHorizontal":0,"wrapVertical":0,"wrapOverlays":0,"panHorizontal":1,"panVertical":1,"showNavigator":1,"minZoomImageRatio":0.8,"maxZoomPixelRatio":2,"visibilityRatio":0.5,"springStiffness":5,"imageLoaderLimit":5,"clickTimeThreshold":300,"clickDistThreshold":5,"zoomPerClick":2,"zoomPerScroll":3,"zoomPerSecond":2}},"nice_menus_options":{"delay":800,"speed":"slow"},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip|tif|tiff|jpeg|jp2"}});</script>
       <!--[if lt IE 9]>
     <script src="/sites/all/themes/zen/js/html5-respond.js"></script>
     <![endif]-->
   </head>
-<body class="html not-front not-logged-in one-sidebar sidebar-first page-islandora page-islandora-object page-islandora-object-macrepo81435 section-islandora" >
+<body class="html not-front not-logged-in one-sidebar sidebar-first page-islandora page-islandora-object page-islandora-object-macrepo81454 section-islandora" >
       <p id="skip-link">
       <a href="#main-menu" class="element-invisible element-focusable">Jump to navigation</a>
     </p>
@@ -131,26 +131,26 @@
     <div id="block-nice-menus-1" class="block block-nice-menus first last odd">
 
       
-  <ul class="nice-menu nice-menu-down nice-menu-main-menu" id="nice-menu-1"><li class="menu__item menu-626 menuparent  menu-path-sdigitalarchivemcmasterca-node-22 first odd "><a href="https://digitalarchive.mcmaster.ca/node/22" title="" class="menu__link">Home</a><ul><li class="menu__item menu-628 menu-path-mcmasterca first odd "><a href="http://www.mcmaster.ca" title="" class="menu__link">McMaster</a></li>
+  <ul class="nice-menu nice-menu-down nice-menu-main-menu" id="nice-menu-1"><li class="menu__item menu-626 menuparent  menu-path-node-22 first odd "><a href="/node/22" title="" class="menu__link">Home</a><ul><li class="menu__item menu-628 menu-path-mcmasterca first odd "><a href="http://www.mcmaster.ca" title="" class="menu__link">McMaster</a></li>
 <li class="menu__item menu-629 menu-path-librarymcmasterca-  even last"><a href="http://library.mcmaster.ca/" title="" class="menu__link">McMaster Library</a></li>
 </ul></li>
-<li class="menu__item menu-630 menuparent  menu-path-sdigitalarchivemcmasterca-islandora-object-macrepo3a1  even "><a href="https://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A1" title="" class="menu__link">Browse</a><ul><li class="menu__item menu-1374 menuparent  menu-path-sdigitalarchivemcmasterca-fedora-repository-macrepo1 first odd "><a href="https://digitalarchive.mcmaster.ca/fedora/repository/macrepo:1" title="" class="menu__link">By collection</a><ul><li class="menu__item menu-3081 menu-path-sdigitalarchivemcmasterca-islandora-object-islandora152 first odd "><a href="https://digitalarchive.mcmaster.ca/islandora/object/islandora:152" title="" class="menu__link">Audio</a></li>
+<li class="menu__item menu-630 menuparent  menu-path-digitalarchivemcmasterca-islandora-object-macrepo3a1  even "><a href="http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A1" title="" class="menu__link">Browse</a><ul><li class="menu__item menu-1374 menuparent  menu-path-sdigitalarchivemcmasterca-fedora-repository-macrepo1 first odd "><a href="https://digitalarchive.mcmaster.ca/fedora/repository/macrepo:1" title="" class="menu__link">By collection</a><ul><li class="menu__item menu-3081 menu-path-digitalarchivemcmasterca-islandora-object-islandora152 first odd "><a href="http://digitalarchive.mcmaster.ca/islandora/object/islandora:152" title="" class="menu__link">Audio</a></li>
 <li class="menu__item menu-1380 menu-path-digitalarchivemcmasterca-islandora-object-macrepo21847  even "><a href="http://digitalarchive.mcmaster.ca/islandora/object/macrepo:21847" title="" class="menu__link">Books</a></li>
-<li class="menu__item menu-1376 menu-path-sdigitalarchivemcmasterca-islandora-object-macrepo10  odd "><a href="https://digitalarchive.mcmaster.ca/islandora/object/macrepo:10" title="" class="menu__link">Map Collections</a></li>
-<li class="menu__item menu-1377 menu-path-sdigitalarchivemcmasterca-islandora-object-macrepo6  even last"><a href="https://digitalarchive.mcmaster.ca/islandora/object/macrepo:6" title="" class="menu__link">Research Collections</a></li>
+<li class="menu__item menu-1376 menu-path-digitalarchivemcmasterca-islandora-object-macrepo10  odd "><a href="http://digitalarchive.mcmaster.ca/islandora/object/macrepo:10" title="" class="menu__link">Map Collections</a></li>
+<li class="menu__item menu-1377 menu-path-digitalarchivemcmasterca-islandora-object-macrepo6  even last"><a href="http://digitalarchive.mcmaster.ca/islandora/object/macrepo:6" title="" class="menu__link">Research Collections</a></li>
 </ul></li>
-<li class="menu__item menu-2354 menuparent  menu-path-node-49  even "><a href="/node/49" title="" class="menu__link">By language</a><ul><li class="menu__item menu-2355 menu-path-sdigitalarchivemcmasterca-islandora-search-dclanguage3a28eng29 first odd "><a href="https://digitalarchive.mcmaster.ca/islandora/search/dc.language%3A%28eng%29" title="" class="menu__link">English</a></li>
-<li class="menu__item menu-2356 menu-path-sdigitalarchivemcmasterca-islandora-search-dclanguage3a28fre29  even "><a href="https://digitalarchive.mcmaster.ca/islandora/search/dc.language%3A%28fre%29" title="" class="menu__link">French</a></li>
-<li class="menu__item menu-2358 menu-path-sdigitalarchivemcmasterca-islandora-search-dclanguage3a28ger29  odd "><a href="https://digitalarchive.mcmaster.ca/islandora/search/dc.language%3A%28ger%29" title="" class="menu__link">German</a></li>
-<li class="menu__item menu-2359 menu-path-sdigitalarchivemcmasterca-islandora-search-dclanguage3a28ita29  even "><a href="https://digitalarchive.mcmaster.ca/islandora/search/dc.language%3A%28ita%29" title="" class="menu__link">Italian</a></li>
-<li class="menu__item menu-2357 menu-path-sdigitalarchivemcmasterca-islandora-search-dclanguage3a28lat29  odd last"><a href="https://digitalarchive.mcmaster.ca/islandora/search/dc.language%3A%28lat%29" title="" class="menu__link">Latin</a></li>
+<li class="menu__item menu-2354 menuparent  menu-path-node-49  even "><a href="/node/49" title="" class="menu__link">By language</a><ul><li class="menu__item menu-2355 menu-path-digitalarchivemcmasterca-islandora-search-dclanguage3a28eng29 first odd "><a href="http://digitalarchive.mcmaster.ca/islandora/search/dc.language%3A%28eng%29" title="" class="menu__link">English</a></li>
+<li class="menu__item menu-2356 menu-path-digitalarchivemcmasterca-islandora-search-dclanguage3a28fre29  even "><a href="http://digitalarchive.mcmaster.ca/islandora/search/dc.language%3A%28fre%29" title="" class="menu__link">French</a></li>
+<li class="menu__item menu-2358 menu-path-digitalarchivemcmasterca-islandora-search-dclanguage3a28ger29  odd "><a href="http://digitalarchive.mcmaster.ca/islandora/search/dc.language%3A%28ger%29" title="" class="menu__link">German</a></li>
+<li class="menu__item menu-2359 menu-path-digitalarchivemcmasterca-islandora-search-dclanguage3a28ita29  even "><a href="http://digitalarchive.mcmaster.ca/islandora/search/dc.language%3A%28ita%29" title="" class="menu__link">Italian</a></li>
+<li class="menu__item menu-2357 menu-path-digitalarchivemcmasterca-islandora-search-dclanguage3a28lat29  odd last"><a href="http://digitalarchive.mcmaster.ca/islandora/search/dc.language%3A%28lat%29" title="" class="menu__link">Latin</a></li>
 </ul></li>
-<li class="menu__item menu-2360 menuparent  menu-path-browse-location-a  odd "><a href="/browse/Location/A" title="" class="menu__link">By location</a><ul><li class="menu__item menu-2362 menu-path-sdigitalarchivemcmasterca-islandora-search-dccoverage3a28america29 first odd "><a href="https://digitalarchive.mcmaster.ca/islandora/search/dc.coverage%3A%28america%29" title="" class="menu__link">America</a></li>
-<li class="menu__item menu-2363 menu-path-sdigitalarchivemcmasterca-islandora-search-dccoverage3a28canada29  even "><a href="https://digitalarchive.mcmaster.ca/islandora/search/dc.coverage%3A%28canada%29" title="" class="menu__link">Canada</a></li>
-<li class="menu__item menu-2361 menu-path-sdigitalarchivemcmasterca-islandora-search-dccoverage3a28europe29  odd "><a href="https://digitalarchive.mcmaster.ca/islandora/search/dc.coverage%3A%28europe%29" title="" class="menu__link">Europe</a></li>
-<li class="menu__item menu-2364 menu-path-sdigitalarchivemcmasterca-islandora-search-dccoverage3a28germany29  even "><a href="https://digitalarchive.mcmaster.ca/islandora/search/dc.coverage%3A%28germany%29" title="" class="menu__link">Germany</a></li>
-<li class="menu__item menu-2366 menu-path-sdigitalarchivemcmasterca-islandora-search-dccoverage3a28hamilton29  odd "><a href="https://digitalarchive.mcmaster.ca/islandora/search/dc.coverage%3A%28hamilton%29" title="" class="menu__link">Hamilton</a></li>
-<li class="menu__item menu-2365 menu-path-sdigitalarchivemcmasterca-islandora-search-dccoverage3a28italy29  even last"><a href="https://digitalarchive.mcmaster.ca/islandora/search/dc.coverage%3A%28italy%29" title="" class="menu__link">Italy</a></li>
+<li class="menu__item menu-2360 menuparent  menu-path-browse-location-a  odd "><a href="/browse/Location/A" title="" class="menu__link">By location</a><ul><li class="menu__item menu-2362 menu-path-digitalarchivemcmasterca-islandora-search-dccoverage3a28america29 first odd "><a href="http://digitalarchive.mcmaster.ca/islandora/search/dc.coverage%3A%28america%29" title="" class="menu__link">America</a></li>
+<li class="menu__item menu-2363 menu-path-digitalarchivemcmasterca-islandora-search-dccoverage3a28canada29  even "><a href="http://digitalarchive.mcmaster.ca/islandora/search/dc.coverage%3A%28canada%29" title="" class="menu__link">Canada</a></li>
+<li class="menu__item menu-2361 menu-path-digitalarchivemcmasterca-islandora-search-dccoverage3a28europe29  odd "><a href="http://digitalarchive.mcmaster.ca/islandora/search/dc.coverage%3A%28europe%29" title="" class="menu__link">Europe</a></li>
+<li class="menu__item menu-2364 menu-path-digitalarchivemcmasterca-islandora-search-dccoverage3a28germany29  even "><a href="http://digitalarchive.mcmaster.ca/islandora/search/dc.coverage%3A%28germany%29" title="" class="menu__link">Germany</a></li>
+<li class="menu__item menu-2366 menu-path-digitalarchivemcmasterca-islandora-search-dccoverage3a28hamilton29  odd "><a href="http://digitalarchive.mcmaster.ca/islandora/search/dc.coverage%3A%28hamilton%29" title="" class="menu__link">Hamilton</a></li>
+<li class="menu__item menu-2365 menu-path-digitalarchivemcmasterca-islandora-search-dccoverage3a28italy29  even last"><a href="http://digitalarchive.mcmaster.ca/islandora/search/dc.coverage%3A%28italy%29" title="" class="menu__link">Italy</a></li>
 </ul></li>
 <li class="menu__item menu-2448 menu-path-browse-subject-a  even last"><a href="/browse/Subject/A" title="" class="menu__link">By subject</a></li>
 </ul></li>
@@ -158,8 +158,8 @@
 </ul></li>
 <li class="menu__item menu-637 menuparent  menu-path-node-6  even "><a href="/node/6" title="Contact Us" class="menu__link">Contact</a><ul><li class="menu__item menu-638 menu-path-node-7 first odd last"><a href="/node/7" title="Contact Us" class="menu__link">Contact Us</a></li>
 </ul></li>
-<li class="menu__item menu-3011 menuparent  menu-path-sdigitalarchivemcmasterca-node-53  odd last"><a href="https://digitalarchive.mcmaster.ca/node/53" title="" class="menu__link">Digital Preservation Policy</a><ul><li class="menu__item menu-3013 menu-path-sdigitalarchivemcmasterca-node-53 first odd "><a href="https://digitalarchive.mcmaster.ca/node/53" title="" class="menu__link">Strategic Framework</a></li>
-<li class="menu__item menu-3012 menu-path-sdigitalarchivemcmasterca-node-52  even last"><a href="https://digitalarchive.mcmaster.ca/node/52" title="" class="menu__link">Implementation Plan</a></li>
+<li class="menu__item menu-3011 menuparent  menu-path-node-53  odd last"><a href="/node/53" title="" class="menu__link">Digital Preservation Policy</a><ul><li class="menu__item menu-3013 menu-path-node-53 first odd "><a href="/node/53" title="" class="menu__link">Strategic Framework</a></li>
+<li class="menu__item menu-3012 menu-path-node-52  even last"><a href="/node/52" title="" class="menu__link">Implementation Plan</a></li>
 </ul></li>
 </ul>
 
@@ -176,10 +176,10 @@
 
         <h2 class="block__title block-title">Search</h2>
     
-  <form action="/islandora/object/macrepo%3A81435" method="post" id="islandora-solr-simple-search-form" accept-charset="UTF-8"><div><div class="container-inline form-wrapper" id="edit-simple"><div class="form-item form-type-textfield form-item-islandora-simple-search-query">
+  <form action="/islandora/object/macrepo%3A81454" method="post" id="islandora-solr-simple-search-form" accept-charset="UTF-8"><div><div class="container-inline form-wrapper" id="edit-simple"><div class="form-item form-type-textfield form-item-islandora-simple-search-query">
   <input type="text" id="edit-islandora-simple-search-query" name="islandora_simple_search_query" value="" size="15" maxlength="128" class="form-text" />
 </div>
-<input type="submit" id="edit-submit" name="op" value="search" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form--PMUAL_K2oTFoIv3m6O5AdYDvOwVViOQb5JPpMHd3o8" />
+<input type="submit" id="edit-submit" name="op" value="search" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-YwxwvGAPV6bx0Lv4Vdh2pbISjX-_eTzulNaGHyvQg9I" />
 <input type="hidden" name="form_id" value="islandora_solr_simple_search_form" />
 </div></form>
 </div>
@@ -207,14 +207,14 @@
   </section>
 
     <div id="content" class="column" role="main">
-      <nav class="breadcrumb" role="navigation"><h2 class="element-invisible">You are here</h2><ol><li><a href="/">Home</a> › </li><li><a href="/islandora"></a> › </li><li><a href="/islandora/object/macrepo%3A1">Digital Archive @ McMaster University Library</a> › </li><li><a href="/islandora/object/macrepo%3A10">Map Collections</a> › </li><li><a href="/islandora/object/macrepo%3A21508">Rare Maps</a> › </li></ol></nav>
+      <nav class="breadcrumb" role="navigation"><h2 class="element-invisible">You are here</h2><ol><li><a href="/">Home</a> › </li><li><a href="/islandora"></a> › </li><li><a href="/islandora/object/macrepo%3A1">Digital Archive @ McMaster University Library</a> › </li><li><a href="/islandora/object/macrepo%3A10">Map Collections</a> › </li><li><a href="/islandora/object/macrepo%3A21508">Rare Maps</a> › </li><li><a href="/islandora/object/macrepo%3A81441">Carte des royaumes d&#039;Espagne et de Portugal / par L. Vivien (1 map on 8 sheets)</a> › </li><li><a href="/islandora/object/macrepo%3A81450">Precis historique des opérations de l&#039;armée française en Espagne... (accompanying text on 4 sheets)</a> › </li></ol></nav>
       <a name="main-menu" id="main-content"></a>
-                    <h1 class="title" id="page-title">The plains of Troy</h1>
-                        <h2 class="element-invisible">Primary tabs</h2><ul class="tabs-primary tabs primary"><li class="tabs-primary__tab is-active"><a href="/islandora/object/macrepo%3A81435" class="tabs-primary__tab-link is-active active">View <span class="element-invisible">(active tab)</span></a></li>
-<li><a href="/islandora/object/macrepo%3A81435/print_object"><img id="print_btn" src="http://digitalarchive.mcmaster.ca/sites/all/modules/islandora-7.x-1.4/images/print-icon.png" alt="Print Object" /></a></li></ul>                  
+                    <h1 class="title" id="page-title">Precis historique des opérations de l&#039;armée française en Espagne, sous le commandement de ... Monseigneur Duc d&#039;Angoulême </h1>
+                        <h2 class="element-invisible">Primary tabs</h2><ul class="tabs-primary tabs primary"><li class="tabs-primary__tab is-active"><a href="/islandora/object/macrepo%3A81454" class="tabs-primary__tab-link is-active active">View <span class="element-invisible">(active tab)</span></a></li>
+<li><a href="/islandora/object/macrepo%3A81454/print_object"><img id="print_btn" src="http://digitalarchive.mcmaster.ca/sites/all/modules/islandora-7.x-1.4/images/print-icon.png" alt="Print Object" /></a></li></ul>                  
 <div class="islandora-large-image-object islandora" vocab="http://schema.org/" prefix="dcterms: http://purl.org/dc/terms/" typeof="ImageObject">
   <div class="islandora-large-image-content-wrapper clearfix">
-                  <a href="/islandora/object/macrepo%3A81435/print" title="Clip Image" id="clip"><img src="http://digitalarchive.mcmaster.ca/sites/all/modules/islandora_openseadragon-7.x-1.4/images/clip_icon.png" alt="" /></a>            <div class="islandora-large-image-content">
+                  <a href="/islandora/object/macrepo%3A81454/print" title="Clip Image" id="clip"><img src="http://digitalarchive.mcmaster.ca/sites/all/modules/islandora_openseadragon-7.x-1.4/images/clip_icon.png" alt="" /></a>            <div class="islandora-large-image-content">
         <div id="islandora-openseadragon" class="islandora-openseadragon"></div>
       </div>
       </div>
@@ -222,11 +222,11 @@
      	
      <p><b>Downloads available under <a target="_blank" href="http://creativecommons.org/licenses/by-nc/2.5/ca/">Creative Commons Attribution-NonCommercial 2.5 License</a></b></p>
            <ul>
-      <li><a href="/islandora/object/macrepo%3A81435/datastream/JP2/view.jp2">Download medium resolution (jp2)</a></li>  You may need an application to open the JP2 file. Wikipedia has an extensive list of applications that support jp2 file formats <a target=_blank href=" https://en.wikipedia.org/wiki/JPEG_2000#Application_support">here</a>
+      <li><a href="/islandora/object/macrepo%3A81454/datastream/JP2/view.jp2">Download medium resolution (jp2)</a></li>  You may need an application to open the JP2 file. Wikipedia has an extensive list of applications that support jp2 file formats <a target=_blank href=" https://en.wikipedia.org/wiki/JPEG_2000#Application_support">here</a>
       </ul>
 
       <ul>
-      <li><a href="/islandora/object/macrepo%3A81435/datastream/OBJ/view.tiff">Download high resolution (tiff - large file ~ 1GB)</a></li>
+      <li><a href="/islandora/object/macrepo%3A81454/datastream/OBJ/view.tiff">Download high resolution (tiff - large file ~ 1GB)</a></li>
       </ul>
 	<?xml version="1.0"?>
 <table>
@@ -239,69 +239,61 @@
     <td>
       <strong>Title</strong>
     </td>
-    <td>The plains of Troy</td>
-  </tr>
-  <tr>
-    <td>Name</td>
-    <td>Acland, Henry W. (Henry Wentworth), 1815-1900</td>
-  </tr>
-  <tr>
-    <td>Name</td>
-    <td>Lewis, Frederick Christian, 1779-1856</td>
+    <td>Precis historique des opérations de l'armée française en Espagne, sous le commandement de ... Monseigneur Duc d'Angoulême</td>
   </tr>
   <tr>
     <td>Type of Resource</td>
-    <td>cartographic</td>
+    <td>text</td>
   </tr>
   <tr>
     <td>Publisher Name</td>
-    <td>Messrs. Wyatt &amp; Son</td>
+    <td>Chez M.M. Lale</td>
   </tr>
   <tr>
     <td>Publisher Location</td>
-    <td>Oxford [England]</td>
+    <td>Paris</td>
   </tr>
   <tr>
     <td>Date</td>
-    <td>1839</td>
+    <td>1824</td>
   </tr>
   <tr>
     <td>Language</td>
-    <td>eng</td>
+    <td>fre</td>
   </tr>
   <tr>
     <td>Identifier</td>
-    <td>RMC_107456</td>
+    <td>RMC_3942_text4</td>
   </tr>
   <tr>
     <td>Form</td>
-    <td>map</td>
+    <td>text</td>
   </tr>
   <tr>
     <td>Note</td>
-    <td>1 map ; 17 x 198 cm, on 5 folding panels.  Three panels are 31 x 66 cm and two exterior panels are 31 x 8 cm.  Mounted on linen backing to form a continuous panorama. Green ribbon binding sewn around edges. Folded and placed between hard cover (34 x 69 cm). Cover is gray and trimmed with burgundy leather on spine and corners. Front cover has title, "The Plains of Troy", in gold capital letters on rectangle of burgundy leather.  Green cloth laces on cover's open edges are lacking; small fragments remain.  Relief shown pictorially.</td>
+    <td>4 sheets ; each 55 x 36 cm.</td>
   </tr>
   <tr>
     <td>Note</td>
-    <td>Engraved panoramic drawing in sepia ink.  "Drawn on the spot by Henry Acland, Esqr. Engraved by F.C. Lewis, engraver of drawings to the Queen Victoria."  "Published 1st. Octr. 1839...."  Direction of view (e.g. S.E., south etc.) indicated above the upper neat line, and physical features or locations are named below the lower neat line.  Originally accompanied the book by Henry W. Ackland, The Plains of Troy: Illustrated by a panoramic drawing taken on the spot; and a map constructed after the latest survey (Oxford: James Wyatt and Son, 1839).</td>
+    <td>Accompanying text to Vivien map; sheet 4 of 4. "Par le Lieutenant Colonel Duchateau...."--from sheet 1. Includes "Suite au tableau des noms des officiers, sous officiers et soldats qui ont été honorablement cités dans les Bulletins de l'armée d'Espagne."</td>
   </tr>
   <tr>
     <td>Subject Geographic</td>
-    <td>Troy (Extinct city)</td>
+    <td>Spain</td>
   </tr>
   <tr>
     <td>Geographic coverage</td>
-    <td>Europe--Turkey--Troas--Troy</td>
+    <td>Europe--Spain</td>
   </tr>
 </table>
    </div>
 
   <div class="islandora-large-image-metadata">
-    <strong>The plains of Troy</strong>
+    <strong>Precis historique des opérations de l&#039;armée française en Espagne, sous le commandement de ... Monseigneur Duc d&#039;Angoulême </strong>
           <div>
         <h2>In collections</h2>
         <ul>
-                  <li><a href="/islandora/object/macrepo%3A21508">Rare Maps</a></li>
+                  <li><a href="/islandora/object/macrepo%3A81450">Precis historique des opérations de l&#039;armée française en Espagne... (accompanying text on 4 sheets)</a></li>
                   </ul>
       </div>
       </div>
