@@ -194,22 +194,21 @@ for i = 4:1:size(C,1)
     %     ind = ~isempty(C{col_ca}{i,1})*10 + ~isempty(C{col_pa}{i,1});
     %     switch ind
     %%%corporate author:
-    fprintf(fid2,'%s\n','<name type="corporate">');
     if isempty(col_ca)==1 || isempty(C{i,col_ca})==1
-        fprintf(fid2,'%s\n','<namePart/>');
+%         fprintf(fid2,'%s\n','<namePart/>');
     else
+        fprintf(fid2,'%s\n','<name type="corporate">');
         fprintf(fid2,'%s\n',['<namePart>' C{i,col_ca} '</namePart>']);
+        fprintf(fid2,'%s\n','</name>');
     end
-    fprintf(fid2,'%s\n','</name>');
     %%%personal author:
-    fprintf(fid2,'%s\n','<name type="personal">');
     if isempty(col_pa)==1 || isempty(C{i,col_pa})==1
-        fprintf(fid2,'%s\n','<namePart/>');
+%         fprintf(fid2,'%s\n','<namePart/>');
     else
+        fprintf(fid2,'%s\n','<name type="personal">');
         fprintf(fid2,'%s\n',['<namePart>' C{i,col_pa} '</namePart>']);
+        fprintf(fid2,'%s\n','</name>');
     end
-    fprintf(fid2,'%s\n','</name>');
-    
     
     %type of resource (constant)
     if isempty(col_type)==1 || isempty(C{i,col_type})==1
