@@ -10,11 +10,15 @@ Using Python 3.4, basic web page information is collected for MacRepo IDs identi
 
 This CSV file is the output file containing MacRepo ID information for sub-collections or items belonging to the Library's Map Collections. This information includes each object's MacRepo ID, URL, page title, sub-collection or item flag, identifier, and MacRepo ID of the parent directory of each object in the Digital Archive. This file is updated monthly on the 1st of every month with Windows Task Scheduler. It is then used at the end of the month as the list of MacRepo IDs Google Analytics performs on.
 
-## Tool: Google Analytics API Python Client
+## Folder: Google Analytics API Python Client
 
-**_Navigate to this folder [here](https://github.com/maclibGIS/Digital-Archive-Tools/tree/master/Google_Analytics_API_Python_Client/scripts): Google_Analytics_API_Python_Client --> scripts_**
+**_Navigate to this folder [here](https://github.com/maclibGIS/Digital-Archive-Tools/tree/master/Google_Analytics_API_Python_Client/scripts) or at Google_Analytics_API_Python_Client --> scripts_**
+
+#### Tool: GA_Filter.py
 
 Using Python 2.7.8, the contents within Google_Analytics_API_Python_Client pulls Google Analytics query data directly into Excel to write a CSV file containing the Google Analytics data. The script GA_Filter.py performs a query to report the page title, number of users, number of page views, a collection or item flag, identifier, and parent directory for each web page in the Maps collection of McMaster's Digital Archives. In addition, the same information is gathered for the multiple time periods of the last 30 days, the last 7 days, and the last day. The script GA_CreateReport.py transforms this data into a readable csv format, with outputs including both an 'all objects' analytics report labelled GA_Report(Date Created) and an analytics report for the collections within the Digital Archive labelled GA_CollectionsReport(Date Created).
+
+### Tool: GA_CreateReport.py
 
 The following instructions are a guide on how to first set-up Python and the Google Analytics reporting API, then edit the Python scripts within this folder to create a CSV report on the reported data.
 
