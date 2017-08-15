@@ -1,6 +1,6 @@
 # Digital Archive Tools
 
-This repository is a resource to perform web analytics on the Library's Digital Archive of Map Collections, collecting and reporting web data through the use of Google Analytics.
+This repository is a resource to perform web analytics on the Library's Digital Archive of Map Collections, collecting and reporting web data through the use of Google Analytics. Access a sample of an Annual Google Analytics report [here.] (https://github.com/maclibGIS/Digital-Archive-Tools/tree/master/Google_Analytics_API_Python_Client/scripts/365daysAgo) 
 
 ## Tool: Scraper_V2.py
 
@@ -22,7 +22,7 @@ Using Python 2.7.8, this script performs a Google Analytics query to obtain the 
 
 Using Python 2.7.8, Google Analytics data in GA_Data.csv is parsed and formatted into a readable CSV format. Additional information for each web page is also appended, including a sub-collection or item flag, identifier, and parent directory for each MacRepo ID of the Library's Maps Collections. Two output Google Analytics Report files are created; one for  all sub-collections and items within the Library's Map Collections labelled GA_ReportYYYYMMDD and one for the top-level sub-collections within the Library's Map Collections labelled GA_CollectionsReportYYYYMMDD, with YYYYMMDD as the report creation date. With batch files then created for 7daysAgo, 30daysAgo, and 365daysAgo web data time spans, Windows Task Scheduler was set up to run a 30daysAgo and 365daysAgo report at the end of every month. Note that each of these scripts take a minimum of 24 hours or more to run. For this reason, each script is scheduled at least two days apart from the other.
 
-### A Guide to The Project's Initial Creation
+### _A Guide to The Project's Initial Creation_
 
 The following instructions are a guide on how to first set-up Python and the Google Analytics reporting API, then edit the Python scripts within this folder to create a CSV report on the reported data.
 
