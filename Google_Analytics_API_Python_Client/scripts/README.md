@@ -40,7 +40,7 @@ The following instructions are a guide on how to first set-up Python and the Goo
 	2. Download the Google Analytics API Python Client folder.
 	Follow the link to the full code repository on GitHub. Download the 'Google_Analytics_API_Python_Client' folder to your C:\ drive.
 	
-	https://github.com/cochonnk/Digital-Archive-Tools/tree/Google-Analytics-Reporting/Google_Analytics_API_Python_Client
+	https://github.com/maclibGIS/Digital-Archive-Tools/tree/master/Google_Analytics_API_Python_Client
 	
 	3. Add Your Google Analytics API Client Secret Credentials.
 	In the Google_Analytics_API_Python_Client folder, open the scripts folder.

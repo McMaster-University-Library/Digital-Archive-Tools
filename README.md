@@ -24,9 +24,11 @@ Using Python 2.7.8, Google Analytics data in GA_Data.csv is parsed and formatted
 
 ### Resource: Google Analytics Reports
 
-The reports are organized by the durations for which web data is captured. For our purposes, weekly, monthly, and yearly reports are created. Each report contains the MacRepo ID, number of users, number of page views, sub-collection or item flag, identifier, and parent directory for each MacRepo ID of the Library's Maps Collections. These reports may be found in the following folders: **[7daysAgo](https://github.com/maclibGIS/Digital-Archive-Tools/tree/master/Google_Analytics_API_Python_Client/scripts/7daysAgo) [30daysAgo](https://github.com/maclibGIS/Digital-Archive-Tools/tree/master/Google_Analytics_API_Python_Client/scripts/30daysAgo) [365daysAgo](https://github.com/maclibGIS/Digital-Archive-Tools/tree/master/Google_Analytics_API_Python_Client/scripts/365daysAgo)**
+The reports are organized by the durations for which web data is captured. For our purposes, weekly, monthly, and yearly reports are created. Each report contains the MacRepo ID, number of users, number of page views, sub-collection or item flag, identifier, and parent directory for each MacRepo ID of the Library's Maps Collections. These reports may be found in the following folders: 
 
-### Resource: Exploring Google Analytics
+**[7daysAgo](https://github.com/maclibGIS/Digital-Archive-Tools/tree/master/Google_Analytics_API_Python_Client/scripts/7daysAgo) [30daysAgo](https://github.com/maclibGIS/Digital-Archive-Tools/tree/master/Google_Analytics_API_Python_Client/scripts/30daysAgo) [365daysAgo](https://github.com/maclibGIS/Digital-Archive-Tools/tree/master/Google_Analytics_API_Python_Client/scripts/365daysAgo)**
+
+### Resource: Exploring Google Analytics.txt
 
 This text file contains key documentation in navigating the Google Analytics dashboard for McMaster University Library users.
 
@@ -48,7 +50,7 @@ The following instructions are a guide on how to first set-up Python and the Goo
 	2. Download the Google Analytics API Python Client folder.
 	Follow the link to the full code repository on GitHub. Download the 'Google_Analytics_API_Python_Client' folder to your C:\ drive.
 	
-	https://github.com/cochonnk/Digital-Archive-Tools/tree/Google-Analytics-Reporting/Google_Analytics_API_Python_Client
+	https://github.com/maclibGIS/Digital-Archive-Tools/tree/master/Google_Analytics_API_Python_Client
 	
 	3. Add Your Google Analytics API Client Secret Credentials.
 	In the Google_Analytics_API_Python_Client folder, open the scripts folder.
