@@ -14,15 +14,23 @@ This CSV file is the output file containing MacRepo ID information for sub-colle
 
 **_Navigate to this folder [here](https://github.com/maclibGIS/Digital-Archive-Tools/tree/master/Google_Analytics_API_Python_Client/scripts) or at Google_Analytics_API_Python_Client --> scripts_**
 
-### Tool: GA_Filter.py
+#### Tool: GA_Filter.py
 
 Using Python 2.7.8, this script performs a Google Analytics query to obtain the page title, number of users, and number of page views for each MacRepo ID within the Library's Maps Collections. This data is stored in a temporary output file in CSV, labelled GA_Data.csv.
 
-### Tool: GA_CreateReport.py
+#### Tool: GA_CreateReport.py
 
 Using Python 2.7.8, Google Analytics data in GA_Data.csv is parsed and formatted into a readable CSV format. Additional information for each web page is also appended, including a sub-collection or item flag, identifier, and parent directory for each MacRepo ID of the Library's Maps Collections. Two output Google Analytics Report files are created; one for  all sub-collections and items within the Library's Map Collections labelled GA_ReportYYYYMMDD and one for the top-level sub-collections within the Library's Map Collections labelled GA_CollectionsReportYYYYMMDD, with YYYYMMDD as the report creation date. With batch files then created for 7daysAgo, 30daysAgo, and 365daysAgo web data time spans, Windows Task Scheduler was set up to run a 30daysAgo and 365daysAgo report at the end of every month. Note that each of these scripts take a minimum of 24 hours or more to run. For this reason, each script is scheduled at least two days apart from the other.
 
-### _A Guide to The Project's Initial Creation_
+#### Resource: Google Analytics Reports
+
+The reports are organized by the durations for which web data is captured. For our purposes, weekly, monthly, and yearly reports are created. Each report contains the MacRepo ID, number of users, number of page views, sub-collection or item flag, identifier, and parent directory for each MacRepo ID of the Library's Maps Collections. These reports may be found in the following folders.
+
+**[7daysAgo](https://github.com/maclibGIS/Digital-Archive-Tools/tree/master/Google_Analytics_API_Python_Client/scripts/7daysAgo)
+[30daysAgo](https://github.com/maclibGIS/Digital-Archive-Tools/tree/master/Google_Analytics_API_Python_Client/scripts/30daysAgo)
+[365daysAgo](https://github.com/maclibGIS/Digital-Archive-Tools/tree/master/Google_Analytics_API_Python_Client/scripts/365daysAgo)**
+
+#### *A Guide to The Project's Initial Creation*
 
 The following instructions are a guide on how to first set-up Python and the Google Analytics reporting API, then edit the Python scripts within this folder to create a CSV report on the reported data.
 
