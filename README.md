@@ -24,11 +24,7 @@ Using Python 2.7.8, Google Analytics data in GA_Data.csv is parsed and formatted
 
 ### Resource: Google Analytics Reports
 
-The reports are organized by the durations for which web data is captured. For our purposes, weekly, monthly, and yearly reports are created. Each report contains the MacRepo ID, number of users, number of page views, sub-collection or item flag, identifier, and parent directory for each MacRepo ID of the Library's Maps Collections. These reports may be found in the following folders.
-
-**[7daysAgo](https://github.com/maclibGIS/Digital-Archive-Tools/tree/master/Google_Analytics_API_Python_Client/scripts/7daysAgo)**
-**[30daysAgo](https://github.com/maclibGIS/Digital-Archive-Tools/tree/master/Google_Analytics_API_Python_Client/scripts/30daysAgo)**
-**[365daysAgo](https://github.com/maclibGIS/Digital-Archive-Tools/tree/master/Google_Analytics_API_Python_Client/scripts/365daysAgo)**
+The reports are organized by the durations for which web data is captured. For our purposes, weekly, monthly, and yearly reports are created. Each report contains the MacRepo ID, number of users, number of page views, sub-collection or item flag, identifier, and parent directory for each MacRepo ID of the Library's Maps Collections. These reports may be found in the following folders: **[7daysAgo](https://github.com/maclibGIS/Digital-Archive-Tools/tree/master/Google_Analytics_API_Python_Client/scripts/7daysAgo) [30daysAgo](https://github.com/maclibGIS/Digital-Archive-Tools/tree/master/Google_Analytics_API_Python_Client/scripts/30daysAgo) [365daysAgo](https://github.com/maclibGIS/Digital-Archive-Tools/tree/master/Google_Analytics_API_Python_Client/scripts/365daysAgo)**
 
 ### Resource: Exploring Google Analytics
 
@@ -36,7 +32,7 @@ This text file contains key documentation in navigating the Google Analytics das
 
 ### *A Guide to The Project's Initial Creation*
 
-**The following instructions are a guide on how to first set-up Python and the Google Analytics reporting API, then edit the Python scripts within this folder to create a CSV report on the reported data.**
+The following instructions are a guide on how to first set-up Python and the Google Analytics reporting API, then edit the Python scripts within this folder to create a CSV report on the reported data.
 
 	1. The link below is a guide on setting up the Google Analytics API for the first time.
 	
@@ -76,7 +72,7 @@ This text file contains key documentation in navigating the Google Analytics das
 	Note: Each report file name is of the form 'GA_ReportYYYYMMDD.csv' with the date on which the query was performed.
 	
 
-**The steps below are a guide on how to set up GA_CreateReport to run within Windows Task Scheduler.**
+The steps below are a guide on how to set up GA_CreateReport to run within Windows Task Scheduler.
 	
 	6. The Google_Analytics_API_Python_Client folder should be located within your local C:\ drive. If it is not, copy it into any folder within the C:\ drive. Make sure that all file paths within GA_Filter and GA_CreateReport refer to the correct directory.
 	
