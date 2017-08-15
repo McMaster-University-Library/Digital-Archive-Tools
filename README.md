@@ -1,20 +1,22 @@
 # Digital Archive Tools
 
-Digital Archive Tools is a resource to perform web analytics on the Library's Digital Archive of map and data collections, collecting and reporting web data through the use of Google Analytics.
-
-## Tool: Scraper.py
-
-This python script creates a lookup table of a specific range of objects on the Digital Archive. This output table of web pages is then the list of objects we will perform web analytics on. It outputs the object's MacRepo ID, URL, page title, and distinguishes the object as a collection or item in the csv file labelled Macrepo_Lookup.csv. Note that the Macrepo_Lookup.csv file stored in this folder is created from a run through of Scraper_V2.py, as it contains additional content as described below.
+This repository is a resource to perform web analytics on the Library's Digital Archive of map and data collections, collecting and reporting web data through the use of Google Analytics.
 
 ## Tool: Scraper_V2.py
 
-This python script is an updated version of Scraper.py, which in addition to each object's MacRepo ID, URL, page title, and collection or item flag, also outputs the identifier and MacRepo ID of the parent directory of each object in the Digital Archive. Note that the csv files created with this script are labelled Macrepo_Lookup.csv and is set to run through its associated batch file every month with Windows Task Scheduler. This update was made in January 2017.
+Using Python 3.4, basic web page information is collected for MacRepo IDs identified as belonging to the Library's Map Collections and stored in an output CSV file. This script is an updated version of Scraper.py found in the OldTools folder, which in addition to each object's MacRepo ID, URL, page title, and sub-collection or item flag, also outputs the identifier and MacRepo ID of the parent directory of each object in the Digital Archive. Every month, Windows Task Scheduler runs Scraper_V2.py through an associated batch file, creating an updated list of Map Collection items as of the date it is run, labelled Macrepo_LookupYYYYMMDD. In addition, Scraper_V2.py overwrites an existing and temporary Macrepo_Lookup.csv file. This is the file used within the Google Analytics API Python Client as the list of MacRepo IDs that web analytics is later performed on.
 
-## Tool: Google Analytics API Python Client (Go to: Google_Analytics_API_Python_Client --> scripts)
+## Resource: Macrepo_Lookup.csv
 
-Using Python 2.7.8, the contents within Google_Analytics_API_Python_Client pulls Google Analytics query data directly into Excel to write a CSV file containing the Google Analytics data. Particularly in GA_Filter, the script performs a query to report the page title, number of users, number of pageviews, a collection or item flag, identifier, and parent directory for each webpage in the Maps collection of McMaster's Digital Archives. In addition, the same information is gathered for the multiple timespans of the last 30 days, the last 7 days, and the last day. The script GA_CreateReport transforms this data into a readable csv format, with outputs including both an 'all objects' analytics report labeled GA_Report(Date Created) and an analytics report fot the collections within the Digital Archive labeled GA_CollectionsReport(Date Created).
+This CSV file is the output file containing MacRepo ID information for sub-collections or items belonging to the Library's Map Collections. This information includes each object's MacRepo ID, URL, page title, sub-collection or item flag, identifier, and MacRepo ID of the parent directory of each object in the Digital Archive. This file is updated monthly on the 1st of every month with Windows Task Scheduler. It is then used at the end of the month as the list of MacRepo IDs Google Analytics performs on.
 
-The following instructions are a guide on how to first setup Python and the Google Analytics reporting API, then edit the Python scripts within this folder to create a CSV report on the reported data.
+## Tool: Google Analytics API Python Client
+
+**_Navigate to this folder [here](https://github.com/maclibGIS/Digital-Archive-Tools/tree/master/Google_Analytics_API_Python_Client/scripts): Google_Analytics_API_Python_Client --> scripts_**
+
+Using Python 2.7.8, the contents within Google_Analytics_API_Python_Client pulls Google Analytics query data directly into Excel to write a CSV file containing the Google Analytics data. The script GA_Filter.py performs a query to report the page title, number of users, number of page views, a collection or item flag, identifier, and parent directory for each web page in the Maps collection of McMaster's Digital Archives. In addition, the same information is gathered for the multiple time periods of the last 30 days, the last 7 days, and the last day. The script GA_CreateReport.py transforms this data into a readable csv format, with outputs including both an 'all objects' analytics report labelled GA_Report(Date Created) and an analytics report for the collections within the Digital Archive labelled GA_CollectionsReport(Date Created).
+
+The following instructions are a guide on how to first set-up Python and the Google Analytics reporting API, then edit the Python scripts within this folder to create a CSV report on the reported data.
 
 	1. The link below is a guide on setting up the Google Analytics API for the first time.
 	
