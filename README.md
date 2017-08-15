@@ -1,6 +1,6 @@
 # Digital Archive Tools
 
-This repository is a resource to perform web analytics on the Library's Digital Archive of Map Collections, collecting and reporting web data through the use of Google Analytics. Access a sample of an Annual Google Analytics report [here.](https://github.com/maclibGIS/Digital-Archive-Tools/tree/master/Google_Analytics_API_Python_Client/scripts/365daysAgo) 
+_This repository is a resource to perform web analytics on the Library's Digital Archive of Map Collections, collecting and reporting web data through the use of Google Analytics. Access a sample of an annual Google Analytics Report [here.](https://github.com/maclibGIS/Digital-Archive-Tools/tree/master/Google_Analytics_API_Python_Client/scripts/365daysAgo)_ 
 
 ## Tool: Scraper_V2.py
 
