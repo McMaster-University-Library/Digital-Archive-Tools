@@ -64,6 +64,7 @@ for i = 3:1:size(C{1,1},1)
     if isempty(C{col_ca}{i,1})==1
         fprintf(fid2,'%s\n','<namePart/>');
     else
+
         fprintf(fid2,'%s\n',['<namePart>' C{col_ca}{i,1} '</namePart>']);
     end
     fprintf(fid2,'%s\n','</name>');

@@ -5,6 +5,9 @@ function [] = DA_metadata_to_mods(working_dir, meta_sheet,title_flag)
 % working_dir is the directory containing the metadata sheet (meta_sheet), and where MODS output will take place.
 % meta_sheet is the filename of the metadata spreadsheet to be processed 
 % title_flag = 0: use title field to generate title; title_flag = 1: generate aerial-photo title from multiple fields
+%
+% example: DA_metadata_to_mods('D:\Local\GordonGriffiths','Gordon Griffith Fonds.tsv',0)
+%
 %%%% Preparation
 % 1. Download the metadata spreadsheet as a tab-separated file 
 % (e.g. https://docs.google.com/spreadsheets/d/17hx390QwHaXibQ7wm3ZNIdbLaB-KDLBNABk08XPBJCg/edit#gid=1930434503)
@@ -46,8 +49,8 @@ end
 % content           country                 province        region          county          city                
 % city_section      area                    index           condition_notes identifier
 
-%% % Load the master spreadsheet (Master Spreadsheet.tsv)-figure out how
-%%%% many columns it has, so that we can load the rest of the items:
+%% % Load the master spreadsheet (Master Spreadsheet.tsv)
+%%% figure out how many columns it has, so that we can load the rest of the items:
 
 %%% Loading the raw spreadsheet; reforming data:
 fid = fopen([working_dir meta_sheet],'r');
@@ -111,7 +114,12 @@ for i = 4:1:size(C,1)
     date_created = C{i,col_dc};
     slash_find = strfind(date_created,'/');
     dash_find = strfind(date_created,'-');
-    if size(date_created,2)==4 || size(date_created,2)==0 || length(strfind(date_created,'['))==1 || (length(dash_find)==2 && dash_find(1)>3) %either we have the year or nothing at all or implied date - all are OK!
+    % Date formats that are OK as-is
+    if size(date_created,2)==4 || ... % just the year
+            size(date_created,2)==0 || ... % blank
+        length(strfind(date_created,'['))==1 || ... % has inferred date
+        (length(dash_find)>=1 && dash_find(1)>3) % in YYYY-MM-DD or YYYY-MM format (changed from (dash_find)==2 to (dash_find)>=1
+    % Fix if in MM/DD/YYYY
     elseif size(date_created,2)>=8 && length(slash_find)==2 %assume we have the date in MM/DD/YYYY
         date_created = [date_created(end-3:end) '-' date_created(1:slash_find(1)-1) '-' date_created(slash_find(1)+1:slash_find(2)-1)];
     else
@@ -194,20 +202,24 @@ for i = 4:1:size(C,1)
     %     ind = ~isempty(C{col_ca}{i,1})*10 + ~isempty(C{col_pa}{i,1});
     %     switch ind
     %%%corporate author:
-    if isempty(col_ca)==1 || isempty(C{i,col_ca})==1
+    if isempty(col_ca)==1 || isempty(C{i,col_ca(1)})==1
 %         fprintf(fid2,'%s\n','<namePart/>');
     else
+        for j = 1:1:size(col_ca,1)
         fprintf(fid2,'%s\n','<name type="corporate">');
-        fprintf(fid2,'%s\n',['<namePart>' C{i,col_ca} '</namePart>']);
+        fprintf(fid2,'%s\n',['<namePart>' C{i,col_ca(j,1)} '</namePart>']);
         fprintf(fid2,'%s\n','</name>');
+        end
     end
     %%%personal author:
-    if isempty(col_pa)==1 || isempty(C{i,col_pa})==1
+    if isempty(col_pa)==1 || isempty(C{i,col_pa(1)})==1
 %         fprintf(fid2,'%s\n','<namePart/>');
     else
+        for j = 1:1:size(col_pa,1)
         fprintf(fid2,'%s\n','<name type="personal">');
-        fprintf(fid2,'%s\n',['<namePart>' C{i,col_pa} '</namePart>']);
+        fprintf(fid2,'%s\n',['<namePart>' C{i,col_pa(j,1)} '</namePart>']);
         fprintf(fid2,'%s\n','</name>');
+        end
     end
     
     %type of resource (constant)
