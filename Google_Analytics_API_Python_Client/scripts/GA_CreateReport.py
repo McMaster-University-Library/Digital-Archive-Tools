@@ -116,7 +116,7 @@ def create_report(startdate):
 
     b.close()
 
-    print "Success. Your Google Analytics report has been written to " + GARFile + " in " + GARPath
+    print ("Success. Your Google Analytics report has been written to " + GARFile + " in " + GARPath)
 
 
     # WRITING GOOGLE ANALYTICS DATA TO GA_CollectionsReportYYYYMMDD.csv.
@@ -194,7 +194,7 @@ def create_report(startdate):
                     
     e.close()
 
-    print "Success. Your Google Analytics Collections report has been written to " + GARFileColl + " in " + GARPathColl
+    print ("Success. Your Google Analytics Collections report has been written to " + GARFileColl + " in " + GARPathColl)
     
 if __name__ == "__main__":
     create_report(startdate)
