@@ -77,7 +77,7 @@ def create_report(startdate):
     b = open(GARPath.strip('\\') + '\\' + GARFile, 'a')
     writer = csv.writer(b, dialect='excel', lineterminator='\n')
 
-    # Place GA_Data.csv within the list 'dataread'.
+    # Place GA_Data.csv within a list defined as 'dataread'.
     dataread = []
     for row in reader2:
         dataread.append(row)
@@ -110,6 +110,8 @@ def create_report(startdate):
             line.append(parent) #Appending corresponding parent directory.
             line.append(toplevel) #Appending corresponding top-level parent directory (collection).                                                                                                                                                                  
             writer.writerow(line)
+
+            print (ID + " data added to report.")
 
         else:
             pass

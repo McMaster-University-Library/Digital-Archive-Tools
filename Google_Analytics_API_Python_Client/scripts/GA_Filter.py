@@ -70,8 +70,11 @@ def filtering(startdate):
 							if not first_profile_id:
 								print('Could not find a valid profile for this user.')
 							else:
+                                                                starttime = timeit.timeit()
 								results = get_top_keywords(service, first_profile_id)
 								print_results(results)
+								endtime = timeit.timeit()
+								print ("Query run time: " + endtime-starttime + " seconds.")
 
 						except TypeError as error:
 							# Handle errors in constructing a query.
@@ -137,7 +140,7 @@ def filtering(startdate):
 			# This script was orginally created with dimensions = 'ga:pagetitle', and metrics = 'ga:pageviews, ga:users'.
 			# Though choosing different dimensions and metrics may work, unforeseen csv formatting issues may occur.
 			# --------------------------------------------------------------------------------------------------------------------
-
+                                                
 						return service.data().ga().get(
 							ids ='ga:' + profile_id,
 							start_date = startdate,
@@ -149,7 +152,7 @@ def filtering(startdate):
 							#In the special case of multiple old web page titles, the webpage with which the most number of users is recorded.
 							sort = "-ga:users",
 							max_results = 1).execute()
-					
+
 			# ----------------------------------------------------------------------------------------------------------------------------
 
 					def print_results(results):
@@ -182,7 +185,7 @@ def filtering(startdate):
 						
 						f.close()
 					
-					print ("...")
+					print ("Collecting data for MacRepo ID " + ID + ".")
 					
 					main(sys.argv)
 
@@ -202,8 +205,11 @@ def filtering(startdate):
 							if not first_profile_id:
 								print('Could not find a valid profile for this user.')
 							else:
+                                                                starttime = timeit.timeit()
 								results = get_top_keywords(service, first_profile_id)
 								print_results(results)
+								endtime = timeit.timeit()
+								print (endtime-starttime)
 
 						except TypeError as error:
 							# Handle errors in constructing a query.
@@ -269,7 +275,7 @@ def filtering(startdate):
 			# This script was orginally created with dimensions = 'ga:pagetitle', and metrics = 'ga:pageviews, ga:users'.
 			# Though choosing different dimensions and metrics may work, unforeseen csv formatting issues may occur.
 			# --------------------------------------------------------------------------------------------------------------------
-
+                                                
 						return service.data().ga().get(
 							ids ='ga:' + profile_id,
 							start_date = startdate,
@@ -281,6 +287,7 @@ def filtering(startdate):
 							#In the special case of multiple old web page titles, the webpage with which the most number of users is recorded.
 							sort = "-ga:users",
 							max_results = 1).execute()
+                                                
 			# ----------------------------------------------------------------------------------------------------------------------------
 
 					def print_results(results):
@@ -313,7 +320,7 @@ def filtering(startdate):
 						
 						f.close()
 					
-					print ("...")
+					print ("Collecting data for MacRepo ID " + ID + ".")
 					
 					main(sys.argv)
 
