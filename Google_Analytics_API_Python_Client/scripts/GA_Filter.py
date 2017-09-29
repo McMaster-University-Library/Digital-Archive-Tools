@@ -13,7 +13,9 @@ import argparse
 import sys
 import csv
 import timeit
+import time
 import pause
+import random
 from googleapiclient.errors import HttpError
 from googleapiclient import sample_tools
 from oauth2client.client import AccessTokenRefreshError
@@ -74,7 +76,7 @@ def filtering(startdate):
 								results = get_top_keywords(service, first_profile_id)
 								print_results(results)
 								endtime = timeit.timeit()
-								print ("Query run time: " + endtime-starttime + " seconds.")
+								print ("Query run time: " + str(endtime-starttime) + " seconds.")
 
 						except TypeError as error:
 							# Handle errors in constructing a query.
@@ -121,6 +123,33 @@ def filtering(startdate):
 									return profiles.get('items')[0].get('id')
 
 						return None
+
+					def makeRequestWithExponentialBackoff(analytics):
+
+                                                  """Wrapper to request Google Analytics data with exponential backoff.
+
+                                                  The makeRequest method accepts the analytics service object, makes API
+                                                  requests and returns the response. If any error occurs, the makeRequest
+                                                  method is retried using exponential backoff.
+
+                                                  Args:
+                                                            analytics: The analytics service object
+
+                                                  Returns:
+                                                            The API response from the makeRequest method.
+                                                  """
+                                                  for n in range(0, 5):
+                                                            try:
+                                                                      return makeRequest(analytics)
+
+                                                            except HttpError, error:
+                                                                      if error.resp.reason in ['userRateLimitExceeded', 'quotaExceeded',
+                                                                       'internalServerError', 'backendError']:
+                                                                        time.sleep((2 ** n) + random.random())
+                                                                      else:
+                                                                                break
+
+                                                  print ("There has been an error, the request never succeeded.")
 
 			# EXECUTING AND RETURNING DATA FROM THE CORE REPORTING API.
 
@@ -209,7 +238,7 @@ def filtering(startdate):
 								results = get_top_keywords(service, first_profile_id)
 								print_results(results)
 								endtime = timeit.timeit()
-								print (endtime-starttime)
+								print ("Query run time: " + str(endtime-starttime) + " seconds.")
 
 						except TypeError as error:
 							# Handle errors in constructing a query.
