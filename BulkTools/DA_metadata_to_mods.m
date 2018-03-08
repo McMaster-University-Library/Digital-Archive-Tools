@@ -2,7 +2,7 @@ function [] = DA_metadata_to_mods(working_dir, meta_sheet,title_flag)
 %
 %
 % where:
-% working_dir is the directory containing the metadata sheet (meta_sheet), and where MODS output will take place.
+% working_dir is the directory containing the (tab-delimited) metadata sheet (meta_sheet), and where MODS output will take place.
 % meta_sheet is the filename of the metadata spreadsheet to be processed 
 % title_flag = 0: use title field to generate title; title_flag = 1: generate aerial-photo title from multiple fields
 %
@@ -65,6 +65,7 @@ frewind(fid); %rewind the pointer to the start of the file:
 %%% cell structure
 tmp = textscan(fid,fmt,'Delimiter','\t','TreatAsEmpty',{'NA','na'});
 C = {};
+
 
 % Remove quotations (removed as of 08-Aug-2016); Collect header information
 % replace '&' with '&amp;' (added 08-Aug-2016):
