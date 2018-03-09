@@ -44,10 +44,12 @@ end
 
 %%% Possible incoming fields:
 % title             pseudotitle             subtitle        date_in         flightline      photo_number    scale	
-% latitude          longitude               thumbnail_link	archive_link    corporate_name	personal_name	publisher_name	publisher_location	
-% set_date          physical_description	general_note	subj_geographic	subj_geographic	subj_geographic	
-% content           country                 province        region          county          city                
-% city_section      area                    index           condition_notes identifier
+% latitude          longitude               thumbnail_link	archive_link    corporate_name	personal_name	
+% publisher_name	publisher_location	publisher_location2(additional)
+% set_date          physical_description    media_type	general_note	subj_geographic	
+% continent           country                 province        region          county          city                
+% city_section      area                    index           condition_notes
+% identifier    
 
 %% % Load the master spreadsheet (Master Spreadsheet.tsv)
 %%% figure out how many columns it has, so that we can load the rest of the items:
@@ -66,6 +68,11 @@ frewind(fid); %rewind the pointer to the start of the file:
 tmp = textscan(fid,fmt,'Delimiter','\t','TreatAsEmpty',{'NA','na'});
 C = {};
 
+%%% Fix a problem with Google Sheet export where the final column has one
+%%% less element in it than the others.
+if length(tmp{1,1}) - length(tmp{1,end}) == 1
+    tmp{1,end}{length(tmp{1,end})+1,1} = '';
+end
 
 % Remove quotations (removed as of 08-Aug-2016); Collect header information
 % replace '&' with '&amp;' (added 08-Aug-2016):
@@ -91,12 +98,16 @@ col_photo = find(strcmp('photo_number',H3)==1); col_fline = find(strcmp('flightl
 
 col_sub = find(strcmp('subtitle',H3)==1);       col_ca = find(strcmp('corporate_name',H3)==1);
 col_pa = find(strcmp('personal_name',H3)==1);   col_dc = find(strcmp('date_in',H3)==1);
+col_do = find(strcmp('date_other',H3)==1);
+
 col_pub = find(strcmp('publisher_name',H3)==1); col_pubpl = find(strcmp('publisher_location',H3)==1);
+col_pubpl2 = find(strcmp('publisher_location2',H3)==1);
 col_pe = find(strcmp('scale',H3)==1);           col_pn = find(strcmp('physical_description',H3)==1);
 col_note = find(strcmp('general_note',H3)==1);  col_pf= find(strcmp('physical_form',H3)==1);
-col_genre = find(strcmp('genre_loc',H3)==1);
+col_genre = find(strcmp('genre_loc',H3)==1);    col_mt = find(strcmp('media_type',H3)==1);
 
 col_sg = find(strcmp('subj_geographic',H3)==1); %multicolumn
+col_topic = find(strcmp('subj_topic',H3)==1);
 
 col_cont = find(strcmp('continent',H3)==1);     col_country = find(strcmp('country',H3)==1);
 col_prov = find(strcmp('province',H3)==1);      col_reg = find(strcmp('region',H3)==1);
@@ -129,11 +140,20 @@ for i = 4:1:size(C,1)
     end
     % Date-other is a stripped-down version of Date ("[" and "]" and "?" removed);
 %     date_other = strrep(C(:,col_dc),'[',''); date_other = strrep(date_other,']',''); date_other = strrep(date_other,'?','');
-    date_other = strrep(date_created,'[',''); date_other = strrep(date_other,']',''); date_other = strrep(date_other,'?','');
+    if isempty(col_do)==1
+date_other = strrep(date_created,'[',''); date_other = strrep(date_other,']',''); date_other = strrep(date_other,'?','');
+    else
+        date_other = C{i,col_do};
+    end
    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     % Generate Coordinates: %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    if isempty(col_lat)==1 || isempty(C{i,col_lat})==1 || isempty(col_long)==1 || isempty(C{i,col_long})==1
+        coords = '';
+    else
     coords = ['latitude ' C{i,col_lat} ' ; longitude ' C{i,col_long}];
-   
+    end
+    
+    
     switch title_flag 
         case 1
     %%%%% Generate Title %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -246,12 +266,18 @@ for i = 4:1:size(C,1)
         fprintf(fid2,'%s\n',['<publisher>' C{i,col_pub} '</publisher>']);
     end
     %%%%place of publishing
-    if isempty(col_pubpl)==1 ||isempty(C{i,col_pubpl})==1
+    if isempty(col_pubpl)==1 || isempty(C{i,col_pubpl})==1
         fprintf(fid2,'%s\n','<place/>');
     else
         fprintf(fid2,'%s\n','<place>');
         fprintf(fid2,'%s\n',['<placeTerm type="text">' C{i,col_pubpl} '</placeTerm>']);
         fprintf(fid2,'%s\n','</place>');
+        if isempty(col_pubpl2)==1 || isempty(C{i,col_pubpl2})==1 %print publishing place 2
+        else
+        fprintf(fid2,'%s\n','<place>');
+        fprintf(fid2,'%s\n',['<placeTerm type="text">' C{i,col_pubpl2} '</placeTerm>']);
+        fprintf(fid2,'%s\n','</place>'); 
+        end
     end
     %%%datecreated
     if isempty(date_created)==1
@@ -298,6 +324,14 @@ for i = 4:1:size(C,1)
     else
         fprintf(fid2,'%s\n',['<note>' C{i,col_pn} '</note>']);
     end
+    
+    %%% media type
+    if isempty(col_mt)==1 ||isempty(C{i,col_mt})==1
+        fprintf(fid2,'%s\n','<internetMediaType/>');
+    else
+        fprintf(fid2,'%s\n',['<internetMediaType>' C{i,col_mt} '</internetMediaType>']);
+    end
+    
     fprintf(fid2,'%s\n','</physicalDescription>');
     
     %note
@@ -309,6 +343,10 @@ for i = 4:1:size(C,1)
     
     %subject information:
     fprintf(fid2,'%s\n','<subject>');
+    
+     %%%%% topical subject
+    if isempty(col_topic)==1 || isempty(C{i,col_topic})==1; fprintf(fid2,'%s\n','<topic/>'); else  fprintf(fid2,'%s\n',['<topic>' C{i,col_topic} '</topic>']); end
+   
     %%%cycle through the geographic subjects
     for j = 1:1:length(col_sg)
         if isempty(C{i,col_sg(j)})==1%
