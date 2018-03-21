@@ -1,4 +1,9 @@
 function [] = DA_mods_to_metadata(path_in)
+%%% Loads all MODS xml file located in a the /MODS folder of a specified
+%%% directory, reformats all metadata to a single table with one row per
+%%% file, and one column per unique metadata element.
+%%% Exports in tab-separated format
+
 if strcmp(path_in(end), '\')==1 || strcmp(path_in(end), '/')==1
 else
     path_in = [path_in '\'];

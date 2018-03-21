@@ -1,7 +1,8 @@
 function [] = DA_metadata_to_mods(working_dir, meta_sheet,title_flag)
+% Generates Digital-Archive upload-ready xml MODS files from a spreadsheet.
+% Spreadsheet should be exported from https://docs.google.com/spreadsheets/d/1xmSuWdqUQ0a9RNCi2DErNO1bBcK6J06ps0moyYkg4Qk
 %
-%
-% where:
+% inputs:
 % working_dir is the directory containing the (tab-delimited) metadata sheet (meta_sheet), and where MODS output will take place.
 % meta_sheet is the filename of the metadata spreadsheet to be processed 
 % title_flag = 0: use title field to generate title; title_flag = 1: generate aerial-photo title from multiple fields
