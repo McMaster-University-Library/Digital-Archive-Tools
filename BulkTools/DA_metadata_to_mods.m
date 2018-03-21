@@ -106,6 +106,7 @@ col_pubpl2 = find(strcmp('publisher_location2',H3)==1);
 col_pe = find(strcmp('scale',H3)==1);           col_pn = find(strcmp('physical_description',H3)==1);
 col_note = find(strcmp('general_note',H3)==1);  col_pf= find(strcmp('physical_form',H3)==1);
 col_genre = find(strcmp('genre_loc',H3)==1);    col_mt = find(strcmp('media_type',H3)==1);
+col_pl = find(strcmp('physical_location',H3)==1);
 
 col_sg = find(strcmp('subj_geographic',H3)==1); %multicolumn
 col_topic = find(strcmp('subj_topic',H3)==1);
@@ -303,7 +304,16 @@ date_other = strrep(date_created,'[',''); date_other = strrep(date_other,']','')
 %     end
     fprintf(fid2,'%s\n','</language>');
     
-    %physical description
+%% location
+    fprintf(fid2,'%s\n','<location>');
+    %%% physical location
+    if isempty(col_pl)==1 ||isempty(C{i,col_pl})==1
+        fprintf(fid2,'%s\n','<physicalLocation/>');
+    else
+        fprintf(fid2,'%s\n',['<physicalLocation>' C{i,col_pl} '</physicalLocation>']);
+    end
+    fprintf(fid2,'%s\n','</location>');
+%% physical description
     fprintf(fid2,'%s\n','<physicalDescription>');
     %%% extent
     if isempty(col_pe)==1 ||isempty(C{i,col_pe})==1
