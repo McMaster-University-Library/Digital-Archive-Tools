@@ -2,7 +2,7 @@
 
 **This repository is a resource to perform web analytics on the McMaster University Library's Digital Archive of Map Collections, collecting and reporting web data through the use of Google Analytics. Access a sample of an annual Google Analytics Report [here.](https://github.com/maclibGIS/Digital-Archive-Tools/tree/master/Google_Analytics_API_Python_Client/scripts/365daysAgo)**
 
-![Guide](guide.png)
+![Guide](Guide.png)
 
 ## Tool: Scraper_V2.py
 
