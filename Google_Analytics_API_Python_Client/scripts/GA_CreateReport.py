@@ -15,6 +15,9 @@
 #       - Google places an API Limit 10 000 queries per profile ID per day. Exceedance of this limit
 #       - will result in an API Error within this script.
 
+# This script runs with windows task scheduler on selected days of the month. If this script is chosen to be run manually,
+# the user should input the following line when a NameError comes up: create_report('365daysAgo').
+
 import sys
 import csv
 import os
@@ -27,12 +30,12 @@ def create_report(startdate):
     GA_Filter.filtering(startdate)
 
     # Creating empty lists. 
-    IDList = [] # Create list of Macrepo IDs.
+    IDList = [] # Creating list of Macrepo IDs.
     flags = [] # Creating list to hold collection or item flags.
     identifiers = [] #Creating list to hold identifiers.
     parentdir = [] #Creating list of parent directories.
     pd_nodetails = [] #Creating list of parent directories with missing information from GA.
-    topleveldir = []
+    topleveldir = [] #Creating list of top-level parent directories (collections).
 
     #----------------------------------------------------------------------------- USER EDIT ---------
     # Open Macrepo_Lookup.csv to obtain ID numbers.
@@ -51,8 +54,6 @@ def create_report(startdate):
             parentdir.append(row[5])
             topleveldir.append(row[6])
     
-    #print datetime.datetime.today().strftime('%Y%m%d')
-    
     #----------------------------------------------------------------------------- USER EDIT ---------
     # Open the csv file to which the report will be written to.
     # DEAR USER: Enter the filepath and the corresponding filename for a csv file to which the report
@@ -70,12 +71,13 @@ def create_report(startdate):
     reader2 = csv.reader(c, delimiter=',', quotechar='|')
     reader3 = csv.reader(c, delimiter = ',', quotechar=',')
 
-    # WRITING GOOGLE ANALYTICS DATA TO GA_Report.csv.
+    # WRITING GOOGLE ANALYTICS DATA TO GA_ReportYYYYMMDD.csv.
+    
     # Open GA_Report.csv file for appending.
     b = open(GARPath.strip('\\') + '\\' + GARFile, 'a')
     writer = csv.writer(b, dialect='excel', lineterminator='\n')
 
-    # Place GA_Data.csv within the list 'dataread'.
+    # Place GA_Data.csv within a list defined as 'dataread'.
     dataread = []
     for row in reader2:
         dataread.append(row)
@@ -89,13 +91,13 @@ def create_report(startdate):
     METRIC2 = "METRIC: " + METRIC2.upper()
     TIMERANGE = "TIMERANGE: From " + startdate + " to " + datetime.datetime.today().strftime('%Y%m%d')
 
-    # Write headers for GA_Report.csv.
+    # Write headers for GA_ReportYYYYMMDD.csv.
     headerwriter = csv.DictWriter(b, fieldnames = ["MACREPO ID", "WEBSITE URL", DIMENSION, METRIC1, METRIC2, "ITEM=1, COLLECTION=2", "IDENTIFIER", "PARENT DIRECTORY", "TOP-LEVEL COLLECTION", TIMERANGE])
     headerwriter.writeheader()
 
-    # Write data in GA_Report.csv.
+    # Write data in GA_ReportYYYYMMDD.csv.
     for ID, item, indicator, identifier, parent, toplevel in zip(IDList[0:len(IDList)],dataread[1:len(dataread)], flags[0:len(flags)], identifiers[0:len(identifiers)], parentdir[0:len(parentdir)], topleveldir[0:len(topleveldir)]): #dataread starts from "1" since "0" are the headings. 
-        
+
         if ID == item[0]:
             line = []
             line.append(item[0]) #Appending MacRepo ID.
@@ -109,15 +111,17 @@ def create_report(startdate):
             line.append(toplevel) #Appending corresponding top-level parent directory (collection).                                                                                                                                                                  
             writer.writerow(line)
 
+            print (ID + " data added to report.")
+
         else:
             pass
 
     b.close()
 
-    print "Success. Your Google Analytics report has been written to " + GARFile + " in " + GARPath
+    print ("Success. Your Google Analytics report has been written to " + GARFile + " in " + GARPath)
 
 
-    # WRITING GOOGLE ANALYTICS DATA TO GA_CollectionsReport.csv.
+    # WRITING GOOGLE ANALYTICS DATA TO GA_CollectionsReportYYYYMMDD.csv.
     
     #----------------------------------------------------------------------------- USER EDIT ---------
     # Open the csv file to which the collections report will be written to.
@@ -162,7 +166,7 @@ def create_report(startdate):
             else:
                 pass
                
-        # Open GA_Report.csv to obtain data.
+        # Open GA_ReportYYYYMMDD.csv to obtain data.
         with open(GARPath.strip('\\') + '\\' + GARFile, 'r') as lookupfile2:
         
             reader4 = csv.reader(lookupfile2, delimiter=",")
@@ -192,7 +196,7 @@ def create_report(startdate):
                     
     e.close()
 
-    print "Success. Your Google Analytics Collections report has been written to " + GARFileColl + " in " + GARPathColl
+    print ("Success. Your Google Analytics Collections report has been written to " + GARFileColl + " in " + GARPathColl)
     
 if __name__ == "__main__":
     create_report(startdate)

@@ -1,20 +1,42 @@
 # Digital Archive Tools
 
-Digital Archive Tools is a resource to perform web analytics on the Library's Digital Archive of map and data collections, collecting and reporting web data through the use of Google Analytics.
+**This repository is a resource to perform web analytics on the McMaster University Library's Digital Archive of Map Collections, collecting and reporting web data through the use of Google Analytics. Access a sample of an annual Google Analytics Report [here.](https://github.com/maclibGIS/Digital-Archive-Tools/tree/master/Google_Analytics_API_Python_Client/scripts/365daysAgo)**
 
-## Tool: Scraper.py
-
-This python script creates a lookup table of a specific range of objects on the Digital Archive. This output table of web pages is then the list of objects we will perform web analytics on. It outputs the object's MacRepo ID, URL, page title, and distinguishes the object as a collection or item in the csv file labelled Macrepo_Lookup.csv. Note that the Macrepo_Lookup.csv file stored in this folder is created from a run through of Scraper_V2.py, as it contains additional content as described below.
+![Guide](Guide.png)
 
 ## Tool: Scraper_V2.py
 
-This python script is an updated version of Scraper.py, which in addition to each object's MacRepo ID, URL, page title, and collection or item flag, also outputs the identifier and MacRepo ID of the parent directory of each object in the Digital Archive. Note that the csv files created with this script are labelled Macrepo_Lookup.csv and is set to run through its associated batch file every month with Windows Task Scheduler. This update was made in January 2017.
+Using Python 3.4, basic web page information is collected for MacRepo IDs identified as belonging to the Library's Map Collections and stored in an output CSV file. This script is an updated version of Scraper.py found in the OldTools folder, which in addition to each object's MacRepo ID, URL, page title, and sub-collection or item flag, also outputs the identifier and MacRepo ID of the parent directory of each object in the Library's Map Collections. Every month, Windows Task Scheduler runs Scraper_V2.py through an associated batch file, creating an updated list of Map Collection items as of the date it is run, labelled Macrepo_LookupYYYYMMDD. In addition, Scraper_V2.py overwrites an existing and temporary Macrepo_Lookup.csv file. This is the file used within the Google Analytics API Python Client as the list of MacRepo IDs that web analytics is later performed on.
 
-## Tool: Google Analytics API Python Client (Go to: Google_Analytics_API_Python_Client --> scripts)
+## Resource: Macrepo_Lookup.csv
 
-Using Python 2.7.8, the contents within Google_Analytics_API_Python_Client pulls Google Analytics query data directly into Excel to write a CSV file containing the Google Analytics data. Particularly in GA_Filter, the script performs a query to report the page title, number of users, number of pageviews, a collection or item flag, identifier, and parent directory for each webpage in the Maps collection of McMaster's Digital Archives. In addition, the same information is gathered for the multiple timespans of the last 30 days, the last 7 days, and the last day. The script GA_CreateReport transforms this data into a readable csv format, with outputs including both an 'all objects' analytics report labeled GA_Report(Date Created) and an analytics report fot the collections within the Digital Archive labeled GA_CollectionsReport(Date Created).
+This CSV file is the output file containing MacRepo ID information for sub-collections or items belonging to the Library's Map Collections. This information includes each object's MacRepo ID, URL, page title, sub-collection or item flag, identifier, and MacRepo ID of the parent directory of each object in the Library's Map Collections. This file is updated monthly on the 1st of every month with Windows Task Scheduler. It is then used at the end of the month as the list of MacRepo IDs Google Analytics performs on.
 
-The following instructions are a guide on how to first setup Python and the Google Analytics reporting API, then edit the Python scripts within this folder to create a CSV report on the reported data.
+## Folder: Google Analytics API Python Client
+
+**_Navigate to this folder [here](https://github.com/maclibGIS/Digital-Archive-Tools/tree/master/Google_Analytics_API_Python_Client/scripts) or at Google_Analytics_API_Python_Client --> scripts_**
+
+### Tool: GA_Filter.py
+
+Using Python 2.7.8, this script performs a Google Analytics query to obtain the page title, number of users, and number of page views for each MacRepo ID within the Library's Maps Collections. This data is stored in a temporary output file in CSV, labelled GA_Data.csv.
+
+### Tool: GA_CreateReport.py
+
+Using Python 2.7.8, Google Analytics data in GA_Data.csv is parsed and formatted into a readable CSV format. Additional information for each web page is also appended, including a sub-collection or item flag, identifier, and parent directory for each MacRepo ID of the Library's Maps Collections. Two output Google Analytics Report files are created; one for  all sub-collections and items within the Library's Map Collections labelled GA_ReportYYYYMMDD and one for the top-level sub-collections within the Library's Map Collections labelled GA_CollectionsReportYYYYMMDD, with YYYYMMDD as the report creation date. With batch files then created for 7daysAgo, 30daysAgo, and 365daysAgo web data time spans, Windows Task Scheduler was set up to run a 30daysAgo and 365daysAgo report at the end of every month. Note that each of these scripts take a minimum of 24 hours or more to run. For this reason, each script is scheduled at least two days apart from the other.
+
+### Resource: Google Analytics Reports
+
+The reports are organized by the durations for which web data is captured. For our purposes, weekly, monthly, and yearly reports are created. Each report contains the MacRepo ID, number of users, number of page views, sub-collection or item flag, identifier, and parent directory for each MacRepo ID of the Library's Maps Collections. These reports may be found in the following folders: 
+
+**[7daysAgo](https://github.com/maclibGIS/Digital-Archive-Tools/tree/master/Google_Analytics_API_Python_Client/scripts/7daysAgo) [30daysAgo](https://github.com/maclibGIS/Digital-Archive-Tools/tree/master/Google_Analytics_API_Python_Client/scripts/30daysAgo) [365daysAgo](https://github.com/maclibGIS/Digital-Archive-Tools/tree/master/Google_Analytics_API_Python_Client/scripts/365daysAgo)**
+
+### Resource: Exploring Google Analytics.txt
+
+This text file contains key documentation in navigating the Google Analytics dashboard for McMaster University Library users.
+
+### *A Guide to The Project's Initial Creation*
+
+The following instructions are a guide on how to first set-up Python and the Google Analytics reporting API, then edit the Python scripts within this folder to create a CSV report on the reported data.
 
 	1. The link below is a guide on setting up the Google Analytics API for the first time.
 	
@@ -30,7 +52,7 @@ The following instructions are a guide on how to first setup Python and the Goog
 	2. Download the Google Analytics API Python Client folder.
 	Follow the link to the full code repository on GitHub. Download the 'Google_Analytics_API_Python_Client' folder to your C:\ drive.
 	
-	https://github.com/cochonnk/Digital-Archive-Tools/tree/Google-Analytics-Reporting/Google_Analytics_API_Python_Client
+	https://github.com/maclibGIS/Digital-Archive-Tools/tree/master/Google_Analytics_API_Python_Client
 	
 	3. Add Your Google Analytics API Client Secret Credentials.
 	In the Google_Analytics_API_Python_Client folder, open the scripts folder.
@@ -58,13 +80,14 @@ The steps below are a guide on how to set up GA_CreateReport to run within Windo
 	
 	6. The Google_Analytics_API_Python_Client folder should be located within your local C:\ drive. If it is not, copy it into any folder within the C:\ drive. Make sure that all file paths within GA_Filter and GA_CreateReport refer to the correct directory.
 	
-	7. Edit the batch file labelled "GA_CreateReport_7daysAgo" with Notepad ++. Change the directory in the second line to the directory in which the batch file is contained.
+	7. Edit the batch file labelled "GA_CreateReport_30daysAgo" with Notepad ++. Change the directory in the second line to the directory in which the batch file is contained.
 	
-	8. Follow the link below to instructions on creating a scheduled task within Windows Task Scheduler. Choose the .bat file  "GA_CreateReport_7daysAgo" as the program/script to run. You may edit this file if you wish to change the start date of your Google Analytics Query, or you may use the existing 3 batch files already created within the "...\Google_Analytics_API_Python_Client\scripts" folder.
+	8. Follow the link below to instructions on creating a scheduled task within Windows Task Scheduler. Choose the .bat file  "GA_CreateReport_30daysAgo" as the program/script to run. You may edit this file if you wish to change the start date of your Google Analytics Query, or you may use the existing 3 batch files already created within the "...\Google_Analytics_API_Python_Client\scripts" folder.
 	
 	http://www.thewindowsclub.com/how-to-schedule-batch-file-run-automatically-windows-7
 	
 	Note: When selecting security options, choose 'Run whether user is logged on or not.
+	Note: Since each report creation script takes at least 24 hours to run, ensure that a minimum of two days is allocated between scheduled scripts.
 	Note: In the case that the user account chosen to run the task does not have administrative privileges, follow this link to give that user 'Log on as Batch Job' Rights.
 	https://www.smartftp.com/support/kb/how-to-give-a-user-log-on-as-a-batch-job-rights-f2691.html
 	

@@ -1,4 +1,10 @@
-import os
+#THIS SCRIPT CREATES A LOOKUP TABLE OF A RANGE OF ITEMS ON THE MCMASTER DIGITAL ARCHIVE. CURRENTLY THE SCRIPT ONLY WORKS ON PYTHON 3 DUE TO USING VERSION-UNIQUE LIBRARIES AND COMMANDS.
+#THE LOOKUP TABLE WILL BE IN CSV FORMAT. IT WILL CONTAIN (for each unique object): MACREPO ID; URL; NAME; TYPE (Item or Collection); PARENT DIRECTORY; TOP-LEVEL PARENT DIRECTORY; PARENT DIRECTORY URLS.
+#NOTE: THIS SCRIPT USES UTF-8 ENCODING. EXCEL MAY NOT BE ABLE TO CORRECTLY IDENTIFY THE ENCODING OF CERTAIN CHARACTERS, PARTICULARLY INTERNATIONAL DIACRITICS, ON ITS OWN.
+#THIS CAN EASILY BE SOLVED BY WORKING IN TEXT EDITORS SUCH AS NOTEPAD++.
+#IF YOU WANT TO WORK IN EXCEL (2007 AT THE EARLIEST), GO TO THIS WEBPAGE AND FOLLOW THE SIMPLE INSTRUCTIONS TO OPEN THE TABLES IN EXCEL: https://www.itg.ias.edu/content/how-import-csv-file-uses-utf-8-character-encoding-0
+
+import sys
 import shutil
 import re
 import codecs
@@ -6,13 +12,7 @@ from urllib import request
 import csv
 import datetime
 
-#THIS SCRIPT CREATES A LOOKUP TABLE OF A RANGE OF ITEMS ON THE MCMASTER DIGITAL ARCHIVE. CURRENTLY THE SCRIPT ONLY WORKS ON PYTHON 3 DUE TO USING VERSION-UNIQUE LIBRARIES AND COMMANDS.
-#THE LOOKUP TABLE WILL BE IN CSV FORMAT. IT WILL CONTAIN (for each unique object): MACREPO ID; URL; NAME; TYPE (Item or Collection); PARENT DIRECTORY; TOP-LEVEL PARENT DIRECTORY; PARENT DIRECTORY URLS.
-#NOTE: THIS SCRIPT USES UTF-8 ENCODING. EXCEL MAY NOT BE ABLE TO CORRECTLY IDENTIFY THE ENCODING OF CERTAIN CHARACTERS, PARTICULARLY INTERNATIONAL DIACRITICS, ON ITS OWN.
-#THIS CAN EASILY BE SOLVED BY WORKING IN TEXT EDITORS SUCH AS NOTEPAD++.
-#IF YOU WANT TO WORK IN EXCEL (2007 AT THE EARLIEST), GO TO THIS WEBPAGE AND FOLLOW THE SIMPLE INSTRUCTIONS TO OPEN THE TABLES IN EXCEL: https://www.itg.ias.edu/content/how-import-csv-file-uses-utf-8-character-encoding-0
-
-scraperfunction = 0 #A flag to determine which process to start. (Set this to 0 to create an entirely new Macrepo_Lookup.csv file. Set this to 1 to update the existing Macrepo_Lookup.csv file.)
+scraperfunction = 1 #A flag to determine which process to start. (Set this to 0 to create an entirely new Macrepo_Lookup.csv file. Set this to 1 to update from the existing Macrepo_Lookup.csv file.)
                 
 #DEFINING THE SCRAPE FUNCTION. IT IS SET TO RUN NEAR THE END OF THIS SCRIPT. 
 def scrape(scraperfunction):
@@ -43,7 +43,7 @@ def scrape(scraperfunction):
 
                         elif scraperfunction == 1: #Creating a list of Macrepo IDs from the last entry of the latest Macrepo_Lookup.csv file to 100 000.
                                 
-                                print('Updating the most recent Macrepo Lookup list. This may take a few hours, leave me running in the background!')
+                                print('Updating from the most recent Macrepo Lookup list. This may take a few hours, leave me running in the background!')
                                 with open("Macrepo_Lookup.csv", "r",encoding='utf-8') as x: #Reading the latest Macrepo_Lookup.csv file.
                                         book=csv.reader(x,delimiter=",")
                                         for row in book:

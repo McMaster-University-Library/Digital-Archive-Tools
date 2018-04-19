@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><mods xmlns="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-0.xsd">
+<accessCondition/>
+<identifier type="local">AirPhotos_Caledonia_1965_A19341-84</identifier>
+<titleInfo>
+<title>[Town of Caledonia, 1965] : [Flightline A19341-Photo 84]</title>
+<subTitle/>
+</titleInfo>
+<name type="corporate">
+<namePart>National Air Photo Library (Canada)</namePart>
+</name>
+<name type="personal">
+<namePart/>
+</name>
+<typeOfResource>cartographic</typeOfResource>
+<genre authority="lctgm">Aerial photographs</genre>
+<originInfo>
+<publisher>[Publisher unknown]</publisher>
+<place>
+<placeTerm type="text">[Place of publication unknown]</placeTerm>
+</place>
+<dateCreated>1965</dateCreated>
+<dateOther>1965</dateOther>
+</originInfo>
+<language>
+<languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+</language>
+<physicalDescription>
+<extent>[1:17,000 approximately]</extent>
+<form authority="marcform">remote-sensing image</form>
+<note>1 remote-sensing image ; 23 x 23 cm.</note>
+</physicalDescription>
+<note>Stereoscopic coverage. Shows Town of Caledonia. Source: National Air Photo Library [Caledonia].</note>
+<subject>
+<geographic/>
+<geographic/>
+<geographic/>
+<hierarchicalGeographic>
+<continent>North America</continent>
+<country>Canada</country>
+<province>Ontario</province>
+<region/>
+<county>Haldimand</county>
+<city/>
+<citySection/>
+<area>Caledonia</area>
+</hierarchicalGeographic>
+<cartographics>
+<coordinates>latitude 43.073904 ; longitude -79.971714</coordinates>
+</cartographics>
+</subject>
+</mods>
