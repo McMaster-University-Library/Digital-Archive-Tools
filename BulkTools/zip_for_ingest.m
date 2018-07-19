@@ -1,4 +1,4 @@
-top_path = 'H:\Digitization_Projects\WWII_Topographic_Maps\Italy\UofA WWII_Italy_Topos\';
+top_path = 'H:\Digitization_Projects\WWII_Topographic_Maps\Italy\UofA WWII_Italy_Topos_50k\';
 cd(top_path);
 addpath('D:\Local\Digital-Archive-Tools\BulkTools');
 d = dir(top_path);
@@ -8,6 +8,7 @@ to_archive = {}; % list of items to archive
 
 %%%% See if we can determine what counter number we should start at (i.e.
 %%%% what name to give to newly-created folders) [set1, set2, etc.]
+jjb_check_dirs([top_path 'zipped-to_ingest\'],1)
 
 d_ingest = dir([top_path 'zipped-to_ingest\']);
 if size(d_ingest,1)<3
@@ -60,7 +61,7 @@ for i = 3:1:length(d)
                 to_archive={}; arc_size = 0;
                 arc_ctr = arc_ctr + 1;
                 num_zips = num_zips + 1;
-                if num_zips == 80
+                if num_zips == 300
                     return;
                     %                     disp('pause');
                 end
