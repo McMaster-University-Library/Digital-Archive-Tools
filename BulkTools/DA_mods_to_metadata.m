@@ -22,6 +22,10 @@ for i = 3:1:length(d)
         switch ext
             case '.xml'
                 macrepo_tmp = filename(strfind(filename,'_')+1:end);
+                if isempty(macrepo_tmp)
+                macrepo_tmp = filename;
+                end
+
                 macrepo{size(macrepo,1)+1,1} = macrepo_tmp;
                 outStruct = xml2struct([start_path '\' d(i).name]); 
                 
@@ -57,7 +61,7 @@ output(:,2:size(output,2)+1) = output(:,1:end);
 output(:,1) = macrepo;
 %% Save the output file
 %output format
-fid = fopen([path_in 'metadata_out.txt'],'w');
+fid = fopen([path_in 'metadata_out.tsv'],'w');
 % output header
 fprintf(fid,'%s\n',sprintf('%s\t',fnames{1,:}));
 

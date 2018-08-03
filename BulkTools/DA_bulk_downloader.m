@@ -3,7 +3,7 @@ function [] = DA_bulk_downloader(file_ext,download_dir,download_list)
 % This function takes a list of macrepo numbers as input, and downloads the selected file type for each digital archive item.
 %%% Inputs:
 % download_list - A one-column csv file with nothing but the macrepo numbers of the items to be downloaded.
-% file_ext: '.tiff'    '.jp2'    '.jpeg'
+% file_ext: '.tiff'    '.jp2'    '.jpeg' '.xml'
 % download_dir: Path to a directory where the files are to be downloaded.
 
 % Parameters
@@ -11,7 +11,8 @@ default_dir = 'D:/';
 file_types_lookup = ...
     {'.tiff', 'OBJ';...
     '.jp2', 'JP2';...
-    '.jpeg', 'TN'};
+    '.jpeg', 'TN';
+    '.xml','MODS/download'};
 fname1 = '';
 pname1 = '';
 pname2 = '';
@@ -73,8 +74,18 @@ while eof==0
         commas(1) = length(tline)+1;
     end
     macrepo = tline(1:commas(1)-1);
-fname_out = [download_dir 'macrepo' macrepo file_ext];
-url = ['http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A' macrepo '/datastream/' dl_prefix '/' macrepo file_ext];
+% fname_out = [download_dir 'macrepo' macrepo file_ext];
+fname_out = [download_dir macrepo file_ext]; %edited by JJB 20180802 - removed macrepo from title
+
+% Format the download url differently depending on whether we want MODS or
+% an image file
+switch file_ext
+    case '.xml'
+        url = ['http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A' macrepo '/datastream/' dl_prefix];
+    otherwise
+        url = ['http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A' macrepo '/datastream/' dl_prefix '/' macrepo file_ext];
+end
+
     try
         websave(fname_out,url);
     catch
