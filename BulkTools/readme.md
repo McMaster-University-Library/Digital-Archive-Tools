@@ -23,12 +23,8 @@ Bulk uploading from a local filesystem to the Digital Archive can be done in a c
 Our approach is as follows: 
 1. Bulk metadata records are created via a [Google spreadsheet](https://docs.google.com/spreadsheets/d/1xmSuWdqUQ0a9RNCi2DErNO1bBcK6J06ps0moyYkg4Qk).  2. Records for each collection are created in separate tabs of the sheet. When a new collection is being described, a new tab is created by duplicating the "Template - DO NOT EDIT - Duplicate for new" tab, and renaming appropriately. 
 3. When MODS metadata files need to be produced, the tab of interest is downloaded to as a tab-separated file (.tsv) to the top-level local folder of the collection, where .tiff images are collected, as well.
-4. A new set of commands are appended to the function *run_DA_metadata_to_mods.m*, in order to point to the destination folder and the .tsv file. e.g.: 
-```
-cd('D:\Local\Digital-Archive-Tools\BulkTools')
-DA_metadata_to_mods('H:\Digitization_Projects\WWII_Topographic_Maps\Italy\UofA WWII_Italy_Topos_50k\','Bulk Metadata Templates - UofA_WW2_Italy_50k_topos.tsv');
-```
-Running these lines results in the creation of a /MODS/ folder in the top-level directory, and the generation of separate .xml files for each row in the spreadsheet.  
+4. A new set of commands are appended to the function *run_DA_metadata_to_mods.m*, in order to point to the destination folder and the .tsv file. e.g.: ```cd('D:\Local\Digital-Archive-Tools\BulkTools')
+DA_metadata_to_mods('H:\Digitization_Projects\WWII_Topographic_Maps\Italy\UofA WWII_Italy_Topos_50k\','Bulk Metadata Templates - UofA_WW2_Italy_50k_topos.tsv');``` Running these lines results in the creation of a /MODS/ folder in the top-level directory, and the generation of separate .xml files for each row in the spreadsheet.  
 5. [OLD] xml files from /MODS are copied to the top-level folder, so that they appear alongside their corresponding .tiff files. A new set of commands are appended to the function *run_DA_zip_for_ingest.m*, in order to point to the top-level folder where the .tiff and .xml files exist. Commands are run, creating .zip files ready for bulk ingest (see more information below).  
 5. [NEW] After connecting to a network folder (dcs1.lib.mcmaster.ca, prepared by Matt McCollow), navigate to the "ToBeProcessed" folder. If not already done, create a folder in this directory that is named after the macrepo number of its collection (e.g. a folder named "66660" is created for the Italy 1:25k topographic maps, since the collection's macrepo number is 66660 [http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A66660](http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A66660). All .tiff/.xml pairs are uploaded to this directory. Dorin is notified to auto-process the items. 
 
