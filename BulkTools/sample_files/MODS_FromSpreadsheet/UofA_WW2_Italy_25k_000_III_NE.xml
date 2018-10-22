@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><mods xmlns="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-0.xsd">
+<accessCondition/>
+<identifier type="local">UofA_WW2_Italy_25k_000_III_NE</identifier>
+<titleInfo>
+<title>Monte Cevedale</title>
+<subtitle>F.9 della Carta d'Italia</subtitle>
+</titleInfo>
+<name type="corporate">
+<namePart>Istituto geografico militare (Italy)</namePart>
+</name>
+<typeOfResource>cartographic</typeOfResource>
+<genre authority="lctgm">topographic maps</genre>
+<originInfo>
+<publisher>Istituto geografico militare</publisher>
+<place>
+<placeTerm type="text">Firenze</placeTerm>
+</place>
+<dateCreated>[1913?]</dateCreated>
+<dateOther>1913</dateOther>
+</originInfo>
+<language>
+<languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+</language>
+<location>
+<physicalLocation>This digital image was created from an original paper map held in the William C. Wonders Map Library at the University of Alberta.</physicalLocation>
+</location>
+<physicalDescription>
+<extent>1:25,000</extent>
+<form authority="marcform">map</form>
+<note>1 map; colour; 37 x 38 cm., on sheet 42 x 85 cm.</note>
+<internetMediaType/>
+</physicalDescription>
+<note>Stereoscopic version of map on left side of sheet. Bottom of sheet trimmed.</note>
+<subject>
+<topic>World War, 1939-1945</topic>
+<geographic>Italy</geographic>
+<hierarchicalGeographic>
+<continent>Europe</continent>
+<country>Italy</country>
+<province/>
+<region>Monte Cevedale</region>
+<county/>
+<city/>
+<citySection/>
+<area/>
+</hierarchicalGeographic>
+<cartographics>
+<coordinates/>
+</cartographics>
+</subject>
+</mods>

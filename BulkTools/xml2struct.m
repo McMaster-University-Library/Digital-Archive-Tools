@@ -3,7 +3,7 @@ function  outStruct  = xml2struct(input)
 %
 % outStruct = xml2struct(input)
 % 
-% xml2struct2 takes either a java xml object, an xml file, or a string in
+% xml2struct takes either a java xml object, an xml file, or a string in
 % xml format as input and returns a parsed xml tree in structure. 
 % 
 % Please note that the following characters are substituted

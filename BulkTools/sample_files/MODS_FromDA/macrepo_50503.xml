@@ -1,0 +1,46 @@
+
+<mods xmlns="http://www.loc.gov/mods/v3" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <titleInfo>
+    <title>Plan of subdivision of part of lot 7, Concession 2, Barton-Tp., the property of Hon. W.E. Sanford</title>
+  </titleInfo>
+  <name type="personal">
+    <namePart>Wallace, Charles H.</namePart>
+  </name>
+  <typeOfResource>cartographic</typeOfResource>
+  <originInfo>
+    <dateCreated>1892-04-20</dateCreated>
+    <publisher>[Publisher unknown]</publisher>
+    <place>
+      <placeTerm type="text">[Hamilton, Ont.]</placeTerm>
+    </place>
+    <dateOther>1892</dateOther>
+  </originInfo>
+  <language>
+    <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+  </language>
+  <physicalDescription>
+    <form authority="marcform">map</form>
+    <extent>[1:720]</extent>
+    <note>1 map : 72 x 52 cm., on sheet 76 x 56 cm. There are numerous tears along the edges of the map and evidence of tape having been adhered to portions of the left edge. The map has been lined with archival paper on the verso.</note>
+  </physicalDescription>
+  <note>&quot;Scale 60 Feet = 1 inch.&quot;  In top left corner of the map, there is a certification statement signed and dated by &quot;Charles H. Wallace, P.L.S. [Public Land Surveyor], Hamilton, 20th April A.D. 1892.&quot;  In the bottom left corner of the map there is a signed statement of approval by the property owner, W. E. Sanford.  Other writing on the map includes the words &quot;County 5&quot; along the left edge of the sheet. The map is marked with a &quot;24&quot; in the lower left corner. On the outer left edge of the Key Plan, there is a written note which reads, &quot;Received from W.E. Sanford and filed this fifth day of July A.D. 1892 at 3:25 O&apos;clock PM [illegible signature] Registrar.&quot; Another written note appears on the bottom of the map in red pen, reading &quot;Withdrawn by Order of...[illegible name and signature].&quot; 
+
+Boundaries are King Street to the north, Main Street to the south, Sydenham Avenue to the west, and Palmerston Road to the east. In the middle of the map are Earnscliffe Avenue and Rosewood Avenue. The Key Plan inset in the upper right hand corner of the map delineates the geographical location of the survey, as the southeastern portion of Lot 7, Concession 2 in Barton Township. 
+
+According to the records of other historical maps, it appears as though this survey was not realized as planned. In Charles Goad&apos;s 1911 Insurance Plan of the City of Hamilton, Ontario, part of the lot is shown to be developing as a subdivision with road names different from those shown in the map. As street names, only King Street and Main Street continue to remain in existence today. Palmerston Road was changed to Trolley Street and later became Gage Avenue. Earnscliffe, Rosewood and Syndenham Avenues were all changed but the exact corresponding street names are unknown.</note>
+  <subject>
+    <geographic>Hamilton (Ont.)</geographic>
+    <hierarchicalGeographic>
+      <continent>North America</continent>
+      <country>Canada</country>
+      <province>Ontario</province>
+      <region>Barton Township</region>
+      <county>Wentworth County</county>
+      <city>Hamilton</city>
+      <citySection>Stipley neighbourhood</citySection>
+      <area>Lot 7, Concession 2</area>
+    </hierarchicalGeographic>
+    <geographic>Barton (Ont.)</geographic>
+  </subject>
+  <identifier type="local">RMC_7460</identifier>
+</mods>

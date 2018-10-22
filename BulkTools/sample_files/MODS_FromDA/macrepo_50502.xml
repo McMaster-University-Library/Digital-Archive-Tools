@@ -1,0 +1,38 @@
+
+<mods xmlns="http://www.loc.gov/mods/v3" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <titleInfo>
+    <title>Hamilton</title>
+  </titleInfo>
+  <typeOfResource>cartographic</typeOfResource>
+  <originInfo>
+    <dateCreated>1800</dateCreated>
+    <place>
+      <placeTerm type="text">[Hamilton?]</placeTerm>
+    </place>
+    <dateOther>[1800?]</dateOther>
+  </originInfo>
+  <language>
+    <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+  </language>
+  <physicalDescription>
+    <form authority="marcform">map</form>
+    <extent>[1:3,960]</extent>
+    <note>1 map : colour ; 74 x 53 cm. Map lined with archival paper on verso. Hand coloured. There is a large stain on upper right side of sheet and many tears around edges and across the middle of the sheet.</note>
+  </physicalDescription>
+  <note>&quot;Scale five chains to an inch.&quot;  Map boundaries are King William Street to the north, James Street to the west, Catherine Street to the east and Hannah Street (now Charlton Avenue) to the south.   In bottom right corner, &quot;No 2&quot;. On lower left corner, &quot;Drawer 4 No 1&quot; (number 1 appears to be added over a number 2).</note>
+  <subject>
+    <geographic>Hamilton (Ont.)</geographic>
+    <hierarchicalGeographic>
+      <continent>North America</continent>
+      <country>Canada</country>
+      <province>Ontario</province>
+      <region>Barton Township</region>
+      <county>Wentworth County</county>
+      <city>Hamilton</city>
+      <citySection>Gore Park</citySection>
+      <area>Lot 14, Concessions 2 &amp; 3</area>
+    </hierarchicalGeographic>
+    <geographic>Gore Park (Hamilton, Ont.)</geographic>
+  </subject>
+  <identifier type="local">RMC_7453</identifier>
+</mods>
