@@ -28,8 +28,8 @@ Our approach is as follows:
 cd('D:\Local\Digital-Archive-Tools\BulkTools')
 DA_metadata_to_mods('H:\Digitization_Projects\WWII_Topographic_Maps\Italy\UofA WWII_Italy_Topos_50k\','Bulk Metadata Templates - UofA_WW2_Italy_50k_topos.tsv');
 ```
-Running these lines results in the creation of a /MODS/ folder in the top-level directory, and the generation of separate .xml files for each row in the spreadsheet. 
-5(old). xml files from /MODS are copied to the top-level folder, so that they appear alongside their corresponding .tiff files. A new set of commands are appended to the function *run_DA_zip_for_ingest.m*, in order to point to the top-level folder where the .tiff and .xml files exist. Commands are run, creating .zip files ready for bulk ingest (see more information below).
+Running these lines results in the creation of a /MODS/ folder in the top-level directory, and the generation of separate .xml files for each row in the spreadsheet.  
+5(old). xml files from /MODS are copied to the top-level folder, so that they appear alongside their corresponding .tiff files. A new set of commands are appended to the function *run_DA_zip_for_ingest.m*, in order to point to the top-level folder where the .tiff and .xml files exist. Commands are run, creating .zip files ready for bulk ingest (see more information below).  
 5(new). After connecting to a network folder (dcs1.lib.mcmaster.ca, prepared by Matt McCollow), navigate to the "ToBeProcessed" folder. If not already done, create a folder in this directory that is named after the macrepo number of its collection (e.g. a folder named "66660" is created for the Italy 1:25k topographic maps, since the collection's macrepo number is 66660 [http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A66660](http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A66660). All .tiff/.xml pairs are uploaded to this directory. Dorin is notified to auto-process the items. 
 
 The following functions take metadata structured in a spreadsheet and prepares them for ingest into the Digital Archive. 
