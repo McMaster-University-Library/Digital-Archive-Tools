@@ -4,7 +4,7 @@ This subdirectory contains Matlab functions used to perform bulk actions on item
 ## 1. Spreadsheet to Digital Archive - Methods and functions
 Bulk uploading from a local filesystem to the Digital Archive can be done in a couple of ways. Regardless of approach, it is necessary to produce pairs of files for each object to be ingested. The pair consists of an image file and a corresponding xml metadata file.  
 Our approach is as follows (a scripted overview of the process can be found in **run_DA_ingest.m**): 
-1. In the top-level folder for the collection of interest (e.g. H:\Digitization_Projects\WWII_Topographic_Maps\Italy\UofA WWII_Italy_Topos_50k\), create the directory structure that is suggested in Section 3 (below). 
+1. In the top-level folder for the collection of interest (e.g. H:\Digitization_Projects\WWII_Topographic_Maps\Italy\UofA WWII_Italy_Topos_50k\), create the directory structure that is suggested in Section 2 (below). 
 2. **Creating metadata records**: Bulk metadata records are created via a [Google spreadsheet](https://docs.google.com/spreadsheets/d/1xmSuWdqUQ0a9RNCi2DErNO1bBcK6J06ps0moyYkg4Qk).  2. Records for each collection are created in separate tabs of the sheet. When a new collection is being described, a new tab is created by duplicating the "Template - DO NOT EDIT - Duplicate for new" tab, and renaming appropriately. 
 3. **Generating individuals metadata files**: When MODS metadata files need to be produced, the following steps should be taken: 
     * The tab of interest in the metadata Google Sheet should be downloaded as a tab-separated file (.tsv) to the top-level local folder of the collection (i.e. the same place where scanned .tiff images are placed).
