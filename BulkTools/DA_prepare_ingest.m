@@ -1,6 +1,12 @@
 function [] = DA_prepare_ingest(top_path)
+% This function identifies pairs of .tiff & .xml files and moves them to the /ToIngest/ folder. 
+% Corresponding pairs are moved to the /ToIngest/ folder, 
+% while any .tiff files without corresponding .xml files will remain in the top-level folder. 
+% A list of unmatched .tiffs is created in the top-level folder as **'unmatched_tiffs.csv**. 
+% This function also creates log files in /logs/
+% Example: DA_prepare_ingest('H:\Digitization_Projects\WWII_Topographic_Maps\GermanyHollandPoland_25k');
 
-% Example: top_path = 'H:\Digitization_Projects\WWII_Topographic_Maps\Italy\UofA WWII_Italy_Topos_50k\';
+
 % Ensure that there is a slash at the end of top_path.
 switch top_path(end)
     case {'\','/'}
@@ -18,6 +24,7 @@ end
 log_path = [top_path 'logs\'];
 jjb_check_dirs(log_path,1) % processing log folder
 jjb_check_dirs([top_path 'ToIngest\'],1) % output folder
+jjb_check_dirs([top_path 'ToFix\'],1) % folder for items failing QA
 jjb_check_dirs([top_path 'ToIngest\Queued\'],1) % queued folder
 
 % Open Log files:
@@ -26,6 +33,9 @@ fid_log = fopen([log_path 'process_log_' datestr(now,30) '.csv'],'a');
 
 %%% Directory listing
 d = dir(top_path);
+
+% If matching .tiff and .xml files are found. Copy to /ToIngest/. If not,
+% leave the .tiff files in the top-level folder and record them in 'unmatched_tiffs.csv'
 
 for i = 3:1:length(d)
     [~, fname, fext] = fileparts(d(i).name); %file directory | filename | file extension
