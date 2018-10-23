@@ -21,15 +21,16 @@ Loads all MODS xml file located in a /MODS folder of a specified directory, refo
 ## 2. Spreadsheet to Digital Archive
 Bulk uploading from a local filesystem to the Digital Archive can be done in a couple of ways. Regardless of approach, it is necessary to produce pairs of files for each object to be ingested. The pair consists of an image file and a corresponding xml metadata file.  
 Our approach is as follows (a scripted overview of the process can be found in **run_DA_ingest.m**): 
-1. **Creating metadata records**: Bulk metadata records are created via a [Google spreadsheet](https://docs.google.com/spreadsheets/d/1xmSuWdqUQ0a9RNCi2DErNO1bBcK6J06ps0moyYkg4Qk).  2. Records for each collection are created in separate tabs of the sheet. When a new collection is being described, a new tab is created by duplicating the "Template - DO NOT EDIT - Duplicate for new" tab, and renaming appropriately. 
-2. **Generating individuals metadata files**: When MODS metadata files need to be produced, the following steps should be taken: 
+1. In the top-level folder for the collection of interest (e.g. H:\Digitization_Projects\WWII_Topographic_Maps\Italy\UofA WWII_Italy_Topos_50k\), create the directory structure that is suggested in Section 3 (below). 
+2. **Creating metadata records**: Bulk metadata records are created via a [Google spreadsheet](https://docs.google.com/spreadsheets/d/1xmSuWdqUQ0a9RNCi2DErNO1bBcK6J06ps0moyYkg4Qk).  2. Records for each collection are created in separate tabs of the sheet. When a new collection is being described, a new tab is created by duplicating the "Template - DO NOT EDIT - Duplicate for new" tab, and renaming appropriately. 
+3. **Generating individuals metadata files**: When MODS metadata files need to be produced, the following steps should be taken: 
     * The tab of interest in the metadata Google Sheet should be downloaded as a tab-separated file (.tsv) to the top-level local folder of the collection (i.e. the same place where scanned .tiff images are placed).
     * Run **DA_metadata_to_mods.m**, which generates Digital-Archive upload-ready xml MODS files from the downloaded metadata spreadsheet (.tsv). As an example:
         * ```cd('D:\Local\Digital-Archive-Tools\BulkTools')```  
 	    * ```DA_metadata_to_mods('H:\Digitization_Projects\WWII_Topographic_Maps\Italy\UofA WWII_Italy_Topos_50k\','Bulk Metadata Templates - UofA_WW2_Italy_50k_topos.tsv');```  
 	    * Running these lines results in the creation of a /MODS/ folder in the top-level directory, and the generation of separate .xml files for each row in the spreadsheet.  
-3. **Preparing for bulk ingest**: 
-    * [OLD method] In this method, .xml files from the /MODS/ directory are copied (manually) to the top-level folder, so that they appear alongside their corresponding .tiff files. 
+4. **Preparing for bulk ingest**: 
+    * [**OLD** method] In this method, .xml files from the /MODS/ directory are copied (manually) to the top-level folder, so that they appear alongside their corresponding .tiff files. 
 	    * **DA_zip_for_ingest.m** is then executed, which creates ready-to-ingest zip files with .tiff/.xml pairs (see function description below for more information) Examples can be found in *run_DA_zip_for_ingest.m* or below:
             * ```cd('D:\Local\Digital-Archive-Tools\BulkTools')```  
 			* ```DA_zip_for_ingest('H:\Digitization_Projects\WWII_Topographic_Maps\Italy\UofA WWII_Italy_Topos_50k\')```
@@ -42,7 +43,7 @@ Our approach is as follows (a scripted overview of the process can be found in *
 			* All .tiff/.xml pairs should be copied from \ToIngest\ to the new directory (/ToBeProcessed/<macrepo>/) on the shared network folder. 
 			* Once copying to the shared network folder has completed, move the copied items from \ToIngest\ to \ToIngest\Queued\ on the local drive.
 	    * Notify Dorin to auto-process the items. Await confirmation that it is completed.
-4. **Quality Control**: Ingested objects are inspected in the Digital Archive.
+5. **Quality Control**: Ingested objects are inspected in the Digital Archive.
     * If an object passes inspection, its .tiff/.xml pair are moved out of \ToIngest\Queued\ to \Ingested\
 	* If an object doesn't pass inspection (or doesn't exist in the digital archive). The inspector makes a note (e.g. in Trello), and the .tiff and .xml of the offending item are moved to the /ToFix/ folder
 
