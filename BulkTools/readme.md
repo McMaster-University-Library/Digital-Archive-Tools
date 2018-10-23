@@ -1,24 +1,7 @@
 # Digital-Archive-Tools/BulkTools
 This subdirectory contains Matlab functions used to perform bulk actions on items for (or from) the Digital Archive. Each function and their associated processes are described below. This guide and associated files can be found at [https://github.com/maclibGIS/Digital-Archive-Tools/tree/master/BulkTools](https://github.com/maclibGIS/Digital-Archive-Tools/tree/master/BulkTools).
 
-## 1. Digital Archive to Spreadsheet or Directory
-A number of functions have been created to pull metadata records or files (images, etc.) from the Digital Archive and place them in local files (or a collective spreadsheet of records). These functions are described below.
-
-### DA_bulk_downloader.m
-This function takes a list of macrepo numbers as input, and downloads the selected file type for each digital archive item. Downloadable types include '.tiff'; '.jp2'; '.jpeg'; '.xml'
-When the argument file_ext is set to '.xml', it performs a bulk download of xml MODS files for a given list of items in the Digital Archive (list given as a csv of macrepo numbers)
-Sample usage: DA_bulk_downloader('H:\Map_Office\Projects\19thc_maps_surveys\','H:\Map_Office\Projects\19thc_maps_surveys\macrepo_list.csv')
-- Operate this function using **run_DA_bulk_downloader**.
-- A sample input file can be found at \sample_files\macrepo_list.csv
-- Sample output files are found in \sample_files\MODS_FromDA
-
-### DA_mods_to_metadata.m
-Loads all MODS xml file located in a /MODS folder of a specified directory, reformats all metadata to a single table with one row per file, and one column per unique metadata element. Exports in tab-separated format. 
-- Operate this function using **run_DA_mods_to_metadata**.
-- **NOTE:** DA_mods_to_metadata should be run after DA_bulk_downloader generates xml files.
-- Sample output file is found at: \sample_files\metadata_out.txt
-
-## 2. Spreadsheet to Digital Archive
+## 1. Spreadsheet to Digital Archive - Methods and functions
 Bulk uploading from a local filesystem to the Digital Archive can be done in a couple of ways. Regardless of approach, it is necessary to produce pairs of files for each object to be ingested. The pair consists of an image file and a corresponding xml metadata file.  
 Our approach is as follows (a scripted overview of the process can be found in **run_DA_ingest.m**): 
 1. In the top-level folder for the collection of interest (e.g. H:\Digitization_Projects\WWII_Topographic_Maps\Italy\UofA WWII_Italy_Topos_50k\), create the directory structure that is suggested in Section 3 (below). 
@@ -64,7 +47,7 @@ This function identifies pairs of .tiff & .xml files and moves them to the /ToIn
 ### run_DA_ingest
 This run script brings together all bulk ingestion processes for each collection. It also contains a description of all processing steps, so can be used as a guide to the entire process.
 
-## 3. Idealized directory structure for ingestion
+## 2. Idealized directory structure for digitization and bulk ingestion
 Idealized directory structure: 
 * \ (Top level): named after the collection, e.g. H:\Digitization_Projects\WWII_Topographic_Maps\GermanyHollandPoland_25k
   * Contents include the all .tiff files to be ingested, as well as the downloaded .tsv metadata spreadsheet, metadata instructions, and any other directories containing .tiff files that are unique, different, or not to be ingested. 
@@ -74,7 +57,24 @@ Idealized directory structure:
   * \Ingested\: .tiff files that have been verified as ingested. Files are moved manually out of \Queued\ into this directory after having been inspected in the Digital Archive.
   * \ToFix\: Landing place for items that were processed by Dorin, but did not pass the QA process. Once items are fixed, the .tiff should be moved back to the top-level folder and the .xml returned to MODS or deleted and replaced.
   
-## 4. Other Functions
+## 3. Fucntions for extracting items from the Digital Archive to a spreadsheet or directory
+A number of functions have been created to pull metadata records or files (images, etc.) from the Digital Archive and place them in local files (or a collective spreadsheet of records). These functions are described below.
+
+### DA_bulk_downloader.m
+This function takes a list of macrepo numbers as input, and downloads the selected file type for each digital archive item. Downloadable types include '.tiff'; '.jp2'; '.jpeg'; '.xml'
+When the argument file_ext is set to '.xml', it performs a bulk download of xml MODS files for a given list of items in the Digital Archive (list given as a csv of macrepo numbers)
+Sample usage: DA_bulk_downloader('H:\Map_Office\Projects\19thc_maps_surveys\','H:\Map_Office\Projects\19thc_maps_surveys\macrepo_list.csv')
+- Operate this function using **run_DA_bulk_downloader**.
+- A sample input file can be found at \sample_files\macrepo_list.csv
+- Sample output files are found in \sample_files\MODS_FromDA
+
+### DA_mods_to_metadata.m
+Loads all MODS xml file located in a /MODS folder of a specified directory, reformats all metadata to a single table with one row per file, and one column per unique metadata element. Exports in tab-separated format. 
+- Operate this function using **run_DA_mods_to_metadata**.
+- **NOTE:** DA_mods_to_metadata should be run after DA_bulk_downloader generates xml files.
+- Sample output file is found at: \sample_files\metadata_out.txt
+  
+## 4. Other functions
 
 ### xml2struct.m
 xml2struct takes either a java xml object, an xml file, or a string in xml format as input and returns a parsed xml tree in structure.
