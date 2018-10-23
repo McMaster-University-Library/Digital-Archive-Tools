@@ -18,6 +18,7 @@ end
 log_path = [top_path 'logs\'];
 jjb_check_dirs(log_path,1) % processing log folder
 jjb_check_dirs([top_path 'ToIngest\'],1) % output folder
+jjb_check_dirs([top_path 'ToIngest\Queued\'],1) % queued folder
 
 % Open Log files:
 fid = fopen([top_path 'unmatched_tiffs.csv'],'w+');
