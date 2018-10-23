@@ -1,4 +1,4 @@
-# Digital-Archive-Tools/BulkTools
+# Digital-Archive-Tools/BulkTools - Process and function documentation
 This subdirectory contains Matlab functions used to perform bulk actions on items for (or from) the Digital Archive. Each function and their associated processes are described below. This guide and associated files can be found at [https://github.com/maclibGIS/Digital-Archive-Tools/tree/master/BulkTools](https://github.com/maclibGIS/Digital-Archive-Tools/tree/master/BulkTools).
 
 ## 1. Spreadsheet to Digital Archive - Methods and functions
