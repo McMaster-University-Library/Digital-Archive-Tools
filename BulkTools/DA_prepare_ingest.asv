@@ -1,0 +1,87 @@
+function [] = DA_prepare_ingest(top_path)
+
+% top_path = 'H:\Digitization_Projects\WWII_Topographic_Maps\Italy\UofA WWII_Italy_Topos_50k\';
+% Ensure that there is a slash at the end of top_path.
+switch top_path(end)
+    case {'\','/'}
+    otherwise
+        top_path = [top_path '\'];
+end
+
+fid = fopen([top_path 'unmatched_tiffs.csv'],'w+');
+fid_log = fopen([top_path 'process_log_' datestr(now,30) '.csv'],'a');
+
+mods_dir = [top_path 'MODS\'];
+if exist(mods_dir,'dir')~=7
+    disp('Can''t find the MODS\ directory. Check that it exists and that the top_path is set properly');
+    return;
+end
+%%%% Ensure that the output folder exists
+jjb_check_dirs([top_path 'ToIngest\'],1)
+
+%%% Directory listing
+d = dir(top_path);
+
+for i = 3:1:length(d)
+    [fdir, fname, fext] = fileparts(d(i).name); %file directory | filename | file extension
+    if strcmp(fext,'.tiff')==1 || strcmp(fext,'.tif')==1
+        if exist([top_path fname '.xml'],'file')==2
+            % If there's a corresponding .xml file, move both over together
+            % to /ToIngest:
+            movefile([top_path fname '*'],[top_path 'ToIngest'])
+            disp(['Moved ' top_path fname ' pair to \ToIngest.']);
+            fprintf(fid_log,['Moved ' top_path fname ' pair to \ToIngest.']);
+        else
+            disp(['No match for: ' top_path d(i).name]);
+            fprintf(fid_log,['Moved ' top_path fname ' pair to \ToIngest.']);
+            % Check if adding tiff to the current archive puts it over 2 GB
+            if (arc_size + d(i).bytes) < 2.4e9 %Making this 2.4 GB because compression ratio is about 80%.
+                %                 to_archive{size(to_archive,1)+1,1} = d(i).name;     % Add tif
+                %                 to_archive{size(to_archive,1)+1,1} = [fname '.xml'];% Add xml
+                %                 arc_size = arc_size + d(i).bytes;
+            else % perform zipping work
+                % make a directory in \zipped-to_ingest
+                %                 zip([top_path 'zipped-to_ingest\set' num2str(arc_ctr) '.zip'],to_archive);
+                jjb_check_dirs([top_path 'zipped-to_ingest\set' num2str(arc_ctr)],1)
+                [status,cmdout] = system(['7z a -tzip "' top_path 'zipped-to_ingest\set' num2str(arc_ctr) '\set' num2str(arc_ctr) '.zip"' sprintf(' %s',to_archive{:})]);
+                switch status
+                    case 0
+                        fprintf(fid,'%s\n',['set ' num2str(arc_ctr) sprintf(',%s',to_archive{:})])
+                        %                 mv_str = sprintf(' %s,',to_archive{:}); mv_str = mv_str(1:end-1);
+                        % Move all files listed in to_archive into the set# folder
+                        for j = 1:1:size(to_archive,1)
+                            [status] = dos(['move ' to_archive{j,1} ' "' top_path 'zipped-to_ingest\set' num2str(arc_ctr) '"']);
+                        end
+                    otherwise
+                        disp(['set ' num2str(arc_ctr) ' failed. Contents: ' sprintf(',%s',to_archive{:})])
+                end
+                %%% Reset archive data; increment counter
+                to_archive={}; arc_size = 0;
+                arc_ctr = arc_ctr + 1;
+                num_zips = num_zips + 1;
+                if num_zips == 300
+                    return;
+                    %                     disp('pause');
+                end
+            end
+            to_archive{size(to_archive,1)+1,1} = d(i).name;     % Add tif to new archive
+            to_archive{size(to_archive,1)+1,1} = [fname '.xml'];% Add xml to new archive
+            arc_size = arc_size + d(i).bytes;
+            
+        end
+    end
+end
+
+% Zip the last archive:
+jjb_check_dirs([top_path 'zipped-to_ingest\set' num2str(arc_ctr)],1)
+[status,cmdout] = system(['7z a -tzip "' top_path 'zipped-to_ingest\set' num2str(arc_ctr) '\set' num2str(arc_ctr) '.zip"' sprintf(' %s',to_archive{:})]);
+switch status
+    case 0
+        fprintf(fid,'%s\n',['set ' num2str(arc_ctr) sprintf(',%s',to_archive{:})])
+        for j = 1:1:size(to_archive,1)
+            [status] = dos(['move ' to_archive{j,1} ' "' top_path 'zipped-to_ingest\set' num2str(arc_ctr) '"']);
+        end
+    otherwise
+        disp(['set ' num2str(arc_ctr) ' failed. Contents: ' sprintf(',%s',to_archive{:})])
+end
+fclose(fid);
