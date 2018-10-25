@@ -26,8 +26,13 @@ Our approach is as follows (a scripted overview of the process can be found in *
 			* All .tiff/.xml pairs should be copied from \ToIngest\ to the new directory (/ToBeProcessed/<macrepo>/) on the shared network folder. 
 			* Once copying to the shared network folder has completed, move the copied items from \ToIngest\ to \ToIngest\Queued\ on the local drive.
 	    * Notify Dorin to auto-process the items. Await confirmation that it is completed.
-5. **Quality Control**: Ingested objects are inspected in the Digital Archive.
-    * If an object passes inspection, its .tiff/.xml pair are moved out of \ToIngest\Queued\ to \Ingested\
+5. **Moving ingested items**
+	* An output of all files ingested into a given collection can be extracted using the Fedora RIQS (http://dcs1.mcmaster.ca/fedora/risearch), and the queries shown in Jay's [Fedora SPARQL Cookbook](https://github.com/jasonbrodeur/Fedora-SPARQL/blob/master/fedora-sparql-cookbook.md)
+	* Output is formatted into a single-column csv file using [this Google Sheet](https://docs.google.com/spreadsheets/d/1GbFjUKtuc8bU2qK5CkAmdaKKlHDSoskw6uaInNMD6Hg/edit#gid=1862350458), and the csv file is saved to /Ingested/ in the working directory. 
+	* Using the aforementioned csv as an input, the function **DA_move_ingested.m** moves verified ingested files from the \ToIngest\Queued\ directory to the \Ingested\ directory. E.g. 
+		* ```DA_move_ingested('H:\Digitization_Projects\WWII_Topographic_Maps\GermanyHollandPoland_25k\','ingested.csv')```
+
+6. **Quality Control**: Ingested objects are inspected in the Digital Archive.
 	* If an object doesn't pass inspection (or doesn't exist in the digital archive). The inspector makes a note (e.g. in Trello), and the .tiff and .xml of the offending item are moved to the /ToFix/ folder
 
 The following functions take metadata structured in a spreadsheet and prepares them for ingest into the Digital Archive. 

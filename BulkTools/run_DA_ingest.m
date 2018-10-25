@@ -27,7 +27,7 @@ DA_prepare_ingest('H:\Digitization_Projects\WWII_Topographic_Maps\GermanyHolland
 %%% Step 3d (Manual): Notify Dorin to auto-process the items. Await confirmation that it is completed.
 
 %%% Step 4: Move the ingested objects into the /Ingested folder. 
-%%% The function DA_move_ingested.m moves  verified ingested files from the \ToIngest\Queued\
+%%% The function DA_move_ingested.m moves verified ingested files from the \ToIngest\Queued\
 %%% directory to the \Ingested\ directory. 
 %%% The input file for this function is a single-column .csv file created
 %%% from the fedora RIQS and formatted using this sheet: https://docs.google.com/spreadsheets/d/1GbFjUKtuc8bU2qK5CkAmdaKKlHDSoskw6uaInNMD6Hg/edit#gid=1862350458
