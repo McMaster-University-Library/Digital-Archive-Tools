@@ -27,13 +27,14 @@ Our approach is as follows (a scripted overview of the process can be found in *
 			* Once copying to the shared network folder has completed, move the copied items from \ToIngest\ to \ToIngest\Queued\ on the local drive.
 	    * Notify Dorin to auto-process the items. Await confirmation that it is completed.
 5. **Moving ingested items**
-	* An output of all files ingested into a given collection can be extracted using the Fedora RIQS (http://dcs1.mcmaster.ca/fedora/risearch), and the queries shown in Jay's [Fedora SPARQL Cookbook](https://github.com/jasonbrodeur/Fedora-SPARQL/blob/master/fedora-sparql-cookbook.md)
-	* Output is formatted into a single-column csv file using [this Google Sheet](https://docs.google.com/spreadsheets/d/1GbFjUKtuc8bU2qK5CkAmdaKKlHDSoskw6uaInNMD6Hg/edit#gid=1862350458), and the csv file is saved to /Ingested/ in the working directory. 
-	* Using the aforementioned csv as an input, the function **DA_move_ingested.m** moves verified ingested files from the \ToIngest\Queued\ directory to the \Ingested\ directory. E.g. 
-		* ```DA_move_ingested('H:\Digitization_Projects\WWII_Topographic_Maps\GermanyHollandPoland_25k\','ingested.csv')```
-
-6. **Quality Control**: Ingested objects are inspected in the Digital Archive.
-	* If an object doesn't pass inspection (or doesn't exist in the digital archive). The inspector makes a note (e.g. in Trello), and the .tiff and .xml of the offending item are moved to the /ToFix/ folder
+	* An output of all files ingested into a given collection is extracted using the Fedora RIQS (http://dcs1.mcmaster.ca/fedora/risearch), and the query given in Jay's [Fedora SPARQL Cookbook](https://github.com/jasonbrodeur/Fedora-SPARQL/blob/master/fedora-sparql-cookbook.md#example-2-display-list-of-all-active-non-deleted-items-in-a-collection-along-with-derivatives-good-for-checking)
+	* Using the aforementioned csv as an input, the function **DA_check_ingested.m** performs quality control on the items and moves QA-passing ingested files from the \ToIngest\Queued\ directory to the \Ingested\ directory. E.g. 
+		* ```DA_check_ingested('H:\Digitization_Projects\WWII_Topographic_Maps\GermanyHollandPoland_25k\','ingested.csv')```
+	* If an item doesn't pass QA, it will be listed in the output file **\ToFix\ToFix.csv**
+		
+6. **Human Quality Control**: QA-failing objects are inspected
+	* If an item needs to be reingested, delete the item in the digital archive and move the .tif/.xml pair back to the /ToIngest/ folder.
+	* If you're able to fix it in the Digital Archive (e.g. by re-uploading / regenerating), please move the .tif/.xml pair to the /Ingested/ folder
 
 The following functions take metadata structured in a spreadsheet and prepares them for ingest into the Digital Archive. 
 

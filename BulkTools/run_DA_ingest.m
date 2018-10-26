@@ -34,9 +34,9 @@ DA_prepare_ingest('H:\Digitization_Projects\WWII_Topographic_Maps\GermanyHolland
 %%% Notes on Fedora RIQS commands: https://github.com/jasonbrodeur/Fedora-SPARQL/blob/master/fedora-sparql-cookbook.md
 %%% RIQS http://dcs1.mcmaster.ca/fedora/risearch
 %%% NOTE that the input file is assumed to exist in \Ingested\
-DA_move_ingested('H:\Digitization_Projects\WWII_Topographic_Maps\GermanyHollandPoland_25k\','ingested.csv')
+% DA_move_ingested('H:\Digitization_Projects\WWII_Topographic_Maps\GermanyHollandPoland_25k\','ingested.csv')
+DA_check_ingested('H:\Digitization_Projects\WWII_Topographic_Maps\GermanyHollandPoland_25k\','ingested_all.csv')
 
-
-%%% Step 4: Inspect the ingested objects in the Digital Archive
+%%% Step 5: Inspect the ingested objects in the Digital Archive
 
 %%% > If an object doesn't pass inspection (or doesn't exist in the digital archive). The inspector makes a note (e.g. in Trello), and the .tiff and .xml of the offending item are moved to the /ToFix/ folder
