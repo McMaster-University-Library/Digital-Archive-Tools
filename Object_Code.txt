@@ -8,108 +8,108 @@
 <head>
   <meta charset="utf-8" />
 <meta name="generator" content="Drupal 7 (http://drupal.org)" />
-<link rel="canonical" href="http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A82335" />
-<link rel="shortlink" href="http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A82335" />
+<link rel="canonical" href="http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A86257" />
+<link rel="shortlink" href="http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A86257" />
 <meta property="og:site_name" content="Digital Archive @ McMaster University Library" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A82335" />
-<meta property="og:title" content="Nagasaki" />
+<meta property="og:url" content="http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A86257" />
+<meta property="og:title" content="Westerwanna" />
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:url" content="http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A82335" />
-<meta name="twitter:title" content="Nagasaki" />
+<meta name="twitter:url" content="http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A86257" />
+<meta name="twitter:title" content="Westerwanna" />
 <meta name="twitter:description" content="Digital Archive @ McMaster University Library" />
-<meta name="twitter:image" content="http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A82335/datastream/TN/view" />
-<meta itemprop="name" content="Nagasaki" />
+<meta name="twitter:image" content="http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A86257/datastream/TN/view" />
+<meta itemprop="name" content="Westerwanna" />
 <meta itemprop="description" content="Digital Archive @ McMaster University Library" />
-<meta itemprop="image" content="http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A82335/datastream/TN/view" />
-<meta name="dcterms.title" content="Nagasaki" />
+<meta itemprop="image" content="http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A86257/datastream/TN/view" />
+<meta name="dcterms.title" content="Westerwanna" />
 <meta name="dcterms.type" content="Text" />
 <meta name="dcterms.format" content="text/html" />
-<meta name="dcterms.identifier" content="http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A82335" />
+<meta name="dcterms.identifier" content="http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A86257" />
 <link rel="shortcut icon" href="http://digitalarchive.mcmaster.ca/sites/default/files/favicon.ico" type="image/ico" />
-  <title>Nagasaki | Digital Archive @ McMaster University Library</title>
+  <title>Westerwanna | Digital Archive @ McMaster University Library</title>
 
       <meta name="MobileOptimized" content="width">
     <meta name="HandheldFriendly" content="true">
     <meta name="viewport" content="width=device-width">
   
   <style>
-@import url("http://digitalarchive.mcmaster.ca/modules/system/system.base.css?ov3n94");
-@import url("http://digitalarchive.mcmaster.ca/modules/system/system.messages.css?ov3n94");
-@import url("http://digitalarchive.mcmaster.ca/modules/system/system.theme.css?ov3n94");
+@import url("http://digitalarchive.mcmaster.ca/modules/system/system.base.css?pfw5a1");
+@import url("http://digitalarchive.mcmaster.ca/modules/system/system.messages.css?pfw5a1");
+@import url("http://digitalarchive.mcmaster.ca/modules/system/system.theme.css?pfw5a1");
 </style>
 <style>
-@import url("http://digitalarchive.mcmaster.ca/modules/aggregator/aggregator.css?ov3n94");
-@import url("http://digitalarchive.mcmaster.ca/sites/all/modules/collapsiblock/collapsiblock.css?ov3n94");
-@import url("http://digitalarchive.mcmaster.ca/modules/comment/comment.css?ov3n94");
-@import url("http://digitalarchive.mcmaster.ca/modules/field/theme/field.css?ov3n94");
-@import url("http://digitalarchive.mcmaster.ca/sites/all/modules/islandora/css/islandora.base.css?ov3n94");
-@import url("http://digitalarchive.mcmaster.ca/sites/all/modules/islandora/css/islandora.theme.css?ov3n94");
-@import url("http://digitalarchive.mcmaster.ca/sites/all/modules/islandora_solution_pack_audio-7.x-1.9/css/islandora_audio.theme.css?ov3n94");
-@import url("http://digitalarchive.mcmaster.ca/sites/all/modules/islandora_solution_pack_collection/css/islandora_basic_collection.base.css?ov3n94");
-@import url("http://digitalarchive.mcmaster.ca/sites/all/modules/islandora_solution_pack_collection/css/islandora_basic_collection.theme.css?ov3n94");
-@import url("http://digitalarchive.mcmaster.ca/sites/all/modules/islandora_solution_pack_image/css/islandora_basic_image.theme.css?ov3n94");
-@import url("http://digitalarchive.mcmaster.ca/sites/all/modules/islandora_batch-7.x-1.9/css/views_table_contextual_links_fix.css?ov3n94");
-@import url("http://digitalarchive.mcmaster.ca/sites/all/modules/islandora_fits-7.x-1.9/css/islandora_fits.css?ov3n94");
-@import url("http://digitalarchive.mcmaster.ca/sites/all/modules/islandora_solution_pack_large_image-7.x-1.9/css/islandora_large_image.theme.css?ov3n94");
-@import url("http://digitalarchive.mcmaster.ca/sites/all/modules/islandora_solution_pack_pdf/css/islandora_pdf.theme.css?ov3n94");
-@import url("http://digitalarchive.mcmaster.ca/sites/all/modules/islandora_solr_search-7.x-1.9/css/islandora_solr.base.css?ov3n94");
-@import url("http://digitalarchive.mcmaster.ca/sites/all/modules/islandora_solr_metadata-7.x-1.9/css/islandora_solr_metadata.css?ov3n94");
-@import url("http://digitalarchive.mcmaster.ca/sites/all/modules/islandora_solution_pack_video-7.x-1.9/css/islandora_video.theme.css?ov3n94");
-@import url("http://digitalarchive.mcmaster.ca/modules/node/node.css?ov3n94");
-@import url("http://digitalarchive.mcmaster.ca/modules/user/user.css?ov3n94");
-@import url("http://digitalarchive.mcmaster.ca/sites/all/modules/views/css/views.css?ov3n94");
+@import url("http://digitalarchive.mcmaster.ca/modules/aggregator/aggregator.css?pfw5a1");
+@import url("http://digitalarchive.mcmaster.ca/sites/all/modules/collapsiblock/collapsiblock.css?pfw5a1");
+@import url("http://digitalarchive.mcmaster.ca/modules/comment/comment.css?pfw5a1");
+@import url("http://digitalarchive.mcmaster.ca/modules/field/theme/field.css?pfw5a1");
+@import url("http://digitalarchive.mcmaster.ca/sites/all/modules/islandora/css/islandora.base.css?pfw5a1");
+@import url("http://digitalarchive.mcmaster.ca/sites/all/modules/islandora/css/islandora.theme.css?pfw5a1");
+@import url("http://digitalarchive.mcmaster.ca/sites/all/modules/islandora_solution_pack_audio-7.x-1.9/css/islandora_audio.theme.css?pfw5a1");
+@import url("http://digitalarchive.mcmaster.ca/sites/all/modules/islandora_solution_pack_collection/css/islandora_basic_collection.base.css?pfw5a1");
+@import url("http://digitalarchive.mcmaster.ca/sites/all/modules/islandora_solution_pack_collection/css/islandora_basic_collection.theme.css?pfw5a1");
+@import url("http://digitalarchive.mcmaster.ca/sites/all/modules/islandora_solution_pack_image/css/islandora_basic_image.theme.css?pfw5a1");
+@import url("http://digitalarchive.mcmaster.ca/sites/all/modules/islandora_batch-7.x-1.9/css/views_table_contextual_links_fix.css?pfw5a1");
+@import url("http://digitalarchive.mcmaster.ca/sites/all/modules/islandora_fits-7.x-1.9/css/islandora_fits.css?pfw5a1");
+@import url("http://digitalarchive.mcmaster.ca/sites/all/modules/islandora_solution_pack_large_image-7.x-1.9/css/islandora_large_image.theme.css?pfw5a1");
+@import url("http://digitalarchive.mcmaster.ca/sites/all/modules/islandora_solution_pack_pdf/css/islandora_pdf.theme.css?pfw5a1");
+@import url("http://digitalarchive.mcmaster.ca/sites/all/modules/islandora_solr_search-7.x-1.9/css/islandora_solr.base.css?pfw5a1");
+@import url("http://digitalarchive.mcmaster.ca/sites/all/modules/islandora_solr_metadata-7.x-1.9/css/islandora_solr_metadata.css?pfw5a1");
+@import url("http://digitalarchive.mcmaster.ca/sites/all/modules/islandora_solution_pack_video-7.x-1.9/css/islandora_video.theme.css?pfw5a1");
+@import url("http://digitalarchive.mcmaster.ca/modules/node/node.css?pfw5a1");
+@import url("http://digitalarchive.mcmaster.ca/modules/user/user.css?pfw5a1");
+@import url("http://digitalarchive.mcmaster.ca/sites/all/modules/views/css/views.css?pfw5a1");
 </style>
 <style>
-@import url("http://digitalarchive.mcmaster.ca/sites/all/modules/colorbox/styles/default/colorbox_style.css?ov3n94");
-@import url("http://digitalarchive.mcmaster.ca/sites/all/modules/ctools/css/ctools.css?ov3n94");
-@import url("http://digitalarchive.mcmaster.ca/sites/all/modules/panels/css/panels.css?ov3n94");
-@import url("http://digitalarchive.mcmaster.ca/sites/all/modules/islandora_openseadragon-7.x-1.9/css/islandora_openseadragon.theme.css?ov3n94");
-@import url("http://digitalarchive.mcmaster.ca/sites/all/modules/nice_menus/css/nice_menus.css?ov3n94");
-@import url("http://digitalarchive.mcmaster.ca/sites/all/themes/maclibrary/css/nice_menu.css?ov3n94");
-@import url("http://digitalarchive.mcmaster.ca/sites/all/modules/islandora_solution_pack_compound-7.x-1.9/css/islandora_compound_object.block.css?ov3n94");
+@import url("http://digitalarchive.mcmaster.ca/sites/all/modules/colorbox/styles/default/colorbox_style.css?pfw5a1");
+@import url("http://digitalarchive.mcmaster.ca/sites/all/modules/ctools/css/ctools.css?pfw5a1");
+@import url("http://digitalarchive.mcmaster.ca/sites/all/modules/panels/css/panels.css?pfw5a1");
+@import url("http://digitalarchive.mcmaster.ca/sites/all/modules/islandora_openseadragon-7.x-1.9/css/islandora_openseadragon.theme.css?pfw5a1");
+@import url("http://digitalarchive.mcmaster.ca/sites/all/modules/nice_menus/css/nice_menus.css?pfw5a1");
+@import url("http://digitalarchive.mcmaster.ca/sites/all/themes/maclibrary/css/nice_menu.css?pfw5a1");
+@import url("http://digitalarchive.mcmaster.ca/sites/all/modules/islandora_solution_pack_compound-7.x-1.9/css/islandora_compound_object.block.css?pfw5a1");
 </style>
 <style>
-@import url("http://digitalarchive.mcmaster.ca/sites/all/themes/newmac/css/normalize.css?ov3n94");
-@import url("http://digitalarchive.mcmaster.ca/sites/all/themes/newmac/css/layouts/responsive-sidebars.css?ov3n94");
-@import url("http://digitalarchive.mcmaster.ca/sites/all/themes/newmac/css/tabs.css?ov3n94");
-@import url("http://digitalarchive.mcmaster.ca/sites/all/themes/newmac/css/pages.css?ov3n94");
-@import url("http://digitalarchive.mcmaster.ca/sites/all/themes/newmac/css/blocks.css?ov3n94");
-@import url("http://digitalarchive.mcmaster.ca/sites/all/themes/newmac/css/navigation.css?ov3n94");
-@import url("http://digitalarchive.mcmaster.ca/sites/all/themes/newmac/css/views-styles.css?ov3n94");
-@import url("http://digitalarchive.mcmaster.ca/sites/all/themes/newmac/css/nodes.css?ov3n94");
-@import url("http://digitalarchive.mcmaster.ca/sites/all/themes/newmac/css/comments.css?ov3n94");
-@import url("http://digitalarchive.mcmaster.ca/sites/all/themes/newmac/css/forms.css?ov3n94");
-@import url("http://digitalarchive.mcmaster.ca/sites/all/themes/newmac/css/fields.css?ov3n94");
-@import url("http://digitalarchive.mcmaster.ca/sites/all/themes/newmac/css/print.css?ov3n94");
-@import url("http://digitalarchive.mcmaster.ca/sites/all/themes/newmac/css/maclibrary.css?ov3n94");
-@import url("http://digitalarchive.mcmaster.ca/sites/all/themes/newmac/css/styles.css?ov3n94");
+@import url("http://digitalarchive.mcmaster.ca/sites/all/themes/newmac/css/normalize.css?pfw5a1");
+@import url("http://digitalarchive.mcmaster.ca/sites/all/themes/newmac/css/layouts/responsive-sidebars.css?pfw5a1");
+@import url("http://digitalarchive.mcmaster.ca/sites/all/themes/newmac/css/tabs.css?pfw5a1");
+@import url("http://digitalarchive.mcmaster.ca/sites/all/themes/newmac/css/pages.css?pfw5a1");
+@import url("http://digitalarchive.mcmaster.ca/sites/all/themes/newmac/css/blocks.css?pfw5a1");
+@import url("http://digitalarchive.mcmaster.ca/sites/all/themes/newmac/css/navigation.css?pfw5a1");
+@import url("http://digitalarchive.mcmaster.ca/sites/all/themes/newmac/css/views-styles.css?pfw5a1");
+@import url("http://digitalarchive.mcmaster.ca/sites/all/themes/newmac/css/nodes.css?pfw5a1");
+@import url("http://digitalarchive.mcmaster.ca/sites/all/themes/newmac/css/comments.css?pfw5a1");
+@import url("http://digitalarchive.mcmaster.ca/sites/all/themes/newmac/css/forms.css?pfw5a1");
+@import url("http://digitalarchive.mcmaster.ca/sites/all/themes/newmac/css/fields.css?pfw5a1");
+@import url("http://digitalarchive.mcmaster.ca/sites/all/themes/newmac/css/print.css?pfw5a1");
+@import url("http://digitalarchive.mcmaster.ca/sites/all/themes/newmac/css/maclibrary.css?pfw5a1");
+@import url("http://digitalarchive.mcmaster.ca/sites/all/themes/newmac/css/styles.css?pfw5a1");
 </style>
   <script src="http://digitalarchive.mcmaster.ca/sites/all/modules/jquery_update/replace/jquery/1.5/jquery.min.js?v=1.5.2"></script>
 <script src="http://digitalarchive.mcmaster.ca/misc/jquery.once.js?v=1.2"></script>
-<script src="http://digitalarchive.mcmaster.ca/misc/drupal.js?ov3n94"></script>
+<script src="http://digitalarchive.mcmaster.ca/misc/drupal.js?pfw5a1"></script>
 <script src="http://digitalarchive.mcmaster.ca/sites/all/modules/jquery_update/replace/ui/external/jquery.cookie.js?v=67fb34f6a866c40d0570"></script>
 <script src="http://digitalarchive.mcmaster.ca/sites/all/modules/nice_menus/js/jquery.bgiframe.js?v=2.1"></script>
 <script src="http://digitalarchive.mcmaster.ca/sites/all/modules/nice_menus/js/jquery.hoverIntent.js?v=0.5"></script>
 <script src="http://digitalarchive.mcmaster.ca/sites/all/modules/nice_menus/js/superfish.js?v=1.4.8"></script>
 <script src="http://digitalarchive.mcmaster.ca/sites/all/modules/nice_menus/js/nice_menus.js?v=1.0"></script>
-<script src="http://digitalarchive.mcmaster.ca/sites/all/modules/collapsiblock/collapsiblock.js?ov3n94"></script>
-<script src="http://digitalarchive.mcmaster.ca/sites/all/libraries/openseadragon/openseadragon.js?ov3n94"></script>
-<script src="http://digitalarchive.mcmaster.ca/sites/all/modules/islandora_openseadragon-7.x-1.9/js/islandora_openseadragon.js?ov3n94"></script>
-<script src="http://digitalarchive.mcmaster.ca/sites/all/modules/islandora_openseadragon-7.x-1.9/js/djtilesource.js?ov3n94"></script>
-<script src="http://digitalarchive.mcmaster.ca/sites/all/libraries/colorbox/jquery.colorbox-min.js?ov3n94"></script>
-<script src="http://digitalarchive.mcmaster.ca/sites/all/modules/colorbox/js/colorbox.js?ov3n94"></script>
-<script src="http://digitalarchive.mcmaster.ca/sites/all/modules/colorbox/styles/default/colorbox_style.js?ov3n94"></script>
-<script src="http://digitalarchive.mcmaster.ca/misc/form.js?ov3n94"></script>
-<script src="http://digitalarchive.mcmaster.ca/misc/collapse.js?ov3n94"></script>
-<script src="http://digitalarchive.mcmaster.ca/sites/all/modules/google_analytics/googleanalytics.js?ov3n94"></script>
+<script src="http://digitalarchive.mcmaster.ca/sites/all/modules/collapsiblock/collapsiblock.js?pfw5a1"></script>
+<script src="http://digitalarchive.mcmaster.ca/sites/all/libraries/openseadragon/openseadragon.js?pfw5a1"></script>
+<script src="http://digitalarchive.mcmaster.ca/sites/all/modules/islandora_openseadragon-7.x-1.9/js/islandora_openseadragon.js?pfw5a1"></script>
+<script src="http://digitalarchive.mcmaster.ca/sites/all/modules/islandora_openseadragon-7.x-1.9/js/djtilesource.js?pfw5a1"></script>
+<script src="http://digitalarchive.mcmaster.ca/sites/all/libraries/colorbox/jquery.colorbox-min.js?pfw5a1"></script>
+<script src="http://digitalarchive.mcmaster.ca/sites/all/modules/colorbox/js/colorbox.js?pfw5a1"></script>
+<script src="http://digitalarchive.mcmaster.ca/sites/all/modules/colorbox/styles/default/colorbox_style.js?pfw5a1"></script>
+<script src="http://digitalarchive.mcmaster.ca/misc/form.js?pfw5a1"></script>
+<script src="http://digitalarchive.mcmaster.ca/misc/collapse.js?pfw5a1"></script>
+<script src="http://digitalarchive.mcmaster.ca/sites/all/modules/google_analytics/googleanalytics.js?pfw5a1"></script>
 <script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-2574088-12", {"cookieDomain":"auto"});ga("send", "pageview");</script>
-<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"newmac","theme_token":"On3ZhT4Y4_Wnr0ObTgHZFDcurTZawUSC6lfumtoJaxE","js":{"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.5\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"sites\/all\/modules\/nice_menus\/js\/jquery.bgiframe.js":1,"sites\/all\/modules\/nice_menus\/js\/jquery.hoverIntent.js":1,"sites\/all\/modules\/nice_menus\/js\/superfish.js":1,"sites\/all\/modules\/nice_menus\/js\/nice_menus.js":1,"sites\/all\/modules\/collapsiblock\/collapsiblock.js":1,"sites\/all\/libraries\/openseadragon\/openseadragon.js":1,"sites\/all\/modules\/islandora_openseadragon-7.x-1.9\/js\/islandora_openseadragon.js":1,"sites\/all\/modules\/islandora_openseadragon-7.x-1.9\/js\/djtilesource.js":1,"sites\/all\/libraries\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/colorbox\/js\/colorbox.js":1,"sites\/all\/modules\/colorbox\/styles\/default\/colorbox_style.js":1,"misc\/form.js":1,"misc\/collapse.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"0":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/aggregator\/aggregator.css":1,"sites\/all\/modules\/collapsiblock\/collapsiblock.css":1,"modules\/comment\/comment.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/islandora\/css\/islandora.base.css":1,"sites\/all\/modules\/islandora\/css\/islandora.theme.css":1,"sites\/all\/modules\/islandora_solution_pack_audio-7.x-1.9\/css\/islandora_audio.theme.css":1,"sites\/all\/modules\/islandora_solution_pack_collection\/css\/islandora_basic_collection.base.css":1,"sites\/all\/modules\/islandora_solution_pack_collection\/css\/islandora_basic_collection.theme.css":1,"sites\/all\/modules\/islandora_solution_pack_image\/css\/islandora_basic_image.theme.css":1,"sites\/all\/modules\/islandora_batch-7.x-1.9\/css\/views_table_contextual_links_fix.css":1,"sites\/all\/modules\/islandora_fits-7.x-1.9\/css\/islandora_fits.css":1,"sites\/all\/modules\/islandora_solution_pack_large_image-7.x-1.9\/css\/islandora_large_image.theme.css":1,"sites\/all\/modules\/islandora_solution_pack_pdf\/css\/islandora_pdf.theme.css":1,"sites\/all\/modules\/islandora_solr_search-7.x-1.9\/css\/islandora_solr.base.css":1,"sites\/all\/modules\/islandora_solr_metadata-7.x-1.9\/css\/islandora_solr_metadata.css":1,"sites\/all\/modules\/islandora_solution_pack_video-7.x-1.9\/css\/islandora_video.theme.css":1,"modules\/node\/node.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/colorbox\/styles\/default\/colorbox_style.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/panels\/css\/panels.css":1,"sites\/all\/modules\/islandora_openseadragon-7.x-1.9\/css\/islandora_openseadragon.theme.css":1,"sites\/all\/modules\/nice_menus\/css\/nice_menus.css":1,"sites\/all\/themes\/maclibrary\/css\/nice_menu.css":1,"sites\/all\/modules\/islandora_solution_pack_compound-7.x-1.9\/css\/islandora_compound_object.block.css":1,"sites\/all\/themes\/newmac\/system.menus.css":1,"sites\/all\/themes\/newmac\/css\/normalize.css":1,"sites\/all\/themes\/newmac\/css\/layouts\/responsive-sidebars.css":1,"sites\/all\/themes\/newmac\/css\/page-backgrounds.css":1,"sites\/all\/themes\/newmac\/css\/tabs.css":1,"sites\/all\/themes\/newmac\/css\/pages.css":1,"sites\/all\/themes\/newmac\/css\/blocks.css":1,"sites\/all\/themes\/newmac\/css\/navigation.css":1,"sites\/all\/themes\/newmac\/css\/views-styles.css":1,"sites\/all\/themes\/newmac\/css\/nodes.css":1,"sites\/all\/themes\/newmac\/css\/comments.css":1,"sites\/all\/themes\/newmac\/css\/forms.css":1,"sites\/all\/themes\/newmac\/css\/fields.css":1,"sites\/all\/themes\/newmac\/css\/print.css":1,"sites\/all\/themes\/newmac\/css\/maclibrary.css":1,"sites\/all\/themes\/newmac\/css\/styles.css":1}},"collapsiblock":{"blocks":{"block-nice-menus-1":"1","block-views-digitalarchive-view-block":"1","block-islandora-bookmark-islandora-bookmark":"1","block-views-home-page-block":"1","block-block-2":"1","block-block-3":"1","block-views-new-digitalarchive-view-block":"1","block-system-user-menu":"1","block-system-main":"1","block-islandora-solr-simple":"1","block-views-fcb6cbe856f996cd11edb1f3e880788f":"1","block-block-5":"1","block-views-f9e704613f6f341b1593ad748719416c":"1","block-block-1":"1","block-multiblock-1":"1","block-islandora-solr-current-query":"1","block-islandora-solr-facet-pages-islandora-solr-facet-pages":"1","block-islandora-compound-object-compound-navigation":"2","block-block-6":"1","block-islandora-solr-sort":"1","block-block-7":"1","block-menu-menu-advancedsearch":"1","block-islandora-solr-advanced":"1"},"default_state":1,"slide_type":1,"slide_speed":200,"block_title":":header:first","block":"div.block","block_content":"div.content"},"colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","maxWidth":"98%","maxHeight":"98%","fixed":true,"mobiledetect":true,"mobiledevicewidth":"480px"},"islandoraOpenSeadragon":{"pid":"macrepo:82335","resourceUri":"http:\/\/digitalarchive.mcmaster.ca\/islandora\/object\/macrepo%3A82335\/datastream\/JP2\/view?token=f5511984c88ea9cc601e057c9c281c56918ba3b9bc9867e2f482437cb45dc0ef","tileSize":256,"tileOverlap":0,"fitToAspectRatio":0,"settings":{"id":"islandora-openseadragon","prefixUrl":"http:\/\/digitalarchive.mcmaster.ca\/sites\/all\/libraries\/openseadragon\/images\/","debugMode":0,"djatokaServerBaseURL":"\/adore-djatoka\/resolver","animationTime":1.5,"blendTime":0.1,"alwaysBlend":0,"autoHideControls":1,"immediateRender":0,"wrapHorizontal":0,"wrapVertical":0,"wrapOverlays":0,"panHorizontal":1,"panVertical":1,"showNavigator":1,"minZoomImageRatio":0.8,"maxZoomPixelRatio":2,"visibilityRatio":0.5,"springStiffness":5,"imageLoaderLimit":5,"clickTimeThreshold":300,"clickDistThreshold":5,"zoomPerClick":2,"zoomPerScroll":1.2,"zoomPerSecond":2,"defaultZoomLevel":1.2}},"nice_menus_options":{"delay":800,"speed":"slow"},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip|tif|tiff|jpeg|jp2","trackColorbox":1},"urlIsAjaxTrusted":{"\/islandora\/object\/macrepo%3A82335":true}});</script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"newmac","theme_token":"KI8oHLDvH8Lcnf6QfCkD4TmcBZpmi9iBrikh_G9DUFU","js":{"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.5\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"sites\/all\/modules\/nice_menus\/js\/jquery.bgiframe.js":1,"sites\/all\/modules\/nice_menus\/js\/jquery.hoverIntent.js":1,"sites\/all\/modules\/nice_menus\/js\/superfish.js":1,"sites\/all\/modules\/nice_menus\/js\/nice_menus.js":1,"sites\/all\/modules\/collapsiblock\/collapsiblock.js":1,"sites\/all\/libraries\/openseadragon\/openseadragon.js":1,"sites\/all\/modules\/islandora_openseadragon-7.x-1.9\/js\/islandora_openseadragon.js":1,"sites\/all\/modules\/islandora_openseadragon-7.x-1.9\/js\/djtilesource.js":1,"sites\/all\/libraries\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/colorbox\/js\/colorbox.js":1,"sites\/all\/modules\/colorbox\/styles\/default\/colorbox_style.js":1,"misc\/form.js":1,"misc\/collapse.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"0":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/aggregator\/aggregator.css":1,"sites\/all\/modules\/collapsiblock\/collapsiblock.css":1,"modules\/comment\/comment.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/islandora\/css\/islandora.base.css":1,"sites\/all\/modules\/islandora\/css\/islandora.theme.css":1,"sites\/all\/modules\/islandora_solution_pack_audio-7.x-1.9\/css\/islandora_audio.theme.css":1,"sites\/all\/modules\/islandora_solution_pack_collection\/css\/islandora_basic_collection.base.css":1,"sites\/all\/modules\/islandora_solution_pack_collection\/css\/islandora_basic_collection.theme.css":1,"sites\/all\/modules\/islandora_solution_pack_image\/css\/islandora_basic_image.theme.css":1,"sites\/all\/modules\/islandora_batch-7.x-1.9\/css\/views_table_contextual_links_fix.css":1,"sites\/all\/modules\/islandora_fits-7.x-1.9\/css\/islandora_fits.css":1,"sites\/all\/modules\/islandora_solution_pack_large_image-7.x-1.9\/css\/islandora_large_image.theme.css":1,"sites\/all\/modules\/islandora_solution_pack_pdf\/css\/islandora_pdf.theme.css":1,"sites\/all\/modules\/islandora_solr_search-7.x-1.9\/css\/islandora_solr.base.css":1,"sites\/all\/modules\/islandora_solr_metadata-7.x-1.9\/css\/islandora_solr_metadata.css":1,"sites\/all\/modules\/islandora_solution_pack_video-7.x-1.9\/css\/islandora_video.theme.css":1,"modules\/node\/node.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/colorbox\/styles\/default\/colorbox_style.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/panels\/css\/panels.css":1,"sites\/all\/modules\/islandora_openseadragon-7.x-1.9\/css\/islandora_openseadragon.theme.css":1,"sites\/all\/modules\/nice_menus\/css\/nice_menus.css":1,"sites\/all\/themes\/maclibrary\/css\/nice_menu.css":1,"sites\/all\/modules\/islandora_solution_pack_compound-7.x-1.9\/css\/islandora_compound_object.block.css":1,"sites\/all\/themes\/newmac\/system.menus.css":1,"sites\/all\/themes\/newmac\/css\/normalize.css":1,"sites\/all\/themes\/newmac\/css\/layouts\/responsive-sidebars.css":1,"sites\/all\/themes\/newmac\/css\/page-backgrounds.css":1,"sites\/all\/themes\/newmac\/css\/tabs.css":1,"sites\/all\/themes\/newmac\/css\/pages.css":1,"sites\/all\/themes\/newmac\/css\/blocks.css":1,"sites\/all\/themes\/newmac\/css\/navigation.css":1,"sites\/all\/themes\/newmac\/css\/views-styles.css":1,"sites\/all\/themes\/newmac\/css\/nodes.css":1,"sites\/all\/themes\/newmac\/css\/comments.css":1,"sites\/all\/themes\/newmac\/css\/forms.css":1,"sites\/all\/themes\/newmac\/css\/fields.css":1,"sites\/all\/themes\/newmac\/css\/print.css":1,"sites\/all\/themes\/newmac\/css\/maclibrary.css":1,"sites\/all\/themes\/newmac\/css\/styles.css":1}},"collapsiblock":{"blocks":{"block-nice-menus-1":"1","block-views-digitalarchive-view-block":"1","block-islandora-bookmark-islandora-bookmark":"1","block-views-home-page-block":"1","block-block-2":"1","block-block-3":"1","block-views-new-digitalarchive-view-block":"1","block-system-user-menu":"1","block-system-main":"1","block-islandora-solr-simple":"1","block-views-fcb6cbe856f996cd11edb1f3e880788f":"1","block-block-5":"1","block-views-f9e704613f6f341b1593ad748719416c":"1","block-block-1":"1","block-multiblock-1":"1","block-islandora-solr-current-query":"1","block-islandora-solr-facet-pages-islandora-solr-facet-pages":"1","block-islandora-compound-object-compound-navigation":"2","block-block-6":"1","block-islandora-solr-sort":"1","block-block-7":"1","block-menu-menu-advancedsearch":"1","block-islandora-solr-advanced":"1"},"default_state":1,"slide_type":1,"slide_speed":200,"block_title":":header:first","block":"div.block","block_content":"div.content"},"colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","maxWidth":"98%","maxHeight":"98%","fixed":true,"mobiledetect":true,"mobiledevicewidth":"480px"},"islandoraOpenSeadragon":{"pid":"macrepo:86257","resourceUri":"http:\/\/digitalarchive.mcmaster.ca\/islandora\/object\/macrepo%3A86257\/datastream\/JP2\/view?token=ab7af7c8262bccb71f6eb727b4178b2829e183e878427b5d1914dc36d66a982d","tileSize":256,"tileOverlap":0,"fitToAspectRatio":0,"settings":{"id":"islandora-openseadragon","prefixUrl":"http:\/\/digitalarchive.mcmaster.ca\/sites\/all\/libraries\/openseadragon\/images\/","debugMode":0,"djatokaServerBaseURL":"\/adore-djatoka\/resolver","animationTime":1.5,"blendTime":0.1,"alwaysBlend":0,"autoHideControls":1,"immediateRender":0,"wrapHorizontal":0,"wrapVertical":0,"wrapOverlays":0,"panHorizontal":1,"panVertical":1,"showNavigator":1,"minZoomImageRatio":0.8,"maxZoomPixelRatio":2,"visibilityRatio":0.5,"springStiffness":5,"imageLoaderLimit":5,"clickTimeThreshold":300,"clickDistThreshold":5,"zoomPerClick":2,"zoomPerScroll":1.2,"zoomPerSecond":2,"defaultZoomLevel":1.2}},"nice_menus_options":{"delay":800,"speed":"slow"},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip|tif|tiff|jpeg|jp2","trackColorbox":1},"urlIsAjaxTrusted":{"\/islandora\/object\/macrepo%3A86257":true}});</script>
       <!--[if lt IE 9]>
     <script src="/sites/all/themes/zen/js/html5-respond.js"></script>
     <![endif]-->
   </head>
-<body class="html not-front not-logged-in one-sidebar sidebar-first page-islandora page-islandora-object page-islandora-object-macrepo82335 section-islandora" >
+<body class="html not-front not-logged-in one-sidebar sidebar-first page-islandora page-islandora-object page-islandora-object-macrepo86257 section-islandora" >
       <p id="skip-link">
       <a href="#main-menu" class="element-invisible element-focusable">Jump to navigation</a>
     </p>
@@ -178,10 +178,10 @@
 
         <h2 class="block__title block-title">Search</h2>
     
-  <form action="/islandora/object/macrepo%3A82335" method="post" id="islandora-solr-simple-search-form" accept-charset="UTF-8"><div><div class="container-inline form-wrapper" id="edit-simple"><div class="form-item form-type-textfield form-item-islandora-simple-search-query">
+  <form action="/islandora/object/macrepo%3A86257" method="post" id="islandora-solr-simple-search-form" accept-charset="UTF-8"><div><div class="container-inline form-wrapper" id="edit-simple"><div class="form-item form-type-textfield form-item-islandora-simple-search-query">
   <input type="text" id="edit-islandora-simple-search-query" name="islandora_simple_search_query" value="" size="15" maxlength="128" class="form-text" />
 </div>
-<input type="submit" id="edit-submit" name="op" value="search" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-i1JDXjnMeCcsiyTasXg0pDuij8XfAac47tHRUl9yAzE" />
+<input type="submit" id="edit-submit" name="op" value="search" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-xH9SiQPOShNldLJhcSdNfRtiw-3tlyVDGv4jfbEB1h4" />
 <input type="hidden" name="form_id" value="islandora_solr_simple_search_form" />
 </div></form>
 </div>
@@ -209,22 +209,22 @@
   </section>
 
     <div id="content" class="column" role="main">
-      <nav class="breadcrumb" role="navigation"><h2 class="element-invisible">You are here</h2><ol><li><a href="/">Home</a> › </li><li><a href="/islandora"></a> › </li><li><a href="/islandora/object/macrepo%3A1">Digital Archive @ McMaster University Library</a> › </li><li><a href="/islandora/object/macrepo%3A10">Map Collections</a> › </li><li><a href="/islandora/object/macrepo%3A66649">World War, 1939-1945</a> › </li><li><a href="/islandora/object/macrepo%3A75555">WWII Aeronautical Charts</a> › </li><li><a href="/islandora/object/macrepo%3A82247">AAF Cloth Charts</a> › </li></ol></nav>
+      <nav class="breadcrumb" role="navigation"><h2 class="element-invisible">You are here</h2><ol><li><a href="/">Home</a> › </li><li><a href="/islandora"></a> › </li><li><a href="/islandora/object/macrepo%3A1">Digital Archive @ McMaster University Library</a> › </li><li><a href="/islandora/object/macrepo%3A10">Map Collections</a> › </li><li><a href="/islandora/object/macrepo%3A66649">World War, 1939-1945</a> › </li><li><a href="/islandora/object/macrepo%3A32223">WWII Topographic Maps</a> › </li><li><a href="/islandora/object/macrepo%3A85282">Europe, Central 1:25k Topographic Maps</a> › </li></ol></nav>
       <a name="main-menu" id="main-content"></a>
-                    <h1 class="title" id="page-title">Nagasaki</h1>
+                    <h1 class="title" id="page-title">Westerwanna</h1>
                                           
 <div class="islandora-large-image-object islandora" vocab="http://schema.org/" prefix="dcterms: http://purl.org/dc/terms/" typeof="ImageObject">
   <div class="islandora-large-image-content-wrapper clearfix">
-                  <a href="/islandora/object/macrepo%3A82335/print" title="Clip Image" id="clip"><img src="http://digitalarchive.mcmaster.ca/sites/all/modules/islandora_openseadragon-7.x-1.9/images/clip_icon.png" alt="" /></a>            <div class="islandora-large-image-content">
+                  <a href="/islandora/object/macrepo%3A86257/print" title="Clip Image" id="clip"><img src="http://digitalarchive.mcmaster.ca/sites/all/modules/islandora_openseadragon-7.x-1.9/images/clip_icon.png" alt="" /></a>            <div class="islandora-large-image-content">
         <div id="islandora-openseadragon" class="islandora-openseadragon"></div>
       </div>
       </div>
   <div class="islandora-large-image-metadata">
-    <strong>Nagasaki</strong>
+    <strong>Westerwanna</strong>
           <div>
         <h2>In collections</h2>
         <ul>
-                  <li><a href="/islandora/object/macrepo%3A82247">AAF Cloth Charts</a></li>
+                  <li><a href="/islandora/object/macrepo%3A85282">Europe, Central 1:25k Topographic Maps</a></li>
                   </ul>
       </div>
     
@@ -236,14 +236,18 @@
     </th>
   </tr>
   <tr>
+    <td>Identifier</td>
+    <td>UofA_WW2_GermanyHollandPoland_25k_2218</td>
+  </tr>
+  <tr>
     <td>
       <strong>Title</strong>
     </td>
-    <td>Nagasaki: Eastern Asia 1:1,000,000</td>
+    <td>Westerwanna</td>
   </tr>
   <tr>
     <td>Name</td>
-    <td>United States. Army Map Service</td>
+    <td>Great Britain. War Office. General Staff. Geographical Section.</td>
   </tr>
   <tr>
     <td>Type of Resource</td>
@@ -251,19 +255,15 @@
   </tr>
   <tr>
     <td>Genre</td>
-    <td>aeronautical charts</td>
+    <td>topographic maps</td>
   </tr>
   <tr>
     <td>Publisher Name</td>
-    <td>Aeronautical Chart Service. U.S. Army Air Forces</td>
+    <td>War Office</td>
   </tr>
   <tr>
     <td>Publisher Location</td>
-    <td>United States</td>
-  </tr>
-  <tr>
-    <td>Publisher Location</td>
-    <td>Washington, D. C.</td>
+    <td>London</td>
   </tr>
   <tr>
     <td>Date</td>
@@ -274,12 +274,12 @@
     <td>eng</td>
   </tr>
   <tr>
-    <td>Identifier</td>
-    <td>WW2_AAF_Cloth_Chart_NI52</td>
+    <td>Physical Location</td>
+    <td>This digital image was created from an original paper map held in the William C. Wonders Map Library at the University of Alberta.</td>
   </tr>
   <tr>
     <td>Scale</td>
-    <td>1:1,000,000</td>
+    <td>1:25,000</td>
   </tr>
   <tr>
     <td>Form</td>
@@ -287,11 +287,11 @@
   </tr>
   <tr>
     <td>Note</td>
-    <td>1 map: colour; 43 x 57 cm, on sheet 57 x 68 cm. Cloth.</td>
+    <td>1 map; monochrome; 44 x 44 cm., on sheet 51 x 55 cm.</td>
   </tr>
   <tr>
     <td>Note</td>
-    <td>AAF Cloth Chart. AMS 5301, Sheet NI52, Second Edition. Northing 32 degrees and Easting 126 degrees. Modified Polyconic Projection, hypsometric tinting, and compilation information. "For use by War and Navy Department Agencies only." Located in the Lloyd Reeds Map Collection G7800_s1000_MC62G_NI52.</td>
+    <td>GSGS series 4414. Sheet 2218, First Edition. Copied from German Topographische Karte 1:25,000 Sheet 2218 dated 1937 and photolithographed by the British Ordnance Survey in 1944. Lambert modified conical orthomorphic projection. Nord de Guerre Grid.</td>
   </tr>
   <tr>
     <td>Subject Topic</td>
@@ -299,25 +299,25 @@
   </tr>
   <tr>
     <td>Subject Geographic</td>
-    <td>Asia</td>
+    <td>Germany</td>
   </tr>
   <tr>
     <td>Geographic coverage</td>
-    <td>Asia--Japan--Japan, Korea</td>
+    <td>Europe--Westerwanna--</td>
   </tr>
   <tr>
     <td>Subject</td>
-    <td>World War, 1939-1945--Asia</td>
+    <td>World War, 1939-1945--Germany</td>
   </tr>
 </table>
 
           <p><b>Downloads available under <a target="_blank" href="http://creativecommons.org/licenses/by-nc/2.5/ca/">Creative Commons Attribution-NonCommercial 2.5 License</a></b></p>
            <ul>
-      <li><a href="/islandora/object/macrepo%3A82335/datastream/JP2/view.jp2">Download medium resolution (jp2)</a></li>  You may need an application to open the JP2 file. Wikipedia has an extensive list of applications that support jp2 file formats <a target=_blank href=" https://en.wikipedia.org/wiki/JPEG_2000#Application_support">here</a>
+      <li><a href="/islandora/object/macrepo%3A86257/datastream/JP2/view.jp2">Download medium resolution (jp2)</a></li>  You may need an application to open the JP2 file. Wikipedia has an extensive list of applications that support jp2 file formats <a target=_blank href=" https://en.wikipedia.org/wiki/JPEG_2000#Application_support">here</a>
       </ul>
 
       <ul>
-      <li><a href="/islandora/object/macrepo%3A82335/datastream/OBJ/view.tiff">Download high resolution (tiff - large file ~ 1GB)</a></li>
+      <li><a href="/islandora/object/macrepo%3A86257/datastream/OBJ/view.tiff">Download high resolution (tiff - large file ~ 1GB)</a></li>
       </ul>
 
   </div>
