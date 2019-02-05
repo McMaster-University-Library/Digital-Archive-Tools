@@ -11,7 +11,7 @@ cd('D:\Local\Digital-Archive-Tools\BulkTools')
 DA_metadata_to_mods('H:\Digitization_Projects\WWII_Topographic_Maps\Italy\UofA WWII_Italy_Topos\','Digital Archive - Bulk Metadata Templates - UofA_WW2_Italy_25k_topos.tsv');
 
 cd('D:\Local\Digital-Archive-Tools\BulkTools')
-DA_metadata_to_mods('H:\Digitization_Projects\WWII_Topographic_Maps\Italy\UofA WWII_Italy_Topos_25k\','Digital Archive - Bulk Metadata Templates - UofA_WW2_Italy_25k_topos-revision.tsv');
+DA_metadata_to_mods('H:\Digitization_Projects\WWII_Topographic_Maps\Italy\UofA WWII_Italy_Topos_25k\','Digital Archive - Bulk Metadata Templates - UofA_WW2_Italy_25k_topos.tsv');
 
 cd('D:\Local\Digital-Archive-Tools\BulkTools')
 DA_metadata_to_mods('H:\Digitization_Projects\WWII_Topographic_Maps\Italy\UofA WWII_Italy_Topos_50k\','Bulk Metadata Templates - UofA_WW2_Italy_50k_topos.tsv');

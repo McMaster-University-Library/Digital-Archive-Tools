@@ -1,4 +1,4 @@
-function [] = DA_bulk_downloader(file_ext,download_dir,download_list)
+function [] = DA_bulk_downloader(file_ext,download_dir,download_list,book_flag)
 % DA_bulk_downloader.m
 % This function takes a list of macrepo numbers as input, and downloads the selected file type for each digital archive item.
 %%% Inputs:
@@ -49,6 +49,10 @@ go_button = uicontrol('Style', 'pushbutton', 'String', 'RUN!',...
     download_dir = pname2;
 end
 
+if nargin < 4 
+    book_flag = 0;
+    disp('assuming book_flag = 0');
+end
 %% Cleanup. Build prefix.
 % Ensure that extension is properly formatted:
 if strcmp(file_ext(1),'.')~=1
@@ -82,10 +86,17 @@ fname_out = [download_dir macrepo file_ext]; %edited by JJB 20180802 - removed m
 switch file_ext
     case '.xml'
         url = ['http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A' macrepo '/datastream/' dl_prefix];
+    case '.tiff'
+        switch book_flag
+            case 0
+                url = ['http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A' macrepo '/datastream/' dl_prefix '/' macrepo file_ext];
+            case 1
+                url = ['http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A' macrepo '/datastream/TIFF/view/'];
+        end
     otherwise
         url = ['http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A' macrepo '/datastream/' dl_prefix '/' macrepo file_ext];
 end
-
+% https://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A31847/datastream/TIFF/view
     try
         websave(fname_out,url);
     catch
