@@ -12,6 +12,16 @@ Using Python 3.4, basic web page information is collected for MacRepo IDs identi
 
 This CSV file is the output file containing MacRepo ID information for sub-collections or items belonging to the Library's Map Collections. This information includes each object's MacRepo ID, URL, page title, sub-collection or item flag, identifier, and MacRepo ID of the parent directory of each object in the Library's Map Collections. This file is updated monthly on the 1st of every month with Windows Task Scheduler. It is then used at the end of the month as the list of MacRepo IDs Google Analytics performs on.
 
+### Macrepo_Lookup columns:
+1. item macrepo number
+2. item url
+3. item title
+4. item type flag: folder=2, item==1
+5. identifier (items only)
+6. macrepo number of direct parent collection 
+7. macrepo number of top-level collection
+8. (through column 15) - all parent folders 
+
 ## Folder: Google Analytics API Python Client
 
 **_Navigate to this folder [here](https://github.com/maclibGIS/Digital-Archive-Tools/tree/master/Google_Analytics_API_Python_Client/scripts) or at Google_Analytics_API_Python_Client --> scripts_**
