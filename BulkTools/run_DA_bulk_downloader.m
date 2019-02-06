@@ -37,3 +37,17 @@ file_ext = '.tiff';
 download_dir = 'D:\Local\DailyTwitter\12Oct1918\';
 download_list = [download_dir 'download_list.csv'];
 DA_bulk_downloader(file_ext,download_dir,download_list,1); % run with book_flag = 1
+
+%% Metadata for Italy 25k
+cd('D:\Local\Digital-Archive-Tools\BulkTools\');
+file_ext = '.xml';
+download_dir = 'H:\Digitization_Projects\WWII_Topographic_Maps\Italy\UofA WWII_Italy_Topos_25k\MODS-downloaded\';
+download_list = [download_dir 'macrepo_list.csv'];
+DA_bulk_downloader(file_ext,download_dir,download_list)
+
+%% Metadata for Italy/Switzerland 250k
+cd('D:\Local\Digital-Archive-Tools\BulkTools\');
+file_ext = '.xml';
+download_dir = 'H:\Digitization_Projects\WWII_Topographic_Maps\ItalySwitzerland_250k\MODS-downloaded\';
+download_list = [download_dir 'macrepo_list.csv'];
+DA_bulk_downloader(file_ext,download_dir,download_list)
