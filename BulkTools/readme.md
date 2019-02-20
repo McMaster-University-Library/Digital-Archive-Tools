@@ -4,14 +4,18 @@ This subdirectory contains Matlab functions used to perform bulk actions on item
 ## 1. Spreadsheet to Digital Archive - Methods and functions
 Bulk uploading from a local filesystem to the Digital Archive can be done in a couple of ways. Regardless of approach, it is necessary to produce pairs of files for each object to be ingested. The pair consists of an image file and a corresponding xml metadata file.  
 Our approach is as follows (a scripted overview of the process can be found in **run_DA_ingest.m**): 
+
 1. In the top-level folder for the collection of interest (e.g. H:\Digitization_Projects\WWII_Topographic_Maps\Italy\UofA WWII_Italy_Topos_50k\), create the directory structure that is suggested in Section 2 (below). 
+
 2. **Creating metadata records**: Bulk metadata records are created via a [Google spreadsheet](https://docs.google.com/spreadsheets/d/1xmSuWdqUQ0a9RNCi2DErNO1bBcK6J06ps0moyYkg4Qk).  2. Records for each collection are created in separate tabs of the sheet. When a new collection is being described, a new tab is created by duplicating the "Template - DO NOT EDIT - Duplicate for new" tab, and renaming appropriately. 
+
 3. **Generating individuals metadata files**: When MODS metadata files need to be produced, the following steps should be taken: 
     * The tab of interest in the metadata Google Sheet should be downloaded as a tab-separated file (.tsv) to the top-level local folder of the collection (i.e. the same place where scanned .tiff images are placed).
     * Run **DA_metadata_to_mods.m**, which generates Digital-Archive upload-ready xml MODS files from the downloaded metadata spreadsheet (.tsv). As an example:
         * ```cd('D:\Local\Digital-Archive-Tools\BulkTools')```  
 	    * ```DA_metadata_to_mods('H:\Digitization_Projects\WWII_Topographic_Maps\Italy\UofA WWII_Italy_Topos_50k\','Bulk Metadata Templates - UofA_WW2_Italy_50k_topos.tsv');```  
 	    * Running these lines results in the creation of a /MODS/ folder in the top-level directory, and the generation of separate .xml files for each row in the spreadsheet.  
+
 4. **Preparing for bulk ingest**: 
     * [**OLD** method] In this method, .xml files from the /MODS/ directory are copied (manually) to the top-level folder, so that they appear alongside their corresponding .tiff files. 
 	    * **DA_zip_for_ingest.m** is then executed, which creates ready-to-ingest zip files with .tiff/.xml pairs (see function description below for more information) Examples can be found in *run_DA_zip_for_ingest.m* or below:
@@ -26,6 +30,7 @@ Our approach is as follows (a scripted overview of the process can be found in *
 			* All .tiff/.xml pairs should be copied from \ToIngest\ to the new directory (/ToBeProcessed/<macrepo>/) on the shared network folder. 
 			* Once copying to the shared network folder has completed, move the copied items from \ToIngest\ to \ToIngest\Queued\ on the local drive.
 	    * Notify Dorin to auto-process the items. Await confirmation that it is completed.
+
 5. **Moving ingested items**
 	* An output of all files ingested into a given collection is extracted using the Fedora RIQS (http://dcs1.mcmaster.ca/fedora/risearch), and the query given in Jay's [Fedora SPARQL Cookbook](https://github.com/jasonbrodeur/Fedora-SPARQL/blob/master/fedora-sparql-cookbook.md#example-2-display-list-of-all-active-non-deleted-items-in-a-collection-along-with-derivatives-good-for-checking)
 	* Using the aforementioned csv as an input, the function **DA_check_ingested.m** performs quality control on the items and moves QA-passing ingested files from the \ToIngest\Queued\ directory to the \Ingested\ directory. E.g. 
@@ -63,8 +68,22 @@ Idealized directory structure:
   * \Ingested\: .tiff files that have been verified as ingested. Files are moved manually out of \Queued\ into this directory after having been inspected in the Digital Archive.
   * \ToFix\: Landing place for items that were processed by Dorin, but did not pass the QA process. Once items are fixed, the .tiff should be moved back to the top-level folder and the .xml returned to MODS or deleted and replaced.
   
-## 3. Fucntions for extracting items from the Digital Archive to a spreadsheet or directory
+## 3. Functions for extracting items from the Digital Archive to a spreadsheet or directory
 A number of functions have been created to pull metadata records or files (images, etc.) from the Digital Archive and place them in local files (or a collective spreadsheet of records). These functions are described below.
+
+## 4. Checking ingested contents (QA processes)
+
+1. Return a list of all ingested items in a collection
+- Navigate to the Fedora Resource Index Query Service: http://dcs1.mcmaster.ca/fedora/risearch
+- Run a SPARQL query to return all items that belong to a given collection
+  - See the [first example](https://github.com/jasonbrodeur/Fedora-SPARQL/blob/master/fedora-sparql-cookbook.md#example-1-display-list-of-all-active-non-deleted-items-in-a-collection) in Jay's Fedora-SPARQL Cookbook for an example
+  - Set **Language** to *sparql*
+  - Set **Response** to *CSV*
+  - Set **Limit** to *Unlimited*
+
+2. Paste results into the first column of the [Formatter Tab](https://docs.google.com/spreadsheets/d/1GbFjUKtuc8bU2qK5CkAmdaKKlHDSoskw6uaInNMD6Hg/edit#gid=0) of the Ingestion Tracking Sheet
+- 
+
 
 ### DA_bulk_downloader.m
 This function takes a list of macrepo numbers as input, and downloads the selected file type for each digital archive item. Downloadable types include '.tiff'; '.jp2'; '.jpeg'; '.xml'
@@ -80,7 +99,7 @@ Loads all MODS xml file located in a /MODS folder of a specified directory, refo
 - **NOTE:** DA_mods_to_metadata should be run after DA_bulk_downloader generates xml files.
 - Sample output file is found at: \sample_files\metadata_out.txt
   
-## 4. Other functions
+## 5. Other functions
 
 ### xml2struct.m
 xml2struct takes either a java xml object, an xml file, or a string in xml format as input and returns a parsed xml tree in structure.
