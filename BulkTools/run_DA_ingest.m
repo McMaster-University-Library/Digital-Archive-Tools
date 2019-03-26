@@ -20,6 +20,7 @@ DA_metadata_to_mods(top_path,'Digital Archive - Bulk Metadata Templates - UofA_W
 %%% top-level folder. A list of unmatched .tiffs is created in the
 %%% top-level folder as 'unmatched_tiffs.csv'
 %%% This function also creates log files in /logs/
+cd('D:\Local\Digital-Archive-Tools\BulkTools')
 DA_prepare_ingest('H:\Digitization_Projects\WWII_Topographic_Maps\GermanyHollandPoland_25k');
 
 %%% Step 3b (Manual): Copy the contents of \ToIngest\ to the new directory (/ToBeProcessed/<macrepo>/) on the shared network folder
