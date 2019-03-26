@@ -25,3 +25,7 @@ DA_metadata_to_mods('H:\Digitization_Projects\WWII_Topographic_Maps\GermanyHolla
 %% LCMSDS defence overprints
 cd('D:\Local\Digital-Archive-Tools\BulkTools')
 DA_metadata_to_mods('H:\Digitization_Projects\WWII_Topographic_Maps\LCMSDS\','Digital Archive - Bulk Metadata Templates - LCMSDS_topos.tsv');
+
+%% OCUL HTDP topos
+cd('D:\Local\Digital-Archive-Tools\BulkTools')
+DA_metadata_to_mods('H:\Digitization_Projects\OCUL_HTDP\','Digital Archive - Bulk Metadata Templates - OCUL HTPD Topos.tsv');
