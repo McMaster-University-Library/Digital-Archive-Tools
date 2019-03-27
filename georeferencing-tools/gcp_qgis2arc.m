@@ -7,10 +7,15 @@ function [] = gcp_qgis2arc(file_in, h, r)
 % - r: The resolution of the image (in ppi)
 %     - Can be pulled from an image using the imagemagick command: identify -quiet -format "%y" <filename>
 %
-%%% Information on converting between qgis and arcgis gcp formats: 
+% NOTE that h and r are optional IF the following conditions are met: 
+% - A file by the same name as the GCP file (and with a .tif, .tiff, or .jp2 extension) is in the same folder as the GCP file
+% - ImageMagick is installed on the computer.
+%
+%%% More information on converting between qgis and arcgis gcp formats may be found at: https://github.com/maclibGIS/Digital-Archive-Tools/tree/master/georeferencing-tools 
+%
+% Created by JJB in March, 2019.
 
-% file_in = 'D:\Dropbox (MUL)\Public\Tiffs&GCPs\March2019\HTDP63360K030M05_1909.tif.points';
-% Read the GCP file:
+%% Read the GCP file. Extract filename, path, and multiple extensions
 [filepath,name,ext] = fileparts(file_in);
 if ~isempty(filepath)==1
     cd(filepath);
@@ -23,7 +28,7 @@ if ~isempty(exten2)==1
    [~,name,ext2] = fileparts(name);
 end
 
-% If h and r are not given, try to extract from image (assuming tif file is in the same directory and ImageMagick installed)
+%% If h and r are not given, try to extract from image (assuming tif file is in the same directory and ImageMagick installed)
 if nargin==1
     if exist([filepath '/' name '.tif'],'file')==2
         tifpath = [filepath '/' name '.tif'];
@@ -48,7 +53,7 @@ if nargin==1
     end
     
 end
-
+%%% Convert h and r to numeric values
 if ischar(h)==1
     h = str2double(h);
 end
@@ -56,6 +61,7 @@ if ischar(r)==1
     r = str2double(r);
 end
 
+%% Read the QGIS GCP file
 gcp_fmt = '%f %f %f %f %f'; %input format for the QGIS GCP files
 
 fid = fopen(file_in,'r');
@@ -63,23 +69,10 @@ hdr = fgetl(fid); % get header row
 C_tmp = textscan(fid,gcp_fmt,'delimiter',',');
 C = cell2mat(C_tmp); %convert from cell array into a matrix
 fclose(fid)
-        
+
+%% Convert and write the file
 %%% Perform the conversion        
 C_ArcGIS = [C(:,3)./r (C(:,4)+h)/r C(:,1) C(:,2)];
 
 %%% Create the ArcGIS gcp file:
 dlmwrite([filepath '/' name '.txt'],C_ArcGIS,'delimiter','\t','precision',14);
-
-        
-        
-        
-%%% Code to pull information from images using imageMagick
-% [status,h] = system(['identify -quiet -format "%h" "' filepath '/' name ext2 '"']); % Image height in pixels
-% [status2,r] = system(['identify -quiet -format "%y" "' filepath '/' name ext2 '"']); % Image resolution in points per inch
-% cmd = ['identify -quiet -format "%h" ' pwd '/' name '.tif];
-% cmd2 = ['identify -quiet -format "%y" ' file_in];
-% %%% Note to self, need to add a query for resolution identify -quiet -format "%y"
-% if ispc==1; [status,cmdout] = dos(cmd); else [status,cmdout] = unix(cmd);end
-% h = str2double(cmdout); %height of the tif in pixels
-% if ispc==1; [status2,cmdout2] = dos(cmd2); else [status2,cmdout2] = unix(cmd2);end
-% ppi_in = str2double(cmdout2); %resolution of the tif (in points per inch)
