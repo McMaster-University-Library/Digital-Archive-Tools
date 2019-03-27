@@ -3,8 +3,9 @@
 ## Georeferencing tutorials 
 [QGIS Tutorials georeferencing tutorial](https://www.qgistutorials.com/en/docs/georeferencing_basics.html)
 
-More to come soon.
-
+## Working with Coordinate Reference Systems (CRS)
+- Guide: [Working with projections in QGIS](https://docs.qgis.org/3.4/en/docs/user_manual/working_with_projections/working_with_projections.html)
+- Guide: [Working with a custom CRS in QGIS](https://docs.qgis.org/3.4/en/docs/user_manual/working_with_projections/working_with_projections.html#custom-coordinate-reference-system)
 
 ## Converting QGIS GCP files to ArcGIS format
  
@@ -35,7 +36,7 @@ Required information / materials:
 
 The output ArcGIS file can be created from the QGIS file columns as: 
 
-```mapX/r	(mapY+h)/r	pixelX	pixelY (where columns are tab-delimited)```
+```pixelX/r	(pixelY+h)/r	mapX	mapY```, where columns are tab-delimited
 
 ### Converting ArcGIS to QGIS format
 Required information / materials: 
