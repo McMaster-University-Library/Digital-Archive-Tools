@@ -34,7 +34,8 @@ Required information / materials:
 - r = Resolution of the image (in points per inch)
 
 The output ArcGIS file can be created from the QGIS file columns as: 
-mapX/r	(mapY+h)/r	pixelX	pixelY (where columns are tab-delimited)
+
+```mapX/r	(mapY+h)/r	pixelX	pixelY (where columns are tab-delimited)```
 
 ### Converting ArcGIS to QGIS format
 Required information / materials: 
@@ -44,7 +45,8 @@ Required information / materials:
 - header written to top of target file: mapX,mapY,pixelX,pixelY,enable
 
 The output QGIS file can be created from the ArcGIS file columns as: 
-column3, column4, column1*r, (column2*r)-h (where columns are comma-delimited)
+
+```column3, column4, column1*r, (column2*r)-h (where columns are comma-delimited)```
 
 ### Extracting height and resolution information from an image
 Height (h) and resolution (r) can be extracted from an image programatically using the following imageMagick commands: 
