@@ -22,7 +22,7 @@
 ### Default ArcGIS format convention
 - Origin is located at the bottom-left of the image
 - GCP file is a text-based, tab-delimited file with an extension <image_name>.txt
-- GCP file has no headder and four columns
+- GCP file has no header and four columns
   - column1 = horizontal location of point in the image, measured in units of inches from the origin (comparable to PixelX in QGIS format). Value increases to the right of the image.
   - column2 = vertical location of point in the image, measured in units of inches from the origin (comparable to PixelY in QGIS format). PixelY increases toward the top of the image (i.e. all y values are >=0)
   - column3 = horizontal location of point in a pre-defined Coordinate Reference System (e.g. Longitude, Easting). Comparable to MapX in QGIS format
