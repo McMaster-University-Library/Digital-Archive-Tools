@@ -1,4 +1,33 @@
 # Georeferencing guidance for items in the McMaster University Digital Archive
+And other handy tools.
+
+# Repository function reference
+
+## gcp_qgis2arc.m
+Converts a GCP file in QGIS format to ArcGIS format
+Inputs: 
+- file_in: The full path to the file (or the filename if in the desired output folder)
+- h:   The height of the image (in pixels)
+  - Can be pulled from an image using the imagemagick command: identify -quiet -format "%h" <filename>
+- r: The resolution of the image (in ppi)
+  - Can be pulled from an image using the imagemagick command: identify -quiet -format "%y" <filename>
+	
+**NOTE** that h and r are optional IF the following conditions are met: 
+- A file by the same name as the GCP file (and with a .tif, .tiff, or .jp2 extension) is in the same folder as the GCP file
+- ImageMagick is installed on the computer.
+
+## extract_gcps.m
+This function uses the gdalinfo command to extract GCP and WKT information from a georeferenced tiff that has an accompanying .aux.xml file. 
+inputs: 
+- file_in: path to the geotiff. If no path is provided (filename only), script assumes Matlab is in the directory containing the file.
+- gdal_path (optional): Allows user to specify the path to the gdal library (often necessary in Windows systems).
+
+**Example inputs and usage:**
+```
+file_in = 'H:\Digitization_Projects\WWII_Topographic_Maps\LCMSDS\GeoTiff-test\WWIIMMEmden_1945v1_TIFF\WWIIMMEmden_1945v1_TIFF.tif';
+gdal_path = 'C:\Program Files\QGIS 3.6\bin';
+extract_gcps(file_in, gdal_path)
+```
 
 ## Georeferencing tutorials 
 [QGIS Tutorials georeferencing tutorial](https://www.qgistutorials.com/en/docs/georeferencing_basics.html)
@@ -27,6 +56,14 @@
   - column2 = vertical location of point in the image, measured in units of inches from the origin (comparable to PixelY in QGIS format). PixelY increases toward the top of the image (i.e. all y values are >=0)
   - column3 = horizontal location of point in a pre-defined Coordinate Reference System (e.g. Longitude, Easting). Comparable to MapX in QGIS format
   - column4 = vertical location of point in a pre-defined Coordinate Reference System (e.g. Latitude, Northing). Comparable to MapY in QGIS format
+
+### Default GDAL format convention
+- Origin is located at the bottom-left of the image. 
+  - pixelX = horizontal location of point in the image, measured in units of pixels from the origin. PixelX increases to the right of the image
+  - pixelY = vertical location of point in the image, measured in units of pixels from the origin. PixelY increases toward the bottom of the image (i.e. all y values are >=0)
+  - mapX = horizontal location of point in a pre-defined Coordinate Reference System (e.g. Longitude, Easting)
+  - mapY = vertical location of point in a pre-defined Coordinate Reference System (e.g. Latitude, Northing)    
+- i.e. format is the same as QGIS, except that columns are structured in a different order and sign on PixelY is reversed.
 
 ### Converting from QGIS to ArcGIS format
 Required information / materials: 

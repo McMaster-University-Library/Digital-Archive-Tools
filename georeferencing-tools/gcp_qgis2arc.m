@@ -75,4 +75,5 @@ fclose(fid)
 C_ArcGIS = [C(:,3)./r (C(:,4)+h)/r C(:,1) C(:,2)];
 
 %%% Create the ArcGIS gcp file:
+fid2 = fopen(
 dlmwrite([filepath '/' name '.txt'],C_ArcGIS,'delimiter','\t','precision',14);
