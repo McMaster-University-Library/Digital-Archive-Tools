@@ -28,6 +28,7 @@ file_in = 'H:\Digitization_Projects\WWII_Topographic_Maps\LCMSDS\GeoTiff-test\WW
 gdal_path = 'C:\Program Files\QGIS 3.6\bin';
 extract_gcps(file_in, gdal_path)
 ```
+# Georeferencing Information
 
 ## Georeferencing tutorials 
 [QGIS Tutorials georeferencing tutorial](https://www.qgistutorials.com/en/docs/georeferencing_basics.html)
