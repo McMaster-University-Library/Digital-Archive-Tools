@@ -42,7 +42,7 @@ The reports are organized by the durations for which web data is captured. For o
 
 ### *A Guide to Creating a Web Analytics Annual Report*
 
-Annual web analytics reports for the Digital Archive are available for 2016/2017 and 2017/2018 periods. The following instructions are a guide on how to update these reports based on new data for a reporting period. In order to obtain data from Google Analytics, access to [The Google Analytics Console](https://analytics.google.com/analytics/web/#/report-home/a2574088w81034268p83866004)  is required.
+Annual web analytics reports for the Digital Archive are available for 2016/2017 and 2017/2018 periods. The following instructions are a guide on how to update these reports based on new data for a reporting period. In order to obtain data from Google Analytics, access to [The Google Analytics Console](https://analytics.google.com/analytics/web) with the appropriate API key is required.
 
 	1. The annual report is created with multiple data resources:
 	
@@ -55,7 +55,7 @@ Annual web analytics reports for the Digital Archive are available for 2016/2017
 
 	- The total number of items using GA_ReportYYYYMMDD.csv
 	- The total number of item pageviews using GA_TopLevelCollectionsReportYYYYMMDD.csv
-	- The total number of pageviews for the Map Collection's [landing page] (https://digitalarchive.mcmaster.ca/maps) using [The Google Analytics Console] (https://analytics.google.com/analytics/web/#/report-home/a2574088w81034268p83866004) 
+	- The total number of pageviews for the Map Collection's main page using The Google Analytics Console
 	
 	- The number of pageviews for items within each individual Top-Level Collection using GA_TopLevelCollectionsReportYYYYMMDD.csv
 	- The number of pageviews for the ten most viewed items using using GA_ReportYYYYMMDD.csv
