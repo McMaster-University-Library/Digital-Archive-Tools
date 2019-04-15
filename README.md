@@ -62,7 +62,7 @@ Annual web analytics reports for the Digital Archive are available for 2016/2017
 
 	3. The user overview and in-depth analysis sections of the report analyze user data for the top ten collections and top ten items for the year. While the top ten items were obtained earlier with GA_ReportYYYYMMDD.csv, the top ten collections are obtained with GA_CollectionsReportYYYYMMDD.csv.
 	
-	4. [The Google Analytics Console](https://analytics.google.com/analytics/web/#/report-home/a2574088w81034268p83866004) is used to obtain user data for the top ten collections and top ten items. Specifically, the geographic location of users and referring sites to Map Collection items are analyzed. 
+	4. The Google Analytics Console is used to obtain user data for the top ten collections and top ten items. Specifically, the geographic location of users and referring sites to Map Collection items are analyzed. 
 	
 	For the purposes of reporting the most significant data (ie. countries and referring sites sourcing a high volume of Map Collection users), it is recommended to begin creating the in-depth analysis section of the report before the user overview. Begin by navigating to Reports/Behavior/Site Content/All Pages within the analytics console. 
 
