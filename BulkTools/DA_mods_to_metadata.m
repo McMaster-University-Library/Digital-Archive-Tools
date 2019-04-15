@@ -3,13 +3,15 @@ function [] = DA_mods_to_metadata(path_in)
 %%% directory, reformats all metadata to a single table with one row per
 %%% file, and one column per unique metadata element.
 %%% Exports in tab-separated format
+% See run_DA_mods_to_metadata.m for usage examples
 
 if strcmp(path_in(end), '\')==1 || strcmp(path_in(end), '/')==1
+    start_path = path_in;
 else
-    path_in = [path_in '\'];
+    start_path = [path_in '\'];
 end
 
-start_path = [path_in 'MODS'];
+% start_path = [path_in 'MODS'];
 
 d = dir(start_path);
 output = {};
@@ -61,7 +63,7 @@ output(:,2:size(output,2)+1) = output(:,1:end);
 output(:,1) = macrepo;
 %% Save the output file
 %output format
-fid = fopen([path_in 'metadata_out.tsv'],'w');
+fid = fopen([start_path 'metadata_out.tsv'],'w');
 % output header
 fprintf(fid,'%s\n',sprintf('%s\t',fnames{1,:}));
 
