@@ -32,10 +32,10 @@ def create_report(startdate):
     # Creating empty lists. 
     IDList = [] # Creating list of Macrepo IDs.
     flags = [] # Creating list to hold collection or item flags.
-    identifiers = [] #Creating list to hold identifiers.
-    parentdir = [] #Creating list of parent directories.
-    pd_nodetails = [] #Creating list of parent directories with missing information from GA.
-    topleveldir = [] #Creating list of top-level parent directories (collections).
+    identifiers = [] # Creating list to hold identifiers.
+    parentdir = [] # Creating list of parent directories.
+    pd_nodetails = [] # Creating list of parent directories with missing information from GA.
+    topleveldir = [] # Creating list of top-level parent directories (collections).
 
     #----------------------------------------------------------------------------- USER EDIT ---------
     # Open Macrepo_Lookup.csv to obtain ID numbers.

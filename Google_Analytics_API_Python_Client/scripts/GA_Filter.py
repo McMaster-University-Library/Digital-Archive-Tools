@@ -14,7 +14,6 @@ import sys
 import csv
 import timeit
 import time
-import pause
 import random
 from googleapiclient.errors import HttpError
 from googleapiclient import sample_tools
