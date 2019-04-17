@@ -4,7 +4,7 @@
 
 ![Guide](Guide.png)
 
-<table align="center"><tr><td align="center" width="9999">
+<table align="center"><tr><td align="center" width="9999">  
 ## Table of Contents
 
 **[Tool: Scraper_V2.py](https://github.com/maclibGIS/Digital-Archive-Tools#tool-scraper_v2py)**  
