@@ -1,4 +1,4 @@
-# Digital Archive Tools									![Logo](Logo.png)
+# Digital Archive Tools
 
 **This repository is a resource to perform web analytics on the McMaster University Library's Digital Archive of Map Collections, collecting and reporting web data through the use of Google Analytics. Access a sample of an annual Google Analytics Report [here.](https://github.com/maclibGIS/Digital-Archive-Tools/tree/master/Google_Analytics_API_Python_Client/scripts/365daysAgo)**
 
@@ -9,12 +9,13 @@
 **[Tool: Scraper_V2.py](https://github.com/maclibGIS/Digital-Archive-Tools#tool-scraper_v2py)**  
 **[Resource: Macrepo_Lookup.csv](https://github.com/maclibGIS/Digital-Archive-Tools#resource-macrepo_lookupcsv)**  
 **[Folder: Google Analytics API Python Client](https://github.com/maclibGIS/Digital-Archive-Tools#folder-google-analytics-api-python-client)**
+
    **[Tool: GA_Filter.py](https://github.com/maclibGIS/Digital-Archive-Tools#tool-ga_filterpy)**  
    **[Tool: GA_CreateReport.py](https://github.com/maclibGIS/Digital-Archive-Tools#tool-ga_createreportpy)**  
    **[Resource: Google Analytics Reports](https://github.com/maclibGIS/Digital-Archive-Tools#resource-google-analytics-reports)**  
    **[A Guide to Creating a Web Analytics Annual Report](https://github.com/maclibGIS/Digital-Archive-Tools#a-guide-to-creating-a-web-analytics-annual-report)**   
    **[Resource: Exploring Google Analytics.txt](https://github.com/maclibGIS/Digital-Archive-Tools#resource-exploring-google-analyticstxt)**  
-   **[A Guide to The Project's Initial Creation](https://github.com/maclibGIS/Digital-Archive-Tools#a-guide-to-the-projects-initial-creation)**  
+   **[A Guide to The Project's Initial Creation](https://github.com/maclibGIS/Digital-Archive-Tools#a-guide-to-the-projects-initial-creation)**
 
 ## Tool: Scraper_V2.py
 
