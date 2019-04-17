@@ -6,7 +6,7 @@
 
 ## Table of Contents
 
-(Tool: Scraper_V2.py)[https://github.com/maclibGIS/Digital-Archive-Tools#tool-scraper_v2py]
+[Tool: Scraper_V2.py](https://github.com/maclibGIS/Digital-Archive-Tools#tool-scraper_v2py)
 
 
 ## Tool: Scraper_V2.py
@@ -17,15 +17,15 @@ Using Python 3.4, basic web page information is collected for MacRepo IDs identi
 
 This CSV file is the output file containing MacRepo ID information for sub-collections or items belonging to the Library's Map Collections. This information includes each object's MacRepo ID, URL, page title, sub-collection or item flag, identifier, and MacRepo ID of the parent directory of each object in the Library's Map Collections. This file is updated monthly on the 1st of every month with Windows Task Scheduler. It is then used at the end of the month as the list of MacRepo IDs Google Analytics performs on.
 
-### Macrepo_Lookup columns:
-1. item macrepo number
-2. item url
-3. item title
-4. item type flag: folder=2, item==1
-5. identifier (items only)
-6. macrepo number of direct parent collection 
-7. macrepo number of top-level collection
-8. (through column 15) - all parent folders 
+### Macrepo_Lookup Columns:
+1. Item Macrepo Number
+2. Item URL
+3. Item Title
+4. Item Type Flag: folder=2, item==1
+5. Identifier (items only)
+6. Macrepo Number of Direct Parent Collection 
+7. Macrepo Number of Top-Level Collection
+8. (Through Column 15) - All Parent Folders 
 
 ## Folder: Google Analytics API Python Client
 
