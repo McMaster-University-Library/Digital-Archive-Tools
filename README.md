@@ -98,14 +98,20 @@ The following instructions are a guide on how to first set-up Python and the Goo
 	
 	\Google_Analytics_API_Python_Client\scripts
 	
-	Open the client_secrets.json file in a text editor such as NotePad++. Delete all the text in this client_secret.json file. Find the client_secret.json file that you created and downloaded from the Google Developer console. Open your client_secret.json file in NotePad++ and copy the text in your file (this has your API credentials) and paste the text into the sample client_secrets.json file that was in the scripts folder. Make sure to save the file.
+	Open the client_secrets.json file in a text editor such as NotePad++. 
+	Delete all the text in this client_secret.json file. 
+	Find the client_secret.json file that you created and downloaded from the Google Developer console. 
+	Open your client_secret.json file in NotePad++ and copy the text in your file (this has your API credentials) and paste the text into the sample client_secrets.json file that was in the scripts folder.
+	Make sure to save the file.
 
 	4. Obtain your View ID (also called Profile ID) from the Google Analytics Core Reporting API Query Explorer.
 	
 	Follow this link to the Google Analytics Core Reporting Query Explorer.
 	https://ga-dev-tools.appspot.com/query-explorer/
 	
-	Choose the Account, Property and View you’d like to get data from. When you select a view the 'ids' field will be populated with the unique Google Analytics View (Profile) ID. You can also find your View (profile) ID in the ADMIN section of Google Analytics' web interface (https://www.google.com/analytics/web/) under View Settings in your specific view.
+	Choose the Account, Property and View you’d like to get data from. 
+	When you select a view the 'ids' field will be populated with the unique Google Analytics View (Profile) ID. 
+	You can also find your View (profile) ID in the ADMIN section of Google Analytics' web interface (https://www.google.com/analytics/web/) under View Settings in your specific view.
 	
 	5. Google Analytics API Python Query Data Output to Excel.
 	
