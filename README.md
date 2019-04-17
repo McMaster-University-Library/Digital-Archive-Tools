@@ -123,11 +123,16 @@ The following instructions are a guide on how to first set-up Python and the Goo
 
 The steps below are a guide on how to set up GA_CreateReport to run within Windows Task Scheduler.
 	
-	6. The Google_Analytics_API_Python_Client folder should be located within your local C:\ drive. If it is not, copy it into any folder within the C:\ drive. Make sure that all file paths within GA_Filter and GA_CreateReport refer to the correct directory.
+	6. The Google_Analytics_API_Python_Client folder should be located within your local C:\ drive. 
+	If it is not, copy it into any folder within the C:\ drive. 
+	Make sure that all file paths within GA_Filter and GA_CreateReport refer to the correct directory.
 	
-	7. Edit the batch file labelled "GA_CreateReport_30daysAgo" with Notepad ++. Change the directory in the second line to the directory in which the batch file is contained.
+	7. Edit the batch file labelled "GA_CreateReport_30daysAgo" with Notepad ++. 
+	Change the directory in the second line to the directory in which the batch file is contained.
 	
-	8. Follow the link below to instructions on creating a scheduled task within Windows Task Scheduler. Choose the .bat file  "GA_CreateReport_30daysAgo" as the program/script to run. You may edit this file if you wish to change the start date of your Google Analytics Query, or you may use the existing 3 batch files already created within the "...\Google_Analytics_API_Python_Client\scripts" folder.
+	8. Follow the link below to instructions on creating a scheduled task within Windows Task Scheduler. 
+	Choose the .bat file  "GA_CreateReport_30daysAgo" as the program/script to run. 
+	You may edit this file if you wish to change the start date of your Google Analytics Query, or you may use the existing 3 batch files already created within the "...\Google_Analytics_API_Python_Client\scripts" folder.
 	
 	http://www.thewindowsclub.com/how-to-schedule-batch-file-run-automatically-windows-7
 	
