@@ -6,8 +6,15 @@
 
 ## Table of Contents
 
-[Tool: Scraper_V2.py](https://github.com/maclibGIS/Digital-Archive-Tools#tool-scraper_v2py)
-
+**[Tool: Scraper_V2.py](https://github.com/maclibGIS/Digital-Archive-Tools#tool-scraper_v2py)
+[Resource: Macrepo_Lookup.csv](https://github.com/maclibGIS/Digital-Archive-Tools#resource-macrepo_lookupcsv)
+[Folder: Google Analytics API Python Client](https://github.com/maclibGIS/Digital-Archive-Tools#folder-google-analytics-api-python-client}
+	[Tool: GA_Filter.py](https://github.com/maclibGIS/Digital-Archive-Tools#tool-ga_filterpy)
+	[Tool: GA_CreateReport.py](https://github.com/maclibGIS/Digital-Archive-Tools#tool-ga_createreportpy)
+	[Resource: Google Analytics Reports](https://github.com/maclibGIS/Digital-Archive-Tools#resource-google-analytics-reports)
+	[A Guide to Creating a Web Analytics Annual Report](https://github.com/maclibGIS/Digital-Archive-Tools#a-guide-to-creating-a-web-analytics-annual-report)
+	[Resource: Exploring Google Analytics.txt](https://github.com/maclibGIS/Digital-Archive-Tools#resource-exploring-google-analyticstxt)
+	[A Guide to The Project's Initial Creation](https://github.com/maclibGIS/Digital-Archive-Tools#a-guide-to-the-projects-initial-creation)**
 
 ## Tool: Scraper_V2.py
 
