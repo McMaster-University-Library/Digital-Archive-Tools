@@ -4,9 +4,9 @@
 
 ![Guide](Guide.png)
 
-## Table of Contents
-
 <table align="center"><tr><td align="center" width="9999">
+
+## Table of Contents
 
 **[Tool: Scraper_V2.py](https://github.com/maclibGIS/Digital-Archive-Tools#tool-scraper_v2py)**  
 **[Resource: Macrepo_Lookup.csv](https://github.com/maclibGIS/Digital-Archive-Tools#resource-macrepo_lookupcsv)**  
@@ -18,7 +18,6 @@
 **[A Guide to Creating a Web Analytics Annual Report](https://github.com/maclibGIS/Digital-Archive-Tools#a-guide-to-creating-a-web-analytics-annual-report)**   
 **[Resource: Exploring Google Analytics.txt](https://github.com/maclibGIS/Digital-Archive-Tools#resource-exploring-google-analyticstxt)**  
 **[A Guide to The Project's Initial Creation](https://github.com/maclibGIS/Digital-Archive-Tools#a-guide-to-the-projects-initial-creation)**
-
 </td></tr></table>
 
 ## Tool: Scraper_V2.py
