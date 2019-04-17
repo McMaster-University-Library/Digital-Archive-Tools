@@ -66,11 +66,32 @@ Annual web analytics reports for the Digital Archive are available for 2016/2017
 	4. The Google Analytics Console is used to obtain user data for the top ten collections and top ten items. 
 	Specifically, the geographic location of users and referring sites to Map Collection items are analyzed. 
 	For the purposes of reporting the most significant data (ie. countries and referring sites sourcing a high volume of Map Collection users), it is recommended to begin creating the in-depth analysis section of the report before the user overview. 
-	Begin by navigating to Reports/Behavior/Site Content/All Pages within the analytics console. 
+	Begin by navigating to Reports --> Behaviour --> Site Content --> All Pages within the analytics console. 
 
-	5. 
-	 
+	5. Creating the in-depth analysis:
+	
+	Obtain information on a specific collection or item page by entering the MacRepo ID of the web page in the search bar.
 
+	- Determine the number of unique users and pageviews broken down by user countries:
+	Set Primary Dimension to Page --> Set Secondary Dimension to Users --> Country.
+	Record the data for the top five countries based on total pageviews.
+	- Determine the number of unique users and pageviews broken down by users' referring sites:
+	Set Primary Dimension to Page --> Set Secondary Dimension to Behavior --> Full Referrer
+	Record the data for the top eight referring sites based on total pageviews.
+	
+	For more details, refer to Exploring Google Analytics.txt found in this folder.
+	
+	6. Creating the user overview:
+	
+	Based on judgment for the top countries and referring sites common to the top ten collections, select a number of countries and referring sites (8 to 10) to record the percentage of pageviews in the respective tables. 
+	Perform the same procedure for the top ten items. 
+	
+	7. Once all data is obtained, the Map Collection User Summary found at the beginning of the report may be created. 
+	Along with a brief description of the year's findings, create pie charts for the top six countries and top six referring sites for the map collection's main page. 
+	(I created my pie charts in Google Sheets!)
+	
+After fine-tuning and review, the Web Analytics Report will be ready to be showcased!
+	
 ### Resource: Exploring Google Analytics.txt
 
 This text file contains key documentation in navigating the Google Analytics dashboard for McMaster University Library users.
