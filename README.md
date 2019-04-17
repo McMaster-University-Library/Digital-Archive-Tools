@@ -6,9 +6,8 @@
 
 ## Table of Contents
 
-**[Tool: Scraper_V2.py](https://github.com/maclibGIS/Digital-Archive-Tools#tool-scraper_v2py)
-
-[Resource: Macrepo_Lookup.csv](https://github.com/maclibGIS/Digital-Archive-Tools#resource-macrepo_lookupcsv)
+**[Tool: Scraper_V2.py](https://github.com/maclibGIS/Digital-Archive-Tools#tool-scraper_v2py)**
+**[Resource: Macrepo_Lookup.csv](https://github.com/maclibGIS/Digital-Archive-Tools#resource-macrepo_lookupcsv)**
 
 [Folder: Google Analytics API Python Client](https://github.com/maclibGIS/Digital-Archive-Tools#folder-google-analytics-api-python-client)
 
