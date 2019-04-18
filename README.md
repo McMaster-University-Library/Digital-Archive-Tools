@@ -44,11 +44,11 @@ This CSV file is the output file containing MacRepo ID information for sub-colle
 
 ### Tool: GA_Filter.py
 
-Using Python 2.7.8, this script performs a Google Analytics query to obtain the page title, number of users, and number of page views for each MacRepo ID within the Library's Maps Collections. This data is stored in a temporary output file in CSV, labelled GA_Data.csv.
+Using Python 2.7.8, this script performs a Google Analytics query to obtain the page title, number of users, and number of page views for each MacRepo ID within the Library's Maps Collections. This data is stored in a temporary output file in CSV, labeled GA_Data.csv.
 
 ### Tool: GA_CreateReport.py
 
-Using Python 2.7.8, Google Analytics data in GA_Data.csv is parsed and formatted into a readable CSV format. Additional information for each web page is also appended, including a sub-collection or item flag, identifier, and parent directory for each MacRepo ID of the Library's Maps Collections. Two output Google Analytics Report files are created; one for  all sub-collections and items within the Library's Map Collections labelled GA_ReportYYYYMMDD and one for the top-level sub-collections within the Library's Map Collections labelled GA_CollectionsReportYYYYMMDD, with YYYYMMDD as the report creation date. With batch files then created for 7daysAgo, 30daysAgo, and 365daysAgo web data time spans, Windows Task Scheduler was set up to run a 30daysAgo and 365daysAgo report at the end of every month. Note that each of these scripts take a minimum of 24 hours or more to run. For this reason, each script is scheduled at least two days apart from the other.
+Using Python 2.7.8, Google Analytics data in GA_Data.csv is parsed and formatted into a readable CSV format. Additional information for each web page is also appended, including a sub-collection or item flag, identifier, and parent directory for each MacRepo ID of the Library's Maps Collections. Two output Google Analytics Report files are created; one for  all sub-collections and items within the Library's Map Collections labeled GA_ReportYYYYMMDD and one for the top-level sub-collections within the Library's Map Collections labeled GA_CollectionsReportYYYYMMDD, with YYYYMMDD as the report creation date. With batch files then created for 7daysAgo, 30daysAgo, and 365daysAgo web data time spans, Windows Task Scheduler was set up to run a 30daysAgo and 365daysAgo report at the end of every month. Note that each of these scripts take a minimum of 24 hours or more to run. For this reason, each script is scheduled at least two days apart from the other.
 
 ### Resource: Google Analytics Reports
 
@@ -82,7 +82,7 @@ Annual web analytics reports for the Digital Archive are available for 2016/2017
 	4. The Google Analytics Console is used to obtain user data for the top ten collections and top ten items. 
 	Specifically, the geographic location of users and referring sites to Map Collection items are analyzed. 
 	For the purposes of reporting the most significant data (ie. countries and referring sites sourcing a high volume of Map Collection users), it is recommended to begin creating the in-depth analysis section of the report before the user overview. 
-	Begin by navigating to Reports --> Behaviour --> Site Content --> All Pages within the analytics console. 
+	Begin by navigating to Reports --> Behavior --> Site Content --> All Pages within the analytics console. 
 
 	5. Create the in-depth analysis:
 	
@@ -167,7 +167,7 @@ The steps below are a guide on how to set up GA_CreateReport to run within Windo
 	If it is not, copy it into any folder within the C:\ drive. 
 	Make sure that all file paths within GA_Filter and GA_CreateReport refer to the correct directory.
 	
-	7. Edit the batch file labelled "GA_CreateReport_30daysAgo" with Notepad ++. 
+	7. Edit the batch file labeled "GA_CreateReport_30daysAgo" with Notepad ++. 
 	Change the directory in the second line to the directory in which the batch file is contained.
 	
 	8. Follow the link below to instructions on creating a scheduled task within Windows Task Scheduler. 
@@ -181,7 +181,10 @@ The steps below are a guide on how to set up GA_CreateReport to run within Windo
 	Note: In the case that the user account chosen to run the task does not have administrative privileges, follow this link to give that user 'Log on as Batch Job' Rights.
 	https://www.smartftp.com/support/kb/how-to-give-a-user-log-on-as-a-batch-job-rights-f2691.html
 	
-	
+## Troubleshooting Tips
+
+A common error found when executing the Python scripts is the absence of modules within the proper program file. 
+For Python 2, which the Google Analytics scripts run on, navigate to C:\Python27 on the local disk and ensure desired modules are in the 'site-packages' folder (Lib\site-packages) found within each Python version folder. 
 	
 	
 	
