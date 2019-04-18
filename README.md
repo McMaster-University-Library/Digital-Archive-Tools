@@ -17,7 +17,9 @@
 [Resource: Google Analytics Reports](https://github.com/maclibGIS/Digital-Archive-Tools#resource-google-analytics-reports)  
 [A Guide to Creating a Web Analytics Annual Report](https://github.com/maclibGIS/Digital-Archive-Tools#a-guide-to-creating-a-web-analytics-annual-report)   
 [Resource: Exploring Google Analytics.txt](https://github.com/maclibGIS/Digital-Archive-Tools#resource-exploring-google-analyticstxt)  
-[A Guide to The Project's Initial Creation](https://github.com/maclibGIS/Digital-Archive-Tools#a-guide-to-the-projects-initial-creation)
+[A Guide to The Project's Initial Creation](https://github.com/maclibGIS/Digital-Archive-Tools#a-guide-to-the-projects-initial-creation)  
+
+**[Troubleshooting Tips](https://github.com/maclibGIS/Digital-Archive-Tools#troubleshooting-tips)**
 </td></tr></table>
 
 ## Tool: Scraper_V2.py
@@ -183,8 +185,7 @@ The steps below are a guide on how to set up GA_CreateReport to run within Windo
 	
 ## Troubleshooting Tips
 
-A common error found when executing the Python scripts is the absence of modules within the proper program file. 
-For Python 2, which the Google Analytics scripts run on, navigate to C:\Python27 on the local disk and ensure desired modules are in the 'site-packages' folder (Lib\site-packages) found within each Python version folder. 
+A common error found when executing the Python scripts is the absence of modules within the proper program file. For Python 2, which the Google Analytics scripts run on, navigate to C:\Python27 on the local disk and ensure desired modules are in the _site-packages_ folder (Lib\site-packages) found within each Python version folder. 
 	
 	
 	
