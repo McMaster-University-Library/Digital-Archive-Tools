@@ -99,7 +99,16 @@ Loads all MODS xml file located in a /MODS folder of a specified directory, refo
 - **NOTE:** DA_mods_to_metadata should be run after DA_bulk_downloader generates xml files.
 - Sample output file is found at: \sample_files\metadata_out.txt
   
-## 5. Other functions
+## 5. Adding Georeferencing Products
+
+1. Add tif and xml files to the appropriate subfolder (named after the macrepo number of the collection in the digital archive) of the ToBeProcessed folder in dcs1.lib.mcmaster.ca
+2. Following ingest, run a SPARQL query to extract all items that belong to the digital archive collection of interest
+  - pull out a table with | identifier | macrepo # |
+  - for all items that need GCP/readme files to be processed, rename the files to preprend '<macrepo #>_' to the filename. 
+3. Copy all renamed georeferencing files to the same subfolder as Step 1. 
+
+  
+## 6. Other functions
 
 ### xml2struct.m
 xml2struct takes either a java xml object, an xml file, or a string in xml format as input and returns a parsed xml tree in structure.
