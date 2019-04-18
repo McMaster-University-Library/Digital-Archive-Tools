@@ -1,13 +1,14 @@
 TOOLS TO EXPLORE AND OBTAIN CERTAIN DATA FROM THE GOOGLE ANALYTICS DASHBOARD.
 
-To obtain information on the McMaster Digital Archives total page users: Reporting --> Behaviour --> Site Content --> All Pages.
+To obtain information on the McMaster Digital Archives total page users: Reports --> Behaviour --> Site Content --> All Pages.
 (To obtain information on a specific page, enter the MacRepo ID of the web page in the search bar.)
 
-Using Reporting --> Behaviour --> Site Content --> All Pages --> (Enter MacRepo ID in the search bar and select the web page.), we can navigate to:
+Using Reports --> Behaviour --> Site Content --> All Pages --> (Enter MacRepo ID in the search bar and select the web page.), we can navigate to:
 
 	1. Page views by Users' Country: Set Primary Dimension to Page --> Set Secondary Dimension to Users --> Country.
 	2. Page views by Users' City: Set Primary Dimension to Page --> Set Secondary Dimension to Users --> City.
-	3. Page views by Channel Grouping: Set Primary Dimension to Page --> Set Secondary Dimension to Acquisition --> Default Channel Grouping.
+	3. Page views by Referring Sources: Set Primary Dimension to Page --> Set Secondary Dimension to Behavior --> Full Referrer.
+	4. Page views by Channel Grouping: Set Primary Dimension to Page --> Set Secondary Dimension to Acquisition --> Default Channel Grouping.
 			
 			Terminology Note:
 			
@@ -42,7 +43,7 @@ Using Reporting --> Behaviour --> Site Content --> All Pages --> (Enter MacRepo 
 				
 				For Multi-Channel Funnels reports, however, Analytics will consider the second session as "direct." and keyword ‘My Search‘ visits will be 1 and the direct visits will be 1. 
 						
-	4. Page views by Traffic Sources and Medium: Set Primary Dimension to Page --> Set Secondary Dimension to Acquisition --> Source/Medium.
+	5. Page views by Traffic Sources and Medium: Set Primary Dimension to Page --> Set Secondary Dimension to Acquisition --> Source/Medium.
 			
 			Note: Medium refers to the channel grouping above. For direct, '(none)' would be indicated as its medium.
 	
@@ -62,10 +63,13 @@ Respective to the navigations above, the query parameters to be set for creating
 	2.	dimensions: ga:city
 		sort: -ga:pageviews
 		
-	3.  dimensions: ga:channelGrouping
+	3.  dimensions: ga:fullReferrer
+		sort: -ga:pageviews	
+		
+	4.  dimensions: ga:channelGrouping
 		sort: -ga:pageviews
 		
-	4.  dimensions: ga:sourceMedium
+	5.  dimensions: ga:sourceMedium
 		sort: -ga:pageviews
 		
 	
