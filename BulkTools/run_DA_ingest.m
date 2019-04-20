@@ -166,3 +166,8 @@ DA_check_ingested(top_path,'ingested_all.csv')
 %%% Step 5: Inspect the ingested objects in the Digital Archive
 
 %%% > If an object doesn't pass inspection (or doesn't exist in the digital archive). The inspector makes a note (e.g. in Trello), and the .tiff and .xml of the offending item are moved to the /ToFix/ folder
+
+%%% Step 6: Prepare goereferencing items for ingest
+cd('D:\Local\Digital-Archive-Tools\BulkTools')
+DA_make_georef_matls(top_path,'ingested_all.csv')
+%%% Copy contents of \ToIngest_Georef to dcs.lib.mcmaster.ca\GCP and move to Queued
