@@ -29,7 +29,8 @@ Our approach is as follows (a scripted overview of the process can be found in *
         * In the shared network folder, navigate to the /ToBeProcessed/ directory. If not already done, create a folder in this directory that is named after the macrepo number of its collection (e.g. a folder named "66660" is created for the Italy 1:25k topographic maps, since the collection's macrepo number is 66660 [http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A66660](http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A66660). 
 			* All .tiff/.xml pairs should be copied from \ToIngest\ to the new directory (/ToBeProcessed/<macrepo>/) on the shared network folder. 
 			* Once copying to the shared network folder has completed, move the copied items from \ToIngest\ to \ToIngest\Queued\ on the local drive.
-	    * Notify Dorin to auto-process the items. Await confirmation that it is completed.
+	    * Items in the /ToBeProcessed/ directory are processed automatically at 6 pm on weekday evenings. 
+			* Processed items are moved to the /Processed/ directory in the shared network folder. Log files are found in the /Confirmation/ directory.
 
 5. **Moving ingested items**
 	* An output of all files ingested into a given collection is extracted using the Fedora RIQS (http://dcs1.mcmaster.ca/fedora/risearch), and the query given in Jay's [Fedora SPARQL Cookbook](https://github.com/jasonbrodeur/Fedora-SPARQL/blob/master/fedora-sparql-cookbook.md#example-2-display-list-of-all-active-non-deleted-items-in-a-collection-along-with-derivatives-good-for-checking)
@@ -39,7 +40,22 @@ Our approach is as follows (a scripted overview of the process can be found in *
 		
 6. **Human Quality Control**: QA-failing objects are inspected
 	* If an item needs to be reingested, delete the item in the digital archive and move the .tif/.xml pair back to the /ToIngest/ folder.
-	* If you're able to fix it in the Digital Archive (e.g. by re-uploading / regenerating), please move the .tif/.xml pair to the /Ingested/ folder
+	* If you're able to fix it in the Digital Archive (e.g. by re-uploading / regenerating), move the .tif/.xml pair to the /Ingested/ folder
+
+7. **Preparing georeferencing materials for ingest
+	* The following georeferencing products may be ingested into the Digital Archive alongside TIFF files, though is done after the TIFF file has already been ingested. 
+		* **GCP file:** Ground Control Point (GCP) file, to be used to georeference a TIFF image in QGIS. GCP files should be collected in the /GCP/ folder of the top-level directory. GCP files should have the same filename as the corresponding TIFF file, with an additional extension of '.points' added. E.g. a TIFF file example.tiff would have a corresponding GCP file example.tiff.points. 
+		* **README file:** Contains coordinate reference system information and instructions on how to georeference the original image. Readme files should be collected in the /README/ folder of the top-level directory. Readme files can be generated using the function *DA_make_readme.m*, which is called from *DA_make_georef_matls.m* as part of automated processing work.
+		* **ISO19115 file(optional):** ISO19115 metadata file in XML format. 
+	* Georeferencing products can be created automatically using the function *DA_make_georef_matls.m*, found in the /georeferencing-tools/ subdirectory of this github repo. The function has the following requirements: 
+		* An extract of all items in the collection of interest must be created following the process described in item 4 above. 
+		* GCP files must have been created and saved to the /GCP/ folder of the top-level directory. Note that for some collections, GCP files can be extracted from georeferenced tiffs using the function *extract_gcps.m* in the /georeferencing-tools/ subdirectory of this github repo. 
+		* Readme files can be generated using the function *DA_make_readme.m*, which is called from *DA_make_georef_matls.m*. This process requires a csv file listing the item's identifier and a text string indicating the corresponding CRS for that item. See the example file in this github repo (CRS_lookup_example.csv).
+	* What DA_make_georef_matls.m* does:  
+		* In cases where the function finds ingested GCP/README/ISO19115 files in the Digital Archive, it attempts to move these items out of /ToIngest_Georef/Queued/ to /Ingested/
+		* When GCP/README/ISO19115 files are not found in the Digital Archive (but TIFF and MODS files are present), the function attempts to copy GCPs files (from /GCP), ISO19115 files (from /ISO19115), and README files (from /README) to the /ToIngest_Georef/ folder.
+			* If no README file is found, the function calls *DA_make_readme.m* to create the readme file. 
+		* All files added to /ToIngest_Georef/ should be copied to the /GCP/ folder of the remote machine (dcs.lib.mcmaster.ca). These will be processed every weeknight at 6pm. Once files are copied, the files in /ToIngest_Georef/ should be manually moved to /ToIngest_Georef/Queued/.
 
 The following functions take metadata structured in a spreadsheet and prepares them for ingest into the Digital Archive. 
 
