@@ -32,6 +32,19 @@
 - Delete TIF/XML from zipfile
 -- use 7zip
 
+## Adding a new collection
+*See full instructions in "H:\Digitization_Projects\Planning\Creating Folders in the Digital Archive.docx"*
+
+- log into Digital Archive (if not already)
+- Navigate to the parent folder for the new collection
+- Click "Manage"
+- Click "Add an object to this Collection"
+- From Content Model dropdown, select "Islandora Collection Content Model"
+- Ignore the Collection PID box.   
+- If you are creating a primary folder, that is, a folder which will contain sub-folders, set the “collection policy” for the folder.  In order to do this, uncheck the “Inherit collection policy” box.  This will produce a list of content models.  
+-- For map collections, only select: **Islandora Large Image Content Model** and **Islandora Collection Content Model** Secondary folders will inherit the properties of the primary folder.  
+- Click ingest when ready.
+
 ## Replacing Metadata
 Instructions on replacing metadata files for already-ingested items in the Digital Archive:
 
