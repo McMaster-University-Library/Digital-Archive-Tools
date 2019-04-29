@@ -44,7 +44,7 @@ Our approach is as follows (a scripted overview of the process can be found in *
 
 7. **Preparing georeferencing materials for ingest
 	* The following georeferencing products may be ingested into the Digital Archive alongside TIFF files, though is done after the TIFF file has already been ingested. 
-		* **GCP file:** Ground Control Point (GCP) file, to be used to georeference a TIFF image in QGIS. GCP files should be collected in the /GCP/ folder of the top-level directory. GCP files should have the same filename as the corresponding TIFF file, with an additional extension of '.points' added. E.g. a TIFF file example.tiff would have a corresponding GCP file example.tiff.points. 
+		* **GCP file:** Ground Control Point (GCP) file, to be used to georeference a TIFF image in QGIS. GCP files should be collected in the /GCP/ folder of the top-level directory. GCP files should have the same filename as the corresponding TIFF file, with the extension of '.points' added. E.g. a TIFF file example.tiff would have a corresponding GCP file example.points. 
 		* **README file:** Contains coordinate reference system information and instructions on how to georeference the original image. Readme files should be collected in the /README/ folder of the top-level directory. Readme files can be generated using the function *DA_make_readme.m*, which is called from *DA_make_georef_matls.m* as part of automated processing work.
 		* **ISO19115 file(optional):** ISO19115 metadata file in XML format. 
 	* Georeferencing products can be created automatically using the function *DA_make_georef_matls.m*, found in the /georeferencing-tools/ subdirectory of this github repo. The function has the following requirements: 
@@ -55,7 +55,7 @@ Our approach is as follows (a scripted overview of the process can be found in *
 		* In cases where the function finds ingested GCP/README/ISO19115 files in the Digital Archive, it attempts to move these items out of /ToIngest_Georef/Queued/ to /Ingested/
 		* When GCP/README/ISO19115 files are not found in the Digital Archive (but TIFF and MODS files are present), the function attempts to copy GCPs files (from /GCP), ISO19115 files (from /ISO19115), and README files (from /README) to the /ToIngest_Georef/ folder.
 			* If no README file is found, the function calls *DA_make_readme.m* to create the readme file. 
-		* All files added to /ToIngest_Georef/ should be copied to the /GCP/ folder of the remote machine (dcs.lib.mcmaster.ca). These will be processed every weeknight at 6pm. Once files are copied, the files in /ToIngest_Georef/ should be manually moved to /ToIngest_Georef/Queued/.
+		* All files added to /ToIngest_Georef/ should be copied to the approapriate folder (/GCP, /ISO19115, /README) in the /GCP/subdirectory of the remote machine (dcs.lib.mcmaster.ca). These will be processed every weeknight at 6pm. Once files are copied, the files in /ToIngest_Georef/ should be manually moved to /ToIngest_Georef/Queued/.
 
 The following functions take metadata structured in a spreadsheet and prepares them for ingest into the Digital Archive. 
 

@@ -33,10 +33,10 @@ jjb_check_dirs([top_path 'README\'],1);
 
 fid_log = fopen([top_path 'Ingested\georef_check_log_' datestr(now,30) '.csv'],'w+');
 % fid_errors = fopen([top_path 'ToFix\ToFix.csv'],'w+');
-
 if exist([top_path 'README\readme_template.txt'],'file')~=2
     copyfile(['..\georeferencing-tools\readme_template.txt'],[top_path 'README\readme_template.txt']);
 end
+addpath('..\georeferencing-tools');
 
 % Open the ingested_list file, which is output from a Fedora RIQS query
 %(specifically, Example #2 here:
@@ -79,10 +79,10 @@ for i = 1:1:size(macrepos,1)
     % If there is no GCP item ingested, try to find it in /gcp/, rename it and copy it into /ToIngest_Georef/
     if isempty(find(strcmp(tmp(:,5),'GCP')==1))==1
         if exist([top_path 'GCP\' macrepo_id{i,2} '.tif.points'],'file')==2
-            [success] = copyfile([top_path 'GCP\' macrepo_id{i,2} '.tif.points'],[top_path 'ToIngest_Georef\macrepo_' macrepo_id{i,1} '_GCP.tif.points']);
+            [success] = copyfile([top_path 'GCP\' macrepo_id{i,2} '.tif.points'],[top_path 'ToIngest_Georef\macrepo_' macrepo_id{i,1} '_GCP.points']);
             switch success
                 case 1
-                    disp(['Copied file macrepo_' macrepo_id{i,1} '_GCP.tif.points to \ToIngest_Georef\']);
+                    disp(['Copied file macrepo_' macrepo_id{i,1} '_GCP.points to \ToIngest_Georef\']);
                 case 0
                     disp(['Error copying file ' macrepo_id{i,2} '.tif.points to \ToIngest_Georef\']);
             end

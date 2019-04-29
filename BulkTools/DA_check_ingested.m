@@ -110,9 +110,13 @@ end
 
 function [] = move_ingested_files(top_path, fname)
 if exist([top_path 'ToIngest\Queued\' fname '.tif'],'file')==2
+    try
     movefile([top_path 'ToIngest\Queued\' fname '.tif'],[top_path 'Ingested\' fname '.tif']);
     movefile([top_path 'ToIngest\Queued\' fname '.xml'],[top_path 'Ingested\' fname '.xml']);
     disp([fname ' pair moved to \Ingested']);
+    catch
+    disp(['Error moving pair ' fname ' from ToIngest\Queued\ to Ingested\. Skipping.']);
+    end
 else
     disp(['Could not find a pair for file: ' fname]);
     clear fname;

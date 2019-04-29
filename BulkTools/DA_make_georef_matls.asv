@@ -33,10 +33,10 @@ jjb_check_dirs([top_path 'README\'],1);
 
 fid_log = fopen([top_path 'Ingested\georef_check_log_' datestr(now,30) '.csv'],'w+');
 % fid_errors = fopen([top_path 'ToFix\ToFix.csv'],'w+');
-
 if exist([top_path 'README\readme_template.txt'],'file')~=2
     copyfile(['..\georeferencing-tools\readme_template.txt'],[top_path 'README\readme_template.txt']);
 end
+addpath([
 
 % Open the ingested_list file, which is output from a Fedora RIQS query
 %(specifically, Example #2 here:
@@ -79,10 +79,10 @@ for i = 1:1:size(macrepos,1)
     % If there is no GCP item ingested, try to find it in /gcp/, rename it and copy it into /ToIngest_Georef/
     if isempty(find(strcmp(tmp(:,5),'GCP')==1))==1
         if exist([top_path 'GCP\' macrepo_id{i,2} '.tif.points'],'file')==2
-            [success] = copyfile([top_path 'GCP\' macrepo_id{i,2} '.tif.points'],[top_path 'ToIngest_Georef\macrepo_' macrepo_id{i,1} '_GCP.tif.points']);
+            [success] = copyfile([top_path 'GCP\' macrepo_id{i,2} '.tif.points'],[top_path 'ToIngest_Georef\macrepo_' macrepo_id{i,1} '_GCP.points']);
             switch success
                 case 1
-                    disp(['Copied file macrepo_' macrepo_id{i,1} '_GCP.tif.points to \ToIngest_Georef\']);
+                    disp(['Copied file macrepo_' macrepo_id{i,1} '_GCP.points to \ToIngest_Georef\']);
                 case 0
                     disp(['Error copying file ' macrepo_id{i,2} '.tif.points to \ToIngest_Georef\']);
             end
@@ -104,13 +104,13 @@ for i = 1:1:size(macrepos,1)
   %%% =========== ISO19115 file ===================== %%%
     % If there is no ISO19115 item ingested, try to find it in /ISO19115/, rename it and copy it into /ToIngest_Georef/
     if isempty(find(strcmp(tmp(:,5),'ISO19115')==1))==1
-        if exist([top_path 'ISO19115\' macrepo_id{i,2} '_TIFF.xml'],'file')==2
-            [success] = copyfile([top_path 'ISO19115\' macrepo_id{i,2} '_TIFF.xml'],[top_path 'ToIngest_Georef\macrepo_' macrepo_id{i,1} '_ISO19115.xml']);
+        if exist([top_path 'ISO19115\' macrepo_id{i,2} 'TIFF.xml'],'file')==2
+            [success] = copyfile([top_path 'ISO19115\' macrepo_id{i,2} 'TIFF.xml'],[top_path 'ToIngest_Georef\macrepo_' macrepo_id{i,1} '_ISO19115.xml']);
             switch success
                 case 1
                     disp(['Copied file macrepo_' macrepo_id{i,1} '_ISO19115.xml to \ToIngest_Georef\']);
                 case 0
-                    disp(['Error copying file ' macrepo_id{i,2} '_ISO19115.xml to \ToIngest_Georef\']);
+                    disp(['Error copying file ' macrepo_id{i,2} 'TIFF.xml to \ToIngest_Georef\']);
             end
         else
             disp(['Can''t find file: ' macrepo_id{i,2} '_ISO19115.xml in \ISO19115']);
@@ -142,8 +142,6 @@ for i = 1:1:size(macrepos,1)
                 case 0
                     disp(['Error copying file macrepo_' macrepo_id{i,1} '_README.txt to \ToIngest_Georef\']);
             end
-        else
-        end
         % else, see if it is in /ToIngest_Georef/Queued, move it to \Ingested
     else
         if exist([top_path 'ToIngest_Georef\Queued\macrepo_' macrepo_id{i,1} '_README.txt'],'file')==2
@@ -158,6 +156,7 @@ for i = 1:1:size(macrepos,1)
     end
     
 end
+fclose(fid_log);
 %{    
     pass_flag = 1;
     for j_ids = 1:1:length(ids)
