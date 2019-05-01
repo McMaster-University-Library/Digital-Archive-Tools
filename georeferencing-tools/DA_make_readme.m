@@ -1,5 +1,5 @@
-function [] = DA_make_readme(macrepo,id,template_path,save_dir,CRS_lookup_path)
-
+function [output] = DA_make_readme(macrepo,id,template_path,save_dir,CRS_lookup_path)
+% output = 1 if successful; 0 if not successful
 fid_readme = fopen(template_path,'r');
 fid_out = fopen([save_dir '\macrepo_' macrepo '_README.txt'],'w');
 
@@ -18,6 +18,9 @@ if ~isempty(rightrow)==1
     CRS_statement = D_CRS{rightrow,2};
 else
     disp(['Can''t find identifier : ' id ' in CRS lookup list. Exiting']);
+    output = 0;
+    fclose(fid_readme); 
+    fclose(fid_out);
     return;
 end
 
@@ -31,3 +34,4 @@ while eof==0
 end
 fclose(fid_readme); 
 fclose(fid_out);
+output = 1;

@@ -1,5 +1,5 @@
-function [] = gcp_qgis2arc(file_in, h, r)
-% Converts a GCP file in QGIS format to ArcGIS format
+function [] = gcp_arc2qgis(file_in, h, r)
+% Converts a GCP file in ArcGIS format to QGIS format
 % Inputs: 
 % - file_in: The full path to the file (or the filename if in the desired output folder)
 % - h:   The height of the image (in pixels)
@@ -42,8 +42,8 @@ if nargin==1
         tiffile = [name '.jp2'];
     else
     end
-        [status,h] = system(['identify -quiet -format "%h" "' filepath '/' name ext2 '"']); % Image height in pixels
-        [status2,r] = system(['identify -quiet -format "%y" "' filepath '/' name ext2 '"']); % Image resolution in points per inch
+        [status,h] = system(['identify -quiet -format "%h" "' tifpath '"']); % Image height in pixels
+        [status2,r] = system(['identify -quiet -format "%y" "' tifpath '"']); % Image resolution in points per inch
         
     if status+status2 ==0    
         disp(['height and resolution values inferred from image ' tiffile ': h = ' h ', r = ' r]);
@@ -61,18 +61,22 @@ if ischar(r)==1
     r = str2double(r);
 end
 
-%% Read the QGIS GCP file
-gcp_fmt = '%f %f %f %f %f'; %input format for the QGIS GCP files
+%% Read the Arc GCP file
+gcp_fmt = '%f %f %f %f'; %input format for the QGIS GCP files
 
 fid = fopen(file_in,'r');
-hdr = fgetl(fid); % get header row
-C_tmp = textscan(fid,gcp_fmt,'delimiter',',');
+% hdr = fgetl(fid); % get header row
+C_tmp = textscan(fid,gcp_fmt,'delimiter','\t');
 C = cell2mat(C_tmp); %convert from cell array into a matrix
-fclose(fid)
+fclose(fid);
 
 %% Convert and write the file
+ %Create the qgis .points file:
+ fid_qgis = fopen([filepath '/' name ext '.points'],'w');
+ fprintf(fid_qgis,'%s\n','mapX,mapY,pixelX,pixelY,enable');
+ fclose(fid_qgis);
 %%% Perform the conversion        
-C_ArcGIS = [C(:,3)./r (C(:,4)+h)/r C(:,1) C(:,2)];
-
-%%% Create the ArcGIS gcp file:
-dlmwrite([filepath '/' name '.txt'],C_ArcGIS,'delimiter','\t','precision',14);
+% C_ArcGIS = [C(:,3)./r (C(:,4)+h)/r C(:,1) C(:,2)];
+C_QGIS = [C(:,3) C(:,4) C(:,1).*r (C(:,2).*r)-h ones(size(C,1),1)];
+%%% Create the QGIS gcp file:
+dlmwrite([filepath '/' name ext '.points'],C_QGIS,'delimiter',',','precision',14,'-append');

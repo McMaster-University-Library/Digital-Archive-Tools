@@ -91,13 +91,13 @@ for i = 1:1:size(macrepos,1)
         end
         % else, see if it is in /ToIngest_Georef/Queued, move it to \Ingested
     else
-        if exist([top_path 'ToIngest_Georef\Queued\macrepo_' macrepo_id{i,1} '_GCP.tif.points'],'file')==2
-            [success2] = movefile([top_path 'ToIngest_Georef\Queued\macrepo_' macrepo_id{i,1} '_GCP.tif.points'],[top_path 'Ingested\macrepo_' macrepo_id{i,1} '_GCP.tif.points']);
+        if exist([top_path 'ToIngest_Georef\Queued\macrepo_' macrepo_id{i,1} '_GCP.points'],'file')==2
+            [success2] = movefile([top_path 'ToIngest_Georef\Queued\macrepo_' macrepo_id{i,1} '_GCP.points'],[top_path 'Ingested\macrepo_' macrepo_id{i,1} '_GCP.points']);
             switch success2
                 case 1
-                    disp(['Moved file macrepo_' macrepo_id{i,1} '_GCP.tif.points to \Ingested\']);
+                    disp(['Moved file macrepo_' macrepo_id{i,1} '_GCP.points to \Ingested\']);
                 case 0
-                    disp(['Error copying file ' macrepo_id{i,1} '_GCP.tif.points to \Ingested\']);
+                    disp(['Error copying file ' macrepo_id{i,1} '_GCP.points to \Ingested\']);
             end
         end
     end
@@ -115,8 +115,8 @@ for i = 1:1:size(macrepos,1)
         else
             disp(['Can''t find file: ' macrepo_id{i,2} '_ISO19115.xml in \ISO19115']);
         end
-        % else, see if it is in /ToIngest_Georef/Queued, move it to \Ingested
-    else
+        
+    else % else, see if it is in /ToIngest_Georef/Queued, move it to \Ingested
         if exist([top_path 'ToIngest_Georef\Queued\macrepo_' macrepo_id{i,1} '_ISO19115.xml'],'file')==2
             [success2] = movefile([top_path 'ToIngest_Georef\Queued\macrepo_' macrepo_id{i,1} '_ISO19115.xml'],[top_path 'Ingested\macrepo_' macrepo_id{i,1} '_ISO19115.xml']);
             switch success2
@@ -132,8 +132,14 @@ for i = 1:1:size(macrepos,1)
     if isempty(find(strcmp(tmp(:,5),'README')==1))==1
         if exist([top_path 'README\macrepo_' macrepo_id{i,1} '_README.txt'],'file')~=2
             %%% Create the readme file: 
-            DA_make_readme(macrepo_id{i,1},macrepo_id{i,2},[top_path 'README\readme_template.txt'],[top_path 'README'],[top_path 'CRS_lookup.csv']);
-            disp(['Created README file: macrepo_' macrepo_id{i,1} '_README.txt in \README']);            
+            result_readme = DA_make_readme(macrepo_id{i,1},macrepo_id{i,2},[top_path 'README\readme_template.txt'],[top_path 'README'],[top_path 'CRS_lookup.csv']);
+            switch result_readme
+                case 0 % Error
+                    disp('Error creating README file -- deleted.');
+                   delete([top_path 'README\macrepo_' macrepo_id{i,1} '_README.txt']);
+                otherwise % success
+                   disp(['Created README file: macrepo_' macrepo_id{i,1} '_README.txt in \README']);            
+            end
         end
             [success] = copyfile([top_path 'README\macrepo_' macrepo_id{i,1} '_README.txt'],[top_path 'ToIngest_Georef\macrepo_' macrepo_id{i,1} '_README.txt']);
             switch success
