@@ -16,6 +16,19 @@ Inputs:
 - A file by the same name as the GCP file (and with a .tif, .tiff, or .jp2 extension) is in the same folder as the GCP file
 - ImageMagick is installed on the computer.
 
+## gcp_arc2qgis.m
+Converts a GCP file in ArcGIS format to QGIS format
+Inputs: 
+- file_in: The full path to the file (or the filename if in the desired output folder)
+- h:   The height of the image (in pixels)
+  - Can be pulled from an image using the imagemagick command: identify -quiet -format "%h" <filename>
+- r: The resolution of the image (in ppi)
+  - Can be pulled from an image using the imagemagick command: identify -quiet -format "%y" <filename>
+	
+**NOTE** that h and r are optional IF the following conditions are met: 
+- A file by the same name as the GCP file (and with a .tif, .tiff, or .jp2 extension) is in the same folder as the GCP file
+- ImageMagick is installed on the computer.
+
 ## extract_gcps.m
 This function uses the gdalinfo command to extract GCP and WKT information from a georeferenced tiff that has an accompanying .aux.xml file. 
 inputs: 
@@ -28,6 +41,10 @@ file_in = 'H:\Digitization_Projects\WWII_Topographic_Maps\LCMSDS\GeoTiff-test\WW
 gdal_path = 'C:\Program Files\QGIS 3.6\bin';
 extract_gcps(file_in, gdal_path)
 ```
+
+## extract_from_iso19115xml.m
+A script used to extract responsible party, publisher, and geographical extents from an ISO 19115 xml file.
+
 # Georeferencing Information
 
 ## Georeferencing tutorials 
