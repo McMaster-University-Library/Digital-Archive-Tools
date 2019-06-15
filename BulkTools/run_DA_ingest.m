@@ -175,3 +175,69 @@ DA_check_ingested(top_path,'ingested_all.csv')
 cd('D:\Local\Digital-Archive-Tools\BulkTools')
 DA_make_georef_matls(top_path,'ingested_all.csv')
 %%% Copy contents of \ToIngest_Georef to dcs.lib.mcmaster.ca\GCP and move to Queued
+
+%% WW2_Geologic_France_80k 
+top_path = 'H:\Digitization_Projects\WWII_Geologic_Maps\Geologic_France_80k\';
+
+cd('D:\Local\Digital-Archive-Tools\BulkTools')
+DA_metadata_to_mods(top_path,'Digital Archive - Bulk Metadata Templates - WW2_Geologic_France_80k.tsv');
+
+cd('D:\Local\Digital-Archive-Tools\BulkTools')
+DA_prepare_ingest(top_path);
+
+top_path = 'H:\Digitization_Projects\WWII_Geologic_Maps\Geologic_France_80k\';
+cd('D:\Local\Digital-Archive-Tools\BulkTools')
+DA_check_ingested(top_path,'ingested_all.csv')
+
+%% WW2_France_50k_GSGS4250  
+top_path = 'H:\Digitization_Projects\WWII_Topographic_Maps\France_Belgium_Holland\France_50k_GSGS4250\';
+
+cd('D:\Local\Digital-Archive-Tools\BulkTools')
+DA_metadata_to_mods(top_path,'Digital Archive - Bulk Metadata Templates - WW2_France_50k_GSGS4250.tsv');
+
+cd('D:\Local\Digital-Archive-Tools\BulkTools')
+DA_prepare_ingest(top_path);
+
+top_path = 'H:\Digitization_Projects\WWII_Topographic_Maps\France_Belgium_Holland\France_50k_GSGS4250\';
+cd('D:\Local\Digital-Archive-Tools\BulkTools')
+DA_check_ingested(top_path,'ingested_all.csv')
+
+%% WW2_France_50k_GSGS4040    
+top_path = 'H:\Digitization_Projects\WWII_Topographic_Maps\France_Belgium_Holland\France_50k_GSGS4040\';
+
+cd('D:\Local\Digital-Archive-Tools\BulkTools')
+DA_metadata_to_mods(top_path,'Digital Archive - Bulk Metadata Templates - WW2_France_50k_GSGS4040.tsv');
+
+cd('D:\Local\Digital-Archive-Tools\BulkTools')
+DA_prepare_ingest(top_path);
+
+top_path = 'H:\Digitization_Projects\WWII_Topographic_Maps\France_Belgium_Holland\France_50k_GSGS4040\';
+cd('D:\Local\Digital-Archive-Tools\BulkTools')
+DA_check_ingested(top_path,'ingested_all.csv')
+
+%% UofA_WW2_Crete_50k_topos     
+top_path = 'H:\Digitization_Projects\WWII_Topographic_Maps\U_of_Alberta\UofA_WW2_Crete_50k';
+
+cd('D:\Local\Digital-Archive-Tools\BulkTools')
+DA_metadata_to_mods(top_path,'Digital Archive - Bulk Metadata Templates - UofA_WW2_Crete_50k_topos.tsv');
+
+cd('D:\Local\Digital-Archive-Tools\BulkTools')
+DA_prepare_ingest(top_path);
+
+top_path = 'H:\Digitization_Projects\WWII_Topographic_Maps\U_of_Alberta\UofA_WW2_Crete_50k';
+cd('D:\Local\Digital-Archive-Tools\BulkTools')
+DA_check_ingested(top_path,'ingested_all.csv')
+
+%% WW2_CityPlans_Japan      
+top_path = 'H:\Digitization_Projects\WWII_CityPlans\CityPlans_Japan\';
+
+cd('D:\Local\Digital-Archive-Tools\BulkTools')
+DA_metadata_to_mods(top_path,'Digital Archive - Bulk Metadata Templates - WW2_CityPlans_Japan.tsv');
+
+cd('D:\Local\Digital-Archive-Tools\BulkTools')
+DA_prepare_ingest(top_path);
+
+top_path = 'H:\Digitization_Projects\WWII_CityPlans\CityPlans_Japan\';
+cd('D:\Local\Digital-Archive-Tools\BulkTools')
+DA_check_ingested(top_path,'ingested_all.csv')
+
