@@ -58,3 +58,10 @@ file_ext = '.tiff';
 download_dir = 'D:\Local\GISDay - DMDS\';
 download_list = 'D:\Local\GISDay - DMDS\macrepos.csv';
 DA_bulk_downloader(file_ext,download_dir,download_list)
+
+%% Italy 1:50k tiffs
+cd('D:\Local\Digital-Archive-Tools\BulkTools\');
+file_ext = '.tiff';
+download_dir = 'E:\Italy_50k\';
+download_list = 'E:\Italy_50k\macrepos.csv';
+DA_bulk_downloader(file_ext,download_dir,download_list)
