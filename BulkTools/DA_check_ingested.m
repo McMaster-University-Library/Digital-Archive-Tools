@@ -1,4 +1,4 @@
-function [] = DA_check_ingested(top_path,ingested_list)
+function [macrepo_id] = DA_check_ingested(top_path,ingested_list)
 %%% This function checks items in the Digital Archive to ensure that they
 %%% contain all derivative files.
 %%% Derivatives include:

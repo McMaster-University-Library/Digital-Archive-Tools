@@ -36,6 +36,7 @@ DA_prepare_ingest('H:\Digitization_Projects\WWII_Topographic_Maps\GermanyHolland
 %%% RIQS http://dcs1.mcmaster.ca/fedora/risearch
 %%% NOTE that the input file is assumed to exist in \Ingested\
 % DA_move_ingested('H:\Digitization_Projects\WWII_Topographic_Maps\GermanyHollandPoland_25k\','ingested.csv')
+cd('D:\Local\Digital-Archive-Tools\BulkTools')
 DA_check_ingested('H:\Digitization_Projects\WWII_Topographic_Maps\GermanyHollandPoland_25k\','ingested_all.csv')
 
 %%% Step 5: Inspect the ingested objects in the Digital Archive
