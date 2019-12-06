@@ -83,7 +83,22 @@ Idealized directory structure:
     *\Queued\: Manual folder. Once .tiff/.xml pairs have been copied from ToIngest\ to DCS1 for bulk ingestion, they should be moved into /Queued so that they are not accidentally processed again.
   * \Ingested\: .tiff files that have been verified as ingested. Files are moved manually out of \Queued\ into this directory after having been inspected in the Digital Archive.
   * \ToFix\: Landing place for items that were processed by Dorin, but did not pass the QA process. Once items are fixed, the .tiff should be moved back to the top-level folder and the .xml returned to MODS or deleted and replaced.
-  
+
+| Collection        | Collection Macrepo Number       | H:\ Location  |
+| ------------- |-------------:| -----|
+| Italy 1:50k Topographic Maps | 84411 |H:\Digitization_Projects\WWII_Topographic_Maps\Italy\UofA WWII_Italy_Topos_50k\|
+| Italy 1:25k Topographic Maps | 66660 | H:\Digitization_Projects\WWII_Topographic_Maps\Italy\UofA WWII_Italy_Topos_25k\ |
+| Europe, Central 1:25k Topographic Maps (GermanyHollandPoland) | 85282 | H:\Digitization_Projects\WWII_Topographic_Maps\GermanyHollandPoland_25k\ |
+|LCMSDS Defence Overprints|86603|H:\Digitization_Projects\WWII_Topographic_Maps\LCMSDS\|
+|Ontario Historical Topographic Maps - 1:63360|87642|H:\Digitization_Projects\OCUL_HTDP_63K\|
+|Ontario Historical Topographic Maps - 1:25000|88343|H:\Digitization_Projects\OCUL_HTDP_25K\|
+|Japan City Plans 1:12,500 |87641|H:\Digitization_Projects\WWII_CityPlans\CityPlans_Japan\|
+|WW2_Geologic_France_80k |88593|H:\Digitization_Projects\WWII_Geologic_Maps\Geologic_France_80k\|
+|WW2_France_50k_GSGS4250|88988|H:\Digitization_Projects\WWII_Topographic_Maps\France_Belgium_Holland\France_50k_GSGS4250\|
+|WW2_France_50k_GSGS4040|88989|H:\Digitization_Projects\WWII_Topographic_Maps\France_Belgium_Holland\France_50k_GSGS4040\|
+|UofA_WW2_Crete_50k_topos|88992|H:\Digitization_Projects\WWII_Topographic_Maps\U_of_Alberta\UofA_WW2_Crete_50k\|
+
+
 ## 3. Functions for extracting items from the Digital Archive to a spreadsheet or directory
 A number of functions have been created to pull metadata records or files (images, etc.) from the Digital Archive and place them in local files (or a collective spreadsheet of records). These functions are described below.
 
