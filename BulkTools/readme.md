@@ -86,9 +86,9 @@ Idealized directory structure:
 
 | Collection        | Collection Macrepo Number       | H:\ Location  |
 | ------------- |-------------:| -----|
-| Italy 1:50k Topographic Maps | 84411 |H:\Digitization_Projects\WWII_Topographic_Maps\Italy\UofA WWII_Italy_Topos_50k\|
-| Italy 1:25k Topographic Maps | 66660 | H:\Digitization_Projects\WWII_Topographic_Maps\Italy\UofA WWII_Italy_Topos_25k\ |
-| Europe, Central 1:25k Topographic Maps (GermanyHollandPoland) | 85282 | H:\Digitization_Projects\WWII_Topographic_Maps\GermanyHollandPoland_25k\ |
+|UofA Italy 1:50k Topographic Maps | 84411 |H:\Digitization_Projects\WWII_Topographic_Maps\U_of_Alberta\UofA WWII_Italy_Topos_50k\|
+|UofA Italy 1:25k Topographic Maps | 66660 | H:\Digitization_Projects\WWII_Topographic_Maps\U_of_Alberta\UofA WWII_Italy_Topos_25k\ |
+| Europe, Central 1:25k Topographic Maps (GermanyHollandPoland) | 85282 | H:\Digitization_Projects\WWII_Topographic_Maps\U_of_Alberta\GermanyHollandPoland_25k\ |
 |LCMSDS Defence Overprints|86603|H:\Digitization_Projects\WWII_Topographic_Maps\LCMSDS\|
 |Ontario Historical Topographic Maps - 1:63360|87642|H:\Digitization_Projects\OCUL_HTDP_63K\|
 |Ontario Historical Topographic Maps - 1:25000|88343|H:\Digitization_Projects\OCUL_HTDP_25K\|
@@ -97,6 +97,7 @@ Idealized directory structure:
 |WW2_France_50k_GSGS4250|88988|H:\Digitization_Projects\WWII_Topographic_Maps\France_Belgium_Holland\France_50k_GSGS4250\|
 |WW2_France_50k_GSGS4040|88989|H:\Digitization_Projects\WWII_Topographic_Maps\France_Belgium_Holland\France_50k_GSGS4040\|
 |UofA_WW2_Crete_50k_topos|88992|H:\Digitization_Projects\WWII_Topographic_Maps\U_of_Alberta\UofA_WW2_Crete_50k\|
+|UofA_USSR_100k|91926|H:\Digitization_Projects\WWII_Topographic_Maps\U_of_Alberta\UofA_USSR_100k|
 
 
 ## 3. Functions for extracting items from the Digital Archive to a spreadsheet or directory
