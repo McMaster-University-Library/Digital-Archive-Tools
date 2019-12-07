@@ -7,7 +7,7 @@ DA_mods_to_metadata('H:\Digitization_Projects\WWII_Topographic_Maps\Italy\Italy_
 
 %% Italy 1:25k -- collected with DA_bulk_downloader
 cd('D:\Local\Digital-Archive-Tools\BulkTools')
-DA_mods_to_metadata('H:\Digitization_Projects\WWII_Topographic_Maps\Italy\UofA WWII_Italy_Topos_25k\MODS-downloaded\');
+DA_mods_to_metadata('H:\Digitization_Projects\WWII_Topographic_Maps\U_of_Alberta\UofA WWII_Italy_Topos_25k\MODS-downloaded\');
 
 %% Italy/Switzerland 1:250k -- collected with DA_bulk_downloader
 cd('D:\Local\Digital-Archive-Tools\BulkTools')

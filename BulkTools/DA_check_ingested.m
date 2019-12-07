@@ -6,7 +6,7 @@ function [macrepo_id] = DA_check_ingested(top_path,ingested_list)
 %%% a list of items failing the check stage.
 %%% Any failing items are moved from /Ingested to
 %%% Example Usage:
-% DA_check_ingested('H:\Digitization_Projects\WWII_Topographic_Maps\GermanyHollandPoland_25k\','ingested.csv')
+% DA_check_ingested('H:\Digitization_Projects\WWII_Topographic_Maps\U_of_Alberta\GermanyHollandPoland_25k\','ingested.csv')
 %
 %
 %%% Notes to self: For every macrepo, we're looking for each item listed in

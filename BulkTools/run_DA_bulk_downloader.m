@@ -41,7 +41,7 @@ DA_bulk_downloader(file_ext,download_dir,download_list,1); % run with book_flag 
 %% Metadata for Italy 25k
 cd('D:\Local\Digital-Archive-Tools\BulkTools\');
 file_ext = '.xml';
-download_dir = 'H:\Digitization_Projects\WWII_Topographic_Maps\Italy\UofA WWII_Italy_Topos_25k\MODS-downloaded\';
+download_dir = 'H:\Digitization_Projects\WWII_Topographic_Maps\U_of_Alberta\UofA WWII_Italy_Topos_25k\MODS-downloaded\';
 download_list = [download_dir 'macrepo_list.csv'];
 DA_bulk_downloader(file_ext,download_dir,download_list)
 

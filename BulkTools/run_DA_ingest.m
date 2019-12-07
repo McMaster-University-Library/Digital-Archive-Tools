@@ -2,7 +2,7 @@
 
 %% Processing GermanyHollandPoland_25k
 cd('D:\Local\Digital-Archive-Tools\BulkTools')
-top_path = 'H:\Digitization_Projects\WWII_Topographic_Maps\GermanyHollandPoland_25k\';
+top_path = 'H:\Digitization_Projects\WWII_Topographic_Maps\U_of_Alberta\GermanyHollandPoland_25k\';
 %%% Step 1: Download a tab-separated spreadsheet (.tsv) of the appropriate tab in
 %%% the metadata Google Sheet (https://docs.google.com/spreadsheets/d/1xmSuWdqUQ0a9RNCi2DErNO1bBcK6J06ps0moyYkg4Qk)
 %%% to the top-level folder for this collection (as indicated by top_path).
@@ -21,7 +21,7 @@ DA_metadata_to_mods(top_path,'Digital Archive - Bulk Metadata Templates - UofA_W
 %%% top-level folder as 'unmatched_tiffs.csv'
 %%% This function also creates log files in /logs/
 cd('D:\Local\Digital-Archive-Tools\BulkTools')
-DA_prepare_ingest('H:\Digitization_Projects\WWII_Topographic_Maps\GermanyHollandPoland_25k');
+DA_prepare_ingest('H:\Digitization_Projects\WWII_Topographic_Maps\U_of_Alberta\GermanyHollandPoland_25k');
 
 %%% Step 3b (Manual): Copy the contents of \ToIngest\ to the new directory (/ToBeProcessed/<macrepo>/) on the shared network folder
 %%% Step 3c (Manual): Once copying to the shared network folder has completed, move the copied items from \ToIngest\ to \ToIngest\Queued\
@@ -37,14 +37,14 @@ DA_prepare_ingest('H:\Digitization_Projects\WWII_Topographic_Maps\GermanyHolland
 %%% NOTE that the input file is assumed to exist in \Ingested\
 % DA_move_ingested('H:\Digitization_Projects\WWII_Topographic_Maps\GermanyHollandPoland_25k\','ingested.csv')
 cd('D:\Local\Digital-Archive-Tools\BulkTools')
-macrepo_id = DA_check_ingested('H:\Digitization_Projects\WWII_Topographic_Maps\GermanyHollandPoland_25k\','ingested_all.csv')
+macrepo_id = DA_check_ingested('H:\Digitization_Projects\WWII_Topographic_Maps\GermanyHollandPoland_25k\','ingested_all.csv');
 
 %%% Step 5: Inspect the ingested objects in the Digital Archive
 
 %%% > If an object doesn't pass inspection (or doesn't exist in the digital archive). The inspector makes a note (e.g. in Trello), and the .tiff and .xml of the offending item are moved to the /ToFix/ folder
 %% Processing UofA Italy 1:25k
 cd('D:\Local\Digital-Archive-Tools\BulkTools')
-top_path = 'H:\Digitization_Projects\WWII_Topographic_Maps\Italy\UofA WWII_Italy_Topos_25k\';
+top_path = 'H:\Digitization_Projects\WWII_Topographic_Maps\U_of_Alberta\UofA WWII_Italy_Topos_25k\';
 %%% Step 1: Download a tab-separated spreadsheet (.tsv) of the appropriate tab in
 %%% the metadata Google Sheet (https://docs.google.com/spreadsheets/d/1xmSuWdqUQ0a9RNCi2DErNO1bBcK6J06ps0moyYkg4Qk)
 %%% to the top-level folder for this collection (as indicated by top_path).
@@ -217,7 +217,7 @@ cd('D:\Local\Digital-Archive-Tools\BulkTools')
 DA_check_ingested(top_path,'ingested_all.csv')
 
 %% UofA_WW2_Crete_50k_topos     
-top_path = 'H:\Digitization_Projects\WWII_Topographic_Maps\U_of_Alberta\UofA_WW2_Crete_50k';
+top_path = 'H:\Digitization_Projects\WWII_Topographic_Maps\U_of_Alberta\UofA_WW2_Crete_50k\';
 
 cd('D:\Local\Digital-Archive-Tools\BulkTools')
 DA_metadata_to_mods(top_path,'Digital Archive - Bulk Metadata Templates - UofA_WW2_Crete_50k_topos.tsv');
@@ -242,3 +242,15 @@ top_path = 'H:\Digitization_Projects\WWII_CityPlans\CityPlans_Japan\';
 cd('D:\Local\Digital-Archive-Tools\BulkTools')
 DA_check_ingested(top_path,'ingested_all.csv')
 
+%% UofA_WW2_USSR_100k_topos     
+top_path = 'H:\Digitization_Projects\WWII_Topographic_Maps\U_of_Alberta\UofA_USSR_100k\';
+
+cd('D:\Local\Digital-Archive-Tools\BulkTools')
+DA_metadata_to_mods(top_path,'Digital Archive - Bulk Metadata Templates - UofA_WW2_Crete_50k_topos.tsv');
+
+cd('D:\Local\Digital-Archive-Tools\BulkTools')
+DA_prepare_ingest(top_path);
+
+top_path = 'H:\Digitization_Projects\WWII_Topographic_Maps\U_of_Alberta\UofA_USSR_100k\';
+cd('D:\Local\Digital-Archive-Tools\BulkTools')
+DA_check_ingested(top_path,'ingested_all.csv')
