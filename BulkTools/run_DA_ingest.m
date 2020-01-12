@@ -37,7 +37,7 @@ DA_prepare_ingest('H:\Digitization_Projects\WWII_Topographic_Maps\U_of_Alberta\G
 %%% NOTE that the input file is assumed to exist in \Ingested\
 % DA_move_ingested('H:\Digitization_Projects\WWII_Topographic_Maps\GermanyHollandPoland_25k\','ingested.csv')
 cd('D:\Local\Digital-Archive-Tools\BulkTools')
-macrepo_id = DA_check_ingested('H:\Digitization_Projects\WWII_Topographic_Maps\GermanyHollandPoland_25k\','ingested_all.csv');
+macrepo_id = DA_check_ingested('H:\Digitization_Projects\WWII_Topographic_Maps\U_of_Alberta\GermanyHollandPoland_25k\','ingested_all.csv');
 
 %%% Step 5: Inspect the ingested objects in the Digital Archive
 
@@ -247,6 +247,26 @@ top_path = 'H:\Digitization_Projects\WWII_Topographic_Maps\U_of_Alberta\UofA_USS
 
 cd('D:\Local\Digital-Archive-Tools\BulkTools')
 DA_metadata_to_mods(top_path,'Digital Archive - Bulk Metadata Templates - UofA_WW2_Crete_50k_topos.tsv');
+
+cd('D:\Local\Digital-Archive-Tools\BulkTools')
+DA_prepare_ingest(top_path);
+
+top_path = 'H:\Digitization_Projects\WWII_Topographic_Maps\U_of_Alberta\UofA_USSR_100k\';
+cd('D:\Local\Digital-Archive-Tools\BulkTools')
+DA_check_ingested(top_path,'ingested_all.csv')
+
+%% Hamilton Aerial Photos - 1969    
+cd('D:\Local\Digital-Archive-Tools\BulkTools')
+top_path = 'H:\Digitization_Projects\Air_Photos\AirPhotos_1969_Hamilton\';
+% cd(top_path)
+jjb_check_dirs([top_path 'MODS'],1);
+jjb_check_dirs([top_path 'Ingested'],1);
+jjb_check_dirs([top_path 'ToFix'],1);
+jjb_check_dirs([top_path 'ToIngest'],1);
+jjb_check_dirs([top_path 'logs'],1);
+
+cd('D:\Local\Digital-Archive-Tools\BulkTools')
+DA_metadata_to_mods(top_path,'Digital Archive - Bulk Metadata Templates - AirPhotos_Hamilton_1969.tsv');
 
 cd('D:\Local\Digital-Archive-Tools\BulkTools')
 DA_prepare_ingest(top_path);
