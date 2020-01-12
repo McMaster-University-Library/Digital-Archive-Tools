@@ -97,7 +97,8 @@ Idealized directory structure:
 |WW2_France_50k_GSGS4250|88988|H:\Digitization_Projects\WWII_Topographic_Maps\France_Belgium_Holland\France_50k_GSGS4250\|
 |WW2_France_50k_GSGS4040|88989|H:\Digitization_Projects\WWII_Topographic_Maps\France_Belgium_Holland\France_50k_GSGS4040\|
 |UofA_WW2_Crete_50k_topos|88992|H:\Digitization_Projects\WWII_Topographic_Maps\U_of_Alberta\UofA_WW2_Crete_50k\|
-|UofA_USSR_100k|91926|H:\Digitization_Projects\WWII_Topographic_Maps\U_of_Alberta\UofA_USSR_100k|
+|UofA_USSR_100k|91926|H:\Digitization_Projects\WWII_Topographic_Maps\U_of_Alberta\UofA_USSR_100k\|
+|AirPhotos_Hamilton_1969|71559|H:\Digitization_Projects\Air_Photos\AirPhotos_1969_Hamilton\|
 
 
 ## 3. Functions for extracting items from the Digital Archive to a spreadsheet or directory
