@@ -140,8 +140,15 @@ Loads all MODS xml file located in a /MODS folder of a specified directory, refo
   - for all items that need GCP/readme files to be processed, rename the files to preprend '<macrepo #>_' to the filename. 
 3. Copy all renamed georeferencing files to the same subfolder as Step 1. 
 
-  
-## 6. Other functions
+## 6. Running Google Analytics Reports
+- Run Examples 4 and 5 in Jay's [Fedora SPARQL Cookbook](https://github.com/jasonbrodeur/Fedora-SPARQL/blob/master/fedora-sparql-cookbook.md)
+  - output of Example 4 should be saved overtop of current data in H:\Digitization_Projects\Digital_Archive_Stats\items_current.csv
+  - output of Example 5 should be saved overtop of current data in H:\Digitization_Projects\Digital_Archive_Stats\collections_current.csv
+- Run **DA_list_map_collections.m** 
+- Use [Google Data Studio](https://datastudio.google.com/navigation/reporting) to create a data view for a given time period. Use the export feature to export it all to H:\Digitization_Projects\Digital_Archive_Stats\xxxx-DA-PageViews.csv
+- Run **DA_GA_stats.m** to compile view statistics (currently in development).
+
+## 7. Other functions
 
 ### xml2struct.m
 xml2struct takes either a java xml object, an xml file, or a string in xml format as input and returns a parsed xml tree in structure.
@@ -152,7 +159,7 @@ Applies an imagemagick mogrify command to all items within a specified directory
 ### rename_files.m
 An old script used to bulk rename folders and files in a local/network directory
 
-## 5. Other References
+## 8. Other References
 ### SPARQL 
 - The digital archive Fedora Resource Index Query Service can be accessed at http://dcs1.mcmaster.ca/fedora/risearch
 - A Fedora SPARQL cookbook and other resources can be found [here](https://github.com/jasonbrodeur/Fedora-SPARQL/blob/master/fedora-sparql-cookbook.md)
