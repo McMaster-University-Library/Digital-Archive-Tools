@@ -68,7 +68,7 @@ DA_bulk_downloader(file_ext,download_dir,download_list)
 
 %% HAM 1898 FIPs using new downloader program (to download DC files)
 cd('D:\Local\Digital-Archive-Tools\BulkTools\');
-download_list = 'H:\Digitization_Projects\omeka-tests\macrepos.csv';
-download_dir = 'H:\Digitization_Projects\omeka-tests\';
+download_list = 'H:\Digitization_Projects\omeka-tests\HamFIP1898\macrepos.csv';
+download_dir = 'H:\Digitization_Projects\omeka-tests\HamFIP1898\';
 download_type = 'DC';
 DA_bulk_downloader_v2_working(download_type,download_dir,download_list);

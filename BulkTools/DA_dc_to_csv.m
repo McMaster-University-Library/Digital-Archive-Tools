@@ -70,7 +70,7 @@ isString    = cellfun('isclass', fnames, 'char');
  fnames(isString) = strrep(fnames(isString),'u_colonu_',':');
  fnames(isString) = strrep(fnames(isString),'dc:','dcterms:');
 
-% strrep(fnames,'u_colonu_',':');
+% Remove all text after remaining underscores
 to_remove = [];
 for i = 1:1:size(fnames,2)
 tmp = fnames{1,i};
@@ -78,7 +78,7 @@ tmp = fnames{1,i};
 ind_uscore = strfind(tmp,'_');
 
 if ~isempty(ind_uscore)
-    tmp = tmp(1:ind_uscore(end)-1);
+    tmp = tmp(1:ind_uscore(1)-1);
     fnames{1,i} = tmp;
 end
 
@@ -101,6 +101,8 @@ output(:,to_remove) = [];
 % JP2 URL: https://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A33273/datastream/JP2/download
 fnames{1,size(fnames,2)+1} = 'TIFF_URL';
 fnames{1,size(fnames,2)+1} = 'JP2000_URL';
+fnames{1,size(fnames,2)+1} = 'dcterms:relation';
+
 numcols_output = size(output,2);
 
 for i = 1:1:size(output,1)
@@ -108,6 +110,7 @@ for i = 1:1:size(output,1)
 output{i,numcols_output+1} = ['https://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A' output{i,1} '/datastream/OBJ/macrepo%3A' output{i,1} '.tiff'];
     % JP2 URL on DA:
 output{i,numcols_output+2} = ['https://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A' output{i,1} '/datastream/JP2/macrepo%3A' output{i,1} '.jp2'];  
+output{i,numcols_output+3} = ['https://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A' output{i,1}];  
 end
 %% Save the output file
 %output format
