@@ -1,4 +1,4 @@
-function [] = DA_bulk_downloader(download_type,download_dir,download_list,book_flag)
+function [] = old_DA_bulk_downloader(file_ext,download_dir,download_list,book_flag)
 % DA_bulk_downloader.m
 % This function takes a list of macrepo numbers as input, and downloads the selected file type for each digital archive item.
 %%% Inputs:
@@ -9,17 +9,16 @@ function [] = DA_bulk_downloader(download_type,download_dir,download_list,book_f
 % Parameters
 default_dir = 'D:/';
 file_types_lookup = ...
-    {'TIFF','.tiff', 'OBJ';...
-    'JPEG2000','.jp2', 'JP2';...
-    'JPEG','.jpeg', 'TN';...
-    'MODS','.xml','MODS/download';...
-    'DC','.xml','DC/download'};
+    {'.tiff', 'OBJ';...
+    '.jp2', 'JP2';...
+    '.jpeg', 'TN';
+    '.xml','MODS/download'};
 fname1 = '';
 pname1 = '';
 pname2 = '';
 
 %% Identify conditions where the GUI is needed:
-if nargin <3 || (nargin==3 && (isempty(download_type)==1 || isempty(download_dir)==1 || isempty(download_list)==1))
+if nargin <3 || (nargin==3 && (isempty(file_ext)==1 || isempty(download_dir)==1 || isempty(download_list)==1))
 
 %% Build the GUI
 f_ui = figure('Position',[100 100 350 100]);
@@ -46,7 +45,7 @@ go_button = uicontrol('Style', 'pushbutton', 'String', 'RUN!',...
     
     waitfor(f_ui,'Tag','Running');
     download_list = [pname1 fname1];
-    download_type = file_types_lookup{get(h_list,'Value'),1};
+    file_ext = file_types_lookup{get(h_list,'Value'),1};
     download_dir = pname2;
 end
 
@@ -56,15 +55,15 @@ if nargin < 4
 end
 %% Cleanup. Build prefix.
 % Ensure that extension is properly formatted:
-% if strcmp(file_ext(1),'.')~=1
-%     file_ext = ['.' file_ext];
-% end
+if strcmp(file_ext(1),'.')~=1
+    file_ext = ['.' file_ext];
+end
 
 if strcmp(download_dir(end),'\')~=1
     download_dir = [download_dir '\'];
 end
-file_ext = file_types_lookup{strcmp(download_type,file_types_lookup(:,1))==1,2};
-dl_prefix = file_types_lookup{strcmp(download_type,file_types_lookup(:,1))==1,3};
+
+dl_prefix = file_types_lookup{strcmp(file_ext,file_types_lookup(:,1))==1,2};
 %% Run
 %%% Open the download list 
 fid = fopen(download_list);
@@ -84,10 +83,10 @@ fname_out = [download_dir macrepo file_ext]; %edited by JJB 20180802 - removed m
 
 % Format the download url differently depending on whether we want MODS or
 % an image file
-switch download_type
-    case {'MODS','DC'}
+switch file_ext
+    case '.xml'
         url = ['http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A' macrepo '/datastream/' dl_prefix];
-    case 'TIFF'
+    case '.tiff'
         switch book_flag
             case 0
                 url = ['http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A' macrepo '/datastream/' dl_prefix '/' macrepo file_ext];
