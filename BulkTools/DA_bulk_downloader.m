@@ -59,9 +59,14 @@ end
 % if strcmp(file_ext(1),'.')~=1
 %     file_ext = ['.' file_ext];
 % end
+if ispc==1
+    slash = '\';
+else
+    slash = '/';
+end
 
-if strcmp(download_dir(end),'\')~=1
-    download_dir = [download_dir '\'];
+if strcmp(download_dir(end),slash)~=1
+    download_dir = [download_dir slash];
 end
 file_ext = file_types_lookup{strcmp(download_type,file_types_lookup(:,1))==1,2};
 dl_prefix = file_types_lookup{strcmp(download_type,file_types_lookup(:,1))==1,3};
@@ -101,6 +106,7 @@ end
     try
         websave(fname_out,url);
     catch
+        disp(['websave failed for item: ' num2str(macrepo)]);
     end
     eof = feof(fid);
 
