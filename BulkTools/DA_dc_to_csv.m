@@ -4,11 +4,16 @@ function [] = DA_dc_to_csv(path_in)
 %%% file, and one column per unique metadata element.
 %%% Exports in tab-separated format
 % See run_DA_dc_to_csv.m for usage examples
+if ispc==1
+    slash = '\';
+else
+    slash = '/';
+end
 
-if strcmp(path_in(end), '\')==1 || strcmp(path_in(end), '/')==1
+if strcmp(path_in(end), slash)==1 || strcmp(path_in(end), slash)==1
     start_path = path_in;
 else
-    start_path = [path_in '\'];
+    start_path = [path_in slash];
 end
 
 % start_path = [path_in 'MODS'];
@@ -29,7 +34,7 @@ for i = 3:1:length(d)
                 end
 
                 macrepo{size(macrepo,1)+1,1} = macrepo_tmp;
-                outStruct = xml2struct([start_path '\' d(i).name]); 
+                outStruct = xml2struct([start_path d(i).name]); 
                 
                 %%%%%%%%%%% Flatten structure into cell array
                 fname_top = fieldnames(outStruct);
