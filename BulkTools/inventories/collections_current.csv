@@ -1,0 +1,608 @@
+"pid","label","parent"
+info:fedora/islandora:100,The story of sinful Sally. Told by herself.,info:fedora/islandora:99
+info:fedora/islandora:105,May 1916,info:fedora/islandora:41
+info:fedora/islandora:114,Notes on Logic,info:fedora/macrepo:5636
+info:fedora/islandora:115,Notes on Logic summary,info:fedora/islandora:114
+info:fedora/islandora:116,"Notes on Logic, Bertrand Russell's translation",info:fedora/islandora:114
+info:fedora/islandora:117,Notes on Logic typescript of Bertrand Russell's translation,info:fedora/islandora:114
+info:fedora/islandora:150,Photographs of Crombie Family,info:fedora/macrepo:10203
+info:fedora/islandora:152,Audio,info:fedora/macrepo:1
+info:fedora/islandora:153,Michio Mamiya,info:fedora/islandora:152
+info:fedora/islandora:38,Manuscripts,info:fedora/macrepo:6
+info:fedora/islandora:39,Printed Materials - Programes (LB as performer and/or speaker),info:fedora/macrepo:33172
+info:fedora/islandora:40,Bernard Freeman Trotter fonds,info:fedora/macrepo:6
+info:fedora/islandora:41,Letters from England,info:fedora/islandora:40
+info:fedora/islandora:42,March 1916,info:fedora/islandora:41
+info:fedora/islandora:43,April 1916,info:fedora/islandora:41
+info:fedora/islandora:44,June 1916,info:fedora/islandora:41
+info:fedora/islandora:45,July 1916,info:fedora/islandora:41
+info:fedora/islandora:46,August 1916,info:fedora/islandora:41
+info:fedora/islandora:47,September 1916,info:fedora/islandora:41
+info:fedora/islandora:48,October 1916,info:fedora/islandora:41
+info:fedora/islandora:49,December 1916,info:fedora/islandora:41
+info:fedora/islandora:50,Letters from France,info:fedora/islandora:40
+info:fedora/islandora:51,December 1916,info:fedora/islandora:50
+info:fedora/islandora:52,January 1917,info:fedora/islandora:50
+info:fedora/islandora:53,February 1917,info:fedora/islandora:50
+info:fedora/islandora:54,March 1917,info:fedora/islandora:50
+info:fedora/islandora:55,April 1917,info:fedora/islandora:50
+info:fedora/islandora:56,Gordon William Parkinson fonds,info:fedora/macrepo:6
+info:fedora/islandora:57,"Early letters. Mervin Heights, London. 142nd Battalion “London’s Own.” March 27- July 4, 1916",info:fedora/islandora:56
+info:fedora/islandora:58,"Camp Borden. C. Co 142nd Battalion.  July 16 – October 29, 1916",info:fedora/islandora:56
+info:fedora/islandora:59,"England (Dibgate Camp, Shorncliffe) . November 12 - December 20, 1916",info:fedora/islandora:56
+info:fedora/islandora:60,"England (Witley Camp, West Sandling Camp). December 26, 1916 - March 26, 1918",info:fedora/islandora:56
+info:fedora/islandora:61,"France. Active duty. March 29- September 17, 1918",info:fedora/islandora:56
+info:fedora/islandora:62,Mathematical Logic Manuscripts,info:fedora/macrepo:5636
+info:fedora/islandora:63,[Notebook on mathematical articles],info:fedora/islandora:62
+info:fedora/islandora:64,J. M. Pigott fonds,info:fedora/macrepo:6
+info:fedora/islandora:65,Daily Journals,info:fedora/islandora:64
+info:fedora/islandora:66,1 January-14 December 1911,info:fedora/islandora:65
+info:fedora/islandora:67,MS 105 Book of Hours,info:fedora/islandora:38
+info:fedora/islandora:7,Posters,info:fedora/macrepo:5636
+info:fedora/islandora:71,Sound recordings,info:fedora/macrepo:33172
+info:fedora/islandora:99,Eighteenth Century Collection,info:fedora/macrepo:6
+info:fedora/macrepo:1,Digital Archive @ McMaster University Library,info:fedora/islandora:root
+info:fedora/macrepo:10,Map Collections,info:fedora/macrepo:1
+info:fedora/macrepo:10011,Poland 1:100k Topographic Maps,info:fedora/macrepo:32223
+info:fedora/macrepo:10203,Crombie family fonds,info:fedora/macrepo:6
+info:fedora/macrepo:10220,Dr. Anthony Macfarlane collection,info:fedora/macrepo:6
+info:fedora/macrepo:132,Franz Liszt and his circle collection,info:fedora/macrepo:6
+info:fedora/macrepo:18802,Germany 1:100k Topographic Maps,info:fedora/macrepo:32223
+info:fedora/macrepo:18807,"Europe, Central 1:100k Topographic Maps",info:fedora/macrepo:32223
+info:fedora/macrepo:18809,Middle Danube Topographic Maps,info:fedora/macrepo:18807
+info:fedora/macrepo:18811,Germany Topographic Maps,info:fedora/macrepo:18807
+info:fedora/macrepo:18813,Poland Topographic Maps,info:fedora/macrepo:18807
+info:fedora/macrepo:18815,Central Europe Topographic Maps,info:fedora/macrepo:18807
+info:fedora/macrepo:18967,The Daily Twitter,info:fedora/macrepo:10203
+info:fedora/macrepo:18976,Holland East 1:25k Topographic Maps,info:fedora/macrepo:32223
+info:fedora/macrepo:19714,Norway 1:100k Topographic Maps,info:fedora/macrepo:32223
+info:fedora/macrepo:19788,Africa 1:2mil Topographic Maps,info:fedora/macrepo:32223
+info:fedora/macrepo:19790,Bulgaria 1:250k Topographic Maps,info:fedora/macrepo:32223
+info:fedora/macrepo:19792,Turkey 1:500k Topographic Maps,info:fedora/macrepo:32223
+info:fedora/macrepo:19795,"Europe, North West 1:250k Topographic Maps",info:fedora/macrepo:32223
+info:fedora/macrepo:20447,Spain Gibraltar 1:100k Topographic Maps,info:fedora/macrepo:32223
+info:fedora/macrepo:20449,Greece 1:100k Topographic Maps,info:fedora/macrepo:32223
+info:fedora/macrepo:20451,Iberian Peninsula 1:250k Topographic Maps,info:fedora/macrepo:32223
+info:fedora/macrepo:21508,Rare Maps,info:fedora/macrepo:10
+info:fedora/macrepo:21772,Yugoslavia 1:250K Topographic Maps,info:fedora/macrepo:32223
+info:fedora/macrepo:21809,Romania 1:250k Topographic Maps,info:fedora/macrepo:32223
+info:fedora/macrepo:21847,Books,info:fedora/macrepo:1
+info:fedora/macrepo:22616,Greece 1:250k Topographic Maps,info:fedora/macrepo:32223
+info:fedora/macrepo:26857,Central Europe Topographic Maps,info:fedora/macrepo:9921
+info:fedora/macrepo:26860,Germany Topographic Maps,info:fedora/macrepo:9921
+info:fedora/macrepo:30,"World War, 1939-1945, Jewish Underground Resistance Collection",info:fedora/macrepo:6
+info:fedora/macrepo:30937,Italy Switzerland 1:100k Topographic Maps,info:fedora/macrepo:32223
+info:fedora/macrepo:31385,The Daily Cackle,info:fedora/macrepo:10203
+info:fedora/macrepo:32223,WWII Topographic Maps,info:fedora/macrepo:66649
+info:fedora/macrepo:32227,Denmark 1:250k Topographic Maps,info:fedora/macrepo:32223
+info:fedora/macrepo:33172,Louise Bennett Coverley 'Miss Lou' fonds,info:fedora/macrepo:6
+info:fedora/macrepo:33174,Aunty Roachy seh,info:fedora/macrepo:33172
+info:fedora/macrepo:33176,Various lists of contents,info:fedora/macrepo:33174
+info:fedora/macrepo:33182,"Burlington Beach, Ont. 1900",info:fedora/macrepo:9839
+info:fedora/macrepo:33184,"Hamilton, Ont. 1898",info:fedora/macrepo:9839
+info:fedora/macrepo:33186,"Hamilton, Ont. 1911",info:fedora/macrepo:9839
+info:fedora/macrepo:33356,Monologues used in 'Aunty Roachy seh',info:fedora/macrepo:33174
+info:fedora/macrepo:34,"World War, 1914-1918, Maps and Aerial Photographs",info:fedora/macrepo:10
+info:fedora/macrepo:34,"World War, 1914-1918, Maps and Aerial Photographs",info:fedora/macrepo:6
+info:fedora/macrepo:45509,"Beamsville, Ont. 1921",info:fedora/macrepo:9839
+info:fedora/macrepo:45511,"Callander, Ont. 1916",info:fedora/macrepo:9839
+info:fedora/macrepo:45513,"Inkerman, Ont. 1889",info:fedora/macrepo:9839
+info:fedora/macrepo:45514,"Manilla, Ont. 1885",info:fedora/macrepo:9839
+info:fedora/macrepo:45516,"Neustadt, Ont. 1896",info:fedora/macrepo:9839
+info:fedora/macrepo:45519,"North Augusta, Ont. 1905",info:fedora/macrepo:9839
+info:fedora/macrepo:45521,"Norwood, Ont. 1900",info:fedora/macrepo:9839
+info:fedora/macrepo:45523,"Orangeville, Ont. 1907",info:fedora/macrepo:9839
+info:fedora/macrepo:45525,"Paisley, Ont. 1904",info:fedora/macrepo:9839
+info:fedora/macrepo:45526,"Palmerston, Ont. 1914",info:fedora/macrepo:9839
+info:fedora/macrepo:45527,"Rockwood, Ont. 1904",info:fedora/macrepo:9839
+info:fedora/macrepo:45529,"Seaforth, Ont. 1923",info:fedora/macrepo:9839
+info:fedora/macrepo:45533,"Selkirk, Ont. 1905",info:fedora/macrepo:9839
+info:fedora/macrepo:45534,"Shakespeare, Ont. 1901",info:fedora/macrepo:9839
+info:fedora/macrepo:45535,"Spanish River, Ont. 1896",info:fedora/macrepo:9839
+info:fedora/macrepo:45536,"Spragge, Ont. 1896",info:fedora/macrepo:9839
+info:fedora/macrepo:45537,"Springfield, Ont. 1906",info:fedora/macrepo:9839
+info:fedora/macrepo:45538,"Stevensville, Ont. 1897",info:fedora/macrepo:9839
+info:fedora/macrepo:45549,"St. George, Ont. 1894",info:fedora/macrepo:9839
+info:fedora/macrepo:45551,"Wiarton, Ont. 1923",info:fedora/macrepo:9839
+info:fedora/macrepo:45552,"Vienna, Ont. 1896",info:fedora/macrepo:9839
+info:fedora/macrepo:45553,"Victoria Harbour, Ont. 1890",info:fedora/macrepo:9839
+info:fedora/macrepo:45554,"St. Jacobs, Ont. 1904",info:fedora/macrepo:9839
+info:fedora/macrepo:45562,"Yarker, Ont. 1904",info:fedora/macrepo:9839
+info:fedora/macrepo:45563,"Wyoming, Ont. 1906",info:fedora/macrepo:9839
+info:fedora/macrepo:45564,"Wroxeter, Ont. 1894",info:fedora/macrepo:9839
+info:fedora/macrepo:45570,"Zurich, Ont. 1896",info:fedora/macrepo:9839
+info:fedora/macrepo:45573,"Pontypool, Ont. 1904",info:fedora/macrepo:9839
+info:fedora/macrepo:45577,"Schomberg, Ont. 1904",info:fedora/macrepo:9839
+info:fedora/macrepo:45578,"Plantagenet, Ont. 1897",info:fedora/macrepo:9839
+info:fedora/macrepo:46730,"Osnabruck, Ont. 1896",info:fedora/macrepo:9839
+info:fedora/macrepo:46732,Monologues not used in Aunty Roachy seh,info:fedora/macrepo:33174
+info:fedora/macrepo:46734,"Monologues not used in Aunty Roachy seh, typed, Christmas themes",info:fedora/macrepo:33174
+info:fedora/macrepo:48084,France 1:250k Topographic Maps,info:fedora/macrepo:32223
+info:fedora/macrepo:48086,Italy Switzerland 1:250k Topographic Maps,info:fedora/macrepo:32223
+info:fedora/macrepo:48681,"Saint-Pierre-les-Becquets, Québec 1897",info:fedora/macrepo:9839
+info:fedora/macrepo:48683,"Wakefield, Québec 1897",info:fedora/macrepo:9839
+info:fedora/macrepo:48687,"Africa, North 1:500k Topographic Maps",info:fedora/macrepo:32223
+info:fedora/macrepo:49,"Trench Maps, Western Front (Original Collection)",info:fedora/macrepo:34
+info:fedora/macrepo:49596,"Hamilton, Ont. 19th century maps & surveys",info:fedora/macrepo:10
+info:fedora/macrepo:53,Aerial Photographs,info:fedora/macrepo:34
+info:fedora/macrepo:5602,Canadian student social and political organizations collection,info:fedora/macrepo:6
+info:fedora/macrepo:5624,Spanish Civil War collection,info:fedora/macrepo:6
+info:fedora/macrepo:5636,Bertrand Russell fonds,info:fedora/macrepo:6
+info:fedora/macrepo:5721,Julian Gould fond,info:fedora/macrepo:6
+info:fedora/macrepo:58544,"Prose - ""Caribbean Literature""",info:fedora/macrepo:33172
+info:fedora/macrepo:58546,"Research/Reference files - Listats of Vocabulary, Alphabets, Glossary, Language",info:fedora/macrepo:33172
+info:fedora/macrepo:58548,"Songs - ""Jamaican Songs from Pantomime Compiled and Published by Louise Bennett""",info:fedora/macrepo:33172
+info:fedora/macrepo:58550,Poetry - Poems,info:fedora/macrepo:33172
+info:fedora/macrepo:58552,"Debate - ""Dat Jamaican Dialect should be official recognize as one secon language""",info:fedora/macrepo:33172
+info:fedora/macrepo:5946,Ontario conservation reports,info:fedora/macrepo:10
+info:fedora/macrepo:6,Archives,info:fedora/macrepo:1
+info:fedora/macrepo:6118,Hanna Newcombe,info:fedora/macrepo:6
+info:fedora/macrepo:61441,England & Wales 1:253k Topographic Maps,info:fedora/macrepo:32223
+info:fedora/macrepo:61443,England & Wales 1:63K Topographic Maps,info:fedora/macrepo:32223
+info:fedora/macrepo:66498,"Preston, Ont. 1924",info:fedora/macrepo:9839
+info:fedora/macrepo:66554,"Trench Maps, Western Front (Chasseaud Collection)",info:fedora/macrepo:34
+info:fedora/macrepo:66555,Regular Series 1:10k (Chasseaud Collection),info:fedora/macrepo:66554
+info:fedora/macrepo:66556,Regular Series 1:20k (Chasseaud Collection),info:fedora/macrepo:66554
+info:fedora/macrepo:66557,Special Sheets 1:20k (Chasseaud Collection),info:fedora/macrepo:66554
+info:fedora/macrepo:66558,Special Sheets 1:40k to 1:250k (Chasseaud Collection),info:fedora/macrepo:66554
+info:fedora/macrepo:66559,Special Sheets 1:5k & 1:10k (Chasseaud Collection),info:fedora/macrepo:66554
+info:fedora/macrepo:66578,Scotland 1:253k Topographic Maps,info:fedora/macrepo:32223
+info:fedora/macrepo:66579,Scotland 1:63k Topographic Maps,info:fedora/macrepo:32223
+info:fedora/macrepo:66580,"Bowmanville, Ont. 1924",info:fedora/macrepo:9839
+info:fedora/macrepo:66581,"Burlington, Ont. 1924",info:fedora/macrepo:9839
+info:fedora/macrepo:66648,"Korean War, 1950-1953",info:fedora/macrepo:10
+info:fedora/macrepo:66649,"World War, 1939-1945",info:fedora/macrepo:10
+info:fedora/macrepo:66650,Korean War Topographic Maps,info:fedora/macrepo:66648
+info:fedora/macrepo:66651,WWII Strategic Maps,info:fedora/macrepo:66649
+info:fedora/macrepo:66652,WWII Recreation Maps,info:fedora/macrepo:66649
+info:fedora/macrepo:66659,Hong Kong 1:20k Topographic Maps,info:fedora/macrepo:32223
+info:fedora/macrepo:66660,Italy 1:25k Topographic Maps,info:fedora/macrepo:32223
+info:fedora/macrepo:67045,Germany 1:25K Topographic Maps,info:fedora/macrepo:32223
+info:fedora/macrepo:67046,Levant 1:50K Topographic Maps,info:fedora/macrepo:32223
+info:fedora/macrepo:67047,"Levant, South 1:50K Topographic Maps",info:fedora/macrepo:32223
+info:fedora/macrepo:67048,Borneo 1:200K Topographic Maps,info:fedora/macrepo:32223
+info:fedora/macrepo:67049,Borneo 1:250K Topographic Maps,info:fedora/macrepo:32223
+info:fedora/macrepo:70033,"Russo-Japanese War, 1904-1905",info:fedora/macrepo:10
+info:fedora/macrepo:70034,Great Britain 1:500k Topographic Maps,info:fedora/macrepo:32223
+info:fedora/macrepo:70035,Great Britain 1:25k Topographic Maps,info:fedora/macrepo:32223
+info:fedora/macrepo:70036,Iceland 1:600k Topographic Maps,info:fedora/macrepo:32223
+info:fedora/macrepo:70155,"Russia, Murmansk Region 1:100k",info:fedora/macrepo:32223
+info:fedora/macrepo:70156,Russia 1:1mil,info:fedora/macrepo:32223
+info:fedora/macrepo:70157,Asia 1:4mil Topographic Maps,info:fedora/macrepo:32223
+info:fedora/macrepo:70212,BEF Original Issue 100k Topographic Series,info:fedora/macrepo:49
+info:fedora/macrepo:70472,Europe 1:1mil Topographic Maps,info:fedora/macrepo:32223
+info:fedora/macrepo:70474,"Europe 1:1mil, Great Britain Topographic Maps",info:fedora/macrepo:32223
+info:fedora/macrepo:70475,Europe 1:2mil Topographic Maps,info:fedora/macrepo:32223
+info:fedora/macrepo:70476,Europe 1:500k Topographic Maps,info:fedora/macrepo:32223
+info:fedora/macrepo:70659,"France 1:250k, GSGS 2738",info:fedora/macrepo:49
+info:fedora/macrepo:70660,"North West Europe 1:250k, GSGS 2733 & 2733b",info:fedora/macrepo:49
+info:fedora/macrepo:70822,"WWII Canada, Training and Defence",info:fedora/macrepo:66649
+info:fedora/macrepo:71369,"Hamilton Region, 20th century aerial photographs",info:fedora/macrepo:10
+info:fedora/macrepo:71370,1927 - Hamilton aerial photographs,info:fedora/macrepo:71369
+info:fedora/macrepo:71371,1950 - Dunnville aerial photographs,info:fedora/macrepo:71369
+info:fedora/macrepo:71376,1919 - Hamilton aerial photographs,info:fedora/macrepo:71369
+info:fedora/macrepo:71378,1953 - Hamilton-Burlington aerial photographs,info:fedora/macrepo:71369
+info:fedora/macrepo:71395,1955 - Hamilton aerial photographs,info:fedora/macrepo:71369
+info:fedora/macrepo:71401,1956 - Hamilton aerial photographs,info:fedora/macrepo:71369
+info:fedora/macrepo:71535,1934 - Greater Hamilton Area aerial photographs,info:fedora/macrepo:71369
+info:fedora/macrepo:71536,1943 - Hamilton aerial photographs,info:fedora/macrepo:71369
+info:fedora/macrepo:71537,1950 - Hamilton aerial photographs,info:fedora/macrepo:71369
+info:fedora/macrepo:71538,1951 - Hamilton aerial photographs,info:fedora/macrepo:71369
+info:fedora/macrepo:71539,"1951-1952 - Brant, Waterloo, and Wentworth Counties aerial photographs",info:fedora/macrepo:71369
+info:fedora/macrepo:71540,1952 - Hamilton aerial photographs,info:fedora/macrepo:71369
+info:fedora/macrepo:71541,1954-1955 - Greater Hamilton Area aerial photographs,info:fedora/macrepo:71369
+info:fedora/macrepo:71542,1954 - Southern Ontario aerial photographs,info:fedora/macrepo:71369
+info:fedora/macrepo:71544,1958-1959 - Hamilton aerial photographs,info:fedora/macrepo:71369
+info:fedora/macrepo:71545,1959-1962 - Golden Horseshoe Area aerial photographs,info:fedora/macrepo:71369
+info:fedora/macrepo:71546,1960 - Greater Hamilton Area aerial photographs,info:fedora/macrepo:71369
+info:fedora/macrepo:71547,1961 - Hamilton aerial photographs,info:fedora/macrepo:71369
+info:fedora/macrepo:71548,1962-1963 - Hamilton to Mississauga aerial photographs,info:fedora/macrepo:71369
+info:fedora/macrepo:71549,1963 - Hamilton aerial photographs,info:fedora/macrepo:71369
+info:fedora/macrepo:71550,1964 - Hamilton aerial photographs,info:fedora/macrepo:71369
+info:fedora/macrepo:71551,1964 - Southern Ontario aerial photographs,info:fedora/macrepo:71369
+info:fedora/macrepo:71552,1965 - Hamilton aerial photographs,info:fedora/macrepo:71369
+info:fedora/macrepo:71553,1965 - Caledonia aerial photographs,info:fedora/macrepo:71369
+info:fedora/macrepo:71554,1966 - Hamilton aerial photographs,info:fedora/macrepo:71369
+info:fedora/macrepo:71555,1966 - Kitchener-Brantford aerial photographs,info:fedora/macrepo:71369
+info:fedora/macrepo:71556,1966 - Beamsville aerial photographs,info:fedora/macrepo:71369
+info:fedora/macrepo:71557,1967 - Hamilton-Burlington aerial photographs,info:fedora/macrepo:71369
+info:fedora/macrepo:71559,1969 - Hamilton aerial photographs,info:fedora/macrepo:71369
+info:fedora/macrepo:71560,1970 - Golden Horseshoe Area aerial photographs,info:fedora/macrepo:71369
+info:fedora/macrepo:71721,test,info:fedora/macrepo:71369
+info:fedora/macrepo:74488,"Caledonia, Ont. 1925",info:fedora/macrepo:9839
+info:fedora/macrepo:74920,Other WWI Theatres of War,info:fedora/macrepo:34
+info:fedora/macrepo:74921,Turkey WWI,info:fedora/macrepo:74920
+info:fedora/macrepo:74922,Africa WWI,info:fedora/macrepo:74920
+info:fedora/macrepo:74923,Egypt WWI,info:fedora/macrepo:74922
+info:fedora/macrepo:74924,Balkans WWI,info:fedora/macrepo:74920
+info:fedora/macrepo:74925,Italy WWI,info:fedora/macrepo:74920
+info:fedora/macrepo:74926,Russia WWI,info:fedora/macrepo:74920
+info:fedora/macrepo:74927,German East Africa WWI,info:fedora/macrepo:74922
+info:fedora/macrepo:74928,Middle East WWI,info:fedora/macrepo:74920
+info:fedora/macrepo:74929,Gallipoli 1:20k series,info:fedora/macrepo:74921
+info:fedora/macrepo:74930,Syria 1:250k series,info:fedora/macrepo:74928
+info:fedora/macrepo:74931,Palestine 1:40k series,info:fedora/macrepo:74928
+info:fedora/macrepo:74932,Palestine 1:20k series,info:fedora/macrepo:74928
+info:fedora/macrepo:74933,British East Africa 1:250k series WWI,info:fedora/macrepo:74922
+info:fedora/macrepo:74935,German Maps,info:fedora/macrepo:34
+info:fedora/macrepo:74936,Railway and Ammunition Dump Maps,info:fedora/macrepo:34
+info:fedora/macrepo:74938,Training Area Maps,info:fedora/macrepo:34
+info:fedora/macrepo:74939,Enemy Organisation Maps,info:fedora/macrepo:34
+info:fedora/macrepo:74940,Enemy Order of Battle Maps,info:fedora/macrepo:34
+info:fedora/macrepo:74941,French Maps,info:fedora/macrepo:34
+info:fedora/macrepo:74943,Regular Series 1:20k (Original Collection),info:fedora/macrepo:49
+info:fedora/macrepo:74944,Regular Series 1:40k (Original Collection),info:fedora/macrepo:49
+info:fedora/macrepo:74945,Regular Series 1:10k (Original Collection),info:fedora/macrepo:49
+info:fedora/macrepo:75083,Sun Prints,info:fedora/macrepo:34
+info:fedora/macrepo:75086,"""B"" Series Maps",info:fedora/macrepo:49
+info:fedora/macrepo:75096,Traffic Maps,info:fedora/macrepo:34
+info:fedora/macrepo:75195,Manuscript Maps,info:fedora/macrepo:34
+info:fedora/macrepo:75202,Special Sheets,info:fedora/macrepo:34
+info:fedora/macrepo:75209,Enemy Battery Positions Maps,info:fedora/macrepo:34
+info:fedora/macrepo:75214,Commercial Newspaper Maps,info:fedora/macrepo:34
+info:fedora/macrepo:75215,Belgian Maps (pre-war),info:fedora/macrepo:34
+info:fedora/macrepo:75436,Signals-Communications Maps,info:fedora/macrepo:34
+info:fedora/macrepo:75437,Billeting Area Maps,info:fedora/macrepo:34
+info:fedora/macrepo:75438,Water Supply Maps,info:fedora/macrepo:34
+info:fedora/macrepo:75439,Bridge Strength Maps,info:fedora/macrepo:34
+info:fedora/macrepo:75442,Skeleton Maps,info:fedora/macrepo:34
+info:fedora/macrepo:75443,Aerodromes and Hospitals,info:fedora/macrepo:34
+info:fedora/macrepo:75444,Barrage Maps and Battle Plans,info:fedora/macrepo:34
+info:fedora/macrepo:75447,Zones of Defence,info:fedora/macrepo:34
+info:fedora/macrepo:75555,WWII Aeronautical Charts,info:fedora/macrepo:66649
+info:fedora/macrepo:75556,World 1:1mil AAF Aeronautical Charts,info:fedora/macrepo:75555
+info:fedora/macrepo:75558,McMaster University,info:fedora/macrepo:6
+info:fedora/macrepo:75559,Films,info:fedora/macrepo:75558
+info:fedora/macrepo:75725,"Fonthill, Ont. 1925",info:fedora/macrepo:9839
+info:fedora/macrepo:75733,Realia,info:fedora/macrepo:75558
+info:fedora/macrepo:75795,"Mildmay, Ont. 1925",info:fedora/macrepo:9839
+info:fedora/macrepo:76323,"Tara, Ont. 1926",info:fedora/macrepo:9839
+info:fedora/macrepo:76326,"Stratford, Ont. 1925",info:fedora/macrepo:9839
+info:fedora/macrepo:77230,1963 - Dundas aerial photographs,info:fedora/macrepo:71369
+info:fedora/macrepo:77266,"Cuban War of Independence, 1895-1898",info:fedora/macrepo:10
+info:fedora/macrepo:77268,"War map of Cuba, the World, and the West Indies (3 maps on 1 sheet)",info:fedora/macrepo:77266
+info:fedora/macrepo:77271,"Stuart, Harold Brownlee, 1889-1946",info:fedora/macrepo:10
+info:fedora/macrepo:77283,"Clifford, Robert Edward, Hon., 1767-1817",info:fedora/macrepo:21508
+info:fedora/macrepo:77662,Podrobnaja karta Rossijskoj Imperīi... (1 map on 15 sheets),info:fedora/macrepo:77283
+info:fedora/macrepo:77663,Kriegs Theater der Teutschen und Franzoesischen... (1 map in 6 parts),info:fedora/macrepo:77283
+info:fedora/macrepo:77664,Exactissima statuum totius ducatus Bavariae... (1 map in 9 parts),info:fedora/macrepo:77283
+info:fedora/macrepo:77665,"Carte chorographique des Pays-Bas Autrichiens (1 map on 12 sheets, orignally 25 sheets)",info:fedora/macrepo:77283
+info:fedora/macrepo:77666,Carte contenant l'etendue ... de Perpignan... (1 map on 6 sheets),info:fedora/macrepo:77283
+info:fedora/macrepo:77667,Carte de France (1 map on 180 sheets),info:fedora/macrepo:77283
+info:fedora/macrepo:77687,Audio,info:fedora/macrepo:5636
+info:fedora/macrepo:77691,RA3 Rec. Acq. 1679,info:fedora/macrepo:77687
+info:fedora/macrepo:77820,Stuart Ivison fonds ,info:fedora/macrepo:6
+info:fedora/macrepo:77842,"Correspondence: Stuart Ivison to Marjorie Ivison, 1943-1945",info:fedora/macrepo:77820
+info:fedora/macrepo:79183,"Carte politique, routiere et statistique de l’Europe d’après les derniers traités (4 sheets)",info:fedora/macrepo:21508
+info:fedora/macrepo:79185,"Map exhibiting the great post roads, physical and political divisions of Europe... (4 sheets)",info:fedora/macrepo:21508
+info:fedora/macrepo:79186,Laurie and Whittle's new chart of the Mediterranean Sea... (2 sheets),info:fedora/macrepo:21508
+info:fedora/macrepo:79187,Cary's new map of England and Wales...  (3 sheets),info:fedora/macrepo:21508
+info:fedora/macrepo:79188,A map of the country sixty five miles round London (10 sheets),info:fedora/macrepo:21508
+info:fedora/macrepo:79189,The County of Northampton (2 sheets),info:fedora/macrepo:21508
+info:fedora/macrepo:79194,Partis Americæ (2 views),info:fedora/macrepo:21508
+info:fedora/macrepo:79477,America Meridionale (3 map segments) / Vincenzo Coronelli,info:fedora/macrepo:21508
+info:fedora/macrepo:79485,"Map of North America exhibiting the recent discoveries, geographical and nautical (7 sheets)",info:fedora/macrepo:21508
+info:fedora/macrepo:79500,County of Cumberland (1 map on 2 sheets),info:fedora/macrepo:21508
+info:fedora/macrepo:79510,The County Palatine of Chester / William Faden (2 sheets),info:fedora/macrepo:21508
+info:fedora/macrepo:79511,A new and accurate map of the County of Cornwall (2 sheets),info:fedora/macrepo:21508
+info:fedora/macrepo:79512,A map of the County of Devon with the City & County of Exeter (3 sheets),info:fedora/macrepo:21508
+info:fedora/macrepo:79513,Ordnance map of Devonshire (8 sheets),info:fedora/macrepo:21508
+info:fedora/macrepo:79514,A map of the County of Essex (9 sheets),info:fedora/macrepo:21508
+info:fedora/macrepo:79515,Part of the first of the general survey of England and Wales... (4 sheets),info:fedora/macrepo:21508
+info:fedora/macrepo:79570,The County Palatine of Lancaster,info:fedora/macrepo:21508
+info:fedora/macrepo:79572,"Map of Lincoln-shire, comprehending Lindsey, Kesteven & Holland",info:fedora/macrepo:21508
+info:fedora/macrepo:79573,A topographical map of the County of Norfolk,info:fedora/macrepo:21508
+info:fedora/macrepo:79574,The County of Northampton,info:fedora/macrepo:21508
+info:fedora/macrepo:79575,A map of the County of Northumberland with that part of the County of Durham...,info:fedora/macrepo:21508
+info:fedora/macrepo:79576,County of Somerset surveyed by Day and Masters,info:fedora/macrepo:21508
+info:fedora/macrepo:79577,The County of Suffolk,info:fedora/macrepo:21508
+info:fedora/macrepo:79578,"A topographical map of the County of Sussex, divided into Rapes, Deanries and Hundreds",info:fedora/macrepo:21508
+info:fedora/macrepo:79579,A topographical map of Wiltshire,info:fedora/macrepo:21508
+info:fedora/macrepo:79580,"The County of York, Survey'd in MDCCLXVII, VIII, IX and MDCLXX",info:fedora/macrepo:21508
+info:fedora/macrepo:79854,"Correspondence: Stuart Ivison to Donald, Duncan, and David Ivison, 1944-1945",info:fedora/macrepo:77820
+info:fedora/macrepo:79855,"Correspondence: Marjorie to Stuart Ivison, 1944",info:fedora/macrepo:77820
+info:fedora/macrepo:80737,"Other Letters, 1944-1945",info:fedora/macrepo:77820
+info:fedora/macrepo:80854,"Photographs. Informal photos of Ivison and his family, as well as official portraits and group photos, 1942-1945",info:fedora/macrepo:77820
+info:fedora/macrepo:80897,"Map of Lincoln-Shire, comprehending Lindsey, Kesteven & Holland, Surveyed in the Years, 1776, 7 (2 sheets)",info:fedora/macrepo:21508
+info:fedora/macrepo:80898,A topographical map of Wiltshire (6 sheets),info:fedora/macrepo:21508
+info:fedora/macrepo:80899,The County of York (10 sheets),info:fedora/macrepo:21508
+info:fedora/macrepo:80900,"Plan of the Cities of london and Westminster the borough of Southwark, and parts adjoining shewing every house (8 sheets)",info:fedora/macrepo:21508
+info:fedora/macrepo:80901,"Cary's new and accurate plan of London and Westminster, the borough of Southwark and parts adjacent... (4 sheets)",info:fedora/macrepo:21508
+info:fedora/macrepo:80902,A new map of England & Wales (2 sheets),info:fedora/macrepo:21508
+info:fedora/macrepo:80903,[Map of the Six Counties of North-Wales] (3 sheets),info:fedora/macrepo:21508
+info:fedora/macrepo:80904,Map of Scotland constructed from original materials obtained under the authority of the Parliamentary Commissioners... (4 sheets,info:fedora/macrepo:21508
+info:fedora/macrepo:80905,"A new and correct map of Scotland or North Britain with all the post and military roads, divisions & ca. (2 sheets)",info:fedora/macrepo:21508
+info:fedora/macrepo:80906,Scotland drawn and engrav'd from a series of angles and astronomical observations (2 sheets),info:fedora/macrepo:21508
+info:fedora/macrepo:80907,Map of Scotland constructed from original materials obtained under the authority of the Parliamentary Commissioners... (2 sheets,info:fedora/macrepo:21508
+info:fedora/macrepo:80908,"A map of the County of Antrim, from actual survey (2 sheets)",info:fedora/macrepo:21508
+info:fedora/macrepo:80909,The County of Clare in the Province of Munster and Kingdom of Ireland... (4 sheets),info:fedora/macrepo:21508
+info:fedora/macrepo:80910,"A survey of the parishes of Tipperkevan, Ballymore Eustace and Ballybought in the Barony of Uppercross... (2 sheets)",info:fedora/macrepo:21508
+info:fedora/macrepo:80911,"[Map of the Kingdoms of Spain and Portugal, including Algarve] (4 sheets)",info:fedora/macrepo:21508
+info:fedora/macrepo:80912,Carte générale de la navigation interieure tant naturelle qu'artificielle de la France (2 sheets),info:fedora/macrepo:21508
+info:fedora/macrepo:80913,[France - 3 Sections] (3 sheets),info:fedora/macrepo:21508
+info:fedora/macrepo:80914,Nouvelle carte chorographique des pays bas autrichiens (4 sheets),info:fedora/macrepo:21508
+info:fedora/macrepo:80915,Carte hydrographique des Etats de la Maison D'Autriche... (2 sheets),info:fedora/macrepo:21508
+info:fedora/macrepo:80916,Etat et rivieres de Genes (2 sheets),info:fedora/macrepo:21508
+info:fedora/macrepo:80981,Madeira and Canary Islands / Benedetto Bordon (2 maps on 1 sheet),info:fedora/macrepo:21508
+info:fedora/macrepo:81030,Mexicvm (1 map on 4 sheets) / Giovanni Battista Nicolosi,info:fedora/macrepo:21508
+info:fedora/macrepo:81038,"Cold War, 1945-1989",info:fedora/macrepo:10
+info:fedora/macrepo:81039,Canadian Military Town Plans,info:fedora/macrepo:81038
+info:fedora/macrepo:81115,Yukon Territory,info:fedora/macrepo:10
+info:fedora/macrepo:81116,Klondike Gold Rush and Alaskan Border Dispute,info:fedora/macrepo:81115
+info:fedora/macrepo:81117,Mountain Photo-topography Maps,info:fedora/macrepo:10
+info:fedora/macrepo:81118,Topographical Survey of the Rocky Mountains,info:fedora/macrepo:81117
+info:fedora/macrepo:81130,Yukon Map 1898 on 10 sheets,info:fedora/macrepo:81116
+info:fedora/macrepo:81131,McMaster University campus maps and air photos,info:fedora/macrepo:10
+info:fedora/macrepo:81132,McMaster campus maps,info:fedora/macrepo:81131
+info:fedora/macrepo:81133,McMaster campus air photos,info:fedora/macrepo:81131
+info:fedora/macrepo:81142,"Southern Ontario, 20th century aerial photographs",info:fedora/macrepo:10
+info:fedora/macrepo:81143,1966 - Bruce Peninsula aerial photographs,info:fedora/macrepo:81142
+info:fedora/macrepo:81144,1974 - Bruce Peninsula aerial photographs,info:fedora/macrepo:81142
+info:fedora/macrepo:81145,1964 - Caledon Area aerial photographs (Halton / Peel Regions),info:fedora/macrepo:81142
+info:fedora/macrepo:81146,1969 - Caledon Area aerial photographs (Halton / Peel Regions),info:fedora/macrepo:81142
+info:fedora/macrepo:81147,1977 - Caledon Area aerial photographs (Halton / Peel Regions),info:fedora/macrepo:81142
+info:fedora/macrepo:81148,1948 - North Bay Region aerial photographs,info:fedora/macrepo:81142
+info:fedora/macrepo:81149,1950 - Rondeau Provincial Park aerial photographs,info:fedora/macrepo:81142
+info:fedora/macrepo:81150,1955 - Simcoe - Delhi aerial photographs (Norfolk County),info:fedora/macrepo:81142
+info:fedora/macrepo:81177,Faculty of Health Sciences,info:fedora/macrepo:1
+info:fedora/macrepo:81206,Dispatch atlas. North America (1 map on 2 sheets),info:fedora/macrepo:21508
+info:fedora/macrepo:81210,E-cards,info:fedora/macrepo:6
+info:fedora/macrepo:81211,Travel and Exploration,info:fedora/macrepo:81210
+info:fedora/macrepo:81225,Botanical,info:fedora/macrepo:81210
+info:fedora/macrepo:81229,Natural History,info:fedora/macrepo:81210
+info:fedora/macrepo:81255,Tunison's Canada (3 maps on 1 sheet),info:fedora/macrepo:21508
+info:fedora/macrepo:81259,Burlington Cemetery gatehouse [architectural plans],info:fedora/macrepo:49596
+info:fedora/macrepo:81260,Design for a gate lodge Burlington Cemetery [set of architectural plans],info:fedora/macrepo:81259
+info:fedora/macrepo:81261,Plan of parks survey upon lot no. 9 in First Concession of the Township of Barton [1 map in 4 segments],info:fedora/macrepo:49596
+info:fedora/macrepo:81262,"American Revolution, 1775-1783",info:fedora/macrepo:21508
+info:fedora/macrepo:81263,Maps of the expedition from Canada of Gen. Burgoyne [collection of 6 maps],info:fedora/macrepo:81262
+info:fedora/macrepo:81264,Plan of the encampment and position of the army ... at Braemus Heights [map 5; 2 image files],info:fedora/macrepo:81263
+info:fedora/macrepo:81265,An exact chart of the River St. Laurence... by Thomas Jefferys (1 map on 2 sheets),info:fedora/macrepo:21508
+info:fedora/macrepo:81266,"3 Karten zu Arat, Eratosthenes, Dionysius Perigeles [signed] W. Matthias 1816 (3 maps in 1 folder)",info:fedora/macrepo:21508
+info:fedora/macrepo:81267,France: Aeronautique Militaire,info:fedora/macrepo:53
+info:fedora/macrepo:81268,"Allied Occupation of the Rhineland, 1919",info:fedora/macrepo:53
+info:fedora/macrepo:81269,"Brighton, Ont. 1926",info:fedora/macrepo:9839
+info:fedora/macrepo:81271,Macmillan Collection,info:fedora/macrepo:10
+info:fedora/macrepo:81273,"Crystal Beach, Ont. 1927",info:fedora/macrepo:9839
+info:fedora/macrepo:81275,Map of the Province of Ontario ; District of Nippissing ; Eastern part of Algoma District (3 maps on 1 sheet),info:fedora/macrepo:21508
+info:fedora/macrepo:81291,City of Montreal and suburbs ; Atlas of the Dominion Counties ... Province of Ontario (3 maps on 1 sheet),info:fedora/macrepo:21508
+info:fedora/macrepo:81294,"Milton, Ont. 1927",info:fedora/macrepo:9839
+info:fedora/macrepo:81326,"War of the Austrian Succession, 1740-1748, Military Camps (set of 20 maps with supplements)",info:fedora/macrepo:77283
+info:fedora/macrepo:81397,Cumberland and Westmorland (1 map on 2 sheets),info:fedora/macrepo:21508
+info:fedora/macrepo:81412,Map of the provinces of Canada (1 map on 6 sheets) / Joseph Bouchette ,info:fedora/macrepo:21508
+info:fedora/macrepo:81431,London 1666 / plans of John Evelyn and Christopher Wren (4 maps on 2 sheets),info:fedora/macrepo:21508
+info:fedora/macrepo:81441,Carte des royaumes d'Espagne et de Portugal / par L. Vivien (1 map on 8 sheets),info:fedora/macrepo:21508
+info:fedora/macrepo:81450,Precis historique des opérations de l'armée française en Espagne... (accompanying text on 4 sheets),info:fedora/macrepo:81441
+info:fedora/macrepo:81515,Colton's map of the world on Mercator's projection ; Western Hemisphere (2 maps on 1 sheet),info:fedora/macrepo:21508
+info:fedora/macrepo:81524,Map of the County of Kildare / by Alexander Taylor (1 map on 6 sheets),info:fedora/macrepo:21508
+info:fedora/macrepo:81535,"Karte derer englischen Unternehmungen zur See auf denen französischen Küsten... [Anglo-French War, 1755-1763] / Christian Friederich van der Heyden",info:fedora/macrepo:21508
+info:fedora/macrepo:81543,Ce plan de la bataille de Tonhausen près de Minden... (map with 2 overlays) / par Guilme. Roy,info:fedora/macrepo:21508
+info:fedora/macrepo:81551,Dominion of Canada... ; Map of the United States / published by Geo. F. Cram (2 maps on 1 sheet),info:fedora/macrepo:21508
+info:fedora/macrepo:81560,"Maps from W.H. Smith, Canada: Past, Present and Future ... Containing Ten Maps, and One General Map of the Province... [1850-2]",info:fedora/macrepo:21508
+info:fedora/macrepo:81573,"[Atlas des Pays Bas / sur la copie de Bruxelles par E.H. Fricx, 1745] - set of 24 maps",info:fedora/macrepo:21508
+info:fedora/macrepo:81599,"Map of Nova Scotia, or Acadia... / by Captn. Montresor, 1768 (1 map on 2 sheets)",info:fedora/macrepo:21508
+info:fedora/macrepo:81804,1967 - Hamilton aerial photographs,info:fedora/macrepo:71369
+info:fedora/macrepo:81840,"World War, 1914-1918, Theatre",info:fedora/macrepo:81210
+info:fedora/macrepo:81849,"World War, 1914-1918",info:fedora/macrepo:81210
+info:fedora/macrepo:81864,Archival Collections/ Advertising,info:fedora/macrepo:81210
+info:fedora/macrepo:81870,Christmas,info:fedora/macrepo:81210
+info:fedora/macrepo:81875,Archival Collections/ McMaster University,info:fedora/macrepo:81210
+info:fedora/macrepo:81878,Canadian School Notebooks,info:fedora/macrepo:81210
+info:fedora/macrepo:81886,Entomology,info:fedora/macrepo:81210
+info:fedora/macrepo:81893,McMaster University,info:fedora/macrepo:81210
+info:fedora/macrepo:81898,Military Arts,info:fedora/macrepo:81210
+info:fedora/macrepo:81903,Science,info:fedora/macrepo:81210
+info:fedora/macrepo:81912,"Topographical map of the districts of Quebec, Three Rivers, St. Francis and Gaspé, Lower Canada... (1 map on 6 sheets) ",info:fedora/macrepo:21508
+info:fedora/macrepo:81951,Ontario lake maps,info:fedora/macrepo:10
+info:fedora/macrepo:82206,"A new map of the whole continent of America, divided into North and South and West Indies (1 map on 2 sheets)",info:fedora/macrepo:21508
+info:fedora/macrepo:82247,AAF Cloth Charts,info:fedora/macrepo:75555
+info:fedora/macrepo:82248,October Crisis 1970,info:fedora/macrepo:10
+info:fedora/macrepo:82336,Federal Emergency Measures Organization,info:fedora/macrepo:81038
+info:fedora/macrepo:82337,EMO Urban Analysis Series Toronto,info:fedora/macrepo:82336
+info:fedora/macrepo:82338,EMO Urban Analysis Series Vancouver,info:fedora/macrepo:82336
+info:fedora/macrepo:82339,Turkey 1:200k Topographic Maps,info:fedora/macrepo:32223
+info:fedora/macrepo:82387,"Peninsular War, 1807-1814",info:fedora/macrepo:77283
+info:fedora/macrepo:82388,"Egyptian and Syrian Campaign, 1798-1801",info:fedora/macrepo:77283
+info:fedora/macrepo:82389,"Russian Campaign, 1812",info:fedora/macrepo:77283
+info:fedora/macrepo:82390,Italian Campaigns,info:fedora/macrepo:77283
+info:fedora/macrepo:82391,"Battle of Waterloo, June 18th, 1815",info:fedora/macrepo:77283
+info:fedora/macrepo:82392,"City View and Plan, Inset Maps (set of 48)",info:fedora/macrepo:77283
+info:fedora/macrepo:82393,Atlas von Liefland oder von den beyden Gouvernementer und Herzogthümern Lief-und Ehstland und der Provinz Oesel...[13 atlas plates],info:fedora/macrepo:77283
+info:fedora/macrepo:82394,City Fortifications and Environs,info:fedora/macrepo:77283
+info:fedora/macrepo:82395,Lauterbourg and Lauter-line (defended border of France),info:fedora/macrepo:77283
+info:fedora/macrepo:82396,Metz,info:fedora/macrepo:82394
+info:fedora/macrepo:82397,Luxembourg,info:fedora/macrepo:82394
+info:fedora/macrepo:82398,Tournay,info:fedora/macrepo:82394
+info:fedora/macrepo:82399,Mastricht,info:fedora/macrepo:82394
+info:fedora/macrepo:82400,Nancy,info:fedora/macrepo:82394
+info:fedora/macrepo:82401,Namur,info:fedora/macrepo:82394
+info:fedora/macrepo:82402,Carte des Bords du Rhin,info:fedora/macrepo:77283
+info:fedora/macrepo:82403,Menin,info:fedora/macrepo:82394
+info:fedora/macrepo:82408,Map of the Russian Dominions in Europe (1814) by John Cary [1 map on 4 sheets],info:fedora/macrepo:82389
+info:fedora/macrepo:8286,France 1:100k Topographic Maps,info:fedora/macrepo:32223
+info:fedora/macrepo:84411,Italy 1:50k Topographic Maps,info:fedora/macrepo:32223
+info:fedora/macrepo:85260,"Hamilton, Ont. 1947",info:fedora/macrepo:9839
+info:fedora/macrepo:85261,"Hamilton, Ont. 1960s",info:fedora/macrepo:9839
+info:fedora/macrepo:85267,Photographs,info:fedora/macrepo:75558
+info:fedora/macrepo:85269,Box 1,info:fedora/macrepo:85267
+info:fedora/macrepo:85272,Town Plans,info:fedora/macrepo:34
+info:fedora/macrepo:85273,Canadian Corps Intelligence Log Maps,info:fedora/macrepo:34
+info:fedora/macrepo:85274,Message Maps,info:fedora/macrepo:34
+info:fedora/macrepo:85275,Soil Going Maps for Tanks,info:fedora/macrepo:34
+info:fedora/macrepo:85276,Situation Maps,info:fedora/macrepo:34
+info:fedora/macrepo:85277,HQ and Military Camp Maps,info:fedora/macrepo:34
+info:fedora/macrepo:85278,Friendly Organisation Maps,info:fedora/macrepo:34
+info:fedora/macrepo:85279,Royal Naval Air Service (RNAS) Flying Maps,info:fedora/macrepo:34
+info:fedora/macrepo:85280,Enemy Target Maps,info:fedora/macrepo:34
+info:fedora/macrepo:85281,Intelligence Summary Maps,info:fedora/macrepo:34
+info:fedora/macrepo:85282,"Europe, Central 1:25k Topographic Maps",info:fedora/macrepo:32223
+info:fedora/macrepo:86541,Carte de la Moldavie [1 map on 2 sheets],info:fedora/macrepo:77283
+info:fedora/macrepo:86557,"Galt, Ont. 1929",info:fedora/macrepo:9839
+info:fedora/macrepo:86558,"Grimsby, Ont. 1928",info:fedora/macrepo:9839
+info:fedora/macrepo:86559,"Port Elgin, Ont. 1928",info:fedora/macrepo:9839
+info:fedora/macrepo:86561,"Southampton, Ont. 1928",info:fedora/macrepo:9839
+info:fedora/macrepo:86603,WWII Defence Overprints,info:fedora/macrepo:66649
+info:fedora/macrepo:86604,Azores 1:100k Topographic Maps,info:fedora/macrepo:32223
+info:fedora/macrepo:86608,WWII BIGOT maps,info:fedora/macrepo:66649
+info:fedora/macrepo:86625,Ordnance Survey Maps,info:fedora/macrepo:77283
+info:fedora/macrepo:8669,Donor and Library Events,info:fedora/macrepo:8666
+info:fedora/macrepo:86715,Rhineland Campaign,info:fedora/macrepo:86603
+info:fedora/macrepo:86716,Operation Overlord,info:fedora/macrepo:86603
+info:fedora/macrepo:86717,Scheldt Campaign,info:fedora/macrepo:86603
+info:fedora/macrepo:86718,Dieppe Raid,info:fedora/macrepo:86603
+info:fedora/macrepo:86719,Italian Campaign,info:fedora/macrepo:86603
+info:fedora/macrepo:86721,Liberation of the Netherlands,info:fedora/macrepo:86603
+info:fedora/macrepo:86722,"Calais (Operation Undergo), September 1944",info:fedora/macrepo:86603
+info:fedora/macrepo:86723,"Germany, 1945",info:fedora/macrepo:86603
+info:fedora/macrepo:86724,Going (Cross-Country Traffic-ability Maps),info:fedora/macrepo:86603
+info:fedora/macrepo:86725,Flooding Overprints,info:fedora/macrepo:86603
+info:fedora/macrepo:8674,Library Staff Events,info:fedora/macrepo:8666
+info:fedora/macrepo:8679,Library Buildings/Areas,info:fedora/macrepo:8666
+info:fedora/macrepo:8690,Miscellaneous,info:fedora/macrepo:8666
+info:fedora/macrepo:87185,"Bomber Charts, Gordon Griffith Archive",info:fedora/macrepo:75555
+info:fedora/macrepo:87187,"""Gee"" Lattice Topographical Charts",info:fedora/macrepo:87185
+info:fedora/macrepo:87189,Plotting Charts,info:fedora/macrepo:87185
+info:fedora/macrepo:87191,Aeronautical Charts,info:fedora/macrepo:87185
+info:fedora/macrepo:87203,Plotting (Radar) Charts,info:fedora/macrepo:87185
+info:fedora/macrepo:87205,"""Gee"" Fixing (Lattice) Charts",info:fedora/macrepo:87185
+info:fedora/macrepo:87218,Topographic (Standard 1 inch to a mile),info:fedora/macrepo:87185
+info:fedora/macrepo:87273,"Vietnam War, 1961-1975",info:fedora/macrepo:10
+info:fedora/macrepo:87275,"Vietnam 1:500,000 Topographic Maps",info:fedora/macrepo:87273
+info:fedora/macrepo:87277,Vietnam City Maps,info:fedora/macrepo:87273
+info:fedora/macrepo:87640,WWII City Plans,info:fedora/macrepo:66649
+info:fedora/macrepo:87641,"Japan City Plans 1:12,500",info:fedora/macrepo:87640
+info:fedora/macrepo:87642,"Ontario Historical Topographic Maps, 1 inch to 1 mile (1:63360)",info:fedora/macrepo:10
+info:fedora/macrepo:87645,Training Charts,info:fedora/macrepo:87185
+info:fedora/macrepo:88309,"Fergus, Ont. 1921",info:fedora/macrepo:9839
+info:fedora/macrepo:88343,"Ontario Historical Topographic Maps, 1:25000",info:fedora/macrepo:10
+info:fedora/macrepo:8848,Belgium & N.E. France 1:100k Topographic Maps,info:fedora/macrepo:32223
+info:fedora/macrepo:8850,Holland 1:100k Topographic Maps,info:fedora/macrepo:32223
+info:fedora/macrepo:88592,WWII Geologic Maps,info:fedora/macrepo:66649
+info:fedora/macrepo:88593,France 1:80k Geologic Maps,info:fedora/macrepo:88592
+info:fedora/macrepo:88988,France 1:50k Topographic Maps,info:fedora/macrepo:32223
+info:fedora/macrepo:88989,France and Belgium 1:50k Topographic Maps,info:fedora/macrepo:32223
+info:fedora/macrepo:88990,Exploration and Fur Trade,info:fedora/macrepo:10
+info:fedora/macrepo:88992,Crete 50k Topograhic Maps,info:fedora/macrepo:32223
+info:fedora/macrepo:8910,Mills Library,info:fedora/macrepo:8679
+info:fedora/macrepo:8912,5th floor construction 2007,info:fedora/macrepo:8910
+info:fedora/macrepo:8916,Mills Learning Commons,info:fedora/macrepo:8910
+info:fedora/macrepo:8918,Before renovations,info:fedora/macrepo:8916
+info:fedora/macrepo:8921,After renovations,info:fedora/macrepo:8916
+info:fedora/macrepo:8929,Preservation Lab,info:fedora/macrepo:8910
+info:fedora/macrepo:8932,Map Library,info:fedora/macrepo:8910
+info:fedora/macrepo:8935,Lyons New Media Centre,info:fedora/macrepo:8910
+info:fedora/macrepo:8938,General Pics,info:fedora/macrepo:8910
+info:fedora/macrepo:8943,Thode Library,info:fedora/macrepo:8679
+info:fedora/macrepo:8945,Renovations,info:fedora/macrepo:8943
+info:fedora/macrepo:8948,Innis Library,info:fedora/macrepo:8679
+info:fedora/macrepo:8949,General,info:fedora/macrepo:8943
+info:fedora/macrepo:8954,General,info:fedora/macrepo:8948
+info:fedora/macrepo:8962,Donor Events,info:fedora/macrepo:8669
+info:fedora/macrepo:8964,Topography of Golgatha: Trench maps of the Western Front,info:fedora/macrepo:8962
+info:fedora/macrepo:8967,Gift Announcement from Pirate Group & Master Class,info:fedora/macrepo:8962
+info:fedora/macrepo:8970,Launch of the USC Shoah Foundations Institute’s Visual History Archive,info:fedora/macrepo:8962
+info:fedora/macrepo:8973,Anna Porter: My Life in Canadian Literature and the Future of the Book,info:fedora/macrepo:8962
+info:fedora/macrepo:8977,Brian McFarlane Event,info:fedora/macrepo:8962
+info:fedora/macrepo:8980,Buckskin and Broadcloth,info:fedora/macrepo:8962
+info:fedora/macrepo:8983,Mary Lou Fallis Event,info:fedora/macrepo:8962
+info:fedora/macrepo:8986,Walk Good: Celebrating Miss Lou,info:fedora/macrepo:8962
+info:fedora/macrepo:8989,A Celebration of Canadian Publishing,info:fedora/macrepo:8962
+info:fedora/macrepo:8993,Library Celebrates Collecting,info:fedora/macrepo:8962
+info:fedora/macrepo:8996,McClelland’s Coat Portraits,info:fedora/macrepo:8962
+info:fedora/macrepo:8999,Brott Archives at McMaster,info:fedora/macrepo:8962
+info:fedora/macrepo:9002,Virtual Museum of the Holocaust and the Resistance Event,info:fedora/macrepo:8962
+info:fedora/macrepo:9005,Launch Event for Mass Digitization and Publishing,info:fedora/macrepo:8962
+info:fedora/macrepo:9008,Jackie Washington Event,info:fedora/macrepo:8962
+info:fedora/macrepo:9015,Library Events,info:fedora/macrepo:8669
+info:fedora/macrepo:9017,Launch of the Lyons New Media Centre,info:fedora/macrepo:9015
+info:fedora/macrepo:90174,Principia Mathematica,info:fedora/macrepo:5636
+info:fedora/macrepo:9020,WILU 2010,info:fedora/macrepo:9015
+info:fedora/macrepo:9023,MacQuest 2010,info:fedora/macrepo:9015
+info:fedora/macrepo:9026,Student displays,info:fedora/macrepo:9015
+info:fedora/macrepo:9028,Thode Poster Sessions,info:fedora/macrepo:9026
+info:fedora/macrepo:9031,Mills Poster Sessions,info:fedora/macrepo:9026
+info:fedora/macrepo:9034,2008 ACRL Excellence in Academic Libraries Award Celebration,info:fedora/macrepo:9015
+info:fedora/macrepo:9037,Irwin Cotler Lecture,info:fedora/macrepo:9015
+info:fedora/macrepo:9040,Deborah Lipstadt Lecture,info:fedora/macrepo:9015
+info:fedora/macrepo:9043,Parent Night 2008,info:fedora/macrepo:9015
+info:fedora/macrepo:9046,Peace and War in the 20th Century Launch,info:fedora/macrepo:9015
+info:fedora/macrepo:9049,3M Fellowship Reception,info:fedora/macrepo:9015
+info:fedora/macrepo:9052,Amazing Library Photo Race,info:fedora/macrepo:9015
+info:fedora/macrepo:9055,Library e-Card Photo Booth,info:fedora/macrepo:9015
+info:fedora/macrepo:9058,MacLibraries Expo 2009,info:fedora/macrepo:9015
+info:fedora/macrepo:9061,Historical Perspectives on Canadian Publishing Launch,info:fedora/macrepo:9015
+info:fedora/macrepo:9067,Holiday Party,info:fedora/macrepo:8674
+info:fedora/macrepo:9069,2007,info:fedora/macrepo:9067
+info:fedora/macrepo:9072,2008,info:fedora/macrepo:9067
+info:fedora/macrepo:9075,2009,info:fedora/macrepo:9067
+info:fedora/macrepo:9078,Service Recognitions,info:fedora/macrepo:8674
+info:fedora/macrepo:9080,2009,info:fedora/macrepo:9078
+info:fedora/macrepo:9083,2010,info:fedora/macrepo:9078
+info:fedora/macrepo:9086,2011,info:fedora/macrepo:9078
+info:fedora/macrepo:9089,2012,info:fedora/macrepo:9078
+info:fedora/macrepo:9095,"Retirements, Farewells, Showers",info:fedora/macrepo:8674
+info:fedora/macrepo:9097,Frances McCrone Retirement,info:fedora/macrepo:9095
+info:fedora/macrepo:9101,"Donna Thomson, Mary Ruth Linkert, Ann Philbrook, Paul Otto Retirement",info:fedora/macrepo:9095
+info:fedora/macrepo:9104,Retiree Luncheons,info:fedora/macrepo:9095
+info:fedora/macrepo:9107,2010 Coop Student Farewell,info:fedora/macrepo:9095
+info:fedora/macrepo:91078,Cambodia City Maps,info:fedora/macrepo:87273
+info:fedora/macrepo:9110,Lawlor Baby Shower,info:fedora/macrepo:9095
+info:fedora/macrepo:9113,Baird Baby Shower,info:fedora/macrepo:9095
+info:fedora/macrepo:9116,Staff BBQs & Celebrations,info:fedora/macrepo:8674
+info:fedora/macrepo:9118,BBQ 2007,info:fedora/macrepo:9116
+info:fedora/macrepo:9121,BBQ 2008,info:fedora/macrepo:9116
+info:fedora/macrepo:9124,Summer Blast 2006,info:fedora/macrepo:9116
+info:fedora/macrepo:9127,"Library Videos, Behind the Scenes",info:fedora/macrepo:8674
+info:fedora/macrepo:9130,Ninja Mugshots,info:fedora/macrepo:8674
+info:fedora/macrepo:91319,WWII Escape and Evasion Maps,info:fedora/macrepo:66649
+info:fedora/macrepo:9133,Halloween at the Library,info:fedora/macrepo:8674
+info:fedora/macrepo:9136,Learning 2.0 @ Mac,info:fedora/macrepo:8674
+info:fedora/macrepo:91371,Map K3/H2 (double-sided),info:fedora/macrepo:91319
+info:fedora/macrepo:91374,Laos City Maps,info:fedora/macrepo:87273
+info:fedora/macrepo:9139,Made by Mac Creative Challenge,info:fedora/macrepo:8674
+info:fedora/macrepo:9142,Staff Newsletter Pics,info:fedora/macrepo:8674
+info:fedora/macrepo:9145,Blended Service Training,info:fedora/macrepo:8674
+info:fedora/macrepo:9148,2009 Library Staff Fair,info:fedora/macrepo:8674
+info:fedora/macrepo:91914,"Boer War, 1899-1902",info:fedora/macrepo:10
+info:fedora/macrepo:91920,Cold War Germany,info:fedora/macrepo:81038
+info:fedora/macrepo:91923,"Entebbe Airport Raid, 1976",info:fedora/macrepo:10
+info:fedora/macrepo:91926,USSR 1:100K Topographic Maps,info:fedora/macrepo:32223
+info:fedora/macrepo:91927,"Alexander Mackenzie, 1764-1820",info:fedora/macrepo:88990
+info:fedora/macrepo:91928,"George Back, 1796-1878",info:fedora/macrepo:88990
+info:fedora/macrepo:91929,"Peter Pond, 1739-1807",info:fedora/macrepo:88990
+info:fedora/macrepo:91930,"Samuel de Champlain, 1567-1635",info:fedora/macrepo:88990
+info:fedora/macrepo:91931,"James Cook, 1728-1779",info:fedora/macrepo:88990
+info:fedora/macrepo:91932,"John Franklin, 1786-1847",info:fedora/macrepo:88990
+info:fedora/macrepo:91933,"Baron de Lahontan, 1666-1716",info:fedora/macrepo:88990
+info:fedora/macrepo:91934,Cold War Afghanistan,info:fedora/macrepo:81038
+info:fedora/macrepo:91935,Hudson Bay,info:fedora/macrepo:88990
+info:fedora/macrepo:91936,Great Lakes,info:fedora/macrepo:88990
+info:fedora/macrepo:91937,Arctic and Northwest Passage,info:fedora/macrepo:88990
+info:fedora/macrepo:91938,"Canada, East",info:fedora/macrepo:88990
+info:fedora/macrepo:91939,Hudson's Bay Company,info:fedora/macrepo:88990
+info:fedora/macrepo:91941,WWII Ethnology Maps,info:fedora/macrepo:66649
+info:fedora/macrepo:91943,Notice to the World,info:fedora/macrepo:77687
+info:fedora/macrepo:91952,"St. Thomas, Ont. 1929",info:fedora/macrepo:9839
+info:fedora/macrepo:91960,Planetary Mapping,info:fedora/macrepo:10
+info:fedora/macrepo:91961,Lunar Mapping,info:fedora/macrepo:91960
+info:fedora/macrepo:91962,"Geologic Atlas of the Moon, 1962-1976",info:fedora/macrepo:91961
+info:fedora/macrepo:91963,Apollo Landing Sites,info:fedora/macrepo:91962
+info:fedora/macrepo:91981,"Dawson, Robert Kearsley (1798-1861)",info:fedora/macrepo:21508
+info:fedora/macrepo:91982,Plans of the Cities and Boroughs of England and Wales (1832),info:fedora/macrepo:91981
+info:fedora/macrepo:91984,Soviet Occupation of Afghanistan (1979-1989),info:fedora/macrepo:91934
+info:fedora/macrepo:91992,Exploration Routes,info:fedora/macrepo:88990
+info:fedora/macrepo:92021,Asia 1:1mil Topographic Maps,info:fedora/macrepo:32223
+info:fedora/macrepo:92022,Asia 1:500k Topographic Maps,info:fedora/macrepo:32223
+info:fedora/macrepo:92024,WWII Hydrographic Charts,info:fedora/macrepo:66649
+info:fedora/macrepo:92025,WWII British Admiralty Charts CWHM,info:fedora/macrepo:92024
+info:fedora/macrepo:92029,World 1:1mil AAF Aeronautical Charts CWHM,info:fedora/macrepo:75555
+info:fedora/macrepo:92034,Ceylon,info:fedora/macrepo:32223
+info:fedora/macrepo:92036,World 1:3mil Long Range Aeronautical Charts CWHM,info:fedora/macrepo:75555
+info:fedora/macrepo:92065,Norway South 1943 Road Map,info:fedora/macrepo:32223
+info:fedora/macrepo:92070,WWII Land Classification Maps,info:fedora/macrepo:66649
+info:fedora/macrepo:9425,Denmark 1:100k Topographic Maps,info:fedora/macrepo:32223
+info:fedora/macrepo:9650,Romania 1:100k Topographic Maps,info:fedora/macrepo:32223
+info:fedora/macrepo:9839,Canadian Fire Insurance Plans,info:fedora/macrepo:10
+info:fedora/macrepo:9916,Yugoslavia 1:100k Topographic Maps,info:fedora/macrepo:32223
+info:fedora/macrepo:9921,"Europe, Central 1:250k Topographic Maps",info:fedora/macrepo:32223
+info:fedora/newspapers:collection,Newspapers Collection,info:fedora/islandora:demos

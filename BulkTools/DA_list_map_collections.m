@@ -2,6 +2,9 @@
 %%% collection tree. The second half of this script counts items within
 %%% given collections
 %%% 
+%%%
+%%% collections_current.csv is created from the Fedora RIQS query found
+%%% here: https://github.com/jasonbrodeur/Fedora-SPARQL/blob/master/fedora-sparql-cookbook.md#example-5-list-all-collections-within-the-digital-archive-and-their-parents
 
 A = readcell('H:\Digitization_Projects\Digital_Archive_Stats\collections_current.csv','NumHeaderLines',1,'Delimiter',',');
 
