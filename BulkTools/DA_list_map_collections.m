@@ -2,11 +2,12 @@
 %%% collection tree. The second half of this script counts items within
 %%% given collections
 %%% 
-%%%
-%%% collections_current.csv is created from the Fedora RIQS query found
-%%% here: https://github.com/jasonbrodeur/Fedora-SPARQL/blob/master/fedora-sparql-cookbook.md#example-5-list-all-collections-within-the-digital-archive-and-their-parents
+%%% Step 1: Run the following Fedora RIQS query: https://github.com/jasonbrodeur/Fedora-SPARQL/blob/master/fedora-sparql-cookbook.md#example-5-list-all-collections-within-the-digital-archive-and-their-parents
+%%% Step 2: Copy and paste the output in collections_current.csv (in this repo)
+%%% Step 3: Save the file. Run this script.
 
-A = readcell('H:\Digitization_Projects\Digital_Archive_Stats\collections_current.csv','NumHeaderLines',1,'Delimiter',',');
+clearvars
+A = readcell('inventories\collections_current.csv','NumHeaderLines',1,'Delimiter',',');
 
 A_cleaned = {};
 for i = 1:1:length(A)
@@ -59,7 +60,8 @@ map_collections_out = {};
 [map_collections,ia] = unique(map_collections);
 level = level(ia,1);
 
-[map_collections, ia2] = sort(map_collections(ia),'ascend');
+% [map_collections, ia2] = sort(map_collections(ia),'ascend');
+[map_collections, ia2] = sort(map_collections,'ascend');
 level = level(ia2);
 
 for j = 1:1:length(map_collections)
@@ -68,7 +70,12 @@ for j = 1:1:length(map_collections)
     map_collections_out{j,2} = A_cleaned{right_row(1),2};
     map_collections_out{j,3} = macrepos(right_row(1),2);
     map_collections_out{j,4} = level(j,1);
+    map_collections_out{j,5} = ['https://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A' num2str(macrepos(right_row(1),1))];
 end
+
+headers_collections = {'macrepo','name','parent_collection','level','url'};
+T = cell2table(map_collections_out,'VariableNames',headers_collections);
+writetable(T,'inventories\map_collections_out.csv')
 
 
 %% Step 2: check the items list against the collections list to include only those with proper parents:
