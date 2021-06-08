@@ -158,7 +158,13 @@ An old function used to crawl through URLs on the digital archive (by incrementi
 Applies an imagemagick mogrify command to all items within a specified directory; typically used to resize and/or convert formats of images.
 ### rename_files.m
 An old script used to bulk rename folders and files in a local/network directory
-
+### DA_list_map_collections.m
+Run this script to create a list of all Digital Archive map collections in the Map Collection 
+To run:
+1. Step 1: Run [this Fedora RIQS query](https://github.com/jasonbrodeur/Fedora-SPARQL/blob/master/fedora-sparql-cookbook.md#example-5-list-all-collections-within-the-digital-archive-and-their-parents) in the [Fedora Resource Index Query Service](http://dcs1.mcmaster.ca/fedora/risearch).
+%%% Step 2: Copy and paste the output in collections_current.csv (in /inventories directory of this repo).
+%%% Step 3: Save the file. Run the script.
+	
 ## 8. Other References
 ### SPARQL 
 - The digital archive Fedora Resource Index Query Service can be accessed at http://dcs1.mcmaster.ca/fedora/risearch
