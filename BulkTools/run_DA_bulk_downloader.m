@@ -72,3 +72,9 @@ download_list = 'H:\Digitization_Projects\omeka-tests\HamFIP1898\macrepos.csv';
 download_dir = 'H:\Digitization_Projects\omeka-tests\HamFIP1898\';
 download_type = 'DC';
 DA_bulk_downloader(download_type,download_dir,download_list);
+
+%% WW2_France_100k_GSGS4249
+
+%% WW2_Holland_100k_GSGS2541
+
+%% WW2_Belgium_France_100k_GSGS4336

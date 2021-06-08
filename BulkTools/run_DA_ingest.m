@@ -274,3 +274,43 @@ DA_prepare_ingest(top_path);
 top_path = 'H:\Digitization_Projects\WWII_Topographic_Maps\U_of_Alberta\UofA_USSR_100k\';
 cd('D:\Local\Digital-Archive-Tools\BulkTools')
 DA_check_ingested(top_path,'ingested_all.csv')
+
+%% 2020-10-20 Scans; odds and ends   
+cd('D:\Local\Digital-Archive-Tools\BulkTools')
+top_path = 'H:\Digitization_Projects\2020-10-20\';
+% cd(top_path)
+jjb_check_dirs([top_path 'MODS'],1);
+jjb_check_dirs([top_path 'Ingested'],1);
+jjb_check_dirs([top_path 'ToFix'],1);
+jjb_check_dirs([top_path 'ToIngest'],1);
+jjb_check_dirs([top_path 'logs'],1);
+
+%%% Special: rename files according to the identifier provided by Gord: 
+[C, H1, H2, H3] = load_metadata_tsv([top_path 'Digital Archive - Bulk Metadata Templates - October2020Scans.tsv']);
+for i = 5:1:size(C,1)
+   s1{i,1} = movefile([top_path C{i,36} '.tif'],[top_path C{i,2}]);
+end
+
+
+cd('D:\Local\Digital-Archive-Tools\BulkTools')
+DA_metadata_to_mods(top_path,'Digital Archive - Bulk Metadata Templates - October2020Scans.tsv');
+
+cd('D:\Local\Digital-Archive-Tools\BulkTools')
+DA_prepare_ingest(top_path);
+
+%%% Move these files to the proper folders in Z:\ToBeProcessed
+
+for i = 6:1:size(C,1)
+   target_folder = C{i,37};
+     jjb_check_dirs(['Z:\ToBeProcessed\' target_folder],1);
+    s2{i,1} =  copyfile([top_path 'ToIngest\' C{i,1} '.tif'],['Z:\ToBeProcessed\' target_folder '\' C{i,1} '.tif'],'f');
+    s3{i,1} =  copyfile([top_path 'ToIngest\' C{i,1} '.xml'],['Z:\ToBeProcessed\' target_folder '\' C{i,1} '.xml']);
+    status_check = s2{i,1}+s3{i,1};
+    if status_check < 2
+    disp(['Error with file: ' c{i,1} ', i = ' num2str(i)]);
+    end
+end
+
+top_path = 'Digital Archive - Bulk Metadata Templates - October2020Scans.tsv';
+cd('D:\Local\Digital-Archive-Tools\BulkTools')
+DA_check_ingested(top_path,'ingested_all.csv')
