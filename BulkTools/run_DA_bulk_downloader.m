@@ -78,3 +78,28 @@ DA_bulk_downloader(download_type,download_dir,download_list);
 %% WW2_Holland_100k_GSGS2541
 
 %% WW2_Belgium_France_100k_GSGS4336
+
+%% Bulgaria 1:250,000 (GSGS 4412) - https://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A19790
+cd('D:\Local\Digital-Archive-Tools\BulkTools\');
+download_type = 'DC';
+download_dir = 'D:\Local\topo-extracts\19790\';
+download_list = [download_dir '19790.csv'];
+DA_bulk_downloader(download_type,download_dir,download_list)
+DA_dc_to_csv(download_dir);
+
+%% Romania 1:250,000 (GSGS 4375) - https://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A21809
+cd('D:\Local\Digital-Archive-Tools\BulkTools\');
+download_type = 'DC';
+download_dir = 'D:\Local\topo-extracts\20447\';
+download_list = [download_dir '20447.csv'];
+DA_bulk_downloader(download_type,download_dir,download_list)
+DA_dc_to_csv(download_dir);
+
+%% Spain Gibraltar 1:100,000 (GSGS 4109) - https://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A20447
+cd('D:\Local\Digital-Archive-Tools\BulkTools\');
+download_type = 'DC';
+download_dir = 'D:\Local\topo-extracts\21809\';
+download_list = [download_dir '21809.csv'];
+DA_bulk_downloader(download_type,download_dir,download_list)
+DA_dc_to_csv(download_dir);
+%% 
