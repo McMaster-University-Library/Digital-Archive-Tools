@@ -102,4 +102,60 @@ download_dir = 'D:\Local\topo-extracts\21809\';
 download_list = [download_dir '21809.csv'];
 DA_bulk_downloader(download_type,download_dir,download_list)
 DA_dc_to_csv(download_dir);
-%% 
+%% Downloading a bunch of series at a time (collection macrepos inserted into a csv file
+cd('D:\Local\Digital-Archive-Tools\BulkTools\');
+download_type = 'DC';
+%%% Load the processing list:
+list_path = 'D:\Local\topo-extracts\collections-to-process.csv';
+colls_to_load = csvread(list_path);
+top_dir = 'D:\Local\topo-extracts\';
+
+% Run once -- check for all directories and csv files -- make empty ones if
+% not
+for i = 1:1:size(colls_to_load,1)
+    coll_to_run = colls_to_load(i,1);
+    
+    download_dir = ['D:\Local\topo-extracts\' num2str(coll_to_run) '\'];
+    jjb_check_dirs(download_dir,1);
+    download_list = [download_dir num2str(coll_to_run) '.csv'];
+    
+    if exist(download_list,'file')~=2
+        fid = fopen(download_list,'w+');
+        fclose(fid);
+    end
+end
+
+%%% Now, manually run sparql queries, save output to csv files
+
+%%% Now, reformat the csv files to include just unique macrepo values of
+%%% children. these lists will be in each directory with name
+%%% 'macrepos_xxxxx'
+for i = 1:1:size(colls_to_load,1)
+    coll_to_run = colls_to_load(i,1);
+    
+    download_dir = ['D:\Local\topo-extracts\' num2str(coll_to_run) '\'];
+    download_list = [download_dir num2str(coll_to_run) '.csv'];
+DA_sparql_extractor(download_list);
+end
+
+%%% iterate through collections -- turn DC to spreadsheet
+for i = 1:1:size(colls_to_load,1)
+    coll_to_run = colls_to_load(i,1);
+    download_dir = ['D:\Local\topo-extracts\' num2str(coll_to_run) '\'];
+    download_list = [download_dir 'macrepos_' num2str(coll_to_run) '.csv'];
+    DA_bulk_downloader(download_type,download_dir,download_list)
+    DA_dc_to_csv(download_dir);
+end
+
+%%% Finally, pull the metadata files out into the top-level directory and
+%%% add the macrepo number to the filename
+for i = 1:1:size(colls_to_load,1)
+    coll_to_run = colls_to_load(i,1);
+    download_dir = ['D:\Local\topo-extracts\' num2str(coll_to_run) '\'];
+copyfile([download_dir 'metadata_out.tsv'],[top_dir num2str(coll_to_run) '_metadata_out.tsv']);
+end
+
+% download_dir = 'D:\Local\topo-extracts\21809\';
+% download_list = [download_dir '21809.csv'];
+% DA_bulk_downloader(download_type,download_dir,download_list)
+% DA_dc_to_csv(download_dir);
