@@ -76,10 +76,12 @@ end
 headers_collections = {'macrepo','name','parent_collection','level','url'};
 T = cell2table(map_collections_out,'VariableNames',headers_collections);
 writetable(T,'inventories\map_collections_out.csv')
-
+map_collections_out2 = [{'macrepo','name','parent_collection','level','url'};map_collections_out];
+writecell(map_collections_out2,'inventories\map_collections_out.xlsx');
+clear map_collection_out2;
 
 %% Step 2: check the items list against the collections list to include only those with proper parents:
-B = readcell('H:\Digitization_Projects\Digital_Archive_Stats\items_current.csv','NumHeaderLines',1,'Delimiter',',');
+B = readcell('inventories\items_current.csv','NumHeaderLines',1,'Delimiter',',');
 B_tmp = B;
 ind1 = find(strncmp(B(:,1),'info:fedora/macrepo:',length('info:fedora/macrepo:'))~=1 | strncmp(B(:,3),'info:fedora/macrepo:',length('info:fedora/macrepo:'))~=1);
 B(ind1,:) = [];
@@ -127,6 +129,15 @@ for i = 1:1:length(DO_macrepos)
 end
 sum(DO_nums)
 
+%%% Write map_items_out (but first, replace missing elements)
+% mask = cellfun(@ismissing, map_items_out(1:18108,1:3));
+% map_items_out(mask) = {[]};
+% writecell(map_items_out(1:18103,1:3),'inventories\map_items_out.xlsx');
 
-
+for i = 1:1:length(map_items_out)
+    map_items_out{i,4} = ['https://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A' num2str(map_items_out{i,1})];
+end
+    headers_map_items = {'macrepo','name','parent_collection','url'};
+T = cell2table(map_items_out,'VariableNames',headers_map_items);
+writetable(T,'inventories\map_items_out.csv');
 
