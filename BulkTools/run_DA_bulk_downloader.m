@@ -159,3 +159,18 @@ end
 % download_list = [download_dir '21809.csv'];
 % DA_bulk_downloader(download_type,download_dir,download_list)
 % DA_dc_to_csv(download_dir);
+
+%% Aerial photos for Janel
+cd('D:\Local\Digital-Archive-Tools\BulkTools\');
+download_type = 'TIFF';
+download_dir = 'H:\Digitization_Projects\Air_Photos\extracted-from-DA\';
+download_list = [download_dir 'macrepos.csv'];
+DA_bulk_downloader(download_type,download_dir,download_list)
+% DA_dc_to_csv(download_dir);
+%%% Rename files to their original (DA identifier) name
+A = readcell([download_dir 'aerial_photos_clipped.csv'],'NumHeaderLines',1,'Delimiter',',');
+
+macrepos = A(:,1); 
+for i = 1:1:length(A)
+   [s{i}] = movefile([download_dir num2str(A{i,1}) '.tiff'],[download_dir num2str(A{i,5}) '.tiff']);
+end
