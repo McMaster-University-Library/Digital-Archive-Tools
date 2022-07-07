@@ -74,7 +74,13 @@ download_type = 'DC';
 DA_bulk_downloader(download_type,download_dir,download_list);
 
 %% WW2_France_100k_GSGS4249
+cd('D:\Local\Digital-Archive-Tools\BulkTools\');
+download_type = 'DC';
+download_dir = 'D:\Local\topo-extracts\8286\';
 
+download_list = [download_dir '19790.csv'];
+DA_bulk_downloader(download_type,download_dir,download_list)
+DA_dc_to_csv(download_dir);
 %% WW2_Holland_100k_GSGS2541
 
 %% WW2_Belgium_France_100k_GSGS4336
@@ -126,6 +132,10 @@ for i = 1:1:size(colls_to_load,1)
 end
 
 %%% Now, manually run sparql queries, save output to csv files
+% Query service: http://dcs1.mcmaster.ca/fedora/risearch
+% Query: https://github.com/jasonbrodeur/Fedora-SPARQL/blob/master/fedora-sparql-cookbook.md#example-1-display-list-of-all-active-non-deleted-items-in-a-collection
+% Run queries; copy and paste contents to the new (and blank) csv files
+% that were created in each collection directory. 
 
 %%% Now, reformat the csv files to include just unique macrepo values of
 %%% children. these lists will be in each directory with name
