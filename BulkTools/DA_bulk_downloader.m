@@ -1,10 +1,13 @@
 function [] = DA_bulk_downloader(download_type,download_dir,download_list,book_flag)
 % DA_bulk_downloader.m
 % This function takes a list of macrepo numbers as input, and downloads the selected file type for each digital archive item.
-%%% Inputs:
+%%% Inputs
+% download_type - the bitstream file type to download (TIFF, JPEG2000, JPEG, MODS, DC) 
+% download_dir - The path where data should be downloaded
 % download_list - A one-column csv file with nothing but the macrepo numbers of the items to be downloaded.
-% file_ext: '.tiff'    '.jp2'    '.jpeg' '.xml'
-% download_dir: Path to a directory where the files are to be downloaded.
+% book_flag (optional) - set to 1 to download a book; set to 0 for singular item [default = 0]
+%%% Example usage:
+% DA_bulk_downloader('TIFF','H:\Digitization_Projects\Omeka\Robert Clifford Collection\','H:\Digitization_Projects\Omeka\Robert Clifford Collection\download_list.csv');
 
 % Parameters
 default_dir = 'D:/';
