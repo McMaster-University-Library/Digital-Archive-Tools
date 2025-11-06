@@ -188,3 +188,10 @@ end
 % DA_bulk_downloader(download_type,download_dir,download_list)
 % DA_dc_to_csv(download_dir);
 
+%% 2025-11-05 - Download some aerial photos
+cd('D:\Local\Digital-Archive-Tools\BulkTools\');
+download_type = 'DC';
+download_dir = 'D:\Local\topo-extracts\21809\';
+download_list = [download_dir '21809.csv'];
+DA_bulk_downloader(download_type,download_dir,download_list)
+DA_dc_to_csv(download_dir);
