@@ -206,7 +206,7 @@ for k = 1:length(d)
         imwrite(img, fullfile(download_dir, strrep(d(k).name, '.tiff', '.jpg')));
         catch
             [filepath,name,ext] = fileparts(d(k).name);
-        status = dos(['magick convert' d(k).name ' ' name '.jpg']); 
+        status = dos(['magick convert ' d(k).name ' ' name '.jpg']); 
         switch status
             case 0
                 disp(['Used CMD conversion for file' name]);
@@ -219,3 +219,5 @@ end
 catch
     disp(['Process failed at k = ' num2str(k)])
 end
+%%%% Use this command in CMD to count how many have been created: 
+% dir /b /a-d "E:\Users\brodeujj\aerial-photos\*.jpg" | find /v /c ""
