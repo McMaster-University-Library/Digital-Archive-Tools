@@ -189,9 +189,33 @@ end
 % DA_dc_to_csv(download_dir);
 
 %% 2025-11-05 - Download some aerial photos
-cd('D:\Local\Digital-Archive-Tools\BulkTools\');
-download_type = 'DC';
-download_dir = 'D:\Local\topo-extracts\21809\';
-download_list = [download_dir '21809.csv'];
+cd('E:\Users\brodeujj\Documents\GitHub\Digital-Archive-Tools\BulkTools\');
+download_type = 'TIFF';
+download_dir = 'E:\Users\brodeujj\aerial-photos\';
+download_list = [download_dir 'macrepos.csv'];
 DA_bulk_downloader(download_type,download_dir,download_list)
-DA_dc_to_csv(download_dir);
+
+% Convert all the tif files in the directory to jpg
+d = dir(download_dir);
+cd(download_dir);
+try
+for k = 1:length(d)
+    if endsWith(d(k).name, '.tiff')
+        try
+        img = imread(fullfile(download_dir, d(k).name));
+        imwrite(img, fullfile(download_dir, strrep(d(k).name, '.tiff', '.jpg')));
+        catch
+            [filepath,name,ext] = fileparts(d(k).name);
+        status = dos(['magick convert' d(k).name ' ' name '.jpg']); 
+        switch status
+            case 0
+                disp(['Used CMD conversion for file' name]);
+            otherwise
+                disp(['Failed to convert file ' name ' using CMD.']);
+        end
+        end
+    end
+end
+catch
+    disp(['Process failed at k = ' num2str(k)])
+end
