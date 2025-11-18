@@ -45,6 +45,33 @@ download_dir = 'H:\Digitization_Projects\WWII_Topographic_Maps\U_of_Alberta\UofA
 download_list = [download_dir 'macrepo_list.csv'];
 DA_bulk_downloader(download_type,download_dir,download_list)
 
+%% Metadata for Yogoslavia 250k
+cd('D:\Local\Digital-Archive-Tools\BulkTools\');
+download_type = 'DC';
+download_dir = 'H:\Digitization_Projects\WWII_Topographic_Maps\Yugoslavia\Yugoslavia_250k\MODS-downloaded\';
+jjb_check_dirs(download_dir,1);
+download_list = [download_dir 'macrepos.csv'];
+DA_bulk_downloader(download_type,download_dir,download_list)
+DA_dc_to_csv(download_dir);
+
+%% Metadata for Romania 100k
+cd('D:\Local\Digital-Archive-Tools\BulkTools\');
+download_type = 'DC';
+download_dir = 'H:\Digitization_Projects\WWII_Topographic_Maps\Romania\Romania_100k\MODS-downloaded\';
+jjb_check_dirs(download_dir,1);
+download_list = [download_dir 'macrepos.csv'];
+DA_bulk_downloader(download_type,download_dir,download_list)
+DA_dc_to_csv(download_dir);
+
+%% Metadata for Turkey 500k
+cd('D:\Local\Digital-Archive-Tools\BulkTools\');
+download_type = 'DC';
+download_dir = 'H:\Digitization_Projects\WWII_Topographic_Maps\Turkey\MODS-downloaded\';
+jjb_check_dirs(download_dir,1);
+download_list = [download_dir 'macrepos.csv'];
+DA_bulk_downloader(download_type,download_dir,download_list)
+DA_dc_to_csv(download_dir);
+
 %% Metadata for Italy/Switzerland 250k
 cd('D:\Local\Digital-Archive-Tools\BulkTools\');
 download_type = 'MODS';
@@ -108,6 +135,13 @@ download_dir = 'D:\Local\topo-extracts\21809\';
 download_list = [download_dir '21809.csv'];
 DA_bulk_downloader(download_type,download_dir,download_list)
 DA_dc_to_csv(download_dir);
+%% Aerial photo thumbnails
+cd('D:\Local\Digital-Archive-Tools\BulkTools\');
+download_type = 'JPEG';
+download_dir = 'H:\Digitization_Projects\Air_Photos\airphoto_thumbnails\';
+download_list = [download_dir 'macrepos.csv'];
+DA_bulk_downloader(download_type,download_dir,download_list)
+
 %% Aerial photos for Janel
 cd('D:\Local\Digital-Archive-Tools\BulkTools\');
 download_type = 'TIFF';

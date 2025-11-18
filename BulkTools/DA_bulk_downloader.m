@@ -102,10 +102,13 @@ switch download_type
             case 1
                 url = ['http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A' macrepo '/datastream/TIFF/view/'];
         end
+    case 'JPEG'
+        url = ['http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A' macrepo '/datastream/' dl_prefix];
     otherwise
         url = ['http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A' macrepo '/datastream/' dl_prefix '/' macrepo file_ext];
 end
 % https://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A31847/datastream/TIFF/view
+% https://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A79829/datastream/TN/view
     try
         websave(fname_out,url);
     catch
