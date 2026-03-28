@@ -9,6 +9,12 @@ function [] = DA_bulk_downloader(download_type,download_dir,download_list,book_f
 %%% Example usage:
 % DA_bulk_downloader('TIFF','H:\Digitization_Projects\Omeka\Robert Clifford Collection\','H:\Digitization_Projects\Omeka\Robert Clifford Collection\download_list.csv');
 
+%%%% Examples of download URLs: 
+% TIFF: https://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A88191/datastream/OBJ/macrepo%3A88191.tiff
+% GCP file: https://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A88191/datastream/GCP/macrepo%3A88191.tiff.points
+% Readme: https://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A88191/datastream/README/README.txt
+% ISO19115: https://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A88191/datastream/ISO19115/ISO19115macrepo%3A88191_ISO19115.xml
+
 % Parameters
 default_dir = 'D:/';
 file_types_lookup = ...
@@ -16,7 +22,10 @@ file_types_lookup = ...
     'JPEG2000','.jp2', 'JP2';...
     'JPEG','.jpeg', 'TN';...
     'MODS','.xml','MODS/download';...
-    'DC','.xml','DC/download'};
+    'DC','.xml','DC/download';...
+    'GCP','.tiff.points','GCP';...
+    % 'README','.txt','README/README';...
+    'ISO19115','_ISO19115.xml','ISO19115/ISO19115'};
 fname1 = '';
 pname1 = '';
 pname2 = '';
@@ -104,6 +113,12 @@ switch download_type
         end
     case 'JPEG'
         url = ['http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A' macrepo '/datastream/' dl_prefix];
+    case 'GCP'
+        % Example: https://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A88191/datastream/GCP/macrepo%3A88191.tiff.points
+        url = ['http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A' macrepo '/datastream/' dl_prefix '/macrepo%3A' macrepo file_ext];
+    case 'ISO19115'
+        % Example: https://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A88191/datastream/ISO19115/ISO19115macrepo%3A88191_ISO19115.xml
+        url = ['http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A' macrepo '/datastream/' dl_prefix 'macrepo%3A' macrepo file_ext];
     otherwise
         url = ['http://digitalarchive.mcmaster.ca/islandora/object/macrepo%3A' macrepo '/datastream/' dl_prefix '/' macrepo file_ext];
 end

@@ -255,3 +255,40 @@ catch
 end
 %%%% Use this command in CMD to count how many have been created: 
 % dir /b /a-d "E:\Users\brodeujj\aerial-photos\*.jpg" | find /v /c ""
+
+%% Download 1:63360 topos
+%%% Step 1: download files
+cd('E:\Users\brodeujj\Documents\GitHub\Digital-Archive-Tools\BulkTools\');
+% download_type = 'TIFF';
+download_dir = 'F:\JB_download\1_63360\';
+download_list = [download_dir 'macrepos.csv'];
+DA_bulk_downloader('TIFF',download_dir,download_list)
+DA_bulk_downloader('GCP',download_dir,download_list)
+DA_bulk_downloader('ISO19115',download_dir,download_list)
+
+%%% Step 2: rename files to their original (DA identifier) name
+% A = readcell([download_dir '1_63360_lookup.csv'],'NumHeaderLines',1,'Delimiter',',');
+lookup = readtable([download_dir '1_63360_lookup.csv']);
+for i = 1:1:size(lookup,1)
+   [s_tiff{i}] = movefile([download_dir num2str(lookup.macrepo(i)) '.tiff'],[download_dir char(lookup.identifier(i)) '.tiff']);
+   [s_gcp{i}] = movefile([download_dir num2str(lookup.macrepo(i)) '.tiff.points'],[download_dir char(lookup.identifier(i)) '.gcp']);
+   [s_iso{i}] = movefile([download_dir num2str(lookup.macrepo(i)) '_ISO19115.xml'],[download_dir char(lookup.identifier(i)) '.xml']);
+end
+%% Download 1:25000 topos
+%%% Step 1: download files
+cd('E:\Users\brodeujj\Documents\GitHub\Digital-Archive-Tools\BulkTools\');
+% download_type = 'TIFF';
+download_dir = 'F:\JB_download\1_25000\';
+download_list = [download_dir 'macrepos.csv'];
+DA_bulk_downloader('TIFF',download_dir,download_list)
+DA_bulk_downloader('GCP',download_dir,download_list)
+DA_bulk_downloader('ISO19115',download_dir,download_list)
+
+%%% Step 2: rename files to their original (DA identifier) name
+% A = readcell([download_dir '1_63360_lookup.csv'],'NumHeaderLines',1,'Delimiter',',');
+lookup = readtable([download_dir '1_25000_lookup.csv']);
+for i = 1:1:size(lookup,1)
+   [s_tiff{i}] = movefile([download_dir num2str(lookup.macrepo(i)) '.tiff'],[download_dir char(lookup.identifier(i)) '.tiff']);
+   [s_gcp{i}] = movefile([download_dir num2str(lookup.macrepo(i)) '.tiff.points'],[download_dir char(lookup.identifier(i)) '.gcp']);
+   [s_iso{i}] = movefile([download_dir num2str(lookup.macrepo(i)) '_ISO19115.xml'],[download_dir char(lookup.identifier(i)) '.xml']);
+end
