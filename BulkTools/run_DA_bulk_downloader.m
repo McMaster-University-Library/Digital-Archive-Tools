@@ -288,7 +288,7 @@ DA_bulk_downloader('ISO19115',download_dir,download_list)
 % A = readcell([download_dir '1_63360_lookup.csv'],'NumHeaderLines',1,'Delimiter',',');
 lookup = readtable([download_dir '1_25000_lookup.csv']);
 for i = 1:1:size(lookup,1)
-   [s_tiff{i}] = movefile([download_dir num2str(lookup.macrepo(i)) '.tiff'],[download_dir char(lookup.identifier(i)) '.tiff']);
-   [s_gcp{i}] = movefile([download_dir num2str(lookup.macrepo(i)) '.tiff.points'],[download_dir char(lookup.identifier(i)) '.gcp']);
-   [s_iso{i}] = movefile([download_dir num2str(lookup.macrepo(i)) '_ISO19115.xml'],[download_dir char(lookup.identifier(i)) '.xml']);
+   [s_tiff{i}] = movefile([download_dir num2str(lookup.macrepo(i)) '.tiff'],[download_dir char(lookup.Identifier(i)) '.tiff']);
+   [s_gcp{i}] = movefile([download_dir num2str(lookup.macrepo(i)) '.tiff.points'],[download_dir char(lookup.Identifier(i)) '.gcp']);
+   [s_iso{i}] = movefile([download_dir num2str(lookup.macrepo(i)) '_ISO19115.xml'],[download_dir char(lookup.Identifier(i)) '.xml']);
 end
